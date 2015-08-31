@@ -8,7 +8,8 @@ $(document).ready(function () {
       //this.classList.remove("is-active");
       $('.c-hamburger--htx').removeClass("is-active");
       $('.hamburger-menu').removeClass("is-open");
-    } else {
+    }
+    else {
       //this.classList.add("is-active");
       $('.c-hamburger--htx').addClass("is-active");
       $('.hamburger-menu').addClass("is-open");
