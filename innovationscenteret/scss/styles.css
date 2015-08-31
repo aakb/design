@@ -6,7 +6,11 @@ body {
   position: fixed;
   height: 96px;
   width: 100%;
-  background-color: green; }
+  background-color: green;
+  /**
+    * The hamburger-icon in the main menu is defined in "_hamburger-button" and positioned here.
+    *
+    */ }
   .nav--logo {
     font-size: 5em; }
   .nav--links {
@@ -25,38 +29,45 @@ body {
     background-color: green; }
 
 .hamburger-menu {
-  background-color: green;
-  border: none;
   position: absolute;
   top: 0px;
-  button: 0px;
   right: -30em;
-  overflow: hidden;
   margin-right: 0em;
   max-width: 90%;
   width: 30em;
   height: 50em;
   z-index: 4;
-  transition: right 1.2s;
+  overflow: hidden;
+  background-color: green;
+  border: none;
+  transition: right 0.7s;
   transition-timing-function: ease-in-out; }
   .hamburger-menu.is-open {
     right: 0; }
 
+/**
+  * Places the hamburger icon defined in "_hamburger-button"
+  *
+  */
 .hamburger-menu .c-hamburger {
   top: 0px;
   left: 0px; }
 
+/**
+  * The menu-links is placed
+  *
+  */
 .hamburger-links {
   padding-top: 2em;
   padding-left: 2em; }
   .hamburger-links .nav-link {
-    color: white;
+    padding-right: 5em;
+    padding-top: 1em;
     text-decoration: none;
     font-size: 1.2em;
     display: list-item;
     list-style: none;
-    padding-right: 5em;
-    padding-top: 1em; }
+    color: white; }
     .hamburger-links .nav-link:hover {
       background-color: blueviolet; }
 

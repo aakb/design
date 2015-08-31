@@ -25,11 +25,16 @@
     text-decoration: none;
   }
 
+
+/**
+  * The hamburger-icon in the main menu is defined in "_hamburger-button" and positioned here.
+  *
+  */
+
   .c-hamburger {
     position: absolute;
     right: 0;
     top: 0;
-
     background-color: $menu-color;
   }
 }
