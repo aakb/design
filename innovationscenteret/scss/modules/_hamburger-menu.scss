@@ -1,0 +1,63 @@
+
+.hamburger-menu {
+
+
+  background-color: $menu-color;
+  border: none;
+  position: absolute;
+  top: 0px;
+  button: 0px;
+  right: -30em;
+  overflow: hidden;
+  margin-right: 0em;
+  max-width: 90%;
+  width: 30em;
+  height: 50em;
+  z-index: 4;
+  transition: right 1.2s;
+  transition-timing-function: ease-in-out;
+
+
+  &.is-open {
+    right: 0;
+  }
+
+}
+.hamburger-menu .c-hamburger {
+  top: 0px;
+  left: 0px;
+}
+
+.hamburger-links {
+  padding-top: 2em;
+  padding-left: 2em;
+
+
+  .nav-link {
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: list-item;
+    list-style: none;
+    padding-right: 5em;
+    padding-top: 1em;
+
+    &:hover{
+
+      background-color: blueviolet;
+    }
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+/*# sourceMappingURL=styles.css.map */
