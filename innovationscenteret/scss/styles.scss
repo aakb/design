@@ -1,6 +1,19 @@
+/**
+ *
+ * Stylesheet import
+ *
+ */
 
-@import "vars";
+
+// Include base
+@import "base/_vars";
+@import "base/_base";
+@import "base/_normalize";
+
+// Layout
 @import "layout/layout";
+
+// Modules
 @import "modules/nav";
 @import "modules/hamburger-menu";
 @import "modules/hamburger-button";
