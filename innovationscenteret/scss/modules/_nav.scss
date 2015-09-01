@@ -5,31 +5,50 @@
  */
 
 
+$nav-height:  96px;
+
 .nav {
   top: 0;
   position: fixed;
 
-  height: 96px;
+  height: $nav-height;
   width: 100%;
 
   background-color: $menu-color;
 
   @include flexbox;
 
-  &--logo,
-  &--links {
-    @include flex-grow(1);
-  }
-
   &--logo {
+    display: block;
+    height: $nav-height;
+    margin-top: .3em;
+    margin-left: .5em;
+    
     color: $white;
     font-size: 3em;
 
     @include order(1);
+    @include align-self(center);
+
+    a {
+      @include strip-link-styles(#fff, none);
+    }
   }
 
   &--links {
+    text-align: center;
+
     @include order(2);
+    @include flex-grow(1);
+    @include align-self(center);
+
+    a {
+      @include strip-link-styles(#fff, none);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &--link {
