@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function () {
+  "use strict";
   $('.c-hamburger').click(function() {
     if(this.classList.contains("is-active")===true){
       //this.classList.remove("is-active");
