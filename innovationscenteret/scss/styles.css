@@ -478,7 +478,7 @@ body {
   background-color: green; }
 
 .c-hamburger--htx span {
-  transition: background 0s 0.3s; }
+  transition: background 0s, 0.3s; }
 
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
@@ -496,18 +496,21 @@ body {
   background-color: green; }
 
 .c-hamburger--htx.is-active span {
+  transition-delay: 0.2s;
   background: none; }
 
 .c-hamburger--htx.is-active span::before {
   top: 0;
+  transition-delay: 0.2s;
   transform: rotate(45deg); }
 
 .c-hamburger--htx.is-active span::after {
   bottom: 0;
+  transition-delay: 0.2s;
   transform: rotate(-45deg); }
 
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s; }
+  transition-delay: 0.2s, 0.2s; }
 
 /*# sourceMappingURL=styles.css.map */
