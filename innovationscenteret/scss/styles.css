@@ -341,35 +341,54 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  margin: 0; }
-
+/**
+ *
+ * Navigation.
+ *
+ */
 .nav {
   top: 0;
   position: fixed;
   height: 96px;
   width: 100%;
   background-color: green;
-  /**
-    * The hamburger-icon in the main menu is defined in "_hamburger-button" and positioned here.
-    *
-    */ }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .nav--logo, .nav--links {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
   .nav--logo {
-    font-size: 5em; }
+    color: #fff;
+    font-size: 3em;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -moz-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
   .nav--links {
-    position: absolute;
-    right: 100px;
-    top: 37px; }
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -moz-order: 2;
+    -ms-flex-order: 2;
+    order: 2; }
   .nav--link {
     padding-right: 1em;
     color: white;
     font-size: 1.2em;
     text-decoration: none; }
-  .nav .c-hamburger {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: green; }
+  .nav--menu {
+    background-color: green;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -moz-order: 3;
+    -ms-flex-order: 3;
+    order: 3; }
 
 .hamburger-menu {
   position: absolute;

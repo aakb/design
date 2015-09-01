@@ -1,3 +1,10 @@
+/**
+ *
+ * Navigation.
+ *
+ */
+
+
 .nav {
   top: 0;
   position: fixed;
@@ -7,14 +14,22 @@
 
   background-color: $menu-color;
 
+  @include flexbox;
+
+  &--logo,
+  &--links {
+    @include flex-grow(1);
+  }
+
   &--logo {
-    font-size: 5em;
+    color: $white;
+    font-size: 3em;
+
+    @include order(1);
   }
 
   &--links {
-    position: absolute;
-    right: 100px;
-    top: 37px;
+    @include order(2);
   }
 
   &--link {
@@ -25,15 +40,9 @@
     text-decoration: none;
   }
 
-/**
-  * The hamburger-icon in the main menu is defined in "_hamburger-button" and positioned here.
-  *
-  */
-
-  .c-hamburger {
-    position: absolute;
-    right: 0;
-    top: 0;
+  &--menu {
     background-color: $menu-color;
+
+    @include order(3);
   }
 }
