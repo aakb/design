@@ -13,7 +13,7 @@ var rename = require('gulp-rename');
 
 // We only want to process our own non-processed JavaScript files.
 var jsPath = ['./js/*.js', '!./js/*.min.*'];
-var sassPath = './scss/*.scss';
+var sassPath = ['./scss/*.scss', './scss/*/*.scss'];
 
 var buildDir = './js';
 
