@@ -351,11 +351,11 @@ table {
 /* Styles
 ================================================================================================================== */
 body {
-  overflow: hidden;
-  margin-top: 10em; }
+  overflow: hidden; }
 
 .content {
   max-width: 62em;
+  margin-top: 10em;
   margin-right: auto;
   margin-left: auto; }
   .content h1 {
