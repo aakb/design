@@ -35,7 +35,7 @@ gulp.task('sass', function () {
     .pipe(sass({
       outputStyle: 'compressed',
       includePaths: [
-//        'bower_components/compass-mixins/lib',
+        'scss/assets/compass-mixins/lib',
       ]
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
