@@ -8,10 +8,10 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/menu_toggle.js"></script>
+    <script src="js/menu-toggle.js"></script>
 </head>
 <body>
-<div class="overlay" onclick="menu_toggle()"></div>
+<div class="overlay js-menu-toggle"></div>
 <header role="banner">
     <nav class="nav">
         <div class="nav--logo"><a href="#">Logo</a></div>
@@ -21,12 +21,12 @@
             <a href="#" class="nav--link">MenuPunkt3</a>
             <a href="#" class="nav--link">Menupunkt4</a>
         </div>
-        <button class="nav--menu c-hamburger" onclick="menu_toggle()">
+        <button class="nav--menu c-hamburger js-menu-toggle">
             <span>toggle menu</span>
         </button>
     </nav>
     <nav class="hamburger-menu">
-        <button class="c-hamburger c-hamburger--htx" onclick="menu_toggle()">
+        <button class="c-hamburger c-hamburger--htx js-menu-toggle">
             <span>toggle menu</span>
         </button>
         <div class="hamburger-menu--links">

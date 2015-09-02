@@ -83,14 +83,13 @@ $boxlist-padding:                       1em;
   &--date,
   &--time,
   &--location {
+    box-sizing: border-box;
     padding: .25em;
     width: 30%;
 
     background: tomato;
     font-size: 85%;
     text-align: center;
-
-    @include box-sizing(border-box);
 
     @media only screen and (min-width: 30em) {
       padding: .5em;
