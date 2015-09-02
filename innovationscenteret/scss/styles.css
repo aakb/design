@@ -26,10 +26,11 @@ body {
   position: relative;
   display: table;
   height: 100%;
+  margin: 0;
   width: 100%;
   background-color: #fff;
   color: #999;
-  font: 1em/1.5 "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 1em/1.5 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 html.is-locked,
 body.is-locked {
@@ -350,8 +351,16 @@ table {
 /* Styles
 ================================================================================================================== */
 body {
-  margin: 0;
   overflow: hidden; }
+
+.content {
+  max-width: 62em;
+  margin-top: 10em;
+  margin-right: auto;
+  margin-left: auto; }
+  .content h1 {
+    color: #000;
+    font-size: 4em; }
 
 /**
  *
