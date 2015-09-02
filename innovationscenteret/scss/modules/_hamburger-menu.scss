@@ -28,35 +28,34 @@ $hamburger-menu-animation-duration: 0.3s;
   &.is-open {
     right: 0;
   }
-}
 
+  &--links {
+    padding-right: 2em;
+    padding-left: 2em;
 
-// Places the hamburger icon defined in "_hamburger-button"
+    a {
+      @include strip-link-styles(#fff, none);
 
-.hamburger-menu .c-hamburger {
-  top: 0;
-  left: 0;
-}
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+  }
 
-
-// The menu-links is placed
-
-.hamburger-links {
-  padding-top: 2em;
-  padding-left: 2em;
-  
-  .nav-link {
-    padding-right: 5em;
-    padding-top: 1em;
-
-    text-decoration: none;
-    font-size: 1.2em;
+  &--link {
     display: list-item;
-    list-style: none;
-    color: white;
+    padding-top: .5em;
+    padding-right: 5em;
+    padding-bottom: .5em;
 
-    &:hover {
-      text-decoration: underline;
+    border-bottom: 1px solid transparentize(#fff, .5);
+    color: white;
+    font-size: 1.2em;
+    list-style: none;
+    text-decoration: none;
+
+    &:last-child {
+      border-bottom: 0;
     }
   }
 }
