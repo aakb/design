@@ -11,6 +11,7 @@
     <script src="js/menu_toggle.js"></script>
 </head>
 <body>
+<div class="overlay" onclick="menu_toggle()"></div>
 <header role="banner">
     <nav class="nav">
         <div class="nav--logo"><a href="#">Logo</a></div>
@@ -24,16 +25,16 @@
             <span>toggle menu</span>
         </button>
     </nav>
-    <div class="overlay" onclick="menu_toggle()"></div>
     <nav class="hamburger-menu">
         <button class="c-hamburger c-hamburger--htx" onclick="menu_toggle()">
             <span>toggle menu</span>
         </button>
-        <div class="hamburger-links">
-            <a href="#" class="nav-link">MenuPunkt1</a>
-            <a href="#" class="nav-link">MenuPunkt2</a>
-            <a href="#" class="nav-link">MenuPunkt3</a>
-            <a href="#" class="nav-link">Menupunkt4</a>
+        <div class="hamburger-menu--links">
+            <a href="#" class="hamburger-menu--link">MenuPunkt1</a>
+            <a href="#" class="hamburger-menu--link">MenuPunkt2</a>
+            <a href="#" class="hamburger-menu--link">MenuPunkt3</a>
+            <a href="#" class="hamburger-menu--link">Menupunkt4</a>
         </div>
     </nav>
+
 </header>

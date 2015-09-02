@@ -14,23 +14,31 @@ $button-transition-delay: 0s;
  */
 
 .c-hamburger {
-  display: block;
   position: relative;
   overflow: hidden;
+
+  display: block;
   margin: 0;
   padding: 0;
   width: $button-width;
   height: $button-height;
+
+  background-color: transparentize(#fff, .85);
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
   font-size: 0;
   text-indent: 100%;
+
+  transition: background $button-transition-duration;
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-shadow: none;
-  border: none;
-  cursor: pointer;
-  transition: background $button-transition-duration;
 
+  &:hover {
+    background-color: $menu-color;
+  }
 }
 
 .c-hamburger:focus {
