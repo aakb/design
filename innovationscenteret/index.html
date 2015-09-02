@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//fonts.googleapis.com/css?family=Exo+2:100,300,600" rel="stylesheet" type="text/css">
-  <link href="scss/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/menu_toggle.js"></script>
 </head>
@@ -19,13 +19,13 @@
     <a href="#" class="nav--link">MenuPunkt3</a>
     <a href="#" class="nav--link">Menupunkt4</a>
   </div>
-  <button class="nav--menu c-hamburger">
+  <button class="nav--menu c-hamburger" onclick="menu_toggle()">
     <span>toggle menu</span>
   </button>
 </nav>
-
-<nav class="hamburger-menu overlay">
-  <button class="c-hamburger c-hamburger--htx">
+<div class="overlay" onclick="menu_toggle()"></div>
+<nav class="hamburger-menu">
+  <button class="c-hamburger c-hamburger--htx" onclick="menu_toggle()">
     <span>toggle menu</span>
   </button>
   <div class="hamburger-links">

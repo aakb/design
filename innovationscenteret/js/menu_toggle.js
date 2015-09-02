@@ -2,17 +2,19 @@
  * Created by jakobrindom on 28/08/15.
  */
 
-$(document).ready(function () {
+function menu_toggle() {
+
+
   "use strict";
 
   var hamburger_button = $('.c-hamburger--htx');
   var hamburger_menu = $('.hamburger-menu');
   var html = $('html');
   var body = $('body');
-  var overlay = $('overlay');
+  var overlay = $('.overlay');
 
-  $('.c-hamburger').click(function() {
-    if(this.classList.contains("is-active")===true){
+
+    if(hamburger_button.hasClass("is-active")){
       // Button animation 'back to hamburger'
       hamburger_button.removeClass("is-active");
 
@@ -20,7 +22,7 @@ $(document).ready(function () {
       hamburger_menu.removeClass("is-open");
 
       // Hides overlay
-      overlay.removeClass('is-hidden');
+      overlay.removeClass('is-visible');
 
       //Unlocks html and body element
       html.removeClass('is-locked');
@@ -35,14 +37,14 @@ $(document).ready(function () {
       hamburger_menu.addClass("is-open");
 
       // Shows overlay
-      overlay.addClass('is-hidden');
+      overlay.addClass('is-visible');
 
       // Lock html and body elements
       html.addClass('is-locked');
       body.addClass('is-locked');
 
     }
-  });
-});
+  }
+
 
 
