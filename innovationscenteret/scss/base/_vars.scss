@@ -5,17 +5,24 @@
  */
 
 
+/* Elements
+   ================================================================================================================== */
+
+$nav-height:  80px;
+
+
 /* Colors
    ================================================================================================================== */
 
-$black:            #000 !default;
-$white:            #fff !default;
-$menu-color:       green;
+$black:            #000;
+$white:            #fff;
+$menu-color:       dimgray;
 $link-color:       blue;
 
 /* Typography
    ================================================================================================================== */
 
-$font-family:      "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font:             1em/1.5 $font-family !default;
+$font-family:      "Cabin Sketch", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:             1em/1.5 $font-family;
+
 

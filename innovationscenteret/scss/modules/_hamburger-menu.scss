@@ -1,9 +1,14 @@
+/**
+ *
+ * Hamburger menu
+ *
+ */
 
-$hamburger-menu-animation-duration: 0.7s;
+
+$hamburger-menu-animation-duration: 0.3s;
 
 
 .hamburger-menu {
-
   position: absolute;
   top: 0;
   right: -30em;
@@ -25,20 +30,16 @@ $hamburger-menu-animation-duration: 0.7s;
   }
 }
 
-/**
-  * Places the hamburger icon defined in "_hamburger-button"
-  *
-  */
+
+// Places the hamburger icon defined in "_hamburger-button"
 
 .hamburger-menu .c-hamburger {
   top: 0;
   left: 0;
 }
 
-/**
-  * The menu-links is placed
-  *
-  */
+
+// The menu-links is placed
 
 .hamburger-links {
   padding-top: 2em;
@@ -54,14 +55,13 @@ $hamburger-menu-animation-duration: 0.7s;
     list-style: none;
     color: white;
 
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
 }
 
-.overlay{
-
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -69,23 +69,11 @@ $hamburger-menu-animation-duration: 0.7s;
   height: 100%;
   opacity: .25;
   visibility: hidden;
- // z-index: 98;
 
-  &.is-visible{
-
+  &.is-visible {
     visibility: visible;
     transition: background $hamburger-menu-animation-duration;
     cursor: pointer;
-    background-color: black;
-
-
+    background-color: #000;
   }
-
-
-
 }
-
-
-
-
-/*# sourceMappingURL=styles.css.map */
