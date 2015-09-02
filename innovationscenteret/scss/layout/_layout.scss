@@ -1,15 +1,40 @@
-body {
+$footer-height: 5em;
+
+
+body, html {
   overflow-x: hidden;
+
 }
 
 .content {
+
   max-width: 62em;
   margin-top: 10em;
   margin-right: auto;
   margin-left: auto;
 
+
   h1 {
     color: #000;
     font-size: 4em;
   }
+}
+
+
+
+footer {
+
+  background-color: black;
+  bottom:0;
+  width: 100%;
+  position:fixed;
+
+
+
+  p{
+
+    color: white;
+
+  }
+
 }

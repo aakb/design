@@ -4,6 +4,9 @@
  *
  */
 
+// Include compass
+@import "compass/css3/box-sizing";
+
 
 // Include base
 @import "base/_vars";
@@ -12,7 +15,7 @@
 @import "base/_mixins";
 
 // Include assets
-@import "assets/_flexbox";
+@import "modules/flexbox";
 
 // Layout
 @import "layout/layout";
@@ -22,3 +25,4 @@
 @import "modules/hamburger-menu";
 @import "modules/hamburger-button";
 @import "modules/content--box";
+@import "modules/_itk-boxlist";
