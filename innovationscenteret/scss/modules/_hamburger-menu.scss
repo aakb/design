@@ -59,20 +59,3 @@ $hamburger-menu-animation-duration: 0.3s;
     }
   }
 }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .25;
-  visibility: hidden;
-
-  &.is-visible {
-    visibility: visible;
-    transition: background $hamburger-menu-animation-duration;
-    cursor: pointer;
-    background-color: #000;
-  }
-}
