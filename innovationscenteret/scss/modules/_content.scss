@@ -1,8 +1,12 @@
+/* Variables
+   ========================================================================== */
 
 $overview-padding:      1.5em;
 
-.overview {
+/* Basis styling
+   ========================================================================== */
 
+.overview {
 
   &--item{
 
@@ -17,8 +21,6 @@ $overview-padding:      1.5em;
 
     @media only screen and (min-width: 30em){
 
-
-
       header {
         order: 2;
         padding: $overview-padding;
@@ -28,7 +30,6 @@ $overview-padding:      1.5em;
 
       figure{
         order: 1;
-
         display: block;
         height: 200px;
         width: 200px;
@@ -38,22 +39,8 @@ $overview-padding:      1.5em;
         @include flex-basis(200px);
         @include flex-grow(0);
         @include flex-shrink(0)
-
       }
-
     }
-
-
-
   }
-
-
-
-
-
-
-
-
-
 }
 

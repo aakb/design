@@ -7,8 +7,6 @@ include("_menus.php")
         <h1>This is a header siteone</h1>
         <p class="lead">Est notare quam littera gothica quam nunc putamus! Autem vel eum iriure dolor in hendrerit: in vulputate velit esse molestie.
         </p>
-
-
         <div class="overview">
             <article class="overview--item">
                 <header>
@@ -39,10 +37,7 @@ include("_menus.php")
                 </header>
                 <figure><img src="https://unsplash.it/200/200/?ran.o" class="overview--image"></figure>
             </article>
-
         </div>
-
-
     </div>
 </main>
 
