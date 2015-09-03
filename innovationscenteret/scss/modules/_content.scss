@@ -1,0 +1,27 @@
+
+$overview-padding:      1em;
+
+.overview {
+
+
+  &--item{
+
+    @include flexbox;
+    @include flex-flow(row nowrap);
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 2em;
+
+    border-top: ridge;
+  }
+
+
+
+
+
+
+
+
+
+}
+
