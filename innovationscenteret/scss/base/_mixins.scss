@@ -2,13 +2,12 @@
  *
  * Global mixins used across multiple modules.
  *
- *
  */
 
-/* Styles
+
+/* Strip all link styles default color of links to inherit.
 ================================================================================================================== */
 
-// Strip all link styles default color of links to inherit.
 @mixin strip-link-styles($color:inherit, $decoration: none) {
   &:link {
     color: $color;
@@ -29,4 +28,12 @@
     color: $color;
     text-decoration: $decoration;
   }
+}
+
+
+/* Breakpoint
+================================================================================================================== */
+
+@mixin breakpoint($breakpoint) {
+  @media only screen and (min-width: $breakpoint) { @content; }
 }
