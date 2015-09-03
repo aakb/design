@@ -7,50 +7,39 @@ include("_menus.php")
         <p class="lead">Est notare quam littera gothica quam nunc putamus! Autem vel eum iriure dolor in hendrerit: in vulputate velit esse molestie.
         </p>
 
-
-        <!-- ITK boxlist -->
-        <div class="itk-boxlist">
-            <article class="itk-boxlist--item">
+        <div class="overview is-side-by-side">
+            <article class="overview--item">
                 <header>
-                    <h2 class="itk-boxlist--header">Vind to billetter Lars Frost, Niels Frank og Kamilla Löfström</h2>
-                    <p class="itk-boxlist--type">Forelæsning</p>
-                    <div class="itk-boxlist--metadata">
-                        <span class="itk-boxlist--date">14. maj 2015</span>
-                        <span class="itk-boxlist--time">10:00 - 12:00</span>
-                        <span class="itk-boxlist--location">Multisalen</span>
-                    </div>
+                    <h2 class="overview--header">This is a header</h2>
+                    <p class="overview--text">Quod mazim placerat facer possim assum typi non habent claritatem? Eorum claritatem Investigationes demonstraverunt lectores legere me lius quod. Dolore te feugait nulla facilisi nam liber.
+                    </p>
+                    <a href="sitethree.php" class="overview--link">This is a link</a>
                 </header>
-                <figure><img src="http://placehold.it/200x200"></figure>
+                <figure><img src="https://unsplash.it/200/200/?random" class="overview--image"></figure>
+            </article>
+
+            <article class="overview--item">
+                <header>
+                    <h2 class="overview--header">This is a header</h2>
+                    <p class="overview--text">Quod mazim placerat facer possim assum typi non habent claritatem? Eorum claritatem Investigationes demonstraverunt lectores legere me lius quod. Dolore te feugait nulla facilisi nam liber.
+                    </p>
+                    <a href="sitethree.php" class="overview--link">This is a link</a>
+                </header>
+                <figure><img src="https://unsplash.it/200/200/?random" class="overview--image"></figure>
+            </article>
+
+            <article class="overview--item">
+                <header>
+                    <h2 class="overview--header">This is a header</h2>
+                    <p class="overview--text">Quod mazim placerat facer possim assum typi non habent claritatem? Eorum claritatem Investigationes demonstraverunt lectores legere me lius quod. Dolore te feugait nulla facilisi nam liber.
+                    </p>
+                    <a href="sitethree.php" class="overview--link">This is a link</a>
+                </header>
+                <figure><img src="https://unsplash.it/200/200/?ran.o" class="overview--image"></figure>
             </article>
         </div>
 
-        <!-- ITK boxlist side by side -->
-        <div class="itk-boxlist is-side-by-side">
-            <article class="itk-boxlist--item">
-                <header>
-                    <h2 class="itk-boxlist--header">Vind to billetter Lars Frost, Niels Frank og Kamilla Löfström</h2>
-                    <p class="itk-boxlist--type">Forelæsning</p>
-                    <div class="itk-boxlist--metadata">
-                        <span class="itk-boxlist--date">14. maj 2015</span>
-                        <span class="itk-boxlist--time">10:00 - 12:00</span>
-                        <span class="itk-boxlist--location">Multisalen</span>
-                    </div>
-                </header>
-                <figure><img src="http://placehold.it/200x200"></figure>
-            </article>
-            <article class="itk-boxlist--item">
-                <header>
-                    <h2 class="itk-boxlist--header">Vind to billetter Lars Frost, Niels Frank og Kamilla Löfström</h2>
-                    <p class="itk-boxlist--type">Forelæsning</p>
-                    <div class="itk-boxlist--metadata">
-                        <span class="itk-boxlist--date">14. maj 2015</span>
-                        <span class="itk-boxlist--time">10:00 - 12:00</span>
-                        <span class="itk-boxlist--location">Multisalen</span>
-                    </div>
-                </header>
-                <figure><img src="http://placehold.it/200x200"></figure>
-            </article>
-        </div>
+
 
 
 

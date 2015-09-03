@@ -8,7 +8,6 @@ $overview-padding:      1.5em;
 
 .overview {
 
-
   &--item{
 
     @include flexbox;
@@ -53,7 +52,6 @@ $overview-padding:      1.5em;
     @include flexbox;
     @include flex-flow(row nowrap);
     @include justify-content(space-between);
-
 
     .overview--item {
       @include flex-direction(column);

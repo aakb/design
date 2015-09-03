@@ -37,8 +37,6 @@ include("_menus.php")
             </article>
         </div>
 
-
-
     </div>
 </main>
 
