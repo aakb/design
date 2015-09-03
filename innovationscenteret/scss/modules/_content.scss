@@ -8,12 +8,14 @@ $overview-padding:      1.5em;
 
 .overview {
 
+
   &--item{
 
     @include flexbox;
     @include flex-flow(row nowrap);
     margin-left: 2em;
     margin-right: 2em;
+    margin-bottom: 2em;
     padding-top: $overview-padding;
     padding-bottom: $overview-padding;
 
@@ -44,3 +46,35 @@ $overview-padding:      1.5em;
   }
 }
 
+// Show 3 columns side by side
+.overview.is-side-by-side {
+  // Stack until there is enough space to display them side by side
+  @media only screen and (min-width: 60em) {
+    @include flexbox;
+    @include flex-flow(row nowrap);
+    @include justify-content(space-between);
+
+
+    .overview--item {
+      @include flex-direction(column);
+
+      margin-right: 1em;
+
+      border-top: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      header {
+        padding: 0;
+        max-width: 200px;
+      }
+
+      figure {
+        padding: 0;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
