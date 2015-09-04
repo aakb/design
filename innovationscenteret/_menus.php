@@ -7,8 +7,8 @@ include("_header.php")
     <nav class="nav">
         <div class="nav--logo"><a href="index.php">Logo</a></div>
         <div class="nav--links">
-            <a href="siteone.php" class="nav--link">MenuPunkt1</a>
-            <a href="sitetwo.php" class="nav--link">MenuPunkt2</a>
+            <a href="news-list.php" class="nav--link">Nyheder</a>
+            <a href="event-list.php" class="nav--link">Events</a>
             <a href="sitethree.php" class="nav--link">MenuPunkt3</a>
             <a href="sitefour.php" class="nav--link">Menupunkt4</a>
         </div>
