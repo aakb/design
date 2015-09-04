@@ -1,7 +1,7 @@
 
 <article class="itk-boxlist--item">
     <header>
-        <h2 class="itk-boxlist--header--header"><a href="event-list.php" class="itk-boxlist--link"> This is a header</a></h2>
+        <h2 class="itk-boxlist--header--header"><a href="event.php" class="itk-boxlist--link"> This is a header</a></h2>
         <p class="itk-boxlist--type">Quod mazim placerat facer possim assum typi non habent claritatem?
         </p>
         <div class="itk-boxlist--metadata">
@@ -45,10 +45,12 @@
         Udsigten
 </span>
 
+            <a href="event.php" rel="tag" title="this is a title" hreflang="en">Læs mere<span class="visually-hidden">this is hidden</span></a>
+
         </div>
     </header>
     <figure>
-        <a href="event-list.php">
+        <a href="event.php">
             <img src="https://unsplash.it/200/200/?random" width="200" height="200" alt>
         </a>
     </figure>

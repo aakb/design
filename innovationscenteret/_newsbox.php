@@ -5,12 +5,12 @@
         </p>
         <div>
             <span class="node-readmore">
-          <a href="news-list.php" rel="tag" title="this is a title" hreflang="en">Læs mere<span class="visually-hidden">this is hidden</span></a>
+          <a href="news.php" rel="tag" title="this is a title" hreflang="en">Læs mere<span class="visually-hidden">this is hidden</span></a>
             </span>
         </div>
     </header>
     <figure>
-        <a href="news-list.php">
+        <a href="news.php">
             <img src="https://unsplash.it/200/200/?random" width="200" height="200" alt>
         </a>
     </figure>

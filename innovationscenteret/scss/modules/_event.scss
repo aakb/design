@@ -1,0 +1,141 @@
+/**
+ *
+ * Event
+ *
+ * The wrapping elements holding layout html.
+ *
+ */
+
+
+/* Styles
+================================================================================================================== */
+
+// Heading
+
+.is-event {
+  .page--heading {
+    @include breakpoint($breakpoint-desk) {
+      margin-right: 32%;
+      font-size: 3.5em;
+    }
+  }
+}
+
+// Event layout
+.event {
+
+  // Node content wrapper. Ensures that headercontainer and node content aligns and centers.
+  &--content {
+    @extend %auto-margins;
+
+    position: relative;
+
+    @include breakpoint($breakpoint-desk) {
+      max-width: $layout-max-width-desk;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      max-width: $layout-max-width;
+    }
+
+  }
+
+  &--main {
+    @include breakpoint($breakpoint-tablet) {
+      width: 68%;
+      margin-right: 2%;
+      float: left;
+    }
+  }
+
+  &--aside {
+    img {
+      display: none;
+
+      @include breakpoint($breakpoint-tablet) {
+        background-color: $white;
+        display: inline;
+        border: 1px solid $grey-border;
+        margin: 0 0 1em 0;
+      }
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding-top: 1px;
+      width: 30%;
+      float: right;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      margin-top: -200px;
+    }
+  }
+
+  &--asideheading {
+    padding: 0.8em;
+    margin: -1px -1px 0 -1px;
+    font-size: 1em;
+    font-family: $font-family;
+    color: $white;
+    background-color: $orange;
+
+    // Center the icon.
+    svg {
+      height: 1em;
+      width: 1em;
+      vertical-align: middle;
+    }
+
+    // Default icon color.
+    path, rect {
+      fill: $white;
+    }
+  }
+
+  &--asidebox {
+    border: 1px solid $grey-border;
+    margin: 0 0 1em 0;
+    background-color: $white;
+
+    p {
+      margin: 1em;
+      text-align: center;
+    }
+
+    @include breakpoint($breakpoint-lap-big) {
+      width: 47.5%;
+      margin-right: 2%;
+      float: left;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+    }
+  }
+
+  &--date {
+    font-family: $font-bold-family;
+  }
+
+  &--doors {
+    font-size: 0.9em;
+    color: $gray-dark;
+  }
+
+  &--price {
+    font-family: $font-bold-family;
+  }
+
+  &--room {
+    font-family: $font-bold-family;
+  }
+
+  &--tickettext {
+    font-size: 0.9em;
+    color: $gray-dark;
+  }
+
+}
+
