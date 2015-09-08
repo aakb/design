@@ -14,7 +14,7 @@
 // Include theme
 @import "theme/breakpoints";
 @import "theme/theme-vars";
-
+@import "theme/icon";
 // Include assets
 @import "assets/flexbox";
 
@@ -23,14 +23,15 @@
 
 // Components
 @import "components/itk-boxlist";
-
+@import "components/itk-messages";
 // Modules
 @import "modules/nav";
 @import "modules/header";
 @import "modules/hamburger-button";
-//@import "modules/_itk-boxlist";
 @import "modules/hamburger-menu";
 @import "modules/overlay";
 @import "modules/content";
 @import "modules/frontpage";
 @import "modules/event";
+@import "modules/fields";
+
