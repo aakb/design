@@ -9,10 +9,14 @@
   width: 100%;
 
   //background: url('../images/header-background.jpg') no-repeat left;
-  background: url('https://unsplash.it/3200/2400/?random') no-repeat left;
-  background-size: cover;
+  //background: url('https://unsplash.it/3200/2400/?random') no-repeat left;
   color: #fff;
 
+  &--image{
+   position: absolute;
+   z-index: -5;
+
+  }
   // Header inner
   &--inner {
     box-sizing: border-box;

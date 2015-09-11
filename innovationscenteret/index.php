@@ -2,13 +2,14 @@
 include("_menus.php")
 ?>
 
-<header class="header" role="banner" id="home">
-  <div class="header--inner">
+<div class="header" role="banner" id="home" style="background: url('https://unsplash.it/3200/2400/?random') no-repeat left;">
+
+    <div class="header--inner">
     <h1 class="header--big">The big header</h1>
     <p class="header--sub">This is some optional text we can either keep or delete</p>
     <div class="header--button-wrapper"><a href="#" class="header--button-link" data-scroll>Look at me!</a></div>
   </div>
-</header>
+</div>
 <main role="main">
   <div class="content frontpage">
     <p class="lead">Est notare quam littera gothica quam nunc putamus! Autem vel eum iriure dolor in hendrerit: in vulputate velit esse molestie.
