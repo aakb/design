@@ -28,10 +28,6 @@ $layout-header-height:        4.35em;
 $layout-header-height-sticky: 3.25em;
 $border-radius:               .6em !default;
 
-// Temp
-$left-spacing:                6em; // Replace this, then delete it
-
-
 
 /* Elements
    ================================================================================================================== */
@@ -44,16 +40,27 @@ $nav-height:  80px;
 
 $black:            #000;
 $white:            #fff;
+
+$gray-lightest:    lighten($black, 95%);
+$gray-lighter:     lighten($black, 90%);
+$gray-light:       lighten($black, 70%);
+$gray:             lighten($black, 60%);
+$gray-dark:        lighten($black, 50%);
+$gray-darker:      lighten($black, 40%);
+$gray-darkest:     lighten($black, 12%);
+
 $menu-color:       dimgray;
 $link-color:       blue;
 $link-color-hover: gold;
 $grey-border:      #D8D8D8;
 $orange:           #D2411E;
+$blue-light:       #1e528a; // Booking form radios and submit.
+
 
 /* Typography
    ================================================================================================================== */
 
-$font-family:      "Cabin Sketch", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family:      "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font:             1em/1.5 $font-family;
 
 

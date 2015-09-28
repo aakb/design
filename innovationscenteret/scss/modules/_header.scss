@@ -8,8 +8,8 @@
 .header {
   width: 100%;
 
-  //background: url('../images/header-background.jpg') no-repeat left;
-  //background: url('https://unsplash.it/3200/2400/?random') no-repeat left;
+  background: url('../images/header-background.jpg');
+  background-size: cover;
   color: #fff;
 
   &--image{

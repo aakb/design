@@ -10,11 +10,9 @@
 @import "base/_base";
 @import "base/_normalize";
 @import "base/_mixins";
+@import "base/breakpoints";
+@import "base/icon";
 
-// Include theme
-@import "theme/breakpoints";
-@import "theme/theme-vars";
-@import "theme/icon";
 // Include assets
 @import "assets/flexbox";
 
@@ -33,6 +31,5 @@
 @import "modules/overlay";
 @import "modules/content";
 @import "modules/frontpage";
-@import "modules/event";
 @import "modules/fields";
 
