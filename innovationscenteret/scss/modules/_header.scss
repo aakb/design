@@ -1,0 +1,109 @@
+/**
+ *
+ * Header.
+ *
+ */
+
+
+.header {
+  width: 100%;
+
+  //background: url('../images/header-background.jpg') no-repeat left;
+  //background: url('https://unsplash.it/3200/2400/?random') no-repeat left;
+  color: #fff;
+
+  &--image{
+   position: absolute;
+   z-index: -5;
+
+  }
+  // Header inner
+  &--inner {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 4.5em 1.5em 1.5em;
+
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+  }
+
+  &--big,
+  &--sub,
+  &--button {
+    text-shadow: 2px 2px 0 transparentize(#000, .5);
+  }
+
+  // Big header
+  &--big {
+    margin-top: 0;
+    padding-top: 1em;
+
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+
+    @include breakpoint($breakpoint-lap) {
+      margin-bottom: .25em;
+      
+      font-size: 7em;
+    }
+  }
+
+  // Sub header
+  &--sub {
+    margin-bottom: 2em;
+
+    font-weight: 300;
+    text-align: center;
+
+    @include breakpoint($breakpoint-lap) {
+      margin-bottom: .5em;
+
+      font-size: 3em;
+    }
+  }
+
+  // Link button
+  &--button {
+    &-wrapper {
+      text-align: center;
+    }
+
+    &-link {
+      border: 2px solid $white;
+      border-radius: 10px;
+      box-sizing: border-box;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 2em;
+      max-width: 12em;
+      padding-top: .25em;
+      padding-bottom: .25em;
+      width: 75%;
+
+      background-color: transparentize($black, .65);
+      color: $white;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: transparentize($black, .35);
+      }
+
+      @include breakpoint($breakpoint-lap) {
+        font-size: 2.5em;
+      }
+    }
+  }
+}

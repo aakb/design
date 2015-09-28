@@ -1,5 +1,49 @@
-body {
-  margin: 0;
+$footer-height: 5em;
 
+
+body, html {
+  overflow-x: hidden;
 }
 
+.content {
+  max-width: 62em;
+  margin-top: 10em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10em;
+
+
+  &.frontpage{
+    margin-top: 7em;
+  }
+
+  h1 {
+    margin-bottom: .2em;
+    text-align: center;
+
+    color: #000;
+    font-size: 4em;
+  }
+
+  .lead {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+
+    color: #000;
+    font-size: 1.5em;
+  }
+}
+
+footer {
+  width: 100%;
+  position:fixed;
+
+  background-color: black;
+  bottom:0;
+
+  p{
+    color: white;
+  }
+}

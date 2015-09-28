@@ -1,0 +1,59 @@
+/**
+ *
+ * Variables
+ *
+ */
+
+
+/* Breakpoints
+   ================================================================================================================== */
+
+
+$breakpoint-lap:              481px;
+$breakpoint-lap-big:          581px;
+$breakpoint-tablet:           720px;
+$breakpoint-desk:             1024px;
+$breakpoint-bigscreen:        1200px;
+
+
+/* Layout
+   ================================================================================================================== */
+
+$layout-max-width:            62.5em;
+$layout-max-width-event:      50em;
+$layout-max-width-desk:       50em;
+$layout-left-spacing:         6.4em; // Offset to make room for burger menu
+$layout-header-image-height:  25em;
+$layout-header-height:        4.35em;
+$layout-header-height-sticky: 3.25em;
+$border-radius:               .6em !default;
+
+// Temp
+$left-spacing:                6em; // Replace this, then delete it
+
+
+
+/* Elements
+   ================================================================================================================== */
+
+$nav-height:  80px;
+
+
+/* Colors
+   ================================================================================================================== */
+
+$black:            #000;
+$white:            #fff;
+$menu-color:       dimgray;
+$link-color:       blue;
+$link-color-hover: gold;
+$grey-border:      #D8D8D8;
+$orange:           #D2411E;
+
+/* Typography
+   ================================================================================================================== */
+
+$font-family:      "Cabin Sketch", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:             1em/1.5 $font-family;
+
+

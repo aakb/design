@@ -1,20 +1,55 @@
+/**
+ *
+ * Navigation.
+ *
+ */
+
+
 .nav {
   top: 0;
   position: fixed;
 
-  height: 96px;
+  height: $nav-height;
   width: 100%;
+  opacity: .95;
+  z-index: 98;
 
   background-color: $menu-color;
 
+  @include flexbox;
+
   &--logo {
-    font-size: 5em;
+    display: block;
+    height: $nav-height;
+    margin-top: .15em;
+    margin-left: .5em;
+    z-index: -1;
+    
+    color: $white;
+    font-size: 3em;
+
+    @include order(1);
+    @include align-self(center);
+
+    a {
+      @include strip-link-styles(#fff, none);
+    }
   }
 
   &--links {
-    position: absolute;
-    right: 100px;
-    top: 37px;
+    text-align: center;
+
+    @include order(2);
+    @include flex-grow(1);
+    @include align-self(center);
+
+    a {
+      @include strip-link-styles(#fff, none);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &--link {
@@ -25,16 +60,9 @@
     text-decoration: none;
   }
 
-
-/**
-  * The hamburger-icon in the main menu is defined in "_hamburger-button" and positioned here.
-  *
-  */
-
-  .c-hamburger {
-    position: absolute;
-    right: 0;
-    top: 0;
+  &--menu {
     background-color: $menu-color;
+
+    @include order(3);
   }
 }

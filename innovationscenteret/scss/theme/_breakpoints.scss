@@ -1,0 +1,20 @@
+/**
+ *
+ * Breakpoints
+ *
+ * Should contain breakpoint variables and breakpoints related mixins
+ *
+ */
+
+
+/* Mixins
+   *
+   * Use this mixin to change styling for your rulesets depending on a breakpoint (width)
+   *
+   * Usage example: @include breakpoint($breakpoint-x)
+   *
+   ================================================================================================================== */
+
+@mixin breakpoint($breakpoint) {
+  @media only screen and (min-width: $breakpoint) { @content; }
+}

@@ -1,0 +1,129 @@
+/**
+ *
+ * Fields
+ *
+ * All fields displayed on nodes and users.
+ */
+
+
+/* Styles
+================================================================================================================== */
+
+.fields {
+
+  // The content image on nodes.
+  &--image {
+    margin-bottom: 1em;
+  }
+
+  // Drupal nests the image in a lot of divs.
+  &--header-image,
+  &--header-image-item,
+  &--header-image img {
+    width: 100%;
+  }
+
+
+  // The blurred header image.
+  &--header-image img {
+    min-width: 2000px;
+
+    @extend %top-image-center;
+  }
+
+  &--header-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+
+    display: none;
+    height: $layout-header-image-height;
+
+    @include breakpoint($breakpoint-desk) {
+      display: block;
+    }
+  }
+
+  // Add a gradient on top of the image.
+  &--header-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 99;
+
+    //@include background-image(linear-gradient(transparent, transparentize($black, .5)));
+  }
+
+
+  // Icon placement in asidebox header
+  &--aside-icon {
+    line-height: 1em;
+    margin-right: .5em;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+
+  // A short intro text.
+  &--lead {
+    font-family: $font-bold-family;
+    margin-bottom: 1em;
+  }
+
+  &--body {
+    // Make sure links break on mobile devices
+    a {
+      word-break: break-all;
+    }
+  }
+
+  // Display created time on news in a gray color with icon.
+  &--time {
+    color: $gray;
+    margin-bottom: 1em;
+  }
+
+  &--time-icon {
+    // Center the icon.
+    svg {
+      height: 1em;
+      width: 1em;
+      vertical-align: text-top;
+    }
+
+    // Default icon color.
+    path, rect {
+      fill: $gray;
+    }
+  }
+
+  &--time-text {
+    vertical-align: top;
+    line-height: 1.6em;
+    display: inline-block;
+    font-size: .8em;
+  }
+
+  // Display of facebook link (Hidden at January launch.)
+  &--facebook {
+    text-align: center;
+    display: inline-block;
+    line-height: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+
+    @include breakpoint($breakpoint-desk) {
+      position: absolute;
+      right: 0;
+      top: -3em;
+      width: auto;
+    }
+  }
+}
+

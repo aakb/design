@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 
+
 // Plugins.
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
@@ -31,14 +32,15 @@ gulp.task('jshint', function() {
  */
 gulp.task('sass', function () {
   gulp.src(sassPath)
+    .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed',
       includePaths: [
-//        'bower_components/compass-mixins/lib',
+        'scss/assets/compass-mixins/lib',
       ]
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./css'))
 });
 
 /**
@@ -81,5 +83,4 @@ gulp.task('assetsJs', function () {
 
 // Tasks to compile sass and watch js file.
 gulp.task('default', ['sass', 'watch']);
-
 gulp.task('build', ['buildJs', 'sass']);

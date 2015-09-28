@@ -1,0 +1,78 @@
+/* Variables
+   ========================================================================== */
+
+$overview-padding:      1.5em;
+
+/* Basis styling
+   ========================================================================== */
+
+.overview {
+
+  &--item{
+
+    @include flexbox;
+    @include flex-flow(row nowrap);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    padding-top: $overview-padding;
+    padding-bottom: $overview-padding;
+
+    border-top: ridge;
+
+    @media only screen and (min-width: 30em){
+
+      header {
+        order: 2;
+        padding: $overview-padding;
+        @include flex-grow(1);
+        @include flex-shrink(1);
+      }
+
+      figure{
+        order: 1;
+        display: block;
+        height: 200px;
+        width: 200px;
+        padding: $overview-padding;
+        padding-right: 0;
+
+        @include flex-basis(200px);
+        @include flex-grow(0);
+        @include flex-shrink(0)
+      }
+    }
+  }
+}
+
+// Show 3 columns side by side
+.overview.is-side-by-side {
+  // Stack until there is enough space to display them side by side
+  @media only screen and (min-width: 60em) {
+    @include flexbox;
+    @include flex-flow(row nowrap);
+    @include justify-content(space-between);
+
+    .overview--item {
+      @include flex-direction(column);
+
+      margin-right: 1em;
+
+      border-top: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      header {
+        padding: 0;
+        max-width: 200px;
+      }
+
+      figure {
+        padding: 0;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
