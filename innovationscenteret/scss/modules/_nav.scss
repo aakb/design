@@ -37,7 +37,9 @@
   }
 
   &--links {
-    text-align: center;
+    margin-right: 1em;
+
+    text-align: right;
 
     @include order(2);
     @include flex-grow(1);
@@ -53,7 +55,7 @@
   }
 
   &--link {
-    padding-right: 1em;
+    padding-right: 1.5em;
 
     color: white;
     font-size: 1.2em;
