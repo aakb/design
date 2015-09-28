@@ -1,6 +1,3 @@
-<?php
-include("_header.php")
-?>
 <body>
 <div class="overlay js-menu-toggle"></div>
 <header role="banner">
