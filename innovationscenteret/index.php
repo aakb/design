@@ -15,7 +15,27 @@
 </div>
 </div>
 <main role="main">
-
+  <!-- ITK boxlist side by side -->
+  <div class="itk-boxlist is-side-by-side">
+    <article class="itk-boxlist--item">
+      <header>
+        <h2 class="itk-boxlist--header">Faciliteter</h2>
+      </header>
+      <figure><img src="http://placehold.it/500x500"></figure>
+    </article>
+    <article class="itk-boxlist--item">
+      <header>
+        <h2 class="itk-boxlist--header">Prototyper</h2>
+      </header>
+      <figure><img src="http://placehold.it/500x500"></figure>
+    </article>
+    <article class="itk-boxlist--item">
+      <header>
+        <h2 class="itk-boxlist--header">Projektsamarbejde</h2>
+      </header>
+      <figure><img src="http://placehold.it/500x500"></figure>
+    </article>
+  </div>
 </main>
 
 <?php

@@ -8,6 +8,7 @@
 .header {
   position: relative;
 
+  margin-bottom: 4em;
   width: 100%;
 
   background: url('../images/header-background.jpg');
@@ -114,7 +115,7 @@
         background-color: $theme-color;
         border: 2px solid $theme-color;
         color: darken($theme-color, 25%);
-        font-weight: 600;
+        font-weight: 400;
 
         &:link,
         &:visited,
@@ -133,7 +134,7 @@
       &.is-secondary {
         border: 2px solid $white;
         color: $white;
-        font-weight: 300;
+        font-weight: 100;
 
         &:link,
         &:visited,

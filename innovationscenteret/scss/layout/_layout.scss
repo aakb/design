@@ -4,7 +4,6 @@ body, html {
   overflow-x: hidden;
 }
 
-
 .logo {
   position: absolute;
   top: 1.5em;
@@ -30,6 +29,12 @@ body, html {
     height: auto;
     width: 12em;
   }
+}
+
+main[role=main] {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $layout-max-width;
 }
 
 footer {

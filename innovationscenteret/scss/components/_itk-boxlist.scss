@@ -1,0 +1,78 @@
+/**
+ *
+ * ITK box list
+ *
+ * A component for content boxes
+ *
+ */
+
+
+/* Variables
+   ========================================================================== */
+
+$boxlist-padding:                       1em;
+
+
+
+/* Basic styling
+   ========================================================================== */
+
+.itk-boxlist {
+  margin-bottom: 1em;
+
+  &--item {
+    @include flexbox;
+    @include flex-flow(column);
+
+    margin-bottom: 1em;
+    padding-top: $boxlist-padding;
+    padding-bottom: $boxlist-padding;
+
+    @media only screen and (min-width: 30em) {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      header {
+        order: 1;
+
+        margin-bottom: 1em;
+
+        text-align: center;
+      }
+
+      figure {
+        order: 2;
+
+        display: block;
+      }
+    }
+  }
+
+  &--header {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+/* Variants
+   ========================================================================== */
+
+// Show 2 columns side by side
+.itk-boxlist.is-side-by-side {
+  // Stack until there is enough space to display them side by side
+  @media only screen and (min-width: 60em) {
+    @include flexbox;
+    @include flex-flow(row nowrap);
+    @include justify-content(space-between);
+
+    .itk-boxlist--item {
+      margin-right: 5em;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
