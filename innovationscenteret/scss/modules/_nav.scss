@@ -88,11 +88,8 @@
   cursor: pointer;
 
   @include breakpoint($layout-max-width) {
-    top: 7em;
+    top: 7.3em;
     right: 8em;
-
-    height: 46px;
-    width: 60px;
   }
 }
 
@@ -115,10 +112,6 @@
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
-
-  @include breakpoint($layout-max-width) {
-    height: 9px;
-  }
 }
 
 .nav-toggle span:nth-child(1) {
@@ -128,18 +121,10 @@
 .nav-toggle span:nth-child(2),
 .nav-toggle span:nth-child(3) {
   top: 15px;
-
-  @include breakpoint($layout-max-width) {
-    top: 18px;
-  }
 }
 
 .nav-toggle span:nth-child(4) {
   top: 30px;
-
-  @include breakpoint($layout-max-width) {
-    top: 36px;
-  }
 }
 
 .nav-toggle.open span:nth-child(1) {
@@ -147,10 +132,6 @@
   left: 50%;
 
   width: 0%;
-
-  @include breakpoint($layout-max-width) {
-    top: 18px;
-  }
 }
 
 .nav-toggle.open span:nth-child(2) {
@@ -171,9 +152,5 @@
   top: 15px;
   width: 0%;
   left: 50%;
-
-  @include breakpoint($layout-max-width) {
-    top: 18px;
-  }
 }
 
