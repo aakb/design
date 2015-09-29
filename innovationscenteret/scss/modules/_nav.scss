@@ -13,17 +13,15 @@
   width: 100%;
 
   @include breakpoint($layout-max-width) {
-    @include flexbox;
+    position: absolute;
+    top: 7.5em;
+    right: 8em;
   }
 
   &--links {
     display: none; // Hiding navigation on smaller screens
 
     @include breakpoint($layout-max-width) {
-      position: absolute;
-      top: 7.5em;
-      right: 14em;
-
       display: block;
       margin-right: 1em;
 
@@ -88,8 +86,8 @@
   cursor: pointer;
 
   @include breakpoint($layout-max-width) {
-    top: 7.3em;
-    right: 8em;
+    top: 2em;
+    right: 2em;
   }
 }
 
