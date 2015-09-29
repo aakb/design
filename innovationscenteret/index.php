@@ -8,38 +8,11 @@
     <h1 class="header--big">Hej.</h1>
     <p class="header--lead">Vi er Center for Innovation i Aarhus, vi understøtter og styrker arbejdet med innovation i Aarhus.</p>
     <p class="header--sub">Vi kan hjælpe jer med servicedesign, research, processer og meget andet. Tøv ikke med at skrive til os for at høre mere!</p>
-  <div class="header--button-wrapper"><a href="#" class="header--button-link" data-scroll>Kontakt os</a></div>
+  <div class="header--button-wrapper"><a href="#" class="header--button-link">Kontakt os</a></div>
 </div>
 </div>
 <main role="main">
-  <div class="content frontpage">
-    <p class="lead">Est notare quam littera gothica quam nunc putamus! Autem vel eum iriure dolor in hendrerit: in vulputate velit esse molestie.
 
-    <div class="itk-boxlist is-side-by-side">
-      <?php
-        include '_newsbox.php';
-      ?>
-      <?php
-        include '_newsbox.php';
-      ?>
-    </div>
-    <div class="itk-boxlist is-side-by-side">
-      <?php
-        include '_newsbox.php';
-      ?>
-      <?php
-        include '_newsbox.php';
-      ?>
-    </div>
-    <div class="frontpage--more-link">
-      <span class="frontpage--more-button">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-          <path d="M501.4,396L501.4,396L501.4,396L193.6,700.3l-86.4-86.4L325,396L107.2,178.2l86.4-86.4L501.4,396z"></path>
-        </svg>
-        <a href="news-list.php">Se alle nyheder</a>
-      </span>
-    </div>
-  </div>
 </main>
 
 <?php

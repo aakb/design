@@ -8,63 +8,172 @@
 .nav {
   top: 0;
   position: fixed;
-
-  height: $nav-height;
-  width: 100%;
-  opacity: .95;
   z-index: 98;
 
-  background-color: $menu-color;
+  width: 100%;
 
-  @include flexbox;
-
-  &--logo {
-    display: block;
-    height: $nav-height;
-    margin-top: .15em;
-    margin-left: .5em;
-    z-index: -1;
-    
-    color: $white;
-    font-size: 3em;
-
-    @include order(1);
-    @include align-self(center);
-
-    a {
-      @include strip-link-styles(#fff, none);
-    }
+  @include breakpoint($layout-max-width) {
+    @include flexbox;
   }
 
   &--links {
-    margin-right: 1em;
+    display: none; // Hiding navigation on smaller screens
 
-    text-align: right;
+    @include breakpoint($layout-max-width) {
+      position: absolute;
+      top: 7.5em;
+      right: 14em;
 
-    @include order(2);
-    @include flex-grow(1);
-    @include align-self(center);
+      display: block;
+      margin-right: 1em;
 
-    a {
-      @include strip-link-styles(#fff, none);
+      font-weight: 100;
+      text-align: right;
 
-      &:hover {
-        text-decoration: underline;
+      @include order(2);
+      @include flex-grow(1);
+      @include align-self(center);
+
+      a {
+        @include strip-link-styles(#fff, none);
       }
     }
   }
 
   &--link {
-    padding-right: 1.5em;
+    @include breakpoint($layout-max-width) {
+      margin-right: 1.5em;
+      padding-bottom: .25em;
 
-    color: white;
-    font-size: 1.2em;
-    text-decoration: none;
+      border-bottom: 2px solid transparent;
+      color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+
+      transition: border 1s;
+
+      &:hover {
+        border-bottom: 3px solid $white;
+      }
+    }
   }
 
   &--menu {
-    background-color: $menu-color;
+    background-color: transparent;
 
-    @include order(3);
+    @include breakpoint($layout-max-width) {
+      @include order(3);
+    }
   }
 }
+
+
+.nav-toggle {
+  position: absolute;
+  top: 1.8em;
+  right: 1em;
+  z-index: 99;
+
+  height: 36px;
+  width: 40px;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  @include breakpoint($layout-max-width) {
+    top: 7em;
+    right: 8em;
+
+    height: 46px;
+    width: 60px;
+  }
+}
+
+.nav-toggle span {
+  position: absolute;
+  left: 0;
+
+  display: block;
+  height: 5px;
+  width: 100%;
+
+  background: $white;
+  opacity: 1;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+
+  @include breakpoint($layout-max-width) {
+    height: 9px;
+  }
+}
+
+.nav-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-toggle span:nth-child(2),
+.nav-toggle span:nth-child(3) {
+  top: 15px;
+
+  @include breakpoint($layout-max-width) {
+    top: 18px;
+  }
+}
+
+.nav-toggle span:nth-child(4) {
+  top: 30px;
+
+  @include breakpoint($layout-max-width) {
+    top: 36px;
+  }
+}
+
+.nav-toggle.open span:nth-child(1) {
+  top: 15px;
+  left: 50%;
+
+  width: 0%;
+
+  @include breakpoint($layout-max-width) {
+    top: 18px;
+  }
+}
+
+.nav-toggle.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.nav-toggle.open span:nth-child(4) {
+  top: 15px;
+  width: 0%;
+  left: 50%;
+
+  @include breakpoint($layout-max-width) {
+    top: 18px;
+  }
+}
+

@@ -5,6 +5,15 @@
 $(document).ready(function () {
   "use strict";
 
+
+  $(document).ready(function(){
+    $('.nav-toggle').click(function(){
+      $(this).toggleClass('open');
+    });
+  });
+
+
+
   var hamburger_button = $('.c-hamburger--htx');
   var hamburger_menu = $('.hamburger-menu');
   var html = $('html');

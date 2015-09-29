@@ -1,38 +1,34 @@
 $footer-height: 5em;
 
-
 body, html {
   overflow-x: hidden;
 }
 
-.content {
-  max-width: 62em;
-  margin-top: 10em;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 10em;
 
+.logo {
+  position: absolute;
+  top: 1.5em;
+  left: 1em;
+  z-index: 99;
 
-  &.frontpage{
-    margin-top: 7em;
+  display: block;
+  height: 2.6em;
+  width: 6em;
+  overflow: hidden;
+
+  @include breakpoint($layout-max-width) {
+    top: 5em;
+    left: 2em;
+
+    height: 5.3em;
+    width: 12em;
   }
 
-  h1 {
-    margin-bottom: .2em;
-    text-align: center;
+  @include breakpoint($breakpoint-bigscreen) {
+    left: 8em;
 
-    color: #000;
-    font-size: 4em;
-  }
-
-  .lead {
-    margin-left: 2em;
-    margin-right: 2em;
-    padding-bottom: 2em;
-    text-align: center;
-
-    color: #000;
-    font-size: 1.5em;
+    height: auto;
+    width: 12em;
   }
 }
 
@@ -43,7 +39,7 @@ footer {
   background-color: black;
   bottom:0;
 
-  p{
+  p {
     color: white;
   }
 }

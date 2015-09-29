@@ -6,13 +6,15 @@
 
 
 .header {
+  position: relative;
+
   width: 100%;
 
   background: url('../images/header-background.jpg');
   background-size: cover;
   color: #fff;
 
-  &--image{
+  &--image {
    position: absolute;
    z-index: -5;
 
@@ -24,44 +26,46 @@
     margin-right: auto;
     margin-left: auto;
     max-width: $layout-max-width;
-    padding: 4.5em 1.5em 1.5em;
+    padding: 6.5em 1em 2em;
 
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(center);
+
+    @include breakpoint($layout-max-width) {
+      padding: 12em 0 5em;
+    }
   }
 
-  &--big,
-  &--lead,
-  &--sub,
-  &--button {
-    text-shadow: 2px 2px 0 transparentize(#000, .5);
-  }
 
   // Big header
   &--big {
-    margin-top: 0;
-    padding-top: 1em;
+    margin-bottom: .5em;
 
     font-size: 2em;
     font-weight: 600;
 
-    @include breakpoint($breakpoint-lap) {
-      margin-bottom: .25em;
-      
-      font-size: 5em;
+    @include breakpoint($layout-max-width) {
+      font-size: 4em;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      font-size: 6em;
     }
   }
 
   // Lead
   &--lead {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 
-    font-weight: 300;
+    font-size: 1.25em;
+    font-weight: 600;
 
-    @include breakpoint($breakpoint-lap) {
-      margin-bottom: .5em;
+    @include breakpoint($layout-max-width) {
+      font-size: 1.75em;
+    }
 
+    @include breakpoint($breakpoint-bigscreen) {
       font-size: 2.25em;
     }
   }
@@ -70,10 +74,13 @@
   &--sub {
     margin-bottom: 2em;
 
+    font-weight: 100;
 
-    @include breakpoint($breakpoint-lap) {
-      margin-bottom: .5em;
+    @include breakpoint($layout-max-width) {
+      font-size: 1.25em;
+    }
 
+    @include breakpoint($breakpoint-bigscreen) {
       font-size: 1.5em;
     }
   }
@@ -90,13 +97,13 @@
       display: block;
       margin-right: auto;
       margin-left: auto;
-      margin-bottom: 2em;
       max-width: 12em;
       padding-top: .25em;
       padding-bottom: .25em;
       width: 75%;
 
       color: $white;
+      font-weight: 100;
       text-align: center;
       text-decoration: none;
 
@@ -112,7 +119,7 @@
         background-color: transparentize($black, .85);
       }
 
-      @include breakpoint($breakpoint-lap) {
+      @include breakpoint($layout-max-width) {
         font-size: 1.5em;
       }
     }
