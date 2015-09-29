@@ -21,6 +21,9 @@
   &--inner {
     box-sizing: border-box;
     height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $layout-max-width;
     padding: 4.5em 1.5em 1.5em;
 
     @include flexbox;
@@ -29,6 +32,7 @@
   }
 
   &--big,
+  &--lead,
   &--sub,
   &--button {
     text-shadow: 2px 2px 0 transparentize(#000, .5);
@@ -41,12 +45,24 @@
 
     font-size: 2em;
     font-weight: 600;
-    text-align: center;
 
     @include breakpoint($breakpoint-lap) {
       margin-bottom: .25em;
       
-      font-size: 7em;
+      font-size: 5em;
+    }
+  }
+
+  // Lead
+  &--lead {
+    margin-bottom: 2em;
+
+    font-weight: 300;
+
+    @include breakpoint($breakpoint-lap) {
+      margin-bottom: .5em;
+
+      font-size: 2.25em;
     }
   }
 
@@ -54,13 +70,11 @@
   &--sub {
     margin-bottom: 2em;
 
-    font-weight: 300;
-    text-align: center;
 
     @include breakpoint($breakpoint-lap) {
       margin-bottom: .5em;
 
-      font-size: 3em;
+      font-size: 1.5em;
     }
   }
 
@@ -71,8 +85,7 @@
     }
 
     &-link {
-      border: 2px solid $white;
-      border-radius: 10px;
+      border: 1px solid $white;
       box-sizing: border-box;
       display: block;
       margin-right: auto;
@@ -83,9 +96,7 @@
       padding-bottom: .25em;
       width: 75%;
 
-      background-color: transparentize($black, .65);
       color: $white;
-      font-weight: 600;
       text-align: center;
       text-decoration: none;
 
@@ -98,11 +109,11 @@
       }
 
       &:hover {
-        background-color: transparentize($black, .35);
+        background-color: transparentize($black, .85);
       }
 
       @include breakpoint($breakpoint-lap) {
-        font-size: 2.5em;
+        font-size: 1.5em;
       }
     }
   }
