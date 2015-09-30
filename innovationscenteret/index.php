@@ -20,19 +20,19 @@
       <header>
         <h2 class="itk-boxlist--header">Faciliteter</h2>
       </header>
-      <figure><img src="images/icons/faciliteter_sort.svg"></figure>
+      <figure><img src="images/icons/networking.svg"></figure>
     </article>
     <article class="itk-boxlist--item">
       <header>
         <h2 class="itk-boxlist--header">Prototyper</h2>
       </header>
-      <figure><img src="images/icons/faciliteter_sort.svg"></figure>
+      <figure><img src="images/icons/prototypes.svg"></figure>
     </article>
     <article class="itk-boxlist--item">
       <header>
         <h2 class="itk-boxlist--header">Projektsamarbejde</h2>
       </header>
-      <figure><img src="images/icons/faciliteter_sort.svg"></figure>
+      <figure><img src="images/icons/collaboration.svg"></figure>
     </article>
   </div>
 </main>

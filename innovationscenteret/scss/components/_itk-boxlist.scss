@@ -38,12 +38,22 @@ $boxlist-padding:                       1em;
         margin-bottom: 1em;
 
         text-align: center;
+        text-transform: uppercase;
+
+        h2 {
+          font-weight: 100;
+        }
       }
 
       figure {
+        fill: $gray-light;
         order: 2;
 
         display: block;
+        padding: 3em;
+
+        border: 1px solid $gray-light;
+        border-radius: 100%;
       }
     }
   }
@@ -64,13 +74,12 @@ $boxlist-padding:                       1em;
   @media only screen and (min-width: 60em) {
     @include flexbox;
     @include flex-flow(row nowrap);
-    @include justify-content(space-between);
+    @include justify-content(space-around);
 
     .itk-boxlist--item {
-      margin-right: 5em;
       margin-bottom: 0;
 
-      @include flex-basis(33.3333%);
+      @include flex-basis(25%);
 
       &:last-child {
         margin-right: 0;
