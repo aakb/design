@@ -3,10 +3,10 @@
   <a href="/" class="logo" title="Center for Innovation i Aarhus"><img src="images/assets/logo.svg"></a>
   <nav class="nav">
     <div class="nav--links">
-      <a href="news-list.php" class="nav--link">Nyheder</a>
-      <a href="event-list.php" class="nav--link">Events</a>
-      <a href="sitethree.php" class="nav--link">MenuPunkt3</a>
-      <a href="sitefour.php" class="nav--link">Menupunkt4</a>
+      <a href="news-list.php" class="nav--link">Ydelser</a>
+      <a href="event-list.php" class="nav--link">Nyheder</a>
+      <a href="sitethree.php" class="nav--link">Om os</a>
+      <a href="sitefour.php" class="nav--link">Kontakt</a>
     </div>
   </nav>
   <div class="nav-toggle js-menu-toggle">

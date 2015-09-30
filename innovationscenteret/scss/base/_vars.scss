@@ -42,8 +42,8 @@ $gray-dark:        lighten($black, 50%);
 $gray-darker:      lighten($black, 40%);
 $gray-darkest:     lighten($black, 12%);
 
-$link-color:       #ffde06;
-$link-color-hover: darken(#ffde06, 15%);
+$link-color:       #009b92;
+$link-color-hover: darken($link-color, 15%);
 $theme-color:      #ffde06;
 
 
