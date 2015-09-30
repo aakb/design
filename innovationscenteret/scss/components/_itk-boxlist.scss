@@ -70,6 +70,8 @@ $boxlist-padding:                       1em;
       margin-right: 5em;
       margin-bottom: 0;
 
+      @include flex-basis(33.3333%);
+
       &:last-child {
         margin-right: 0;
       }

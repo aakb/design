@@ -38,6 +38,22 @@
     }
   }
 
+  &--lead,
+  &--sub {
+    a {
+      &:link,
+      &:visited,
+      &:active {
+        color: $theme-color;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: $theme-color;
+        text-decoration: none;
+      }
+    }
+  }
 
   // Big header
   &--big {
@@ -75,7 +91,7 @@
   &--sub {
     margin-bottom: 2em;
 
-    font-weight: 100;
+    font-weight: 300;
 
     @include breakpoint($layout-max-width) {
       font-size: 1.25em;
@@ -128,23 +144,6 @@
           background-color: transparent;
           border: 2px solid $theme-color;
           color: $theme-color;
-        }
-      }
-
-      &.is-secondary {
-        border: 2px solid $white;
-        color: $white;
-        font-weight: 100;
-
-        &:link,
-        &:visited,
-        &:active {
-          text-decoration: none;
-        }
-
-        &:hover {
-          background-color: $white;
-          color: $black;
         }
       }
     }

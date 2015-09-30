@@ -20,14 +20,14 @@ body, html {
     left: 2em;
 
     height: 5.3em;
-    width: 12em;
+    width: 8em;
   }
 
   @include breakpoint($breakpoint-bigscreen) {
     left: 8em;
 
     height: auto;
-    width: 12em;
+    width: 8em;
   }
 }
 
