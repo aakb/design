@@ -27,7 +27,7 @@ browserSync.init({
 // We only want to process our own non-processed JavaScript files.
 var jsPath = ['./js/*.js', '!./js/*.min.*'];
 var sassPath = './scss/**/*.scss';
-
+var htmlPath = './*.php'; //could also be twig files
 var buildDir = './js';
 
 /**
