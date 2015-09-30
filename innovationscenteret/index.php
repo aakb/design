@@ -44,25 +44,25 @@
   <div class="itk-boxlist is-side-by-side">
     <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist--header">Netværk</h2>
+        <h2 class="itk-boxlist--header">Faciliteter</h2>
       </header>
-      <figure><img src="images/icons/networking.svg"></figure>
+      <figure><img src="images/icons/facilities.svg"></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#">This is the link</a>
     </article>
     <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist--header">Prototyper</h2>
+        <h2 class="itk-boxlist--header">Sparring</h2>
       </header>
-      <figure><img src="images/icons/prototypes.svg"></figure>
+      <figure><img src="images/icons/sparring.svg"></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#">This is the link</a>
     </article>
     <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist--header">Projektsamarbejde</h2>
+        <h2 class="itk-boxlist--header">Kurser</h2>
       </header>
-      <figure><img src="images/icons/collaboration.svg"></figure>
+      <figure><img src="images/icons/courses.svg"></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#">This is the link</a>
     </article>

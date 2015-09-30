@@ -1,7 +1,6 @@
 $top-and-button-margin: 1em;
 
 .footer {
-
   &--content {
     margin-left: auto;
     margin-right: auto;
@@ -16,8 +15,7 @@ $top-and-button-margin: 1em;
 
     a {
       color: white;
-}
-
+    }
   }
 
   &--socialmedia {
@@ -30,9 +28,10 @@ $top-and-button-margin: 1em;
       height: 1.8em;
       width: 1.8em;
       margin-left: 1em;
-        .st0 {
-          fill: $white;
-        }
+
+      .st0 {
+        fill: $white;
+      }
     }
   }
 
