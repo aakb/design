@@ -1,11 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Lag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-370 248.3 100 100" style="enable-background:new -370 248.3 100 100;" xml:space="preserve">
-<style type="text/css">
-	.st0{stroke:#000000;stroke-miterlimit:10;}
-</style>
 <g>
 	<path class="st0" d="M-295.7,279h6.7c2.7,0,4.9-2.1,4.9-4.8v-6.7c0-2.6-2.2-4.8-4.9-4.8h-6.7c-2.6,0-4.8,2.2-4.8,4.8v6.7
 		C-300.5,276.8-298.3,279-295.7,279z M-297.6,267.5c0-1,0.9-1.9,1.9-1.9h6.7c1.1,0,2,0.8,2,1.9v6.7c0,1-0.9,1.9-2,1.9h-6.7
