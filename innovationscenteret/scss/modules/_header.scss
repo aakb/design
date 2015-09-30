@@ -128,34 +128,31 @@
       padding-top: .5em;
       padding-bottom: .5em;
 
+      background-color: transparent;
+      border: 2px solid $theme-color;
+      color: $theme-color;
       border-radius: 30px;
+      font-weight: 400;
       text-align: center;
       text-decoration: none;
 
-      transition: background-color 1s, border 1s, color 1s;
+      transition: background-color .5s, border .5s, color .5s;
+
+      &:link,
+      &:visited,
+      &:active {
+        color: $theme-color;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: $theme-color;
+        border: 2px solid $theme-color;
+        color: darken($theme-color, 35%);
+      }
 
       @include breakpoint($layout-max-width) {
         font-size: 1.5em;
-      }
-
-      &.is-primary {
-        background-color: $theme-color;
-        border: 2px solid $theme-color;
-        color: darken($theme-color, 25%);
-        font-weight: 400;
-
-        &:link,
-        &:visited,
-        &:active {
-          color: darken($theme-color, 35%);
-          text-decoration: none;
-        }
-
-        &:hover {
-          background-color: transparent;
-          border: 2px solid $theme-color;
-          color: $theme-color;
-        }
       }
     }
   }
