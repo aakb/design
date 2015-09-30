@@ -19,7 +19,7 @@ var rename = require('gulp-rename');
  */
 var browserSync = require('browser-sync').create();
 browserSync.init({
-  proxy: "mockups.vm",
+  proxy: "design.vm",
   host: "192.168.50.34"
 });
 
