@@ -6,9 +6,9 @@
 
     </div>
     <div class="footer--socialmedia">
-      <a href="instagram.com"><figure><?php include 'images/icons/instagram_sort.php'; ?></figure></a>
-      <a href="instagram.com"><figure><?php include 'images/icons/twitter_sort.php'; ?></figure></a>
-      <a href="instagram.com"><figure><?php include 'images/icons/linkedin_sort.php'; ?></figure></a>
+      <a href="instagram.com"><figure><?php include 'includes/icons/instagram_icon.php'; ?></figure></a>
+      <a href="instagram.com"><figure><?php include 'includes/icons/twitter_icon.php'; ?></figure></a>
+      <a href="instagram.com"><figure><?php include 'includes/icons/linkedin_icon.php'; ?></figure></a>
     </div>
   </div>
 </footer>
