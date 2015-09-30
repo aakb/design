@@ -1,18 +1,9 @@
 /**
- * Created by jakobrindom on 28/08/15.
- */
+* Created by jakobrindom on 28/08/15.
+*/
 
 $(document).ready(function () {
   "use strict";
-
-/*
-  $(document).ready(function(){
-    $('.nav-toggle').click(function(){
-      $(this).toggleClass('open');
-    });
-  });
-*/
-
 
   var hamburger_button = $('.nav-toggle');
   var hamburger_menu = $('.hamburger-menu');
@@ -34,7 +25,6 @@ $(document).ready(function () {
       // Unlocks html and body element.
       html.removeClass('is-locked');
       body.removeClass('is-locked');
-
     }
     else {
       // Hamburger button animatiion to 'x'.
