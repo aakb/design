@@ -15,7 +15,7 @@ body, html {
   width: 6em;
   overflow: hidden;
 
-  @include breakpoint($layout-max-width) {
+  @include breakpoint($layout-max-width-big-screen) {
     top: 5em;
     left: 2em;
 
@@ -34,7 +34,7 @@ body, html {
 main[role=main] {
   margin-right: auto;
   margin-left: auto;
-  max-width: $layout-max-width;
+  max-width: $layout-max-width-big-screen;
 }
 
 footer {

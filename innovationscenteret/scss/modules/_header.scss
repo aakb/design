@@ -26,15 +26,23 @@
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-    max-width: $layout-max-width;
-    padding: 6.5em 1em 2em;
+    padding-top: 6.5em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
 
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(center);
 
-    @include breakpoint($layout-max-width) {
-      padding: 12em 0 7em;
+    @include breakpoint($breakpoint-tablet) {
+      padding-right: 8em;
+      padding-bottom: 4em;
+      padding-left: 8em;
+    }
+
+    @include breakpoint($layout-max-width-big-screen) {
+      padding: 12em 12em 7em;
     }
   }
 
@@ -62,7 +70,7 @@
     font-size: 2em;
     font-weight: 600;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($layout-max-width-big-screen) {
       font-size: 4em;
     }
 
@@ -78,7 +86,7 @@
     font-size: 1.25em;
     font-weight: 600;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($layout-max-width-big-screen) {
       font-size: 1.75em;
     }
 
@@ -93,7 +101,7 @@
 
     font-weight: 300;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($layout-max-width-big-screen) {
       font-size: 1.25em;
     }
 
@@ -123,7 +131,7 @@
 
       transition: background-color 1s, border 1s, color 1s;
 
-      @include breakpoint($layout-max-width) {
+      @include breakpoint($layout-max-width-big-screen) {
         font-size: 1.5em;
       }
 

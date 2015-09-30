@@ -12,7 +12,7 @@
 
   width: 100%;
 
-  @include breakpoint($layout-max-width) {
+  @include breakpoint($layout-max-width-big-screen) {
     position: absolute;
     top: 7.5em;
     right: 8em;
@@ -21,11 +21,11 @@
   &--links {
     display: none; // Hiding navigation on smaller screens
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($layout-max-width-big-screen) {
       display: block;
       margin-right: 1em;
 
-      font-weight: 100;
+      font-weight: 300;
       text-align: right;
 
       @include order(2);
@@ -39,7 +39,7 @@
   }
 
   &--link {
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($layout-max-width-big-screen) {
       margin-right: 1.5em;
       padding-bottom: .25em;
 
@@ -59,7 +59,7 @@
   &--menu {
     background-color: transparent;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($layout-max-width-big-screen) {
       @include order(3);
     }
   }
@@ -85,7 +85,7 @@
   transition: .5s ease-in-out;
   cursor: pointer;
 
-  @include breakpoint($layout-max-width) {
+  @include breakpoint($layout-max-width-big-screen) {
     top: 2em;
     right: 2em;
   }
