@@ -67,32 +67,6 @@
       <a href="#">This is the link</a>
     </article>
   </div>
-  <div class="itk-boxlist is-side-by-side">
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Netværk</h2>
-      </header>
-      <figure><img src="images/icons/networking.svg"></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Prototyper</h2>
-      </header>
-      <figure><img src="images/icons/prototypes.svg"></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Projektsamarbejde</h2>
-      </header>
-      <figure><img src="images/icons/collaboration.svg"></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
-    </article>
-  </div>
 </main>
 <?php
   include '_footer.php';

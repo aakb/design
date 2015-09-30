@@ -35,7 +35,7 @@ $boxlist-padding:                       1em;
       header {
         order: 1;
 
-        margin-bottom: 1.7em;
+        margin-bottom: .5em;
 
         text-align: center;
         text-transform: uppercase;
@@ -50,10 +50,9 @@ $boxlist-padding:                       1em;
         order: 2;
 
         display: block;
-        margin: 0 3em 1em;
+        margin: 0 3em;
         padding: 2em;
 
-        border: 1px solid $gray-light;
         border-radius: 100%;
       }
 
