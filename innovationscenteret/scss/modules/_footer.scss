@@ -1,4 +1,4 @@
-$top-and-button-margin: .5em;
+$top-and-button-margin: 1em;
 
 .footer {
 
@@ -13,6 +13,11 @@ $top-and-button-margin: .5em;
     vertical-align: middle;
     margin-top: $top-and-button-margin;
     margin-bottom: $top-and-button-margin;
+
+    a {
+      color: white;
+}
+
   }
 
   &--socialmedia {
@@ -22,11 +27,11 @@ $top-and-button-margin: .5em;
 
     figure {
       display: inline-block;
-      height: 2em;
-      width: 2em;
+      height: 1.8em;
+      width: 1.8em;
       margin-left: 1em;
         .st0 {
-          fill: $theme-color;
+          fill: $white;
         }
     }
   }

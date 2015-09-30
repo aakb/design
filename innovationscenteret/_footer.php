@@ -1,8 +1,7 @@
 <footer>
   <div class="footer--content">
     <div class="footer--mail">
-
-      kontakt: <a href="mailto:cfi@aarhus.dk"> cfi@aarhus.dk</a>
+      <a href="mailto:cfi@aarhus.dk">cfi@aarhus.dk</a>
 
     </div>
     <div class="footer--socialmedia">
