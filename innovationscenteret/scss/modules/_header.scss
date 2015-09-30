@@ -15,11 +15,6 @@
   background-size: cover;
   color: #fff;
 
-  &--image {
-   position: absolute;
-   z-index: -5;
-
-  }
   // Header inner
   &--inner {
     box-sizing: border-box;
@@ -41,11 +36,35 @@
       padding-left: 8em;
     }
 
-    @include breakpoint($layout-max-width-big-screen) {
-      padding: 12em 12em 7em;
+    @include breakpoint($breakpoint-desk) {
+      padding-top: 12em;
+      padding-right: 0;
+      padding-bottom: 6em;
+      padding-left: 0;
+    }
+
+    @include breakpoint($layout-max-width) {
+      max-width: $layout-max-width;
     }
   }
 
+  // Big header
+  &--big {
+    margin-bottom: .5em;
+
+    font-size: 2em;
+    font-weight: 600;
+
+    @include breakpoint($layout-max-width) {
+      font-size: 3em;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      font-size: 5em;
+    }
+  }
+
+  // Lead, sub
   &--lead,
   &--sub {
     a {
@@ -63,22 +82,6 @@
     }
   }
 
-  // Big header
-  &--big {
-    margin-bottom: .5em;
-
-    font-size: 2em;
-    font-weight: 600;
-
-    @include breakpoint($layout-max-width-big-screen) {
-      font-size: 4em;
-    }
-
-    @include breakpoint($breakpoint-bigscreen) {
-      font-size: 5em;
-    }
-  }
-
   // Lead
   &--lead {
     margin-bottom: 1em;
@@ -86,7 +89,7 @@
     font-size: 1.25em;
     font-weight: 600;
 
-    @include breakpoint($layout-max-width-big-screen) {
+    @include breakpoint($layout-max-width) {
       font-size: 1.75em;
     }
 
@@ -101,7 +104,7 @@
 
     font-weight: 300;
 
-    @include breakpoint($layout-max-width-big-screen) {
+    @include breakpoint($layout-max-width) {
       font-size: 1.25em;
     }
 
@@ -131,7 +134,7 @@
 
       transition: background-color 1s, border 1s, color 1s;
 
-      @include breakpoint($layout-max-width-big-screen) {
+      @include breakpoint($layout-max-width) {
         font-size: 1.5em;
       }
 

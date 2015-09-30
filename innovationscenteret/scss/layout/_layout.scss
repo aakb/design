@@ -15,26 +15,26 @@ body, html {
   width: 6em;
   overflow: hidden;
 
-  @include breakpoint($layout-max-width-big-screen) {
+  @include breakpoint($layout-max-width) {
     top: 5em;
     left: 2em;
 
-    height: 5.3em;
+    height: 3.5em;
     width: 8em;
   }
 
   @include breakpoint($breakpoint-bigscreen) {
     left: 8em;
 
-    height: auto;
-    width: 8em;
+    height: 4.5em;
+    width: 10em;
   }
 }
 
 main[role=main] {
   margin-right: auto;
   margin-left: auto;
-  max-width: $layout-max-width-big-screen;
+  max-width: $layout-max-width;
 }
 
 footer {
