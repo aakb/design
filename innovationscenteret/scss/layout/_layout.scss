@@ -4,7 +4,25 @@ body, html {
   overflow-x: hidden;
 }
 
-.logo {
+&.is-frontpage {
+  .logo {
+    top: 5em;
+    left: 2em;
+
+    height: 3.5em;
+    width: 8em;
+
+    @include breakpoint($breakpoint-bigscreen) {
+      left: 8em;
+
+      height: 4.5em;
+      width: 10em;
+    }
+  }
+}
+
+.logo,
+.logo.is-sticky {
   position: absolute;
   top: 1.5em;
   left: 1em;
@@ -16,29 +34,14 @@ body, html {
   overflow: hidden;
 
   @include breakpoint($layout-max-width) {
-    top: 5em;
-    left: 2em;
+    position: fixed;
+    top: 1.3em;
+    left: 1em;
 
-    height: 3.5em;
-    width: 8em;
+    height: 2.2em;
+    width: 5em;
 
     transition: all .5s;
-
-    &.is-sticky {
-      position: fixed;
-      top: 1.3em;
-      left: 1em;
-
-      height: 2.2em;
-      width: 5em;
-    }
-  }
-
-  @include breakpoint($breakpoint-bigscreen) {
-    left: 8em;
-
-    height: 4.5em;
-    width: 10em;
   }
 }
 

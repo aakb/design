@@ -1,12 +1,9 @@
-<body class="is-scrolling">
+<body class="<?php echo $class; ?>">
   <div class="overlay js-menu-toggle"></div>
-  <a href="/" class="logo js-logo" title="Center for Innovation i Aarhus"><img src="images/assets/logo.svg"></a>
+  <a href="/innovationscenteret" class="logo js-logo" title="Center for Innovation i Aarhus"><img src="images/assets/logo.svg"></a>
   <nav class="nav js-nav">
     <div class="nav--links">
-      <a href="news-list.php" class="nav--link">Ydelser</a>
-      <a href="event-list.php" class="nav--link">Nyheder</a>
-      <a href="sitethree.php" class="nav--link">Om os</a>
-      <a href="sitefour.php" class="nav--link">Kontakt</a>
+      <a href="ydelser.php" class="nav--link">Ydelser</a>
     </div>
   </nav>
   <div class="nav-toggle js-menu-toggle">
@@ -17,9 +14,6 @@
   </div>
   <nav class="hamburger-menu">
     <div class="hamburger-menu--links">
-      <a href="siteone.php" class="hamburger-menu--link">MenuPunkt1</a>
-      <a href="sitetwo.php" class="hamburger-menu--link">MenuPunkt2</a>
-      <a href="sitethree.php" class="hamburger-menu--link">MenuPunkt3</a>
-      <a href="sitefour.php" class="hamburger-menu--link">Menupunkt4</a>
+      <a href="#" class="hamburger-menu--link">Ydelser</a>
     </div>
   </nav>
