@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-370 248.3 100 100">
 <style type="text/css">
-	circle, path {fill: #b3b3b3;}
-	.st0{fill:none;stroke:#b3b3b3;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>

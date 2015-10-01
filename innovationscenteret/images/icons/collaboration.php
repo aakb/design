@@ -1,8 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-370 248.3 100 100">
-<style type="text/css">
-	path, circle {fill: #b3b3b3;}
-	.st0{fill:none;stroke:#b3b3b3;stroke-width:1.5;stroke-miterlimit:10;}
-</style>
 <g>
 	<path d="M-327.2,270.1c-3.1,3.3-3,8.5,0.4,11.7c3.3,3.1,8.5,3,11.6-0.4c3.1-3.3,3-8.5-0.4-11.6
 		C-318.9,266.7-324.1,266.8-327.2,270.1z M-316.1,280.6c-2.6,2.8-7.1,2.9-9.9,0.3c-2.8-2.6-2.9-7.1-0.3-9.9c2.6-2.8,7.1-2.9,9.9-0.3
