@@ -9,7 +9,7 @@
 
   function headerScrolling() {
     var scroll = $(window).scrollTop();
-    var threshold = 200;
+    var threshold = 50;
 
     // Header elements
     var logo      = $('.js-logo');

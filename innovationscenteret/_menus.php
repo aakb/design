@@ -4,6 +4,9 @@
   <nav class="nav js-nav">
     <div class="nav--links">
       <a href="ydelser.php" class="nav--link">Ydelser</a>
+      <a href="ydelser.php" class="nav--link">Nyheder</a>
+      <a href="ydelser.php" class="nav--link">Om os</a>
+      <a href="ydelser.php" class="nav--link">Kontakt os</a>
     </div>
   </nav>
   <div class="nav-toggle js-menu-toggle">

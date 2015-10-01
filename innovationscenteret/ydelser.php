@@ -17,20 +17,10 @@
     <article class="itk-boxlist2--item">
       <header>
         <h2 class="itk-boxlist2--header">Netværk</h2>
-        <p>
-          <strong>Du inspireres og inspirer andre</strong><br>
-          <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
-          Innovation i Aarhus deltagelse i vores innovationsnetværk. Her møder du kollegaer i Aarhus Kommune, der
-          arbejder med innovation ligesom dig.</p>
-          <p>Når du deltager i innovationsnetværket har du adgang til:</p>
-          <ul>
-            <li>Morgen- og gå-hjem-møder med inspirerende interne og eksterne oplæg</li>
-            <li>Konferencer, temadage og større events</li>
-            <li>Matchmaking</li>
-            <li>Nyhedsmails med inspiration til jeres daglige arbejde med innovation</li>
-            </li>
-          </ul>
-        </p>
+        <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
+        Innovation i Aarhus deltagelse i vores innovationsnetværk. Her møder du kollegaer i Aarhus Kommune, der
+        arbejder med innovation ligesom dig.</p>
+        <a href="netvaerk.php">Læs om netværk</a>
       </header>
       <figure><?php include 'images/icons/networking.php'; ?></figure>
     </article>
@@ -43,14 +33,14 @@
     </article>
     <article class="itk-boxlist2--item">
       <header>
-        <h2 class="itk-boxlist2--header">Netværk</h2>
+        <h2 class="itk-boxlist2--header">Noget andet</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
       <figure><?php include 'images/icons/prototypes.php'; ?></figure>
     </article>
     <article class="itk-boxlist2--item">
       <header>
-        <h2 class="itk-boxlist2--header">Netværk</h2>
+        <h2 class="itk-boxlist2--header">Noget tredje</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
       <figure><?php include 'images/icons/prototypes.php'; ?></figure>
