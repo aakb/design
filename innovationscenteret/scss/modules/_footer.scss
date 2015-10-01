@@ -6,7 +6,6 @@ $top-and-button-margin: 2em;
     margin-right: auto;
     max-width: $layout-max-width;
   }
-
   &--mail {
     display: inline-block;
     vertical-align: middle;
@@ -17,22 +16,20 @@ $top-and-button-margin: 2em;
       color: white;
     }
   }
-
   &--socialmedia {
     float: right;
     margin-top: $top-and-button-margin;
     margin-bottom: $top-and-button-margin;
 
     figure {
-      display: inline-block;
       height: 1.8em;
       width: 1.8em;
       margin-left: 1em;
+      display: inline-block;
 
       .st0 {
         fill: $white;
       }
     }
   }
-
 }
