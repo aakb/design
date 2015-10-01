@@ -39,7 +39,10 @@ $boxlist-padding:                       1em;
       header {
         order: 2;
 
-        padding: $boxlist-padding;
+        padding-top: 0;
+        padding-right: $boxlist-padding;
+        padding-bottom: $boxlist-padding;
+        padding-left: $boxlist-padding;
 
         @include flex-grow(1);
         @include flex-shrink(1);
