@@ -4,6 +4,10 @@ body, html {
   overflow-x: hidden;
 }
 
+body.is-page {
+  padding-top: 10em;
+}
+
 &.is-frontpage {
   .logo {
     @include breakpoint($layout-max-width) {

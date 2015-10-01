@@ -1,4 +1,6 @@
 <?php
+  $class = 'is-page';
+
   include '_header.php';
   include '_menus.php';
 ?>
@@ -34,7 +36,7 @@
     </article>
     <article class="itk-boxlist2--item">
       <header>
-        <h2 class="itk-boxlist2--header">Prototyper</h2>
+        <h2 id="network" class="itk-boxlist2--header">Prototyper</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
       <figure><?php include 'images/icons/prototypes.php'; ?></figure>

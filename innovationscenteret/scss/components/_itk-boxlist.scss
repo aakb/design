@@ -110,6 +110,10 @@ $boxlist-padding:                       1em;
 
         h2 {
           font-weight: 300;
+
+          a {
+            @include strip-link-styles($gray);
+          }
         }
       }
 

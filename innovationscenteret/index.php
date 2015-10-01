@@ -22,11 +22,11 @@
   <div class="itk-boxlist">
     <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist--header">Netværk</h2>
+        <h2 class="itk-boxlist--header"><a href="ydelser.php#network">Netværk</a></h2>
       </header>
-      <figure class="svginclude"><a href="#"><?php include 'images/icons/networking.php'; ?></a></figure>
+      <figure class="svginclude"><a href="ydelser.php#network"><?php include 'images/icons/networking.php'; ?></a></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#" class="itk-boxlist--link">This is the link</a>
+      <a href="ydelser.php#network" class="itk-boxlist--link">This is the link</a>
     </article>
     <article class="itk-boxlist--item">
       <header>
