@@ -1,7 +1,7 @@
-<body>
+<body class="is-scrolling">
   <div class="overlay js-menu-toggle"></div>
-  <a href="/" class="logo" title="Center for Innovation i Aarhus"><img src="images/assets/logo.svg"></a>
-  <nav class="nav">
+  <a href="/" class="logo js-logo" title="Center for Innovation i Aarhus"><img src="images/assets/logo.svg"></a>
+  <nav class="nav js-nav">
     <div class="nav--links">
       <a href="news-list.php" class="nav--link">Ydelser</a>
       <a href="event-list.php" class="nav--link">Nyheder</a>

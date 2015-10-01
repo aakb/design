@@ -8,14 +8,27 @@
 .nav {
   top: 0;
   position: fixed;
-  z-index: 98;
+  z-index: 89;
 
   width: 100%;
 
   @include breakpoint($layout-max-width) {
-    position: absolute;
+    position: fixed;
     top: 6.5em;
-    right: 8em;
+    right: 12em;
+
+    transition: top .5s, right .5s, padding .5s;
+
+    &.is-sticky {
+      position: fixed;
+      top: 0;
+      right: 0;
+
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+
+      background-color: transparentize($black, .25);
+    }
   }
 
   &--links {
@@ -23,14 +36,10 @@
 
     @include breakpoint($layout-max-width) {
       display: block;
-      margin-right: 1em;
+      margin-right: 6em;
 
       font-weight: 300;
       text-align: right;
-
-      @include order(2);
-      @include flex-grow(1);
-      @include align-self(center);
 
       a {
         @include strip-link-styles(#fff, none);
@@ -55,34 +64,28 @@
       }
     }
   }
-
-  &--menu {
-    background-color: transparent;
-
-    @include breakpoint($layout-max-width) {
-      @include order(3);
-    }
-  }
 }
 
 
 .nav-toggle {
-  position: absolute;
-  top: 1.8em;
+  position: fixed;
+  top: 1.3em;
   right: 1em;
-  z-index: 999;
+  z-index: 99;
 
   height: 36px;
   width: 40px;
 
-
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  transition: transform .5s ease-in-out;
   cursor: pointer;
 
   @include breakpoint($layout-max-width) {
-    top: 2em;
     right: 2em;
+
+    &.is-sticky {
+      top: 1.3em;
+    }
   }
 }
 

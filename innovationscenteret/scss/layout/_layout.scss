@@ -8,7 +8,7 @@ body, html {
   position: absolute;
   top: 1.5em;
   left: 1em;
-  z-index: 99;
+  z-index: 90;
 
   display: block;
   height: 2.6em;
@@ -21,6 +21,17 @@ body, html {
 
     height: 3.5em;
     width: 8em;
+
+    transition: all .5s;
+
+    &.is-sticky {
+      position: fixed;
+      top: 1.3em;
+      left: 1em;
+
+      height: 2.2em;
+      width: 5em;
+    }
   }
 
   @include breakpoint($breakpoint-bigscreen) {
@@ -33,6 +44,7 @@ body, html {
 
 main[role=main] {
   margin-right: auto;
+  margin-bottom: 10em;
   margin-left: auto;
   max-width: $layout-max-width;
 }

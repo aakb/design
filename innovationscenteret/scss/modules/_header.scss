@@ -52,15 +52,15 @@
   &--big {
     margin-bottom: .5em;
 
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: 600;
 
     @include breakpoint($layout-max-width) {
-      font-size: 3em;
+      font-size: 2.5em;
     }
 
     @include breakpoint($breakpoint-bigscreen) {
-      font-size: 5em;
+      font-size: 3.5em;
     }
   }
 
@@ -90,11 +90,11 @@
     font-weight: 600;
 
     @include breakpoint($layout-max-width) {
-      font-size: 1.75em;
+      font-size: 1.5em;
     }
 
     @include breakpoint($breakpoint-bigscreen) {
-      font-size: 2.25em;
+      font-size: 1.75em;
     }
   }
 
