@@ -5,7 +5,17 @@
  */
 
 
-.nav {
+.is-frontpage {
+  .nav {
+    top: 6.5em;
+    right: 12em;
+
+    background-color: transparent;
+  }
+}
+
+.nav,
+.nav.is-sticky {
   top: 0;
   position: absolute;
   z-index: 89;
@@ -13,21 +23,16 @@
   width: 100%;
 
   @include breakpoint($layout-max-width) {
-    top: 6.5em;
-    right: 12em;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    background-color: transparentize($black, .25);
 
     transition: top .35s, right .35s, padding .35s;
-
-    &.is-sticky {
-      position: fixed;
-      top: 0;
-      right: 0;
-
-      padding-top: 1.5em;
-      padding-bottom: 1.5em;
-
-      background-color: transparentize($black, .25);
-    }
   }
 
   &--links {
@@ -82,10 +87,6 @@
   @include breakpoint($layout-max-width) {
     position: fixed;
     right: 2em;
-
-    &.is-sticky {
-      top: 1.3em;
-    }
   }
 }
 
