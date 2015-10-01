@@ -7,13 +7,12 @@
 
 .nav {
   top: 0;
-  position: fixed;
+  position: absolute;
   z-index: 89;
 
   width: 100%;
 
   @include breakpoint($layout-max-width) {
-    position: fixed;
     top: 6.5em;
     right: 12em;
 
@@ -68,7 +67,7 @@
 
 
 .nav-toggle {
-  position: fixed;
+  position: absolute;
   top: 1.3em;
   right: 1em;
   z-index: 99;
@@ -81,6 +80,7 @@
   cursor: pointer;
 
   @include breakpoint($layout-max-width) {
+    position: fixed;
     right: 2em;
 
     &.is-sticky {
