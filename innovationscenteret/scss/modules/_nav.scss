@@ -20,7 +20,13 @@
   position: absolute;
   z-index: 89;
 
+  padding-top: 3em;
+  padding-bottom: 2.5em;
   width: 100%;
+
+  background-color: transparentize($black, .25);
+
+  transition: top .35s, right .35s, padding .35s;
 
   @include breakpoint($layout-max-width) {
     position: fixed;
@@ -29,10 +35,6 @@
 
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-
-    background-color: transparentize($black, .25);
-
-    transition: top .35s, right .35s, padding .35s;
   }
 
   &--links {
@@ -73,7 +75,7 @@
 
 .nav-toggle {
   position: absolute;
-  top: 1.3em;
+  top: 1.7em;
   right: 1em;
   z-index: 99;
 
