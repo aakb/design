@@ -17,6 +17,56 @@ $boxlist-padding:                       1em;
 /* Basic styling
    ========================================================================== */
 
+.itk-boxlist2 {
+  margin-bottom: 1em;
+
+  &--item {
+    @include flexbox;
+    @include flex-flow(row nowrap);
+
+    margin-right: -6em;
+    margin-bottom: 3em;
+    margin-left: -6em;
+    padding-right: 6em;
+    padding-bottom: 3em;
+    padding-left: 6em;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-lighter;
+    }
+
+    @media only screen and (min-width: 30em) {
+      header {
+        order: 2;
+
+        padding: $boxlist-padding;
+
+        @include flex-grow(1);
+        @include flex-shrink(1);
+      }
+
+      figure {
+        order: 1;
+
+        display: block;
+        margin: 0 3em 0 0;
+        padding: 0 2em 0 0;
+
+        @include flex-basis(10em);
+        @include flex-shrink(0);
+      }
+    }
+  }
+
+  &--header {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
 .itk-boxlist {
   margin-bottom: 1em;
 
@@ -52,8 +102,6 @@ $boxlist-padding:                       1em;
         display: block;
         margin: 0 3em;
         padding: 2em;
-
-        border-radius: 100%;
       }
 
       p {
@@ -91,18 +139,6 @@ $boxlist-padding:                       1em;
     }
   }
 
-  &--header {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-
-/* Variants
-   ========================================================================== */
-
-// Show 2 columns side by side
-.itk-boxlist.is-side-by-side {
   // Stack until there is enough space to display them side by side
   @media only screen and (min-width: 60em) {
     margin-bottom: 7em;
@@ -115,10 +151,11 @@ $boxlist-padding:                       1em;
       margin-bottom: 0;
 
       @include flex-basis(25%);
-
-      &:last-child {
-        margin-right: 0;
-      }
     }
+  }
+
+  &--header {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

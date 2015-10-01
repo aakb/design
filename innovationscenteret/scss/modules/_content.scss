@@ -1,4 +1,22 @@
 .content {
+  padding-top: 10em;
 
+  h1 {
+    margin-bottom: .5em;
 
+    color: transparentize($black, .25);
+    font-size: 5em;
+    text-align: center;
+  }
+
+  &--text {
+    border-bottom: 1px solid $gray-lighter;
+
+    margin-right: -6em;
+    margin-bottom: 3em;
+    margin-left: -6em;
+    padding-right: 6em;
+    padding-bottom: 3em;
+    padding-left: 6em;
+  }
 }

@@ -20,8 +20,7 @@
   </div>
 </div>
 <main role="main">
-  <!-- ITK boxlist side by side -->
-  <div class="itk-boxlist is-side-by-side">
+  <div class="itk-boxlist">
     <article class="itk-boxlist--item">
       <header>
         <h2 class="itk-boxlist--header">Netværk</h2>
@@ -47,7 +46,7 @@
       <a href="#">This is the link</a>
     </article>
   </div>
-  <div class="itk-boxlist is-side-by-side">
+  <div class="itk-boxlist">
     <article class="itk-boxlist--item">
       <header>
         <h2 class="itk-boxlist--header">Faciliteter</h2>
