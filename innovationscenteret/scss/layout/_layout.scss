@@ -13,7 +13,7 @@ body, html {
       height: 3.5em;
       width: 8em;
     }
-    
+
     @include breakpoint($breakpoint-bigscreen) {
       left: 8em;
 
@@ -52,16 +52,4 @@ main[role=main] {
   margin-bottom: 10em;
   margin-left: auto;
   max-width: $layout-max-width;
-}
-
-footer {
-  width: 100%;
-  position:fixed;
-
-  background-color: black;
-  bottom:0;
-
-  p {
-    color: white;
-  }
 }

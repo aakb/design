@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
   <div class="footer--content">
     <div class="footer--mail">
       <a href="mailto:cfi@aarhus.dk">cfi@aarhus.dk</a>
