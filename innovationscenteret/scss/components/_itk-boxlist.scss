@@ -70,6 +70,21 @@ $boxlist-padding:                       1em;
 .itk-boxlist {
   margin-bottom: 1em;
 
+  // Stack until there is enough space to display them side by side
+  @media only screen and (min-width: 60em) {
+    margin-bottom: 7em;
+
+    @include flexbox;
+    @include flex-flow(row nowrap);
+    @include justify-content(space-around);
+
+    .itk-boxlist--item {
+      margin-bottom: 0;
+
+      @include flex-basis(25%);
+    }
+  }
+
   &--item {
     @include flexbox;
     @include flex-flow(column);
@@ -111,51 +126,35 @@ $boxlist-padding:                       1em;
 
         text-align: center;
       }
+    }
+  }
 
-      a {
-        order: 4;
+  &--link,
+  &--link:link,
+  &--link:visited {
+    @media only screen and (min-width: 30em) {
+      order: 4;
 
-        display: inline-block;
-        margin-right: 1em;
-        margin-left: 1em;
-        padding: .5em 1em;
+      display: inline-block;
+      margin-right: 1em;
+      margin-left: 1em;
+      padding: .5em 1em;
 
-        background-color: transparent;
+      background-color: transparent;
+      border: 1px solid $link-color;
+      border-radius: 30px;
+      color: $link-color;
+      font-weight: 300;
+      text-align: center;
+      text-decoration: none;
+
+      transition: background-color .5s, border .5s, color .5s;
+
+      &:hover {
+        background-color: $link-color;
         border: 1px solid $link-color;
-        border-radius: 30px;
-        color: $link-color;
-        font-weight: 300;
-        text-align: center;
-        text-decoration: none;
-
-        transition: background-color .5s, border .5s, color .5s;
-
-        &:hover {
-          background-color: $link-color;
-          border: 1px solid $link-color;
-          color: $white;
-        }
+        color: $white;
       }
     }
-  }
-
-  // Stack until there is enough space to display them side by side
-  @media only screen and (min-width: 60em) {
-    margin-bottom: 7em;
-
-    @include flexbox;
-    @include flex-flow(row nowrap);
-    @include justify-content(space-around);
-
-    .itk-boxlist--item {
-      margin-bottom: 0;
-
-      @include flex-basis(25%);
-    }
-  }
-
-  &--header {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 }

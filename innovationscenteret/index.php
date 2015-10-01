@@ -25,9 +25,9 @@
       <header>
         <h2 class="itk-boxlist--header">Netværk</h2>
       </header>
-      <figure class="svginclude"><?php include 'images/icons/networking.php'; ?></figure>
+      <figure class="svginclude"><a href="#"><?php include 'images/icons/networking.php'; ?></a></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
+      <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
     <article class="itk-boxlist--item">
       <header>
@@ -35,7 +35,7 @@
       </header>
       <figure class="svginclude"><?php include "images/icons/prototypes.php"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
+      <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
     <article class="itk-boxlist--item">
       <header>
@@ -43,7 +43,7 @@
       </header>
       <figure class="svginclude"><?php include "images/icons/collaboration.php"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
+      <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
   </div>
   <div class="itk-boxlist">
@@ -53,7 +53,7 @@
       </header>
       <figure class="svginclude"><?php include "images/icons/facilities.php"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
+      <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
     <article class="itk-boxlist--item">
       <header>
@@ -61,7 +61,7 @@
       </header>
       <figure class="svginclude"><?php include "images/icons/sparring.php"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
+      <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
     <article class="itk-boxlist--item">
       <header>
@@ -69,7 +69,7 @@
       </header>
       <figure class="svginclude"><?php include "images/icons/courses.php"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#">This is the link</a>
+      <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
   </div>
 </main>
