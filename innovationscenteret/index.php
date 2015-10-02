@@ -7,12 +7,13 @@
 
 <div class="header" role="banner" id="home">
   <div class="header--inner">
-    <h1 class="header--big">Vi er et fælles mødested for innovation i Aarhus Kommune</h1>
+    <h1 class="header--big">Fælles mødested og værksted for innovation i Aarhus Kommune</h1>
     <p class="header--lead">
-      Vi understøtter udviklingsarbejdet med værkstedsfaciliteter, og indgår som projektpartner med stærke faglige
-      kompetencer indenfor design, antropologi og procesfacilitering.
+      Vi indgår som projektpartner med kompetencer inden for design, antropologi og procesfacilitering.
     </p>
-    <p class="header--sub">﻿Lær os at kende og læs mere om, hvordan du kan <a href="#">bruge os</a> i dit arbejde her.</p>
+    <p class="header--sub">
+      Lær os at kende og læs mere om, hvordan du kan bruge os i dit arbejde her.
+    </p>
     <div class="header--button-wrapper">
       <a href="ydelser.php" class="header--button-link is-primary">Ydelser</a>
     </div>
