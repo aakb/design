@@ -20,7 +20,7 @@
   </div>
 </div>
 <main role="main">
-  <div class="itk-boxlist">
+  <div class="itk-boxlist-column">
     <?php
       include 'includes/_network.php';
     ?>
@@ -31,7 +31,7 @@
       include 'includes/_collaboration.php';
     ?>
   </div>
-  <div class="itk-boxlist">
+  <div class="itk-boxlist-column">
     <?php
       include 'includes/_facilities.php';
     ?>
