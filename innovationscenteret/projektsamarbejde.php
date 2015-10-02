@@ -16,7 +16,7 @@
       <header>
         <h2 class="itk-boxlist--header">Netværk</h2>
       </header>
-      <figure><?php include 'images/icons/networking.php'; ?></figure>
+      <figure><?php include 'images/icons/networking.svg'; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#">This is the link</a>
     </article>
@@ -24,7 +24,7 @@
       <header>
         <h2 class="itk-boxlist--header">Prototyper</h2>
       </header>
-      <figure><?php include "images/icons/prototypes.php"; ?></figure>
+      <figure><?php include "images/icons/prototypes.svg"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#">This is the link</a>
     </article>
@@ -32,7 +32,7 @@
       <header>
         <h2 class="itk-boxlist--header">Projektsamarbejde</h2>
       </header>
-      <figure><?php include "images/icons/collaboration.php"; ?></figure>
+      <figure><?php include "images/icons/collaboration.svg"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#">This is the link</a>
     </article>

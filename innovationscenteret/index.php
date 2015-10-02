@@ -24,7 +24,7 @@
       <header>
         <h2 class="itk-boxlist--header"><a href="netvaerk.php">Netværk</a></h2>
       </header>
-      <figure class="svginclude"><a href="netvaerk.php"><?php include 'images/icons/networking.php'; ?></a></figure>
+      <figure><a href="netvaerk.php"><?php include 'images/icons/networking.svg'; ?></a></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="netvaerk.php" class="itk-boxlist--link">This is the link</a>
     </article>
@@ -32,7 +32,7 @@
       <header>
         <h2 class="itk-boxlist--header">Prototyper</h2>
       </header>
-      <figure class="svginclude"><?php include "images/icons/prototypes.php"; ?></figure>
+      <figure><?php include "images/icons/prototypes.svg"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
@@ -40,7 +40,7 @@
       <header>
         <h2 class="itk-boxlist--header">Projektsamarbejde</h2>
       </header>
-      <figure class="svginclude"><?php include "images/icons/collaboration.php"; ?></figure>
+      <figure><?php include "images/icons/collaboration.svg"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
@@ -50,7 +50,7 @@
       <header>
         <h2 class="itk-boxlist--header">Faciliteter</h2>
       </header>
-      <figure class="svginclude"><?php include "images/icons/facilities.php"; ?></figure>
+      <figure><?php include "images/icons/facilities.svg"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
@@ -58,7 +58,7 @@
       <header>
         <h2 class="itk-boxlist--header">Sparring</h2>
       </header>
-      <figure class="svginclude"><?php include "images/icons/sparring.php"; ?></figure>
+      <figure><?php include "images/icons/sparring.svg"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>
@@ -66,7 +66,7 @@
       <header>
         <h2 class="itk-boxlist--header">Kurser</h2>
       </header>
-      <figure class="svginclude"><?php include "images/icons/courses.php"; ?></figure>
+      <figure><?php include "images/icons/courses.svg"; ?></figure>
       <p>Praeterea iter est quasdam res quas ex communi.</p>
       <a href="#" class="itk-boxlist--link">This is the link</a>
     </article>

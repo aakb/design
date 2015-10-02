@@ -49,10 +49,11 @@ $boxlist-padding:                       1em;
       }
 
       figure {
-        order: 1;
         display: block;
-        margin: 0 3em 0 0;
-        padding: 0 2em 0 0;
+        margin-right: 2em;
+
+        opacity: .25;
+        order: 1;
 
         @include flex-basis(10em);
         @include flex-shrink(0);
@@ -81,11 +82,6 @@ $boxlist-padding:                       1em;
 
     .itk-boxlist--item {
       margin-bottom: 0;
-
-      figure {
-        margin: 0 3em;
-        padding: 0em;
-      }
     }
   }
 
@@ -107,17 +103,14 @@ $boxlist-padding:                       1em;
     }
 
     figure {
-      margin: 0 12em;
-      min-width: 12em;
-      padding: 1em;
-      fill: $gray-light;
-      order: 2;
       display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 1em;
+      max-width: 10em;
 
-      @include breakpoint($breakpoint-tablet) {
-        margin: 0 12em;
-        padding: 2em;
-      }
+      opacity: .25;
+      order: 2;
     }
 
     p {

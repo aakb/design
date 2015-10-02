@@ -24,28 +24,28 @@
         arbejder med innovation ligesom dig.</p>
         <a href="netvaerk.php">Læs om netværk</a>
       </header>
-      <figure><?php include 'images/icons/networking.php'; ?></figure>
+      <figure><?php include 'images/icons/networking.svg'; ?></figure>
     </article>
     <article class="itk-boxlist2--item">
       <header>
         <h2 id="network" class="itk-boxlist2--header">Prototyper</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
-      <figure><?php include 'images/icons/prototypes.php'; ?></figure>
+      <figure><?php include 'images/icons/prototypes.svg'; ?></figure>
     </article>
     <article class="itk-boxlist2--item">
       <header>
         <h2 class="itk-boxlist2--header">Noget andet</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
-      <figure><?php include 'images/icons/prototypes.php'; ?></figure>
+      <figure><?php include 'images/icons/prototypes.svg'; ?></figure>
     </article>
     <article class="itk-boxlist2--item">
       <header>
         <h2 class="itk-boxlist2--header">Noget tredje</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
-      <figure><?php include 'images/icons/prototypes.php'; ?></figure>
+      <figure><?php include 'images/icons/prototypes.svg'; ?></figure>
     </article>
   </div>
 </main>
