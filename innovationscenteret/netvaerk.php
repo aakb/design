@@ -22,30 +22,15 @@
     </ul>
   </div>
   <div class="itk-boxlist">
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header"><a href="ydelser.php#network">Netværk</a></h2>
-      </header>
-      <figure class="svginclude"><a href="ydelser.php#network"><?php include 'images/icons/networking.svg'; ?></a></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="ydelser.php#network" class="itk-boxlist--link">This is the link</a>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Prototyper</h2>
-      </header>
-      <figure class="svginclude"><?php include "images/icons/prototypes.svg"; ?></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#" class="itk-boxlist--link">This is the link</a>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Projektsamarbejde</h2>
-      </header>
-      <figure class="svginclude"><?php include "images/icons/collaboration.svg"; ?></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#" class="itk-boxlist--link">This is the link</a>
-    </article>
+    <?php
+      include 'includes/_network.php';
+    ?>
+    <?php
+      include 'includes/_prototypes.php';
+    ?>
+    <?php
+      include 'includes/_collaboration.php';
+    ?>
   </div>
 </main>
 <?php

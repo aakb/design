@@ -20,56 +20,26 @@
 </div>
 <main role="main">
   <div class="itk-boxlist">
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header"><a href="netvaerk.php">Netværk</a></h2>
-      </header>
-      <figure><a href="netvaerk.php"><?php include 'images/icons/networking.svg'; ?></a></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="netvaerk.php" class="itk-boxlist--link">This is the link</a>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Prototyper</h2>
-      </header>
-      <figure><?php include "images/icons/prototypes.svg"; ?></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#" class="itk-boxlist--link">This is the link</a>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Projektsamarbejde</h2>
-      </header>
-      <figure><?php include "images/icons/collaboration.svg"; ?></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#" class="itk-boxlist--link">This is the link</a>
-    </article>
+    <?php
+      include 'includes/_network.php';
+    ?>
+    <?php
+      include 'includes/_prototypes.php';
+    ?>
+    <?php
+      include 'includes/_collaboration.php';
+    ?>
   </div>
   <div class="itk-boxlist">
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Faciliteter</h2>
-      </header>
-      <figure><?php include "images/icons/facilities.svg"; ?></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#" class="itk-boxlist--link">This is the link</a>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Sparring</h2>
-      </header>
-      <figure><?php include "images/icons/sparring.svg"; ?></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#" class="itk-boxlist--link">This is the link</a>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header">Kurser</h2>
-      </header>
-      <figure><?php include "images/icons/courses.svg"; ?></figure>
-      <p>Praeterea iter est quasdam res quas ex communi.</p>
-      <a href="#" class="itk-boxlist--link">This is the link</a>
-    </article>
+    <?php
+      include 'includes/_facilities.php';
+    ?>
+    <?php
+      include 'includes/_sparring.php';
+    ?>
+    <?php
+      include 'includes/_courses.php';
+    ?>
   </div>
 </main>
 <?php
