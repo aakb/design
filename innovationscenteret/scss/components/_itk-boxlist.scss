@@ -72,6 +72,7 @@ $boxlist-padding:                       1em;
 
 .itk-boxlist {
   margin-bottom: 1em;
+
   // Stack until there is enough space to display them side by side
   @media only screen and (min-width: 50em) {
     margin-bottom: 7em;
@@ -79,18 +80,16 @@ $boxlist-padding:                       1em;
     @include flexbox;
     @include flex-flow(row nowrap);
     @include justify-content(space-around);
-
-    .itk-boxlist--item {
-      margin-bottom: 0;
-    }
   }
 
   &--item {
-    @include flexbox;
-    @include flex-flow(column);
     margin-bottom: 1em;
     padding-top: $boxlist-padding;
     padding-bottom: $boxlist-padding;
+
+    @include flexbox;
+    @include flex-flow(column);
+    @include flex-basis(25%);
 
     header {
       order: 1;
@@ -114,11 +113,11 @@ $boxlist-padding:                       1em;
     }
 
     p {
-      order: 3;
-
       margin-bottom: 1em;
 
       text-align: center;
+
+      order: 3;
     }
 
     @media only screen and (min-width: 30em) {
