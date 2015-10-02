@@ -50,7 +50,6 @@ $boxlist-padding:                       1em;
 
       figure {
         order: 1;
-
         display: block;
         margin: 0 3em 0 0;
         padding: 0 2em 0 0;
@@ -72,9 +71,8 @@ $boxlist-padding:                       1em;
 
 .itk-boxlist {
   margin-bottom: 1em;
-
   // Stack until there is enough space to display them side by side
-  @media only screen and (min-width: 60em) {
+  @media only screen and (min-width: 50em) {
     margin-bottom: 7em;
 
     @include flexbox;
@@ -84,14 +82,16 @@ $boxlist-padding:                       1em;
     .itk-boxlist--item {
       margin-bottom: 0;
 
-      @include flex-basis(25%);
+      figure {
+        margin: 0 3em;
+        padding: 0em;
+      }
     }
   }
 
   &--item {
     @include flexbox;
     @include flex-flow(column);
-
     margin-bottom: 1em;
     padding-top: $boxlist-padding;
     padding-bottom: $boxlist-padding;
@@ -107,15 +107,15 @@ $boxlist-padding:                       1em;
     }
 
     figure {
+      margin: 0 12em;
+      min-width: 12em;
+      padding: 1em;
       fill: $gray-light;
       order: 2;
-
       display: block;
-      margin: 0 8em;
-      padding: 1em;
 
       @include breakpoint($breakpoint-tablet) {
-        margin: 0 3em;
+        margin: 0 12em;
         padding: 2em;
       }
     }
