@@ -15,10 +15,10 @@
     <p>Hi omnes lingua, institutis, legibus inter se differunt. Quid securi etiam tamquam eu fugiat nulla pariatur. A communi observantia non est recedendum.</p>
     <p>Quam temere in vitiis, legem sancimus haerentia. Integer legentibus erat a ante historiarum dapibus. Ab illo tempore, ab est sed immemorabili.</p>
   </div>
-  <div class="itk-boxlist2">
-    <article class="itk-boxlist2--item">
+  <div class="itk-boxlist">
+    <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist2--header">Netværk</h2>
+        <h2 class="itk-boxlist--header">Netværk</h2>
         <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
         Innovation i Aarhus deltagelse i vores innovationsnetværk. Her møder du kollegaer i Aarhus Kommune, der
         arbejder med innovation ligesom dig.</p>
@@ -26,23 +26,23 @@
       </header>
       <figure><?php include 'images/icons/networking.svg'; ?></figure>
     </article>
-    <article class="itk-boxlist2--item">
+    <article class="itk-boxlist--item">
       <header>
-        <h2 id="network" class="itk-boxlist2--header">Prototyper</h2>
+        <h2 id="network" class="itk-boxlist--header">Prototyper</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
       <figure><?php include 'images/icons/prototypes.svg'; ?></figure>
     </article>
-    <article class="itk-boxlist2--item">
+    <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist2--header">Noget andet</h2>
+        <h2 class="itk-boxlist--header">Noget andet</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
       <figure><?php include 'images/icons/prototypes.svg'; ?></figure>
     </article>
-    <article class="itk-boxlist2--item">
+    <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist2--header">Noget tredje</h2>
+        <h2 class="itk-boxlist--header">Noget tredje</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
       <figure><?php include 'images/icons/prototypes.svg'; ?></figure>

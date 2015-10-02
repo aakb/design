@@ -21,7 +21,7 @@
       </li>
     </ul>
   </div>
-  <div class="itk-boxlist">
+  <div class="itk-boxlist-column">
     <?php
       include 'includes/_network.php';
     ?>

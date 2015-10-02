@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer--content">
     <div class="footer--mail">
-      Skriv til os på <a href="mailto:cfi@aarhus.dk">cfi@aarhus.dk</a>
+      Dokk1, Hack Kampmanns Plads 2 8000 Aarhus C - <a href="mailto:cfi@aarhus.dk">cfi@aarhus.dk</a>
     </div>
     <div class="footer--socialmedia">
       <a href="instagram.com"><figure class="footericons"><?php include 'includes/icons/instagram_icon.php'; ?></figure></a>
