@@ -7,7 +7,7 @@
 
 <main role="main" class="content">
   <h1>Ydelser</h1>
-  <img class="content--image" src="https://unsplash.it/1280/330/?random"></img>
+  <figure class="content--image-wrapper"><img src="https://unsplash.it/1600/500/?random"></img></figure>
 
   <div class="content--text">
     <p>At nos hinc posthac, sitientis piros Afros. Ut enim ad minim veniam, quis nostrud exercitation. Ambitioni dedisse scripsisse iudicaretur. Prima luce, cum quibus mons aliud  consensu ab eo.</p>
