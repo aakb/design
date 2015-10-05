@@ -18,17 +18,17 @@
   <div class="itk-boxlist">
     <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist--header">Netværk</h2>
+        <h2 class="itk-boxlist--header"><a href="netvaerk.php">Netværk</a></h2>
         <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
         Innovation i Aarhus deltagelse i vores innovationsnetværk. Her møder du kollegaer i Aarhus Kommune, der
         arbejder med innovation ligesom dig.</p>
         <a href="netvaerk.php">Læs om netværk</a>
       </header>
-      <figure><img src="images/networking.png"></figure>
+      <figure><a href="netvaerk.php"><img src="images/networking.png"></a></figure>
     </article>
     <article class="itk-boxlist--item">
       <header>
-        <h2 id="network" class="itk-boxlist--header">Prototyper</h2>
+        <h2 id="network" class="itk-boxlist--header"><a href="prototyper.php">Prototyper</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
         <a href="prototyper.php">Læs om prototyper</a>
       </header>
@@ -36,7 +36,7 @@
     </article>
     <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist--header">Sparring</h2>
+        <h2 class="itk-boxlist--header"><a href="sparring.php">Sparring</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
         <a href="sparring.php">Læs om sparring</a>
       </header>

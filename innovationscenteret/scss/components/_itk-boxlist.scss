@@ -80,6 +80,12 @@ $boxlist-padding:                       1em;
 .itk-boxlist-column {
   margin-bottom: 1em;
 
+  header {
+    a {
+      @include strip-link-styles($theme-color-secondary);
+    }
+  }
+
   &--link,
   &--link:link,
   &--link:visited {
@@ -136,10 +142,6 @@ $boxlist-padding:                       1em;
 
       font-size: .75em;
       text-align: center;
-
-      a {
-        @include strip-link-styles($gray);
-      }
     }
 
     figure {
