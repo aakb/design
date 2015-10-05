@@ -1,5 +1,3 @@
-$footer-height: 5em;
-
 body, html {
   overflow-x: hidden;
 }
@@ -10,7 +8,7 @@ body.is-page {
 
 &.is-frontpage {
   .logo {
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($breakpoint-desk) {
       top: 5em;
       left: 2em;
 
@@ -39,7 +37,7 @@ body.is-page {
   width: 6em;
   overflow: hidden;
 
-  @include breakpoint($layout-max-width) {
+  @include breakpoint($breakpoint-desk) {
     position: fixed;
     top: 1.3em;
     left: 1em;
@@ -55,5 +53,5 @@ main[role=main] {
   margin-right: auto;
   margin-bottom: 14em;
   margin-left: auto;
-  max-width: $layout-max-width;
+  max-width: $breakpoint-desk;
 }

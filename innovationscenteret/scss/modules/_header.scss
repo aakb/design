@@ -37,14 +37,11 @@
     }
 
     @include breakpoint($breakpoint-desk) {
+      max-width: $breakpoint-desk;
       padding-top: 12em;
-      padding-right: 0;
+      padding-right: 1.8em;
       padding-bottom: 6em;
-      padding-left: 0;
-    }
-
-    @include breakpoint($layout-max-width) {
-      max-width: $layout-max-width;
+      padding-left: 1.8em;
     }
   }
 
@@ -55,7 +52,7 @@
     font-size: 1.75em;
     font-weight: 600;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($breakpoint-desk) {
       font-size: 2.5em;
     }
 
@@ -89,7 +86,7 @@
     font-size: 1.25em;
     font-weight: 600;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($breakpoint-desk) {
       font-size: 1.5em;
     }
 
@@ -104,7 +101,7 @@
 
     font-weight: 300;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($breakpoint-desk) {
       font-size: 1.25em;
     }
 
@@ -151,7 +148,7 @@
         color: darken($theme-color, 35%);
       }
 
-      @include breakpoint($layout-max-width) {
+      @include breakpoint($breakpoint-desk) {
         font-size: 1.5em;
       }
     }

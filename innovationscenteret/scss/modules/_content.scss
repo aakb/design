@@ -1,3 +1,9 @@
+/**
+ *
+ * Content.
+ *
+ */
+
 .content {
   padding-right: 1em;
   padding-left: 1em;
@@ -32,7 +38,7 @@
     padding-left: 6em;
   }
 
-  @include breakpoint($layout-max-width) {
+  @include breakpoint($breakpoint-desk) {
     h1 {
       font-size: 5em;
     }

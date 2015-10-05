@@ -8,7 +8,7 @@
 .is-frontpage {
   .nav {
     top: 6.5em;
-    right: 4em;
+    right: 0;
 
     background-color: transparent;
   }
@@ -28,7 +28,7 @@
 
   transition: top .35s, right .35s, padding .35s;
 
-  @include breakpoint($layout-max-width) {
+  @include breakpoint($breakpoint-desk) {
     position: fixed;
     top: 0;
     right: 0;
@@ -40,7 +40,7 @@
   &--links {
     display: none; // Hiding navigation on smaller screens
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($breakpoint-desk) {
       display: block;
       margin-right: 6em;
 
@@ -54,8 +54,7 @@
   }
 
   &--link {
-    @include breakpoint($layout-max-width) {
-      margin-right: 1.5em;
+    @include breakpoint($breakpoint-desk) {
       padding-bottom: .25em;
 
       border-bottom: 2px solid transparent;
@@ -64,6 +63,10 @@
       text-decoration: none;
 
       transition: border 1s;
+
+      &:not(:last-child) {
+        margin-right: 1.5em;
+      }
 
       &:hover {
         border-bottom: 3px solid $white;
@@ -86,7 +89,7 @@
   transition: transform .5s ease-in-out;
   cursor: pointer;
 
-  @include breakpoint($layout-max-width) {
+  @include breakpoint($breakpoint-desk) {
     position: fixed;
     right: 2em;
   }

@@ -37,7 +37,7 @@ $boxlist-padding:                       1em;
       margin-left: 1em;
     }
 
-    @media only screen and (min-width: 30em) {
+    @include breakpoint($breakpoint-lap) {
       header {
         order: 2;
 
@@ -102,14 +102,14 @@ $boxlist-padding:                       1em;
       color: $white;
     }
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($breakpoint-desk) {
       max-width: 100%;
     }
   }
 }
 
 .itk-boxlist-column {
-  @media only screen and (min-width: 50em) {
+  @include breakpoint($breakpoint-tablet) {
     margin-bottom: 7em;
 
     @include flexbox;
@@ -155,7 +155,7 @@ $boxlist-padding:                       1em;
       order: 3;
     }
 
-    @media only screen and (min-width: 30em) {
+    @include breakpoint($breakpoint-lap) {
       padding-top: 0;
       padding-bottom: 0;
 
