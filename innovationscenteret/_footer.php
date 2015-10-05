@@ -4,9 +4,9 @@
       Dokk1, Hack Kampmanns Plads 2 8000 Aarhus C - <a href="mailto:cfi@aarhus.dk">cfi@aarhus.dk</a>
     </div>
     <div class="footer--socialmedia">
-      <a href="instagram.com"><figure class="footericons"><?php include 'includes/icons/instagram_icon.php'; ?></figure></a>
-      <a href="instagram.com"><figure class="footericons"><?php include 'includes/icons/twitter_icon.php'; ?></figure></a>
-      <a href="instagram.com"><figure class="footericons"><?php include 'includes/icons/linkedin_icon.php'; ?></figure></a>
+      <a href="instagram.com"><figure class="footericons"><img src="images/twitter.png"></figure></a>
+      <a href="instagram.com"><figure class="footericons"><img src="images/instagram.png"></figure></a>
+      <a href="instagram.com"><figure class="footericons"><img src="images/linkedin.png"></figure></a>
     </div>
   </div>
 </footer>
