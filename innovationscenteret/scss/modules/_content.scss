@@ -2,13 +2,11 @@
   padding-right: 1em;
   padding-left: 1em;
 
-
-
   h1 {
     margin-bottom: .5em;
 
     color: transparentize($black, .25);
-    font-size: 5em;
+    font-size: 3em;
     text-align: center;
   }
 
@@ -32,5 +30,11 @@
     padding-right: 6em;
     padding-bottom: 3em;
     padding-left: 6em;
+  }
+
+  @include breakpoint($layout-max-width) {
+    h1 {
+      font-size: 5em;
+    }
   }
 }

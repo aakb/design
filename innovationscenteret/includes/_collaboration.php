@@ -2,7 +2,7 @@
   <header>
     <h2 class="itk-boxlist-column--header">Projektsamarbejde</h2>
   </header>
-  <figure><?php include "images/icons/collaboration.svg"; ?></figure>
+  <figure><img src="images/collaboration.png"></figure>
   <p>Du arbejder sammen med os i dit projekt.</p>
   <a href="#" class="itk-boxlist-column--link">Læs mere</a>
 </article>

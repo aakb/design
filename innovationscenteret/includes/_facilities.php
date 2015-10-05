@@ -2,7 +2,7 @@
   <header>
     <h2 class="itk-boxlist-column--header">Faciliteter</h2>
   </header>
-  <figure><?php include "images/icons/facilities.svg"; ?></figure>
+  <figure><img src="images/facilities.png"></figure>
   <p>Du bruger FremtidsForvaltningens Faciliteter.</p>
   <a href="#" class="itk-boxlist-column--link">Læs mere</a>
 </article>
