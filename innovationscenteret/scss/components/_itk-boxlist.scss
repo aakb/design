@@ -109,22 +109,22 @@ $boxlist-padding:                       1em;
 }
 
 .itk-boxlist-column {
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(space-around);
+
   @include breakpoint($breakpoint-tablet) {
     margin-bottom: 7em;
-
-    @include flexbox;
-    @include flex-flow(row nowrap);
-    @include justify-content(space-around);
   }
 
   &--item {
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     padding-top: $boxlist-padding;
     padding-bottom: $boxlist-padding;
 
     @include flexbox;
     @include flex-flow(column);
-    @include flex-basis(25%);
+    @include flex-basis(100%);
 
     header {
       order: 1;
@@ -160,15 +160,27 @@ $boxlist-padding:                       1em;
       padding-bottom: 0;
 
       header {
-        margin-bottom: .5em;
-
         text-align: center;
         text-transform: uppercase;
 
         h2 {
+          margin-bottom: 0;
+
           font-weight: 300;
         }
       }
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      @include flex-basis(40%);
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      box-sizing: border-box;
+      padding-left: 3em;
+      padding-right: 3em;
+
+      @include flex-basis(33%);
     }
   }
 }

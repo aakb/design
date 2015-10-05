@@ -30,8 +30,6 @@
     <?php
       include 'includes/_collaboration.php';
     ?>
-  </div>
-  <div class="itk-boxlist-column">
     <?php
       include 'includes/_facilities.php';
     ?>
