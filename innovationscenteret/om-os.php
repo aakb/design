@@ -31,14 +31,14 @@
         <h2 id="network" class="itk-boxlist--header">Prototyper</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
-      <figure><img src="https://unsplash.it/500/500/?random"></figure>
+      <figure><img src="https://unsplash.it/500/600/?random"></figure>
     </article>
     <article class="itk-boxlist--item">
       <header>
         <h2 class="itk-boxlist--header">Noget andet</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
       </header>
-      <figure><img src="https://unsplash.it/500/500/?random"></figure>
+      <figure><img src="https://unsplash.it/500/700/?random"></figure>
     </article>
   </div>
 </main>
