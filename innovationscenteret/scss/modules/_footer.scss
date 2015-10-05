@@ -6,10 +6,6 @@
 
 $top-and-button-margin: 2em;
 
-footer {
-
-}
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -24,11 +20,11 @@ footer {
     max-width: $layout-max-width;
     padding-right: 1em;
     padding-left: 1em;
+
+    @include flexbox;
   }
 
   &--mail {
-    display: inline-block;
-    vertical-align: middle;
     margin-top: $top-and-button-margin;
     margin-bottom: $top-and-button-margin;
 
@@ -37,23 +33,22 @@ footer {
     }
   }
 
-  &--socialmedia {
-    float: right;
+  &--social,
+  &--icons {
+    @include flex-basis(50%);
+  }
+
+  &--social {
     margin-top: $top-and-button-margin;
     margin-bottom: $top-and-button-margin;
 
-    .footericons {
-      height: 1.8em;
-      width: 1.8em;
-      margin-left: 1em;
-      display: inline-block;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(flex-end);
+  }
 
-      .st0 {
-        fill: white;
-        stroke: white;
-        stroke-width:2.5;
-        stroke-miterlimit:10;
-      }
-    }
+  &--icons {
+    width: 1.8em;
+    margin-left: 1em;
   }
 }
