@@ -8,12 +8,16 @@
 .header {
   position: relative;
 
-  margin-bottom: 4em;
+  margin-bottom: 1em;
   width: 100%;
 
   background: url('../images/header-background.jpg');
   background-size: cover;
   color: #fff;
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-bottom: 4em;
+  }
 
   // Header inner
   &--inner {
