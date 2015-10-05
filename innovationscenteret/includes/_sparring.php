@@ -1,8 +1,8 @@
 <article class="itk-boxlist-column--item">
   <header>
-    <h2 class="itk-boxlist-column--header">Sparring</h2>
+    <h2 class="itk-boxlist-column--header"><a href="sparring.php">Sparring</a></h2>
   </header>
-  <figure><img src="images/sparring.png"></figure>
+  <figure><a href="sparring.php"><img src="images/sparring.png"></a></figure>
   <p>Vi sparrer med dig om, hvordan du kan bruge designprocesser i dit projekt.</p>
-  <a href="#" class="itk-boxlist-column--link">Læs mere</a>
+  <a href="sparring.php" class="itk-boxlist-column--link">Læs mere</a>
 </article>

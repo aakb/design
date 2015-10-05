@@ -6,7 +6,7 @@
 ?>
 
 <main role="main" class="content">
-  <h1>Projektsamarbejde</h1>
+  <h1>Sparring</h1>
   <div class="content--text">
     <strong>Du inspireres og inspirer andre</strong><br>
     <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
@@ -26,7 +26,7 @@
       include 'includes/_network.php';
     ?>
     <?php
-      include 'includes/_sparring.php';
+      include 'includes/_prototypes.php';
     ?>
     <?php
       include 'includes/_collaboration.php';
