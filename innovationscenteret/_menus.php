@@ -8,7 +8,7 @@
     <div class="nav--links">
       <a href="ydelser.php" class="nav--link">Ydelser</a>
       <a href="om-os.php" class="nav--link">Om os</a>
-      <a href="kontakt.php" class="nav--link">Kontakt</a>
+      <a href="contact.php" class="nav--link">Kontakt</a>
     </div>
   </nav>
   <!--menu.html.twig END-->
@@ -23,7 +23,7 @@
     <div class="hamburger-menu--links">
       <a href="ydelser.php" class="hamburger-menu--link">Ydelser</a>
       <a href="om-os.php" class="hamburger-menu--link">Om os</a>
-      <a href="kontakt.php" class="hamburger-menu--link">Kontakt os</a>
+      <a href="contact.php" class="hamburger-menu--link">Kontakt os</a>
     </div>
   </nav>
   <!--menu.html.twig END-->
