@@ -13,71 +13,9 @@
 $boxlist-padding:                       1em;
 
 
-
-/* Basic styling
-   ========================================================================== */
-
-.itk-boxlist {
-  &--item {
-    @include flexbox;
-    @include flex-flow(row nowrap);
-
-    margin-right: -6em;
-    margin-bottom: 3em;
-    margin-left: -6em;
-    padding-right: 6em;
-    padding-bottom: 3em;
-    padding-left: 6em;
-
-    &:not(:last-child) {
-      border-bottom: 1px solid $gray-lighter;
-    }
-
-    header {
-      order: 2;
-    }
-
-    figure {
-      margin-right: 1em;
-
-      order: 1;
-
-      @include flex-basis(4em);
-      @include flex-shrink(0);
-    }
-
-    @include breakpoint($breakpoint-lap) {
-      header {
-        order: 2;
-
-        padding-top: 0;
-        padding-right: $boxlist-padding;
-        padding-bottom: $boxlist-padding;
-        padding-left: $boxlist-padding;
-
-        @include flex-grow(1);
-        @include flex-shrink(1);
-      }
-
-      figure {
-        display: block;
-        margin-right: 2em;
-        margin-left: 0;
-
-        @include flex-basis(6em);
-      }
-    }
-  }
-
-  &--header {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-
 .itk-boxlist,
-.itk-boxlist-column {
+.itk-boxlist-column,
+.itk-boxlist-news {
   margin-bottom: 1em;
 
   header {
@@ -87,7 +25,7 @@ $boxlist-padding:                       1em;
   }
 
   &--header {
-    margin-bottom: 0;
+    margin-bottom: .5em;
   }
 
   &--link,
@@ -124,13 +62,112 @@ $boxlist-padding:                       1em;
   }
 }
 
+
+.itk-boxlist,
+.itk-boxlist-news {
+  &--item {
+    @include flexbox;
+    @include flex-flow(row nowrap);
+
+    border-bottom: 1px solid $gray-lighter;
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+  }
+
+  header {
+    order: 2;
+  }
+
+  @include breakpoint($breakpoint-lap) {
+    header {
+      padding-top: 0;
+      padding-right: $boxlist-padding;
+      padding-bottom: $boxlist-padding;
+      padding-left: $boxlist-padding;
+
+      @include flex-grow(1);
+      @include flex-shrink(1);
+    }
+  }
+
+  figure {
+    margin-right: 1em;
+
+    order: 1;
+
+    @include flex-basis(6em);
+    @include flex-shrink(0);
+  }
+}
+
+
+.itk-boxlist {
+  &--item {
+    margin-right: -6em;
+    margin-bottom: 3em;
+    margin-left: -6em;
+    padding-right: 6em;
+    padding-bottom: 3em;
+    padding-left: 6em;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-lighter;
+    }
+  }
+}
+
+
+.itk-boxlist-news {
+  margin-right: -6em;
+  margin-bottom: 3em;
+  margin-left: -6em;
+  padding-right: 7.8em;
+  padding-bottom: 3em;
+  padding-left: 7.8em;
+
+  &--header-text {
+    margin-bottom: 1em;
+
+    color: $gray-dark;
+    text-align: center;
+  }
+
+  &--meta {
+    margin-bottom: .75em;
+
+    color: $gray;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    &--item {
+      border: 1px solid $gray-lighter;
+      padding-bottom: 0;
+    }
+
+    header {
+      padding-top: 1.5em;
+      padding-left: 0;
+    }
+
+    figure {
+      display: block;
+      margin-right: 1.5em;
+      margin-left: 0;
+
+      @include flex-basis(14em);
+    }
+  }
+}
+
+
 .itk-boxlist-column {
   @include flexbox;
   @include flex-flow(row wrap);
   @include justify-content(space-around);
 
   @include breakpoint($breakpoint-tablet) {
-    margin-bottom: 7em;
+    margin-bottom: 4em;
   }
 
   &--item {
@@ -161,6 +198,7 @@ $boxlist-padding:                       1em;
     }
 
     p {
+      min-height: 4.5em;
       margin-bottom: 1em;
 
       text-align: center;
@@ -194,10 +232,18 @@ $boxlist-padding:                       1em;
 
     @include breakpoint($breakpoint-desk) {
       box-sizing: border-box;
-      padding-left: 3em;
-      padding-right: 3em;
 
       @include flex-basis(33%);
+
+      // Add padding left to all elements except the 1st and 4th
+      &:not(:nth-child(3n+1)) {
+        padding-left: 3em;
+      }
+
+      // Add padding right to all elements except the 3rd
+      &:not(:nth-child(3n)) {
+        padding-right: 3em;
+      }
     }
   }
 }

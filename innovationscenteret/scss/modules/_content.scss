@@ -8,10 +8,10 @@
   padding-right: 1em;
   padding-left: 1em;
 
-  h1 {
+  &--header {
     margin-bottom: .5em;
 
-    color: transparentize($black, .25);
+    color: $gray-darker;
     font-size: 3em;
     text-align: center;
   }
@@ -20,11 +20,6 @@
     margin-right: -6em;
     margin-bottom: 2.5em;
     margin-left: -6em;
-  }
-
-  h2 {
-    margin-bottom: .5em;
-
   }
 
   &--text {
@@ -39,7 +34,7 @@
   }
 
   @include breakpoint($breakpoint-desk) {
-    h1 {
+    &--header {
       font-size: 5em;
     }
   }
