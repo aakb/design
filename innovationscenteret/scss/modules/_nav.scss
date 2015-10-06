@@ -20,8 +20,7 @@
   position: absolute;
   z-index: 89;
 
-  padding-top: 3em;
-  padding-bottom: 2.5em;
+  height: 5.5em;
   width: 100%;
 
   background-color: transparentize($black, .25);
@@ -33,6 +32,7 @@
     top: 0;
     right: 0;
 
+    height: auto;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
@@ -90,8 +90,11 @@
   cursor: pointer;
 
   @include breakpoint($breakpoint-desk) {
+    top: 1.3em;
+  }
+
+  @include breakpoint($breakpoint-desk) {
     position: fixed;
-    right: 2em;
   }
 }
 

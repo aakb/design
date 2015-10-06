@@ -1,3 +1,10 @@
+/**
+ *
+ * Layout.
+ *
+ */
+
+
 body, html {
   overflow-x: hidden;
 }
@@ -51,7 +58,11 @@ body.is-page {
 
 main[role=main] {
   margin-right: auto;
-  margin-bottom: 14em;
+  margin-bottom: 8em;
   margin-left: auto;
   max-width: $breakpoint-desk;
+
+  @include breakpoint($breakpoint-desk) {
+    margin-bottom: 6em;
+  }
 }
