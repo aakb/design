@@ -9,8 +9,8 @@
   <h1 class="content--header">Nyheder</h1>
   <div class="itk-boxlist-news">
     <?php include 'includes/_news.php'; ?>
+    <?php include 'includes/_pager.php'; ?>
   </div>
-  <?php include 'includes/_pager.php'; ?>
 </main>
 <?php
   include '_footer.php';
