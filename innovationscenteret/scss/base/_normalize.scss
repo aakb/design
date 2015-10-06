@@ -97,7 +97,6 @@ a:hover {
 
 h1 {
   font-size: 2em;
-  margin: 0;
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
@@ -215,7 +214,7 @@ figure {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: 1em;
 }
 
 /* 1. Correct `color` not being inherited in IE 8/9. */

@@ -8,7 +8,9 @@
     <div class="nav--links">
       <a href="ydelser.php" class="nav--link">Ydelser</a>
       <a href="om-os.php" class="nav--link">Om os</a>
+      <a href="nyheder.php" class="nav--link">Nyheder</a>
       <a href="kontakt.php" class="nav--link">Kontakt</a>
+      <a href="designguide.php" class="nav--link">Design guide</a>
     </div>
   </nav>
   <!--menu.html.twig END-->

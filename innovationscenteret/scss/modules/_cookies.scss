@@ -1,0 +1,28 @@
+.cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+
+  width: 100%;
+
+  background: white;
+}
+
+.cookies--inner {
+  padding: 1em;
+
+  text-align: center;
+
+  @include breakpoint($breakpoint-lap) {
+    line-height: 2.2em;
+  }
+}
+
+.cookies--text {
+  margin-right: .5em;
+}
+
+.cookies .button {
+  cursor: pointer;
+}
