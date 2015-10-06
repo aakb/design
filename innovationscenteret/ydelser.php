@@ -6,7 +6,7 @@
 ?>
 
 <main role="main" class="content">
-  <h1>Ydelser</h1>
+  <h1 class="content--header">Ydelser</h1>
   <figure class="content--image-wrapper"><img src="https://unsplash.it/1600/500/?random"></figure>
 
   <div class="content--text">

@@ -6,7 +6,7 @@
 ?>
 
 <main role="main" class="content">
-  <h1>Netværk</h1>
+  <h1 class="content--header">Netværk</h1>
   <!--node--basic.html.twig START-->
   <!--field.html.twig START-->
   <div class="content--text">

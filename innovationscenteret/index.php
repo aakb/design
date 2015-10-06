@@ -15,7 +15,7 @@
       Lær os at kende og læs mere om, hvordan du kan bruge os i dit arbejde her.
     </p>
     <div class="header--button-wrapper">
-      <a href="ydelser.php" class="header--button-link is-primary">Ydelser</a>
+      <a href="ydelser.php" class="header--button-link">Ydelser</a>
     </div>
   </div>
 </div>
@@ -43,6 +43,11 @@
       include 'includes/_courses.php';
     ?>
     <!--region.html.twig END-->
+  </div>
+  <h2 class="frontpage--header">Nyheder</h2>
+  <div class="itk-boxlist-news">
+    <?php include 'includes/_news.php'; ?>
+    <a href="nyheder.php" class="button">Alle nyheder</a>
   </div>
 </main>
 <?php

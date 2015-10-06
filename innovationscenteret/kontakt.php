@@ -6,7 +6,7 @@
 ?>
 
 <main role="main" class="content">
-  <h1>Kontakt</h1>
+  <h1 class="content--header">Kontakt</h1>
   <!--node--overview.html.twig START-->
   <!--field.html.twig START-->
   <figure class="content--image-wrapper"><img src="https://unsplash.it/1600/500/?random"></figure>
@@ -25,7 +25,7 @@
     <article class="itk-boxlist--item">
       <header>
         <!--field.html.twig START-->
-        <h2 class="itk-boxlist--header">Something</h2>
+        <h2 class="itk-boxlist--header"><a href="#">Something</a></h2>
         <!--field.html.twig END-->
         <!--field.html.twig START-->
         <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
@@ -43,7 +43,7 @@
     <article class="itk-boxlist--item">
       <header>
         <!--field.html.twig START-->
-        <h2 id="network" class="itk-boxlist--header">Prototyper</h2>
+        <h2 id="network" class="itk-boxlist--header"><a href="#">Prototyper</a></h2>
         <!--field.html.twig END-->
         <!--field.html.twig START-->
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
@@ -58,7 +58,7 @@
     <article class="itk-boxlist--item">
       <header>
         <!--field.html.twig START-->
-        <h2 class="itk-boxlist--header">Noget andet</h2>
+        <h2 class="itk-boxlist--header"><a href="#">Noget andet</a></h2>
         <!--field.html.twig END-->
         <!--field.html.twig START-->
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
