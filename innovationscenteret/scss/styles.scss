@@ -10,11 +10,8 @@
 @import "base/_base";
 @import "base/_normalize";
 @import "base/_mixins";
+@import "base/icon";
 
-// Include theme
-@import "theme/breakpoints";
-@import "theme/theme-vars";
-@import "theme/icon";
 // Include assets
 @import "assets/flexbox";
 
@@ -23,16 +20,11 @@
 
 // Components
 @import "components/itk-boxlist";
-@import "components/itk-messages";
 
 // Modules
 @import "modules/nav";
 @import "modules/header";
-@import "modules/hamburger-button";
-@import "modules/hamburger-menu";
 @import "modules/overlay";
+@import "modules/hamburger-menu";
+@import "modules/footer";
 @import "modules/content";
-@import "modules/frontpage";
-@import "modules/event";
-@import "modules/fields";
-

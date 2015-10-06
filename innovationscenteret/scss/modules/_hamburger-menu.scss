@@ -16,10 +16,10 @@ $hamburger-menu-animation-duration: 0.3s;
   max-width: 90%;
   width: 30em;
   height: 100%;
-  z-index: 99;
+  z-index: 98;
   overflow: hidden;
 
-  background-color: $menu-color;
+  background-color: $theme-color-secondary;
   border: none;
 
   transition: right $hamburger-menu-animation-duration;
@@ -30,6 +30,7 @@ $hamburger-menu-animation-duration: 0.3s;
   }
 
   &--links {
+    padding-top: 5em;
     padding-right: 2em;
     padding-left: 2em;
 

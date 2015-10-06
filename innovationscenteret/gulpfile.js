@@ -12,10 +12,22 @@ var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var rename = require('gulp-rename');
 
+/**
+ * Setting up browsersync.
+ * Proxy is the name of the vagrent.
+ * Host is the the ip defined in "vagrantfile"
+ */
+var browserSync = require('browser-sync').create();
+browserSync.init({
+  proxy: "design.vm",
+  host: "192.168.50.34"
+});
+
+
 // We only want to process our own non-processed JavaScript files.
 var jsPath = ['./js/*.js', '!./js/*.min.*'];
-var sassPath = ['./scss/*.scss', './scss/*/*.scss'];
-
+var sassPath = './scss/**/*.scss';
+var phpPath = './**/*.php'; //could also be twig files
 var buildDir = './js';
 
 /**
@@ -41,6 +53,7 @@ gulp.task('sass', function () {
     }).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream());
 });
 
 /**
@@ -49,6 +62,8 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
   gulp.watch(jsPath, ['jshint']);
   gulp.watch(sassPath, ['sass']);
+  gulp.watch(phpPath).on('change', browserSync.reload);
+  gulp.watch(jsPath).on('change',browserSync.reload);
 });
 
 /**
