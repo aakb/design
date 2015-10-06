@@ -64,5 +64,6 @@ main[role=main] {
 
   @include breakpoint($breakpoint-desk) {
     margin-bottom: 6em;
+    padding-bottom: 3em;
   }
 }

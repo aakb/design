@@ -6,9 +6,6 @@
 
 
 .pager {
-	margin-top: -6.5em;
-	padding-bottom: 2em;
-
 	&__items {
 		margin: 0;
 		padding: 0;
@@ -24,6 +21,10 @@
 		background: $gray-lightest;
 		color: $gray;
 
+		&:hover {
+			background: $theme-color-secondary;
+		}
+
     a {
 			box-sizing: border-box;
 			display: block;
@@ -32,6 +33,10 @@
 			width: 100%;
 
 			@include strip-link-styles($gray);
+
+			&:hover {
+				color: $white;
+			}
     }
 
 		&.is-active {

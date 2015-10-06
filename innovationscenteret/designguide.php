@@ -57,12 +57,33 @@
   <h2>Button</h2>
   <fieldset>
     <a href="#" class="button">This is a button</a>
+    <br><br>
     <a href="#" class="button is-block">This is a block button</a>
+  </fieldset>
+  <br><br>
+  <h2>Pager</h2>
+  <fieldset>
+    <nav class="pager">
+      <ul class="pager__items">
+        <li class="pager__item is-active">
+          <a href="/news" title="Nuværende side">1</a>
+        </li>
+        <li class="pager__item">
+          <a href="#" title="Go to page 2">2</a>
+        </li>
+        <li class="pager__item pager__item--next">
+          <a href="#" title="Gå til næste side" rel="next"><span class="visually-hidden">Næste</span></a>
+        </li>
+        <li class="pager__item pager__item--last">
+          <a href="#" title="Gå til sidste side"><span>Sidste</span></a>
+        </li>
+      </ul>
+    </nav>
   </fieldset>
   <!-- Cookies -->
   <div id="js-cookies" class="cookies">
     <div class="cookies--inner">
-      <span class="cookies--text">Denne side benytter cookies.</span>
+      <span class="cookies--text">Denne side benytter cookies</span>
       <span class="cookies--agree">
       <span class="button js-cookies--agree">Tillad cookies</span>
     </span>
