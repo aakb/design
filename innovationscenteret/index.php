@@ -4,7 +4,7 @@
   include '_header.php';
   include '_menus.php';
 ?>
-
+<!--region.html.twig START-->
 <div class="header" role="banner" id="home">
   <div class="header--inner">
     <h1 class="header--big">Fælles mødested og værksted for innovation i Aarhus Kommune</h1>
@@ -19,8 +19,11 @@
     </div>
   </div>
 </div>
+<!--region.html.twig END-->
+
 <main role="main">
   <div class="itk-boxlist-column">
+    <!--region.html.twig START-->
     <?php
       include 'includes/_network.php';
     ?>
@@ -39,6 +42,7 @@
     <?php
       include 'includes/_courses.php';
     ?>
+    <!--region.html.twig END-->
   </div>
 </main>
 <?php

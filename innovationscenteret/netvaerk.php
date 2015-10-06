@@ -7,6 +7,8 @@
 
 <main role="main" class="content">
   <h1>Netværk</h1>
+  <!--node--basic.html.twig START-->
+  <!--field.html.twig START-->
   <div class="content--text">
     <strong>Du inspireres og inspirer andre</strong><br>
     <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
@@ -21,6 +23,8 @@
       </li>
     </ul>
   </div>
+  <!--field.html.twig END-->
+  <!--field.html.twig START-->
   <div class="itk-boxlist-column">
     <?php
       include 'includes/_network.php';
@@ -32,6 +36,8 @@
       include 'includes/_collaboration.php';
     ?>
   </div>
+  <!--field.html.twig END-->
+  <!--node--basic.html.twig END-->
 </main>
 <?php
   include '_footer.php';

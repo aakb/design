@@ -7,6 +7,8 @@
 
 <main role="main" class="content">
   <h1>Kontakt</h1>
+  <!--node.html.twig START-->
+  <!--field.html.twig START-->
   <div class="content--text">
     <strong>Anne Vest Hansen</strong><br>
     <p>Afdelingsleder af ITK Lab og daglig leder af Center for Innovation i Aarhus <br>
@@ -47,8 +49,11 @@
     <strong>Nyhedsbrev</strong><br>
     <p>Du kan melde dig til vores nyhedsbrev her: <br>
       Hvis du selv har nyheder, som du gerne vil have med i nyhedsbrevet, så kontakt <a href="cfi@aarhus.dk">cfi@aarhus.dk</a>.</p>
-
+  </div>
+  <!--field.html.twig END-->
+  <!--node.html.twig END-->
 </main>
+
 <?php
   include '_footer.php';
 ?>
