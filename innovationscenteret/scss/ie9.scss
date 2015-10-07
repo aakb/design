@@ -1,0 +1,73 @@
+/**
+ *
+ * IE 9 styles
+ *
+ */
+
+.nav,
+.nav.is-sticky {
+  &--links {
+    display: block;
+  }
+
+  &--link {
+    display: inline-block;
+  }
+}
+
+
+.itk-boxlist,
+.itk-boxlist-news {
+  &--item {
+    float: left;
+    padding: 1em;
+    width: 100%;
+
+    header,
+    figure {
+      float: left;
+    }
+
+    header {
+      width: 75%;
+    }
+
+    figure {
+      width: 20%;
+    }
+  }
+}
+
+
+.itk-boxlist-column {
+  &--item {
+    float: left;
+    width: 33%;
+  }
+}
+
+
+.button,
+.button:link,
+.button:visited {
+  display: inline-block;
+
+  &.is-block {
+    display: inline-block;
+  }
+}
+
+
+.footer {
+  &--mail {
+    float: left;
+  }
+
+  &--social {
+    float: right;
+  }
+
+  &--icons {
+    float: left;
+  }
+}
