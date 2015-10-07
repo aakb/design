@@ -33,43 +33,45 @@
     right: 0;
 
     height: auto;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
   }
 
   &--links {
     display: none; // Hiding navigation on smaller screens
 
     @include breakpoint($breakpoint-desk) {
-      display: block;
       margin-right: 6em;
 
       font-weight: 300;
       text-align: right;
 
+      @include flexbox;
+      @include justify-content(flex-end);
+
       a {
         @include strip-link-styles(#fff, none);
+
+        &:hover {
+          color: $theme-color;
+        }
       }
     }
   }
 
   &--link {
     @include breakpoint($breakpoint-desk) {
-      padding-bottom: .25em;
+      padding-top: 1.2em;
+      padding-right: 1.2em;
+      padding-bottom: 1.2em;
+      padding-left: 1.2em;
 
-      border-bottom: 2px solid transparent;
       color: white;
       font-size: 1.2em;
       text-decoration: none;
 
-      transition: border 1s;
-
-      &:not(:last-child) {
-        margin-right: 1.5em;
-      }
+      transition: border 1s, background-color .25s;
 
       &:hover {
-        border-bottom: 3px solid $white;
+        background-color: transparentize($black, .75);
       }
     }
   }
