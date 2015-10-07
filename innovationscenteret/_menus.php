@@ -6,11 +6,11 @@
   <!--menu.html.twig START-->
   <nav class="nav js-nav">
     <div class="nav--links">
-      <a href="ydelser.php" class="nav--link">Ydelser</a>
-      <a href="om-os.php" class="nav--link">Om os</a>
-      <a href="nyheder.php" class="nav--link">Nyheder</a>
-      <a href="kontakt.php" class="nav--link">Kontakt</a>
-      <a href="designguide.php" class="nav--link">Design guide</a>
+      <a href="ydelser.php" class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">Ydelser</a>
+      <a href="om-os.php" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">Om os</a>
+      <a href="nyheder.php" class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>">Nyheder</a>
+      <a href="kontakt.php" class="nav--link<?php echo $is_active === 3 ? ' is-active' : '' ?>">Kontakt</a>
+      <a href="designguide.php" class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>">Design guide</a>
     </div>
   </nav>
   <!--menu.html.twig END-->

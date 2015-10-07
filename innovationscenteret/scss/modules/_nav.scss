@@ -50,8 +50,10 @@
       a {
         @include strip-link-styles(#fff, none);
 
+        &.is-active,
         &:hover {
           color: $theme-color;
+          background-color: transparentize($black, .75);
         }
       }
     }
@@ -69,10 +71,6 @@
       text-decoration: none;
 
       transition: border 1s, background-color .25s;
-
-      &:hover {
-        background-color: transparentize($black, .75);
-      }
     }
   }
 }
