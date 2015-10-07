@@ -37,6 +37,7 @@ $hamburger-menu-animation-duration: 0.3s;
     a {
       @include strip-link-styles(#fff, none);
 
+      &.is-active,
       &:hover {
         color: $link-color-hover;
       }

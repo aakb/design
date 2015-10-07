@@ -1,5 +1,6 @@
 <?php
   $class = 'is-page';
+  $is_active = 2;
 
   include '_header.php';
   include '_menus.php';
