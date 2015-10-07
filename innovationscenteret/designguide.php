@@ -83,9 +83,9 @@
   <!-- Cookies -->
   <div id="js-cookies" class="cookies">
     <div class="cookies--inner">
-      <span class="cookies--text">Denne side benytter cookies</span>
+      <span class="cookies--text">Vi benytter cookies, vi lover vi bruger dem til noget ondt!</span>
       <span class="cookies--agree">
-      <span class="button js-cookies--agree">Tillad cookies</span>
+      <span class="button js-cookies--agree">Ok det er i orden</span>
     </span>
     </div>
   </div>
