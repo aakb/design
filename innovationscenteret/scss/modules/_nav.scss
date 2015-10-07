@@ -61,11 +61,14 @@
 
   &--link {
     @include breakpoint($breakpoint-desk) {
-      padding-top: 1.2em;
+      margin-top: .75em;
+      margin-bottom: .75em;
+      padding-top: .5em;
       padding-right: 1.2em;
-      padding-bottom: 1.2em;
+      padding-bottom: .5em;
       padding-left: 1.2em;
 
+      border-radius: 5em;
       color: white;
       font-size: 1.2em;
       text-decoration: none;
