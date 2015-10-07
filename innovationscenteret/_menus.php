@@ -23,11 +23,12 @@
   <!--menu.html.twig START-->
   <nav class="hamburger-menu">
     <div class="hamburger-menu--links">
-      <a href="ydelser.php" class="hamburger-menu--link">Ydelser</a>
-      <a href="om-os.php" class="hamburger-menu--link">Om os</a>
-      <a href="nyheder.php" class="hamburger-menu--link">Nyheder</a>
-      <a href="kontakt.php" class="hamburger-menu--link">Kontakt</a>
-      <a href="designguide.php" class="hamburger-menu--link">Design guide</a>
+      <a href="ydelser.php" class="hamburger-menu--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">Ydelser</a>
+      <a href="om-os.php" class="hamburger-menu--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">Om os</a>
+      <a href="nyheder.php" class="hamburger-menu--link<?php echo $is_active === 2 ? ' is-active' : '' ?>">Nyheder</a>
+      <a href="kontakt.php" class="hamburger-menu--link<?php echo $is_active === 3 ? ' is-active' : '' ?>">Kontakt</a>
+      <a href="designguide.php" class="hamburger-menu--link<?php echo $is_active === 4 ? ' is-active' : '' ?>">Design
+        guide</a>
     </div>
   </nav>
   <!--menu.html.twig END-->
