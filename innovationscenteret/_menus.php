@@ -25,7 +25,9 @@
     <div class="hamburger-menu--links">
       <a href="ydelser.php" class="hamburger-menu--link">Ydelser</a>
       <a href="om-os.php" class="hamburger-menu--link">Om os</a>
-      <a href="contact.php" class="hamburger-menu--link">Kontakt os</a>
+      <a href="nyheder.php" class="hamburger-menu--link">Nyheder</a>
+      <a href="kontakt.php" class="hamburger-menu--link">Kontakt</a>
+      <a href="designguide.php" class="hamburger-menu--link">Design guide</a>
     </div>
   </nav>
   <!--menu.html.twig END-->
