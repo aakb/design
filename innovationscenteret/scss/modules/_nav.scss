@@ -49,17 +49,12 @@
 
       a {
         @include strip-link-styles(#fff, none);
-
-        &.is-active,
-        &:hover {
-          color: $theme-color;
-          background-color: transparentize($black, .75);
-        }
       }
     }
   }
 
-  &--link {
+  // Drupal's markup dictates that .nav--link has to be inside .nav
+  .nav--link {
     @include breakpoint($breakpoint-desk) {
       margin-top: .75em;
       margin-bottom: .75em;
@@ -74,6 +69,15 @@
       text-decoration: none;
 
       transition: border 1s, background-color .25s;
+
+      &.is-active,
+      &:hover {
+        background-color: transparentize($black, .75);
+
+        a {
+          @include strip-link-styles($theme-color, none);
+        }
+      }
     }
   }
 }

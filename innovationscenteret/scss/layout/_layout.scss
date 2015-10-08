@@ -9,10 +9,6 @@ body, html {
   overflow-x: hidden;
 }
 
-body.is-page {
-  padding-top: 8em;
-}
-
 &.is-frontpage {
   .logo {
     @include breakpoint($breakpoint-desk) {
@@ -53,6 +49,13 @@ body.is-page {
     width: 5em;
 
     transition: all .35s;
+  }
+}
+
+
+.is-page {
+  main[role=main] {
+    padding-top: 8em;
   }
 }
 

@@ -44,7 +44,8 @@ $hamburger-menu-animation-duration: 0.3s;
     }
   }
 
-  &--link {
+  // Drupal uses same template for menus so they both get the nav--link class
+  .nav--link {
     display: list-item;
     padding-top: .5em;
     padding-right: 5em;
