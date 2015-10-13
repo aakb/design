@@ -66,6 +66,10 @@
   <fieldset>
     <?php include 'includes/_pager.php'; ?>
   </fieldset>
+  <h2>Instagram Gallery</h2>
+  <fieldset>
+    <?php include 'includes/_instagram.php'; ?>
+  </fieldset>
   <!-- Cookies -->
   <div id="js-cookies" class="cookies">
     <div class="cookies--inner">

@@ -41,6 +41,7 @@
       <figure><a href="#"></a><img src="https://unsplash.it/500/700/?random"></a></figure>
     </article>
   </div>
+  <?php include 'includes/_instagram.php'; ?>
 </main>
 <?php
   include '_footer.php';
