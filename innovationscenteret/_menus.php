@@ -6,12 +6,11 @@
   <!--menu.html.twig START-->
   <nav class="nav js-nav">
     <div class="nav--links">
-      <span class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>"><a href="ydelser.php">Ydelser</a></span>
-      <span class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>"><a href="om-os.php">Om os</a></span>
-      <span class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>"><a href="nyheder.php">Nyheder</a></span>
-      <span class="nav--link<?php echo $is_active === 3 ? ' is-active' : '' ?>"><a href="kontakt.php">Kontakt</a></span>
-      <span class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>"><a href="designguide.php">Design
-          guide</a></span>
+      <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="ydelser.php">Ydelser</a>
+      <a class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>" href="om-os.php">Om os</a>
+      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="nyheder.php">Nyheder</a>
+      <a class="nav--link<?php echo $is_active === 3 ? ' is-active' : '' ?>" href="kontakt.php">Kontakt</a>
+      <a class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>" href="designguide.php">Design guide</a>
     </div>
   </nav>
   <!--menu.html.twig END-->
