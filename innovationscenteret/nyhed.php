@@ -6,9 +6,8 @@
 ?>
 
 <main role="main" class="content">
-  <h1 class="content--header">Nyhed</h1>
   <figure class="content--image-wrapper"><img src="https://unsplash.it/1600/500/?random"></figure>
-
+  <h1 class="content--header">Nyhed</h1>
   <div class="content--text">
     <p>At nos hinc posthac, sitientis piros Afros. Ut enim ad minim veniam, quis nostrud exercitation. Ambitioni dedisse scripsisse iudicaretur. Prima luce, cum quibus mons aliud  consensu ab eo.</p>
     <p>Salutantibus vitae elit libero, a pharetra augue. Quam diu etiam furor iste tuus nos eludet? Non equidem invideo, miror magis posuere velit aliquet. Quisque placerat facilisis egestas cillum dolore.</p>
