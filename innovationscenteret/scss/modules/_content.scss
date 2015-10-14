@@ -13,7 +13,7 @@
 
     color: $gray-darker;
     font-size: 3em;
-    text-align: center;
+    font-weight: 300;
   }
 
   &--image-wrapper {
@@ -35,7 +35,7 @@
 
   @include breakpoint($breakpoint-desk) {
     &--header {
-      font-size: 5em;
+      font-size: 4em;
     }
   }
 }
