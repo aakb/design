@@ -9,24 +9,28 @@ $hamburger-menu-animation-duration: 0.3s;
 
 
 .hamburger-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -30em;
+  bottom: 0;
   margin-right: 0;
   max-width: 90%;
   width: 30em;
-  height: 100%;
   z-index: 98;
   overflow: hidden;
 
   background-color: $theme-color-secondary;
-  border: none;
 
   transition: right $hamburger-menu-animation-duration;
   transition-timing-function: ease-in-out;
 
   &.is-open {
     right: 0;
+  }
+
+  &--inner {
+    height: 100%;
+    overflow-y: scroll;
   }
 
   &--links {
@@ -40,6 +44,10 @@ $hamburger-menu-animation-duration: 0.3s;
       &.is-active,
       &:hover {
         color: $link-color-hover;
+      }
+
+      &.is-sub {
+        margin-left: 1em;
       }
     }
   }
