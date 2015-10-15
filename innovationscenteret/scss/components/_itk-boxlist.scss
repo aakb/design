@@ -170,11 +170,13 @@ $boxlist-padding:                       1em;
   &--item {
     margin-bottom: 4em;
     padding-top: $boxlist-padding;
+    padding-right: $boxlist-padding;
     padding-bottom: $boxlist-padding;
+    padding-left: $boxlist-padding;
 
     @include flexbox;
     @include flex-flow(column);
-    @include flex-basis(45%);
+    @include flex-basis(40%);
 
     header {
       order: 1;
@@ -224,7 +226,7 @@ $boxlist-padding:                       1em;
     }
 
     @include breakpoint($breakpoint-tablet) {
-      @include flex-basis(50%);
+      @include flex-basis(45%);
     }
 
     @include breakpoint($breakpoint-desk) {
