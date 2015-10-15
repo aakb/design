@@ -73,6 +73,7 @@ $boxlist-padding:                       1em;
     @include flex-flow(row nowrap);
 
     margin-bottom: 3em;
+    padding-bottom: 2em;
 
     &:not(:last-child) {
       border-bottom: 1px solid $gray-lighter;
@@ -105,7 +106,6 @@ $boxlist-padding:                       1em;
   }
 
   @include breakpoint($breakpoint-bigscreen) {
-
       margin-right: -6em;
       margin-left: -6em;
       padding-right: 6em;
@@ -118,7 +118,6 @@ $boxlist-padding:                       1em;
 .itk-boxlist-news {
   &--item {
     padding-right: $boxlist-padding;
-    padding-bottom: $boxlist-padding;
     padding-left: $boxlist-padding;
   }
 
