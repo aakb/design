@@ -65,14 +65,18 @@ $boxlist-padding:                       1em;
 
 .itk-boxlist,
 .itk-boxlist-news {
+  padding-right: 1em;
+  padding-left: 1em;
+
   &--item {
     @include flexbox;
     @include flex-flow(row nowrap);
 
-    border-bottom: 1px solid $gray-lighter;
     margin-bottom: 3em;
-    padding-bottom: 1em;
-    padding-right: 1em;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-lighter;
+    }
   }
 
   header {
@@ -99,32 +103,24 @@ $boxlist-padding:                       1em;
     @include flex-basis(6em);
     @include flex-shrink(0);
   }
-}
 
+  @include breakpoint($breakpoint-bigscreen) {
 
-.itk-boxlist {
-  &--item {
-    margin-right: -6em;
-    margin-bottom: 3em;
-    margin-left: -6em;
-    padding-right: 6em;
-    padding-bottom: 3em;
-    padding-left: 6em;
-
-    &:not(:last-child) {
-      border-bottom: 1px solid $gray-lighter;
-    }
+      margin-right: -6em;
+      margin-left: -6em;
+      padding-right: 6em;
+      padding-bottom: 3em;
+      padding-left: 6em;
   }
 }
 
 
 .itk-boxlist-news {
-  margin-right: -6em;
-  margin-bottom: 3em;
-  margin-left: -6em;
-  padding-right: 6em;
-  padding-bottom: 3em;
-  padding-left: 6em;
+  &--item {
+    padding-right: $boxlist-padding;
+    padding-bottom: $boxlist-padding;
+    padding-left: $boxlist-padding;
+  }
 
   &--header-text {
     margin-bottom: 1em;
@@ -133,16 +129,12 @@ $boxlist-padding:                       1em;
     text-align: center;
   }
 
-  &--meta {
-    margin-bottom: .75em;
-
-    color: $gray;
-  }
-
   @include breakpoint($breakpoint-tablet) {
     &--item {
       border: 1px solid $gray-lighter;
+      padding-right: 0;
       padding-bottom: 0;
+      padding-left: 0;
     }
 
     header {
@@ -164,14 +156,19 @@ $boxlist-padding:                       1em;
 .itk-boxlist-column {
   @include flexbox;
   @include flex-flow(row wrap);
-  @include justify-content(space-around);
+  @include justify-content(center);
 
   @include breakpoint($breakpoint-tablet) {
     margin-bottom: 4em;
   }
 
+  @include breakpoint($breakpoint-desk) {
+    margin-right: -1.5em;
+    margin-left: -1.5em;
+  }
+
   &--item {
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     padding-top: $boxlist-padding;
     padding-bottom: $boxlist-padding;
 
@@ -198,8 +195,8 @@ $boxlist-padding:                       1em;
     }
 
     p {
-      min-height: 4.5em;
-      margin-bottom: 1em;
+      min-height: 3em;
+      margin-bottom: 1.75em;
 
       text-align: center;
 
@@ -227,13 +224,11 @@ $boxlist-padding:                       1em;
     }
 
     @include breakpoint($breakpoint-tablet) {
-      @include flex-basis(40%);
+      @include flex-basis(50%);
     }
 
     @include breakpoint($breakpoint-desk) {
       box-sizing: border-box;
-      margin-right: -1.5em;
-      margin-left: -1.5em;
       padding-right: 1.5em;
       padding-left: 1.5em;
 
