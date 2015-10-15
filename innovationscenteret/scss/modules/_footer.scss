@@ -29,8 +29,6 @@ $top-and-button-margin: 2em;
   &--mail {
     margin-bottom: $top-and-button-margin;
 
-    @include flex-shrink(0);
-
     a {
       color: white;
     }
@@ -53,6 +51,10 @@ $top-and-button-margin: 2em;
   @include breakpoint($breakpoint-tablet) {
     &--content {
       @include flex-flow(row nowrap);
+    }
+
+    &--mail {
+      @include flex-shrink(0);
     }
 
     &--social,
