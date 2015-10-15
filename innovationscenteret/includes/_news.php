@@ -2,7 +2,6 @@
 <article class="itk-boxlist-news--item">
   <header>
     <h2 class="itk-boxlist-news--header"><a href="nyhed.php">This is the news!</a></h2>
-    <p class="itk-boxlist--meta">2. okt 2015</p>
     <p>
       Sed haec quis possit intrepidus aestimare tellus. Curabitur blandit tempus ardua ridiculus sed magna. Morbi
       odio eros, volutpat ut pharetra vitae, lobortis sed nibh.
@@ -15,7 +14,6 @@
 <article class="itk-boxlist-news--item">
   <header>
     <h2 class="itk-boxlist-news--header"><a href="nyhed.php">This is the news!</a></h2>
-    <p class="itk-boxlist--meta">1. okt 2015</p>
     <p>
       Sed haec quis possit intrepidus aestimare tellus. Curabitur blandit tempus ardua ridiculus sed magna. Morbi
       odio eros, volutpat ut pharetra vitae, lobortis sed nibh.
@@ -27,7 +25,6 @@
 <article class="itk-boxlist-news--item">
   <header>
     <h2 class="itk-boxlist-news--header"><a href="nyhed.php">This is the news!</a></h2>
-    <p class="itk-boxlist--meta">1. okt 2015</p>
     <p>
       Sed haec quis possit intrepidus aestimare tellus. Curabitur blandit tempus ardua ridiculus sed magna. Morbi
       odio eros, volutpat ut pharetra vitae, lobortis sed nibh.
