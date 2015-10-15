@@ -27,12 +27,11 @@
     color: $white;
   }
 
-
-
   &.is-block {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    max-width: 95%;
 
     @include breakpoint($breakpoint-desk) {
       max-width: 50%;

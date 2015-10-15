@@ -61,12 +61,16 @@ body, html {
 
 main[role=main] {
   margin-right: auto;
-  margin-bottom: 8em;
+  margin-bottom: 12em;
   margin-left: auto;
   max-width: $breakpoint-desk;
 
+  @include breakpoint($breakpoint-tablet) {
+    margin-bottom: 9em;
+  }
+
   @include breakpoint($breakpoint-desk) {
-    margin-bottom: 6em;
+    margin-bottom: 5em;
     padding-bottom: 3em;
   }
 }
