@@ -8,11 +8,13 @@
   padding-right: 1em;
   padding-left: 1em;
 
+  @include word-wrap;
+
   &--header {
     margin-bottom: .5em;
 
     color: $gray-darker;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 300;
   }
 
