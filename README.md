@@ -1,6 +1,6 @@
 # Design
 
-This repository contains designs for aakb projects. Consider this documentation and source for the HTML and CSS (SASS) of a given project.
+This repository contains designs for aakb projects. Consider this documentation and source for the HTML and CSS of a given project.
 
 For now, all project designs should recide in a folder with the corresponding project name containing necessary files.
 
