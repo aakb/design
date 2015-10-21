@@ -122,10 +122,38 @@ $boxlist-padding:                       1em;
   }
 
   &--header-text {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 
     color: $gray-dark;
     text-align: center;
+  }
+
+  &--meta,
+  &--meta-wrapper {
+    @include flexbox;
+  }
+
+  &--meta {
+    margin-bottom: .75em;
+
+    @include flex-flow(row wrap);
+  }
+
+  &--meta-wrapper {
+    margin-bottom: .25em;
+
+    @include flex-basis(100%);
+    @include align-items(center);
+    @include align-content(center);
+  }
+
+  &--icon {
+    margin-top: .25em;
+    margin-right: .5em;
+
+    opacity: .5;
+
+    @include flex-basis(1em);
   }
 
   @include breakpoint($breakpoint-tablet) {
