@@ -15,9 +15,8 @@ $boxlist-padding:                       1em;
 
 .itk-boxlist,
 .itk-boxlist-column,
-.itk-boxlist-news {
-  margin-bottom: 1em;
-
+.itk-boxlist-news,
+.itk-boxlist-events {
   header {
     a {
       @include strip-link-styles($theme-color-secondary);
@@ -64,7 +63,8 @@ $boxlist-padding:                       1em;
 
 
 .itk-boxlist,
-.itk-boxlist-news {
+.itk-boxlist-news,
+.itk-boxlist-events {
   padding-right: 1em;
   padding-left: 1em;
 
@@ -106,16 +106,19 @@ $boxlist-padding:                       1em;
   }
 
   @include breakpoint($breakpoint-bigscreen) {
-      margin-right: -6em;
-      margin-left: -6em;
-      padding-right: 6em;
-      padding-bottom: 3em;
-      padding-left: 6em;
+    margin-right: -6em;
+    margin-left: -6em;
+    padding-right: 6em;
+    padding-bottom: 6em;
+    padding-left: 6em;
   }
 }
 
 
-.itk-boxlist-news {
+.itk-boxlist-news,
+.itk-boxlist-events {
+  padding-bottom: 4em;
+
   &--item {
     padding-right: $boxlist-padding;
     padding-left: $boxlist-padding;

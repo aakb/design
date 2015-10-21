@@ -8,7 +8,7 @@
 
 <main role="main" class="content">
   <h1 class="content--header">Events</h1>
-  <div class="itk-boxlist-news">
+  <div class="itk-boxlist-events">
     <?php include 'includes/_events.php'; ?>
     <?php include 'includes/_pager.php'; ?>
   </div>
