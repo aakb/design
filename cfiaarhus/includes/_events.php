@@ -4,8 +4,8 @@
     <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
     <div class="itk-boxlist-events--meta">
       <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
-        2. okt 2015
+        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/location.php'; ?></span>
+        Mødelokale 2
       </p>
       <p class="itk-boxlist-events--meta-wrapper">
         <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>
@@ -23,8 +23,8 @@
     <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
     <div class="itk-boxlist-events--meta">
       <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
-        1. okt 2015
+        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/location.php'; ?></span>
+        Mødelokale 1
       </p>
       <p class="itk-boxlist-events--meta-wrapper">
         <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>
@@ -41,8 +41,8 @@
     <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
     <div class="itk-boxlist-events--meta">
       <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
-        1. okt 2015
+        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/location.php'; ?></span>
+        Mødelokale 2
       </p>
       <p class="itk-boxlist-events--meta-wrapper">
         <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>

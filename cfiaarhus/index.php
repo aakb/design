@@ -47,7 +47,7 @@
   <h2 class="frontpage--header">Events</h2>
   <div class="itk-boxlist-events">
     <?php include 'includes/_events.php'; ?>
-    <a href="nyheder.php" class="button is-block">Alle events</a>
+    <a href="events.php" class="button is-block">Alle events</a>
   </div>
   <h2 class="frontpage--header">Nyheder</h2>
   <div class="itk-boxlist-news">

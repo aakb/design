@@ -2,7 +2,7 @@
   <!--page.html.twig START-->
 <body class="<?php echo $class; ?>">
   <div class="overlay js-menu-toggle"></div>
-  <a href="/innovationscenteret" class="logo js-logo" title="Center for Innovation i Aarhus"><img src="images/assets/logo.svg"></a>
+  <a href="/cfiaarhus" class="logo js-logo" title="Center for Innovation i Aarhus"><img src="images/assets/logo.svg"></a>
   <!--menu.html.twig START-->
   <nav class="nav js-nav">
     <div class="nav--links">
