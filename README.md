@@ -4,4 +4,4 @@ This repository contains designs for aakb projects. Consider this documentation 
 
 For now, all project designs should recide in a folder with the corresponding project name containing necessary files.
 
-Follow our [guidelines](https://github.com/aakb/guidelines) for committing to this repository.
+Follow the [guidelines](https://github.com/aakb/guidelines) when committing to this repository.
