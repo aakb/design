@@ -1,11 +1,10 @@
-<h3 class="itk-boxlist-events--header-text">Fredag den 2/10-2015</h3>
 <article class="itk-boxlist-events--item">
   <header>
     <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
     <div class="itk-boxlist-events--meta">
       <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/location.php'; ?></span>
-        Mødelokale 2
+        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
+        3. oktober 2015
       </p>
       <p class="itk-boxlist-events--meta-wrapper">
         <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>
@@ -17,14 +16,13 @@
   </header>
   <figure><a href="event.php"><img src="https://unsplash.it/499/500/?random"></a></figure>
 </article>
-<h3 class="itk-boxlist-events--header-text">Torsdag den 1/10-2015</h3>
 <article class="itk-boxlist-events--item">
   <header>
     <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
     <div class="itk-boxlist-events--meta">
       <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/location.php'; ?></span>
-        Mødelokale 1
+        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
+        2. oktober 2015
       </p>
       <p class="itk-boxlist-events--meta-wrapper">
         <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>
@@ -41,8 +39,8 @@
     <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
     <div class="itk-boxlist-events--meta">
       <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/location.php'; ?></span>
-        Mødelokale 2
+        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
+        1. oktober 2015
       </p>
       <p class="itk-boxlist-events--meta-wrapper">
         <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>
