@@ -92,6 +92,7 @@ $top-and-button-margin: 2em;
       order: 2;
 
       @include flex-basis(50%);
+      @include align-self(center);
     }
 
     &--social {
