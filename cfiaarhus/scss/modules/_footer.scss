@@ -28,6 +28,7 @@ $top-and-button-margin: 2em;
 
   &--mail {
     margin-bottom: $top-and-button-margin;
+    text-align: center;
 
     a {
       color: white;
@@ -48,24 +49,61 @@ $top-and-button-margin: 2em;
     margin-left: 1em;
   }
 
-  @include breakpoint($breakpoint-tablet) {
-    &--content {
-      @include flex-flow(row nowrap);
-    }
+  &--aarhus {
+    margin-top: $top-and-button-margin;
+    margin-bottom: $top-and-button-margin;
 
+    @include flexbox;
+    @include flex-basis(100%);
+    @include align-items(center);
+    @include justify-content(space-around);
+  }
+
+  &--logo {
+    width: 8em;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
     &--mail {
-      @include flex-shrink(0);
+      text-align: left;
+
+      @include flex-basis(75%);
     }
 
     &--social,
     &--icons {
-      @include flex-basis(50%);
+      @include flex-basis(25%);
     }
 
     &--social {
       @include flexbox;
       @include align-items(center);
       @include justify-content(flex-end);
+    }
+
+    &--aarhus {
+      @include flex(0, 0, 100%);
+    }
+  }
+
+  @include breakpoint($breakpoint-desk) {
+    &--mail {
+      text-align: center;
+      order: 2;
+
+      @include flex-basis(50%);
+    }
+
+    &--social {
+      order: 3;
+    }
+
+    &--aarhus {
+      order: 1;
+      margin-top: 0;
+
+      @include justify-content(flex-start);
+      @include flex-basis(25%);
     }
   }
 }
