@@ -17,7 +17,8 @@
 
 
 .itk-boxlist,
-.itk-boxlist-news {
+.itk-boxlist-news,
+.itk-boxlist-events {
   &--item {
     float: left;
     padding: 1em;
@@ -34,6 +35,12 @@
 
     figure {
       width: 20%;
+    }
+  }
+
+  &--icon {
+    img {
+      max-width: 1em;
     }
   }
 }

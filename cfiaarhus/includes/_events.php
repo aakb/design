@@ -1,13 +1,13 @@
-<article class="itk-boxlist-events--item">
+<article class="itk-boxlist-news--item">
   <header>
-    <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
-    <div class="itk-boxlist-events--meta">
-      <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
+    <h2 class="itk-boxlist-news--header"><a href="event.php">This is the event</a></h2>
+    <div class="itk-boxlist-news--meta">
+      <p class="itk-boxlist-news--meta-wrapper">
+        <span class="itk-boxlist-news--icon"><img src="includes/icons/calendar.svg"></span>
         3. oktober 2015
       </p>
-      <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>
+      <p class="itk-boxlist-news--meta-wrapper">
+        <span class="itk-boxlist-events--icon"><img src="includes/icons/clock.svg"></span>
         08:00 - 21:00
       </p>
     </div>
@@ -16,16 +16,16 @@
   </header>
   <figure><a href="event.php"><img src="https://unsplash.it/499/500/?random"></a></figure>
 </article>
-<article class="itk-boxlist-events--item">
+<article class="itk-boxlist-news--item">
   <header>
-    <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
-    <div class="itk-boxlist-events--meta">
-      <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
+    <h2 class="itk-boxlist-news--header"><a href="event.php">This is the event</a></h2>
+    <div class="itk-boxlist-news--meta">
+      <p class="itk-boxlist-news--meta-wrapper">
+        <span class="itk-boxlist-news--icon"><img src="includes/icons/calendar.svg"></span>
         2. oktober 2015
       </p>
-      <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>
+      <p class="itk-boxlist-news--meta-wrapper">
+        <span class="itk-boxlist-news--icon"><img src="includes/icons/clock.svg"></span>
         08:00 - 21:00
       </p>
     </div>
@@ -34,16 +34,16 @@
   </header>
   <figure><a href="event.php"><img src="https://unsplash.it/500/500/?random"></a></figure>
 </article>
-<article class="itk-boxlist-events--item">
+<article class="itk-boxlist-news--item">
   <header>
-    <h2 class="itk-boxlist-events--header"><a href="event.php">This is the event</a></h2>
-    <div class="itk-boxlist-events--meta">
-      <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/calendar.php'; ?></span>
+    <h2 class="itk-boxlist-news--header"><a href="event.php">This is the event</a></h2>
+    <div class="itk-boxlist-news--meta">
+      <p class="itk-boxlist-news--meta-wrapper">
+        <span class="itk-boxlist-news--icon"><img src="includes/icons/calendar.svg"></span>
         1. oktober 2015
       </p>
-      <p class="itk-boxlist-events--meta-wrapper">
-        <span class="itk-boxlist-events--icon"><?php include 'includes/icons/clock.php'; ?></span>
+      <p class="itk-boxlist-news--meta-wrapper">
+        <span class="itk-boxlist-news--icon"><img src="includes/icons/clock.svg"></span>
         08:00 - 21:00
       </p>
     </div>
