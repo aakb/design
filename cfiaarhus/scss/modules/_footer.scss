@@ -20,7 +20,6 @@ $top-and-button-margin: 2em;
     max-width: $breakpoint-desk;
     padding-top: $top-and-button-margin;
     padding-right: 1em;
-    padding-left: 1em;
 
     @include flexbox;
     @include flex-flow(row wrap);
@@ -50,7 +49,6 @@ $top-and-button-margin: 2em;
   }
 
   &--aarhus {
-    margin-top: $top-and-button-margin;
     margin-bottom: $top-and-button-margin;
 
     @include flexbox;
@@ -65,9 +63,10 @@ $top-and-button-margin: 2em;
 
   @include breakpoint($breakpoint-tablet) {
     &--mail {
+      order: 2;
       text-align: left;
 
-      @include flex-basis(75%);
+      @include flex-basis(50%);
     }
 
     &--social,
@@ -76,13 +75,15 @@ $top-and-button-margin: 2em;
     }
 
     &--social {
+        order: 3;
       @include flexbox;
       @include align-items(center);
       @include justify-content(flex-end);
     }
 
     &--aarhus {
-      @include flex(0, 0, 100%);
+        order: 1;
+        @include flex-basis(25%);
     }
   }
 

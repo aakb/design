@@ -4,6 +4,10 @@
  *
  */
 
+ body {
+   padding-bottom: 9em;
+ }
+
 .nav,
 .nav.is-sticky {
   &--links {
@@ -56,6 +60,7 @@
 
 
 .instagram-gallery {
+  margin-bottom: 7em;
   figure {
     float: left;
     margin-right: 2em;
@@ -84,6 +89,10 @@
   }
 
   &--icons {
+    float: left;
+  }
+  &--aarhus {
+    padding-right: 1em;
     float: left;
   }
 }
