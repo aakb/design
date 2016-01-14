@@ -85,10 +85,6 @@ body {
   font-size: 3vmin;
 }
 
-.template--group-item > :nth-child(1),
-.template--group-item > :nth-child(2) {
-}
-
 .template--group-item > :nth-child(1) {
   display: block;
   height: 100%;
@@ -111,6 +107,7 @@ body {
   width: 78%;
 
   color: rgba(255, 255, 255, .85);
+  line-height: 5vmin;
 }
 
 .template--group-item:nth-child(odd) {
