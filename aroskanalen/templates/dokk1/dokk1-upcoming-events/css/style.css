@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Gibson SemiBold';
+  src: url("/aroskanalen/assets/dokk1/fonts/Gibson-SemiBold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Gibson Regular';
+  src: url("/aroskanalen/assets/dokk1/fonts/Gibson-Regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Gibson Light';
+  src: url("/aroskanalen/assets/dokk1/fonts/Gibson-Light-webfont.woff") format("woff");
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
+  font: 1em/1.5 'Gibson Light', sans-serif;
+}
+
+.template {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 100%;
+  width: 100%;
+
+  background-image: url('../image.jpg');
+  background-repeat: no-repeat;
+  background-color: rgb(35, 85, 135);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.template--content {
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.template--header,
+.template--group-header {
+  padding-top: 4vmin;
+  padding-bottom: 4vmin;
+  padding-left: 4vmin;
+
+  font-family: 'Gibson SemiBold';
+}
+
+.template--header,
+.template--group-header,
+.template--group-item {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  letter-spacing: .15vmin;
+  line-height: 120%;
+}
+
+.template--header {
+  background-color: rgba(35, 85, 135, .85);
+  font-size: 5vmin;
+}
+
+.template--group-header {
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 3vmin;
+}
+
+.template--group-item {
+  display: flex;
+  flex-flow: column wrap;
+
+  height: 90px;
+  padding-top: 3vmin;
+  padding-bottom: 3vmin;
+  padding-left: 4vmin;
+
+  font-size: 3vmin;
+}
+
+.template--group-item > :nth-child(1) {
+  display: block;
+  height: 100%;
+  width: 22%;
+}
+
+.template--group-item  > :nth-child(2) {
+  display: block;
+  height: 50%;
+  width: 78%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.template--group-item > :nth-child(3) {
+  display: block;
+  height: 50%;
+  width: 78%;
+
+  color: rgba(255, 255, 255, .85);
+  line-height: 5vmin;
+}
+
+.template--group-item:nth-child(odd) {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.template--footer {
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+
+  height: 10vmin;
+
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 3vmin;
+  text-align: center;
+}
