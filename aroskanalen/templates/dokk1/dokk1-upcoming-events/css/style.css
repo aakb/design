@@ -26,6 +26,10 @@ body {
 .template {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   min-height: 100%;
   width: 100%;
 
@@ -34,6 +38,10 @@ body {
   background-color: rgb(35, 85, 135);
   background-blend-mode: multiply;
   background-size: cover;
+}
+
+.template--content {
+  background-color: rgba(255, 255, 255, .15);
 }
 
 .template--header,
@@ -61,14 +69,15 @@ body {
 }
 
 .template--group-header {
-  background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(0, 0, 0, .5);
   font-size: 3vmin;
 }
 
 .template--group-item {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 
+  height: 90px;
   padding-top: 3vmin;
   padding-bottom: 3vmin;
   padding-left: 4vmin;
@@ -78,34 +87,46 @@ body {
 
 .template--group-item > :nth-child(1),
 .template--group-item > :nth-child(2) {
-  padding-bottom: 1vmin;
 }
 
 .template--group-item > :nth-child(1) {
-  flex-basis: 22%;
+  display: block;
+  height: 100%;
+  width: 22%;
 }
 
 .template--group-item  > :nth-child(2) {
-  flex-basis: 78%;
+  display: block;
+  height: 50%;
+  width: 78%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .template--group-item > :nth-child(3) {
-  flex-basis: 100%;
+  display: block;
+  height: 50%;
+  width: 78%;
 
+  color: rgba(255, 255, 255, .85);
 }
 
-.template--group-item.is-odd {
-  background-color: rgba(255, 255, 255, .15);
-}
-
-.template--group-item.is-even {
+.template--group-item:nth-child(odd) {
   background-color: rgba(255, 255, 255, .2);
 }
 
 .template--footer {
   display: flex;
   align-content: flex-end;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
 
+  height: 10vmin;
+
+  background-color: rgba(0, 0, 0, .5);
   font-size: 3vmin;
   text-align: center;
 }
