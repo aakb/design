@@ -102,12 +102,12 @@ body {
 }
 
 .template--group-item > :nth-child(3) {
-  color: rgba(255, 255, 255, .85);
+  color: rgba(255, 255, 255, .5);
   line-height: 5vmin;
 }
 
 .template--group-item:nth-child(odd) {
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, .05);
 }
 
 .template--footer {
@@ -183,16 +183,12 @@ body {
     line-height: 2.5vmin;
   }
 
-  .template--group:nth-child(odd) .template--group-item:nth-child(odd) {
-    background-color: rgba(255, 255, 255, .2);
-  }
-
   .template--group:nth-child(even) .template--group-item:nth-child(odd) {
     background-color: transparent;
   }
 
   .template--group:nth-child(even) .template--group-item:nth-child(even) {
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .05);
   }
 
   .template--footer {
