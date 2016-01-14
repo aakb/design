@@ -141,6 +141,10 @@ body {
     border-right: 1px solid rgba(0, 0, 0, .75);
   }
 
+  .template--group-header {
+    background-color: rgba(0, 0, 0, .5);
+  }
+
   .template--header,
   .template--group-header {
     padding-top: 2vmin;
