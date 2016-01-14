@@ -34,13 +34,12 @@ body {
   width: 100%;
 
   background-repeat: no-repeat;
-  background-color: rgb(35, 85, 135);
+  background-color: rgb(0, 55, 100);
   background-blend-mode: multiply;
   background-size: cover;
 }
 
 .template--content {
-  background-color: rgba(255, 255, 255, .15);
 }
 
 .template--header,
@@ -63,12 +62,12 @@ body {
 }
 
 .template--header {
-  background-color: rgba(35, 85, 135, .85);
+  background-color: rgba(0, 0, 0, .5);
   font-size: 5vmin;
 }
 
 .template--group-header {
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .25);
   font-size: 3vmin;
 }
 
@@ -92,7 +91,7 @@ body {
 .template--group-item  > :nth-child(2),
 .template--group-item  > :nth-child(3) {
   height: 50%;
-  width: 78%;
+  width: 70%;
 }
 
 .template--group-item  > :nth-child(2) {
@@ -102,12 +101,12 @@ body {
 }
 
 .template--group-item > :nth-child(3) {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, .75);
   line-height: 5vmin;
 }
 
 .template--group-item:nth-child(odd) {
-  background-color: rgba(255, 255, 255, .05);
+  background-color: rgba(255, 255, 255, .025);
 }
 
 .template--footer {
@@ -139,10 +138,6 @@ body {
     width: 0; /* Make sure they have equal width */
 
     border-right: 1px solid rgba(0, 0, 0, .75);
-  }
-
-  .template--group-header {
-    background-color: rgba(0, 0, 0, .5);
   }
 
   .template--header,
