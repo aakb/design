@@ -33,7 +33,6 @@ body {
   min-height: 100%;
   width: 100%;
 
-  background-image: url('../image.jpg');
   background-repeat: no-repeat;
   background-color: rgb(35, 85, 135);
   background-blend-mode: multiply;
@@ -69,7 +68,7 @@ body {
 }
 
 .template--group-header {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .3);
   font-size: 3vmin;
 }
 
@@ -77,7 +76,7 @@ body {
   display: flex;
   flex-flow: column wrap;
 
-  height: 90px;
+  height: 90px; /* fixed height for making child elements using % height, if you have a better solution do it! :) */
   padding-top: 3vmin;
   padding-bottom: 3vmin;
   padding-left: 4vmin;
@@ -86,26 +85,23 @@ body {
 }
 
 .template--group-item > :nth-child(1) {
-  display: block;
   height: 100%;
   width: 22%;
 }
 
-.template--group-item  > :nth-child(2) {
-  display: block;
+.template--group-item  > :nth-child(2),
+.template--group-item  > :nth-child(3) {
   height: 50%;
   width: 78%;
+}
 
+.template--group-item  > :nth-child(2) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .template--group-item > :nth-child(3) {
-  display: block;
-  height: 50%;
-  width: 78%;
-
   color: rgba(255, 255, 255, .85);
   line-height: 5vmin;
 }
@@ -126,4 +122,78 @@ body {
   background-color: rgba(0, 0, 0, .5);
   font-size: 3vmin;
   text-align: center;
+}
+
+@media all and (min-width: 1081px) {
+  .template--content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .template--group {
+    align-self: stretch;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 0; /* Make sure they have equal width */
+
+    border-right: 1px solid rgba(0, 0, 0, .75);
+  }
+
+  .template--header,
+  .template--group-header {
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    padding-left: 2vmin;
+  }
+
+  .template--header {
+    font-size: 2.5vmin;
+  }
+
+  .template--group-header {
+    font-size: 1.5vmin;
+  }
+
+  .template--group-item {
+    height: 80px; /* fixed height for making child elements using % height, if you have a better solution do it! :) */
+    padding-top: 1.5vmin;
+    padding-bottom: .2vmin;
+    padding-left: 2vmin;
+
+    font-size: 1.5vmin;
+  }
+
+  .template--group-item > :nth-child(1) {
+    width: 20%;
+  }
+
+  .template--group-item  > :nth-child(2),
+  .template--group-item  > :nth-child(3) {
+    height: 50%;
+    width: 75%;
+  }
+
+  .template--group-item > :nth-child(3) {
+    line-height: 2.5vmin;
+  }
+
+  .template--group:nth-child(odd) .template--group-item:nth-child(odd) {
+    background-color: rgba(255, 255, 255, .2);
+  }
+
+  .template--group:nth-child(even) .template--group-item:nth-child(odd) {
+    background-color: transparent;
+  }
+
+  .template--group:nth-child(even) .template--group-item:nth-child(even) {
+    background-color: rgba(255, 255, 255, .2);
+  }
+
+  .template--footer {
+    max-height: 10vmin;
+
+    font-size: 1.5vmin;
+  }
 }
