@@ -39,9 +39,6 @@ body {
   background-size: cover;
 }
 
-.template--content {
-}
-
 .template--header,
 .template--group-header {
   padding-top: 4vmin;
@@ -63,7 +60,11 @@ body {
 
 .template--header {
   background-color: rgba(0, 0, 0, .5);
-  font-size: 5vmin;
+  font-size: 7vmin;
+}
+
+.template--content {
+  flex-grow: 1;
 }
 
 .template--group-header {
@@ -113,7 +114,6 @@ body {
   display: flex;
   align-content: flex-end;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: center;
 
   height: 10vmin;
@@ -126,8 +126,6 @@ body {
 @media all and (min-width: 1081px) {
   .template--content {
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
   }
 
   .template--group {
