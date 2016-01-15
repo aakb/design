@@ -1,0 +1,118 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
+  font: 1em/1.5 Helvetica Neue, Arial, sans-serif;
+}
+
+.template {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-color: rgb(0, 55, 100);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.template--header,
+.template--group-header,
+.template--group-item {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  letter-spacing: .15vmin;
+  line-height: 120%;
+}
+
+.template--header {
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 7vmin;
+}
+
+.template--group-header {
+  background-color: rgba(0, 0, 0, .25);
+  font-size: 3vmin;
+}
+
+.template--group-item {
+  padding-top: 3vmin;
+  padding-bottom: 3vmin;
+
+  font-size: 3vmin;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+@media all and (min-width: 1081px) {
+  .template--content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .template--group {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .template--group:nth-child(1) {
+    flex-grow: 0;
+  }
+
+  .template--header,
+  .template--group-header,
+  .template--group-item {
+    padding: 2vmin;
+
+    text-align: center;
+  }
+
+  .template--group-header,
+  .template--group-item {
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    width: 0; /* Make sure items are equal width */
+
+    text-align: center;
+  }
+
+  .template--header {
+    font-size: 2.5vmin;
+  }
+
+  .template--group-header {
+    font-size: 1.5vmin;
+  }
+
+  .template--group-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5vmin;
+  }
+
+  .template--group-item > :nth-child(3) {
+    line-height: 1vmin;
+  }
+
+  .template--group:nth-child(even) .template--group-item:nth-child(odd) {
+    background-color: transparent;
+  }
+
+  .template--group:nth-child(even) .template--group-item:nth-child(even) {
+    background-color: rgba(255, 255, 255, .05);
+  }
+}
