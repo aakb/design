@@ -18,7 +18,7 @@ body {
   width: 100%;
 
   background-repeat: no-repeat;
-  background-color: rgb(0, 55, 100);
+  background-color: dimgray;
   background-blend-mode: multiply;
   background-size: cover;
 }
@@ -39,16 +39,16 @@ body {
 }
 
 .template--group-header {
+  padding: 2vmin;
+
   background-color: rgba(0, 0, 0, .25);
   font-size: 3vmin;
 }
 
 .template--group-item {
-  padding-top: 3vmin;
-  padding-bottom: 3vmin;
-
   font-size: 3vmin;
   overflow: hidden;
+  outline: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -64,6 +64,11 @@ body {
   .template--group {
     display: flex;
     flex-grow: 1;
+
+  }
+
+  .template--group:nth-child(odd) {
+    background-color: rgba(255, 255, 255, .05);
   }
 
   .template--group:nth-child(1) {
@@ -73,8 +78,6 @@ body {
   .template--header,
   .template--group-header,
   .template--group-item {
-    padding: 2vmin;
-
     text-align: center;
   }
 
@@ -104,15 +107,7 @@ body {
     font-size: 1.5vmin;
   }
 
-  .template--group-item > :nth-child(3) {
-    line-height: 1vmin;
-  }
-
-  .template--group:nth-child(even) .template--group-item:nth-child(odd) {
-    background-color: transparent;
-  }
-
-  .template--group:nth-child(even) .template--group-item:nth-child(even) {
-    background-color: rgba(255, 255, 255, .05);
+  .template--group-item:nth-child(1) {
+    background-color: rgba(0, 0, 0, .1);
   }
 }
