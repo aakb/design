@@ -1,0 +1,98 @@
+/**
+ *
+ * IE 9 styles
+ *
+ */
+
+ body {
+   padding-bottom: 9em;
+ }
+
+.nav,
+.nav.is-sticky {
+  &--links {
+    display: block;
+  }
+
+  &--link {
+    display: inline-block;
+  }
+}
+
+
+.itk-boxlist,
+.itk-boxlist-news,
+.itk-boxlist-events {
+  &--item {
+    float: left;
+    padding: 1em;
+    width: 100%;
+
+    header,
+    figure {
+      float: left;
+    }
+
+    header {
+      width: 75%;
+    }
+
+    figure {
+      width: 20%;
+    }
+  }
+
+  &--icon {
+    img {
+      max-width: 1em;
+      padding-bottom: .25em;
+    }
+  }
+}
+
+
+.itk-boxlist-column {
+  &--item {
+    float: left;
+    width: 33%;
+  }
+}
+
+
+.instagram-gallery {
+  margin-bottom: 7em;
+  figure {
+    float: left;
+    margin-right: 2em;
+    width: 33%;
+  }
+}
+
+.button,
+.button:link,
+.button:visited {
+  display: inline-block;
+
+  &.is-block {
+    display: inline-block;
+  }
+}
+
+
+.footer {
+  &--mail {
+    float: left;
+  }
+
+  &--social {
+    float: right;
+  }
+
+  &--icons {
+    float: left;
+  }
+  &--aarhus {
+    padding-right: 1em;
+    float: left;
+  }
+}

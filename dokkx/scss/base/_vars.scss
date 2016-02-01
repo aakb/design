@@ -1,0 +1,56 @@
+/**
+ *
+ * Variables
+ *
+ */
+
+
+/* Breakpoints
+   ================================================================================================================== */
+
+
+$breakpoint-lap:              481px;
+$breakpoint-tablet:           720px;
+$breakpoint-desk:             1024px;
+$breakpoint-bigscreen:        1500px;
+
+
+/* Layout
+   ================================================================================================================== */
+
+
+
+/* Elements
+   ================================================================================================================== */
+
+$nav-height:  80px;
+
+
+/* Colors
+   ================================================================================================================== */
+
+$theme-color:             #ffde06;
+$theme-color-secondary:   #009b92;
+
+$black:            #000;
+$white:            #fff;
+
+$gray-lightest:    lighten($black, 95%);
+$gray-lighter:     lighten($black, 90%);
+$gray-light:       lighten($black, 70%);
+$gray:             lighten($black, 60%);
+$gray-dark:        lighten($black, 50%);
+$gray-darker:      lighten($black, 40%);
+$gray-darkest:     lighten($black, 12%);
+
+$link-color:       $theme-color-secondary;
+$link-color-hover: darken($link-color, 15%);
+
+
+/* Typography
+   ================================================================================================================== */
+
+$font-family:      "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:             1em/1.5 $font-family;
+
+

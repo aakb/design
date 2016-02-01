@@ -1,0 +1,271 @@
+/**
+ *
+ * ITK box list
+ *
+ * A component for content boxes
+ *
+ */
+
+
+/* Variables
+   ========================================================================== */
+
+$boxlist-padding:                       1em;
+
+
+.itk-boxlist,
+.itk-boxlist-column,
+.itk-boxlist-news,
+.itk-boxlist-events {
+  header {
+    a {
+      @include strip-link-styles($theme-color-secondary);
+    }
+  }
+
+  &--header {
+    margin-bottom: .5em;
+  }
+
+  &--link,
+  &--link:link,
+  &--link:visited {
+    order: 4;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 75%;
+    padding: .5em 1em;
+
+    background-color: transparent;
+    border: 1px solid $link-color;
+    border-radius: 5em;
+    color: $link-color;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+
+    box-sizing: border-box;
+    transition: background-color .5s, border .5s, color .5s;
+
+    &:hover {
+      background-color: $link-color;
+      border: 1px solid $link-color;
+      color: $white;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      max-width: 100%;
+    }
+  }
+}
+
+
+.itk-boxlist,
+.itk-boxlist-news,
+.itk-boxlist-events {
+  padding-right: 1em;
+  padding-left: 1em;
+
+  &--item {
+    @include flexbox;
+    @include flex-flow(row nowrap);
+
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-lighter;
+    }
+  }
+
+  header {
+    order: 2;
+  }
+
+  @include breakpoint($breakpoint-lap) {
+    header {
+      padding-top: 0;
+      padding-right: $boxlist-padding;
+      padding-bottom: $boxlist-padding;
+      padding-left: $boxlist-padding;
+
+      @include flex-grow(1);
+      @include flex-shrink(1);
+    }
+  }
+
+  figure {
+    margin-right: 1em;
+
+    order: 1;
+
+    @include flex-basis(6em);
+    @include flex-shrink(0);
+  }
+
+  @include breakpoint($breakpoint-bigscreen) {
+    margin-right: -6em;
+    margin-left: -6em;
+    padding-right: 6em;
+    padding-bottom: 6em;
+    padding-left: 6em;
+  }
+}
+
+
+.itk-boxlist-news,
+.itk-boxlist-events {
+  padding-bottom: 5em;
+
+  &--item {
+    padding-right: $boxlist-padding;
+    padding-left: $boxlist-padding;
+  }
+
+  &--header-text {
+    margin-bottom: 1.5em;
+
+    color: $gray-dark;
+    text-align: center;
+  }
+
+  &--meta,
+  &--meta-wrapper {
+    @include flexbox;
+  }
+
+  &--meta {
+    margin-bottom: .75em;
+
+    @include flex-flow(row wrap);
+  }
+
+  &--meta-wrapper {
+    margin-bottom: .25em;
+
+    @include flex-basis(100%);
+    @include align-items(center);
+    @include align-content(center);
+  }
+
+  &--icon {
+    margin-top: .25em;
+    padding-bottom: .75em;
+    margin-right: .5em;
+
+    opacity: .5;
+
+    @include flex-basis(1em);
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    &--item {
+      border: 1px solid $gray-lighter;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+
+    header {
+      padding-top: 1.5em;
+      padding-left: 0;
+    }
+
+    figure {
+      display: block;
+      margin-right: 1.5em;
+      margin-left: 0;
+
+      @include flex-basis(14em);
+    }
+  }
+}
+
+
+.itk-boxlist-column {
+  @include flexbox;
+  @include flex-flow(row wrap);
+  @include justify-content(center);
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-bottom: 4em;
+  }
+
+  @include breakpoint($breakpoint-desk) {
+    margin-right: -1.5em;
+    margin-left: -1.5em;
+  }
+
+  &--item {
+    margin-bottom: 4em;
+    padding-top: $boxlist-padding;
+    padding-right: $boxlist-padding;
+    padding-bottom: $boxlist-padding;
+    padding-left: $boxlist-padding;
+
+    @include flexbox;
+    @include flex-flow(column);
+    @include flex-basis(40%);
+
+    header {
+      order: 1;
+
+      font-size: .75em;
+      text-align: center;
+    }
+
+    figure {
+      display: block;
+      margin-top: 1.25em;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 1em;
+      max-width: 5em;
+
+      order: 2;
+    }
+
+    p {
+      min-height: 3em;
+      margin-bottom: 1.75em;
+
+      text-align: center;
+
+      order: 3;
+    }
+
+    @include breakpoint($breakpoint-lap) {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      header {
+        text-align: center;
+        text-transform: uppercase;
+
+        h2 {
+          margin-bottom: 0;
+
+          font-weight: 300;
+        }
+      }
+
+      figure {
+        max-width: 6em;
+      }
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      @include flex-basis(45%);
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      box-sizing: border-box;
+      padding-right: 1.5em;
+      padding-left: 1.5em;
+
+      @include flex-basis(33%);
+    }
+  }
+}

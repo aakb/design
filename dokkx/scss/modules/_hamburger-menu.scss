@@ -1,0 +1,71 @@
+/**
+ *
+ * Hamburger menu
+ *
+ */
+
+
+$hamburger-menu-animation-duration: 0.3s;
+
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: -30em;
+  bottom: 0;
+  margin-right: 0;
+  max-width: 90%;
+  width: 30em;
+  z-index: 98;
+  overflow: hidden;
+
+  background-color: $theme-color-secondary;
+
+  transition: right $hamburger-menu-animation-duration;
+  transition-timing-function: ease-in-out;
+
+  &.is-open {
+    right: 0;
+  }
+
+  &--inner {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  &--links {
+    padding-top: 5em;
+    padding-right: 2em;
+    padding-left: 2em;
+
+    a {
+      @include strip-link-styles(#fff, none);
+
+      &.is-active,
+      &:hover {
+        color: $link-color-hover;
+      }
+
+      &.is-sub {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  // Drupal uses same template for menus so they both get the nav--link class
+  .nav--link {
+    display: list-item;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    border-bottom: 1px solid transparentize(#fff, .5);
+    color: white;
+    font-size: 1.2em;
+    list-style: none;
+    text-decoration: none;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}

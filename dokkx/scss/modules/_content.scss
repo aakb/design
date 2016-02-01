@@ -1,0 +1,64 @@
+/**
+ *
+ * Content.
+ *
+ */
+
+.content {
+  padding-right: 1em;
+  padding-left: 1em;
+
+  @include word-wrap;
+
+  &--header {
+    margin-top: .5em;
+    margin-left: -.075em; // Compensate for font whitespace
+
+    color: $gray-darker;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+
+  &--meta {
+    margin-top: -.5em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+
+    border-bottom: 1px solid $gray-lighter;
+    font-weight: 300;
+  }
+
+  &--image-wrapper {
+    margin-top: -2.5em;
+    margin-right: -6em;
+    margin-bottom: 2.5em;
+    margin-left: -6em;
+  }
+
+  &--text {
+    border-bottom: 1px solid $gray-lighter;
+
+    margin-right: -6em;
+    margin-bottom: 3em;
+    margin-left: -6em;
+    padding-right: 6em;
+    padding-bottom: 3em;
+    padding-left: 6em;
+  }
+
+  @include breakpoint($breakpoint-desk) {
+    &--header {
+      font-size: 4em;
+    }
+
+    &--image-wrapper {
+      margin-top: -3.25em;
+    }
+  }
+
+  @include breakpoint($breakpoint-bigscreen) {
+    &--image-wrapper {
+      margin-top: 0;
+    }
+  }
+}

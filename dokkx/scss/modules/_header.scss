@@ -1,0 +1,160 @@
+/**
+ *
+ * Header.
+ *
+ */
+
+
+.header {
+  position: relative;
+
+  margin-bottom: 1em;
+  width: 100%;
+
+  background: url('../images/header-background.jpg');
+  background-size: cover;
+  color: #fff;
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-bottom: 4em;
+  }
+
+  // Header inner
+  &--inner {
+    box-sizing: border-box;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5.75em;
+    padding-right: 1em;
+    padding-bottom: 1.75em;
+    padding-left: 1em;
+
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+
+    @include breakpoint($breakpoint-tablet) {
+      padding-right: 8em;
+      padding-bottom: 4em;
+      padding-left: 8em;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      max-width: $breakpoint-desk;
+      padding-top: 12em;
+      padding-right: 1.8em;
+      padding-bottom: 6em;
+      padding-left: 1.8em;
+    }
+  }
+
+  // Big header
+  &--big {
+    margin-bottom: .5em;
+
+    font-size: 1.75em;
+    font-weight: 600;
+
+    @include breakpoint($breakpoint-desk) {
+      font-size: 2.5em;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      font-size: 3.5em;
+    }
+  }
+
+  // Lead, sub
+  &--lead,
+  &--sub {
+    a {
+      &:link,
+      &:visited,
+      &:active {
+        color: $theme-color;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: $theme-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Lead
+  &--lead {
+    margin-bottom: 1em;
+
+    font-size: 1.25em;
+    font-weight: 600;
+
+    @include breakpoint($breakpoint-desk) {
+      font-size: 1.5em;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      font-size: 1.75em;
+    }
+  }
+
+  // Sub header
+  &--sub {
+    margin-bottom: 2em;
+
+    font-weight: 300;
+
+    @include breakpoint($breakpoint-desk) {
+      font-size: 1.25em;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      font-size: 1.5em;
+    }
+  }
+
+  // Link button
+  &--button {
+    &-wrapper {
+      text-align: center;
+    }
+
+    &-link {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 10em;
+      margin-right: 1em;
+      margin-left: 1em;
+      padding-top: .5em;
+      padding-bottom: .5em;
+
+      background-color: transparent;
+      border: 2px solid $theme-color;
+      color: $theme-color;
+      border-radius: 30px;
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
+
+      transition: background-color .5s, border .5s, color .5s;
+
+      &:link,
+      &:visited,
+      &:active {
+        color: $theme-color;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: $theme-color;
+        border: 2px solid $theme-color;
+        color: darken($theme-color, 35%);
+      }
+
+      @include breakpoint($breakpoint-desk) {
+        font-size: 1.5em;
+      }
+    }
+  }
+}

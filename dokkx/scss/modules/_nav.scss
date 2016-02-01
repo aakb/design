@@ -1,0 +1,156 @@
+/**
+ *
+ * Navigation.
+ *
+ */
+
+
+.is-frontpage {
+  .nav {
+    top: 6.5em;
+    right: 0;
+
+    background-color: transparent;
+  }
+}
+
+.nav,
+.nav.is-sticky {
+  top: 0;
+  position: absolute;
+  z-index: 89;
+
+  height: 5.5em;
+  width: 100%;
+
+  background-color: transparentize($black, .25);
+
+  transition: top .35s, right .35s, padding .35s;
+
+  @include breakpoint($breakpoint-desk) {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: auto;
+  }
+
+  &--links {
+    display: none; // Hiding navigation on smaller screens
+
+    @include breakpoint($breakpoint-desk) {
+      margin-right: 6em;
+
+      font-weight: 300;
+      text-align: right;
+
+      @include flexbox;
+      @include justify-content(flex-end);
+
+      a {
+        @include strip-link-styles(#fff, none);
+      }
+    }
+  }
+
+  // Drupal's markup dictates that .nav--link has to be inside .nav
+  .nav--link {
+    @include breakpoint($breakpoint-desk) {
+      margin-top: .75em;
+      margin-bottom: .75em;
+      padding-top: .5em;
+      padding-right: 1.2em;
+      padding-bottom: .5em;
+      padding-left: 1.2em;
+
+      border-radius: 5em;
+      color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+
+      transition: border 1s, background-color .25s;
+
+      &.is-active,
+      &:hover {
+        background-color: transparentize($black, .75);
+
+        @include strip-link-styles($theme-color, none);
+      }
+    }
+  }
+}
+
+
+.nav-toggle {
+  position: absolute;
+  top: 1.6em;
+  right: 1em;
+  z-index: 99;
+
+  height: 36px;
+  width: 40px;
+
+  transform: rotate(0deg);
+  transition: transform .5s ease-in-out;
+  cursor: pointer;
+
+  @include breakpoint($breakpoint-desk) {
+    top: 1.2em;
+  }
+
+  @include breakpoint($breakpoint-desk) {
+    position: fixed;
+  }
+}
+
+.nav-toggle span {
+  position: absolute;
+  left: 0;
+
+  display: block;
+  height: 5px;
+  width: 100%;
+
+  background: $white;
+  opacity: 1;
+
+
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.nav-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-toggle span:nth-child(2),
+.nav-toggle span:nth-child(3) {
+  top: 15px;
+}
+
+.nav-toggle span:nth-child(4) {
+  top: 30px;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  top: 15px;
+  left: 50%;
+
+  width: 0%;
+}
+
+.nav-toggle.open span:nth-child(2) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.nav-toggle.open span:nth-child(4) {
+  top: 15px;
+  width: 0%;
+  left: 50%;
+}
