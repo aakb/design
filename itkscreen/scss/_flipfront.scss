@@ -1,6 +1,15 @@
 
 
 .front{
-  outline: 1;
+
+  background-color: black;
+  .staff-name-title {
+    a:link, a:visited {  
+    color: white;
+    text-decoration: none;
+}
+    color: white;
+
+  }
 
 }
