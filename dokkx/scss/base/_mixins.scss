@@ -5,7 +5,7 @@
  */
 
 
-/* Strip all link styles default color of links to inherit.
+/* Strip all link styles default color of links to inherit
 ================================================================================================================== */
 
 @mixin strip-link-styles($color:inherit, $decoration: none) {

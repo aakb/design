@@ -9,13 +9,18 @@
   position: relative;
 
   margin-bottom: 1em;
+  padding-bottom: 2em;
   width: 100%;
 
   background: url('../images/header-background.jpg');
   background-size: cover;
   color: #fff;
 
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+
   @include breakpoint($breakpoint-tablet) {
+    padding-bottom: 1em;
     margin-bottom: 4em;
   }
 
@@ -53,7 +58,7 @@
   &--big {
     margin-bottom: .5em;
 
-    font-size: 1.75em;
+    font-size: 1.65em;
     font-weight: 600;
 
     @include breakpoint($breakpoint-desk) {
@@ -87,7 +92,7 @@
   &--lead {
     margin-bottom: 1em;
 
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-weight: 600;
 
     @include breakpoint($breakpoint-desk) {
@@ -123,11 +128,12 @@
     &-link {
       box-sizing: border-box;
       display: inline-block;
-      width: 10em;
       margin-right: 1em;
       margin-left: 1em;
       padding-top: .5em;
+      padding-right: 1.5em;
       padding-bottom: .5em;
+      padding-left: 1.5em;
 
       background-color: transparent;
       border: 2px solid $theme-color;

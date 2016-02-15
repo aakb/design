@@ -6,10 +6,9 @@
   <!--menu.html.twig START-->
   <nav class="nav js-nav">
     <div class="nav--links">
-      <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="ydelser.php">Ydelser</a>
-      <a class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>" href="om-os.php">Om os</a>
-      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="nyheder.php">Nyheder</a>
-      <a class="nav--link<?php echo $is_active === 3 ? ' is-active' : '' ?>" href="events.php">Events</a>
+      <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="aktivitet.php">Aktivitet</a>
+      <a class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>" href="besoeg-dokkx.php">Besøg DokkX</a>
+      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="dokkx.php">DokkX</a>
       <a class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>" href="kontakt.php">Kontakt</a>
       <a class="nav--link<?php echo $is_active === 5 ? ' is-active' : '' ?>" href="designguide.php">Design guide</a>
     </div>

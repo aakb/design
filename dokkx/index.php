@@ -7,15 +7,15 @@
 <!--region.html.twig START-->
 <div class="header" role="banner" id="home">
   <div class="header--inner">
-    <h1 class="header--big">Fælles mødested og værksted for innovation i Aarhus Kommune</h1>
+    <h1 class="header--big">Velfærdsteknologi i Aarhus Kommune</h1>
     <p class="header--lead">
       Vi indgår som projektpartner med kompetencer inden for design, antropologi og procesfacilitering.
     </p>
     <p class="header--sub">
-      Lær os at kende og læs mere om, hvordan du kan bruge os i dit arbejde her.
+      Kom og besøg i vores lokaler på niveau 2 på Dokk1.
     </p>
     <div class="header--button-wrapper">
-      <a href="ydelser.php" class="header--button-link">Ydelser</a>
+      <a href="aabningstider.php" class="header--button-link">Se vores åbningstider</a>
     </div>
   </div>
 </div>

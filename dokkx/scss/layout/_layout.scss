@@ -12,18 +12,13 @@ body, html {
 &.is-frontpage {
   .logo {
     @include breakpoint($breakpoint-desk) {
-      top: 5em;
-      left: 2em;
-
-      height: 3.5em;
-      width: 8em;
     }
 
     @include breakpoint($breakpoint-bigscreen) {
-      left: 8em;
+      top: 2.75em;
 
-      height: 13.5em;
-      width: 10em;
+      height: 5.5em;
+      width: 18em;
     }
   }
 }
@@ -36,17 +31,16 @@ body, html {
   z-index: 90;
 
   display: block;
-  height: 2.6em;
-  width: 6em;
+  height: 2.4em;
+  width: 10em;
   overflow: hidden;
 
   @include breakpoint($breakpoint-desk) {
     position: fixed;
-    top: 1.3em;
-    left: 1em;
+    top: 1.4em;
+    left: 2em;
 
-    height: 2.2em;
-    width: 5em;
+    width: 12 em;
 
     transition: all .35s;
   }
