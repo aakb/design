@@ -50,10 +50,6 @@
     &--header {
       font-size: 4em;
     }
-
-    &--image-wrapper {
-      margin-top: -3.25em;
-    }
   }
 
   @include breakpoint($breakpoint-bigscreen) {

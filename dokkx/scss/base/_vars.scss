@@ -29,8 +29,8 @@ $nav-height:  80px;
 /* Colors
    ================================================================================================================== */
 
-$theme-color:             #ffed00;
-$theme-color-secondary:   #009b92;
+$theme-color:             #009fe3;
+$theme-color-secondary:   #e30613;
 
 $black:            #000;
 $white:            #fff;
@@ -43,8 +43,8 @@ $gray-dark:        lighten($black, 50%);
 $gray-darker:      lighten($black, 40%);
 $gray-darkest:     lighten($black, 12%);
 
-$link-color:       $theme-color-secondary;
-$link-color-hover: darken($link-color, 15%);
+$link-color:       $theme-color;
+$link-color-hover: darken($link-color, 25%);
 
 
 /* Typography

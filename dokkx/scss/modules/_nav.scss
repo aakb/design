@@ -24,7 +24,7 @@
   position: absolute;
   z-index: 89;
 
-  height: 5.5em;
+  height: 5em;
   width: 100%;
 
   background-color: transparentize($black, .25);
@@ -35,8 +35,6 @@
     position: fixed;
     top: 0;
     right: 0;
-
-    height: auto;
   }
 
   &--links {
@@ -62,7 +60,7 @@
     @include breakpoint($breakpoint-desk) {
       margin-top: .75em;
       margin-bottom: .75em;
-      padding-top: .5em;
+      padding-top: .7em;
       padding-right: 1.2em;
       padding-bottom: .5em;
       padding-left: 1.2em;
@@ -87,8 +85,8 @@
 
 .nav-toggle {
   position: absolute;
-  top: 1.25em;
-  right: 1em;
+  top: 1.4em;
+  right: 2em;
   z-index: 99;
 
   height: 36px;
@@ -99,7 +97,6 @@
   cursor: pointer;
 
   @include breakpoint($breakpoint-desk) {
-    top: 1.2em;
   }
 
   @include breakpoint($breakpoint-desk) {

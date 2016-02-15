@@ -19,7 +19,7 @@ $boxlist-padding:                       1em;
 .itk-boxlist-events {
   header {
     a {
-      @include strip-link-styles($theme-color-secondary);
+      @include strip-link-styles($link-color);
     }
   }
 

@@ -135,9 +135,9 @@
       padding-bottom: .5em;
       padding-left: 1.5em;
 
-      background-color: transparent;
+      background-color: $theme-color;
       border: 2px solid $theme-color;
-      color: $theme-color;
+      color: $white;
       border-radius: 30px;
       font-weight: 400;
       text-align: center;
@@ -148,14 +148,14 @@
       &:link,
       &:visited,
       &:active {
-        color: $theme-color;
+        color: $white;
         text-decoration: none;
       }
 
       &:hover {
-        background-color: $theme-color;
-        border: 2px solid $theme-color;
-        color: darken($theme-color, 35%);
+        background-color: transparent;
+        border: 2px solid $white;
+        color: $white;
       }
 
       @include breakpoint($breakpoint-desk) {

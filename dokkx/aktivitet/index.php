@@ -1,9 +1,9 @@
 <?php
   $class = 'is-page';
-  $is_active = 0;
+  $is_active = 1;
 
-  include '_header.php';
-  include '_menus.php';
+include '../_header.php';
+include '../_menus.php';
 ?>
 
 <main role="main" class="content">

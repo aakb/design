@@ -9,47 +9,68 @@ body, html {
   overflow-x: hidden;
 }
 
-&.is-frontpage {
+body {
   .logo {
-    @include breakpoint($breakpoint-desk) {
-    }
+    overflow: hidden;
+    position: absolute;
+    z-index: 90;
 
-    @include breakpoint($breakpoint-bigscreen) {
-      top: 2.75em;
-
-      height: 5.5em;
-      width: 18em;
+    &.is-sticky {
+      @include breakpoint($breakpoint-desk) {
+        position: fixed;
+      }
     }
   }
-}
 
-.logo,
-.logo.is-sticky {
-  position: absolute;
-  top: 1.5em;
-  left: 1em;
-  z-index: 90;
+  &.is-frontpage {
+    .logo {
+      top: 1.25em;
+      left: 1em;
 
-  display: block;
-  height: 2.4em;
-  width: 10em;
-  overflow: hidden;
+      display: block;
+      height: 2.4em;
+      width: 10em;
+      overflow: hidden;
 
-  @include breakpoint($breakpoint-desk) {
-    position: fixed;
-    top: 1.4em;
-    left: 2em;
+      &.is-sticky {
+        @include breakpoint($breakpoint-desk) {
+          top: 1.3em;
 
-    width: 12 em;
+          height: 2.5em;
+          width: 12em;
+        }
+      }
 
-    transition: all .35s;
+      @include breakpoint($breakpoint-desk) {
+        top: 2em;
+        left: 1.8em;
+
+        width: 12em;
+
+        transition: all .35s;
+      }
+
+      @include breakpoint($breakpoint-bigscreen) {
+        top: 3em;
+
+        height: 5em;
+        width: 15em;
+      }
+    }
   }
-}
 
+  &.is-page {
+    .logo {
+      top: 1.5em;
+      left: 1em;
 
-.is-page {
-  main[role=main] {
-    padding-top: 8em;
+      height: 2em;
+      width: 10em;
+    }
+
+    main[role=main] {
+      padding-top: 7.5em;
+    }
   }
 }
 
