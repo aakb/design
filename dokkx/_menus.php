@@ -2,16 +2,15 @@
   <!--page.html.twig START-->
 <body class="<?php echo $class; ?>">
   <div class="overlay js-menu-toggle"></div>
-  <a href="/cfiaarhus" class="logo js-logo" title="Center for Innovation i Aarhus"><img src="images/assets/logo.svg"></a>
+  <a href="/dokkx" class="logo js-logo" title="Center for Innovation i Aarhus"><img src="/dokkx/images/assets/logo.svg"></a>
   <!--menu.html.twig START-->
   <nav class="nav js-nav">
     <div class="nav--links">
-      <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="ydelser.php">Ydelser</a>
-      <a class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>" href="om-os.php">Om os</a>
-      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="nyheder.php">Nyheder</a>
-      <a class="nav--link<?php echo $is_active === 3 ? ' is-active' : '' ?>" href="events.php">Events</a>
-      <a class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>" href="kontakt.php">Kontakt</a>
-      <a class="nav--link<?php echo $is_active === 5 ? ' is-active' : '' ?>" href="designguide.php">Design guide</a>
+      <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="/dokkx/aktivitet/">Aktivitet</a>
+      <a class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/">Besøg
+        DokkX</a>
+      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="/dokkx/dokkx.php">DokkX</a>
+      <a class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>" href="/dokkx/kontakt.php">Kontakt</a>
     </div>
   </nav>
   <!--menu.html.twig END-->
@@ -25,16 +24,19 @@
   <nav class="hamburger-menu">
     <div class="hamburger-menu--inner">
       <div class="hamburger-menu--links">
-        <a href="ydelser.php" class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">Ydelser</a>
-        <a class="nav--link is-sub <?php echo $is_sub_active === 0 ? ' is-active' : '' ?>" href="netvaerk.php">Netværk</a>
-        <a class="nav--link is-sub <?php echo $is_sub_active === 1 ? ' is-active' : '' ?>" href="prototyper.php">Prototyper</a>
-        <a class="nav--link is-sub <?php echo $is_sub_active === 2 ? ' is-active' : '' ?>" href="projektsamarbejde
-        .php">Projektsamarbejde</a>
-        <a href="om-os.php" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">Om os</a>
-        <a href="nyheder.php" class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>">Nyheder</a>
-        <a href="events.php" class="nav--link<?php echo $is_active === 3 ? ' is-active' : '' ?>">Events</a>
-        <a href="kontakt.php" class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>">Kontakt</a>
-        <a href="designguide.php" class="nav--link<?php echo $is_active === 5 ? ' is-active' : '' ?>">Design
+        <a href="/dokkx/aktivitet/" class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">Aktivitet</a>
+        <a class="nav--link is-sub <?php echo $is_sub_active[0] === 0 ? ' is-active' : '' ?>"
+           href="/dokkx/sundhed-traening.php">Sundhed og træning</a>
+        <a class="nav--link is-sub <?php echo $is_sub_active[0] === 1 ? ' is-active' : '' ?>" href="/dokkx/teknologier.php">Teknologier</a>
+        <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/arkiv.php">Arkiv</a>
+        <a href="/dokkx/besoeg-dokkx/" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">Besøg
+          DokkX</a>
+        <a class="nav--link is-sub <?php echo $is_sub_active[1] === 0 ? ' is-active' : '' ?>"
+           href="/dokkx/besoeg-dokkx/aabningstider.php">Åbningstider</a>
+        <a href="/dokkx/nyheder.php" class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>">Nyheder</a>
+        <a href="/dokkx/events.php" class="nav--link<?php echo $is_active === 3 ? ' is-active' : '' ?>">Events</a>
+        <a href="/dokkx/kontakt.php" class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>">Kontakt</a>
+        <a href="/dokkx/designguide.php" class="nav--link<?php echo $is_active === 5 ? ' is-active' : '' ?>">Design
           guide</a>
       </div>
     </div>

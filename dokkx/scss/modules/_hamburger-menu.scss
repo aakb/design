@@ -19,7 +19,7 @@ $hamburger-menu-animation-duration: 0.3s;
   z-index: 98;
   overflow: hidden;
 
-  background-color: $theme-color-secondary;
+  background-color: $theme-color;
 
   transition: right $hamburger-menu-animation-duration;
   transition-timing-function: ease-in-out;

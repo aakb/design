@@ -9,53 +9,68 @@ body, html {
   overflow-x: hidden;
 }
 
-&.is-frontpage {
+body {
   .logo {
-    @include breakpoint($breakpoint-desk) {
-      top: 5em;
-      left: 2em;
+    overflow: hidden;
+    position: absolute;
+    z-index: 90;
 
-      height: 3.5em;
-      width: 8em;
+    &.is-sticky {
+      @include breakpoint($breakpoint-desk) {
+        position: fixed;
+      }
     }
+  }
 
-    @include breakpoint($breakpoint-bigscreen) {
-      left: 8em;
+  &.is-frontpage {
+    .logo {
+      top: 1.25em;
+      left: 1em;
 
-      height: 13.5em;
+      display: block;
+      height: 2.4em;
+      width: 10em;
+      overflow: hidden;
+
+      &.is-sticky {
+        @include breakpoint($breakpoint-desk) {
+          top: 1.3em;
+
+          height: 2.5em;
+          width: 12em;
+        }
+      }
+
+      @include breakpoint($breakpoint-desk) {
+        top: 2em;
+        left: 1.8em;
+
+        width: 12em;
+
+        transition: all .35s;
+      }
+
+      @include breakpoint($breakpoint-bigscreen) {
+        top: 3em;
+
+        height: 5em;
+        width: 15em;
+      }
+    }
+  }
+
+  &.is-page {
+    .logo {
+      top: 1.5em;
+      left: 1em;
+
+      height: 2em;
       width: 10em;
     }
-  }
-}
 
-.logo,
-.logo.is-sticky {
-  position: absolute;
-  top: 1.5em;
-  left: 1em;
-  z-index: 90;
-
-  display: block;
-  height: 2.6em;
-  width: 6em;
-  overflow: hidden;
-
-  @include breakpoint($breakpoint-desk) {
-    position: fixed;
-    top: 1.3em;
-    left: 1em;
-
-    height: 2.2em;
-    width: 5em;
-
-    transition: all .35s;
-  }
-}
-
-
-.is-page {
-  main[role=main] {
-    padding-top: 8em;
+    main[role=main] {
+      padding-top: 7.5em;
+    }
   }
 }
 
