@@ -74,9 +74,9 @@
 
       &.is-active,
       &:hover {
-        background-color: transparentize($black, .75);
+        background-color: $theme-color;
 
-        @include strip-link-styles($theme-color, none);
+        @include strip-link-styles($white, none);
       }
     }
   }
