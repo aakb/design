@@ -22,32 +22,36 @@
 <!--region.html.twig END-->
 
 <main role="main">
-  <div class="itk-boxlist-column">
-    <!--region.html.twig START-->
-    <?php
-      include 'includes/_network.php';
-    ?>
-    <?php
-      include 'includes/_prototypes.php';
-    ?>
-    <?php
-      include 'includes/_collaboration.php';
-    ?>
-    <?php
-      include 'includes/_facilities.php';
-    ?>
-    <?php
-      include 'includes/_sparring.php';
-    ?>
-    <?php
-      include 'includes/_courses.php';
-    ?>
-    <!--region.html.twig END-->
+  <div class="itk-boxlist">
+    <article class="itk-boxlist--item">
+      <header>
+        <h2 class="itk-boxlist--header"><a href="#">Something</a></h2>
+        <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
+          Innovation i Aarhus deltagelse i vores innovationsnetværk. Her møder du kollegaer i Aarhus Kommune, der
+          arbejder med innovation ligesom dig.</p>
+        <a href="netvaerk.php">Læs om netværk</a>
+      </header>
+      <figure><a href="#"><img src="https://unsplash.it/500/500/?random"></a></figure>
+    </article>
+    <article class="itk-boxlist--item">
+      <header>
+        <h2 id="network" class="itk-boxlist--header"><a href="#">Prototyper</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
+      </header>
+      <figure><a href="#"><img src="https://unsplash.it/500/600/?random"></a></figure>
+    </article>
+    <article class="itk-boxlist--item">
+      <header>
+        <h2 class="itk-boxlist--header"><a href="#">Noget andet</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
+      </header>
+      <figure><a href="#"></a><img src="https://unsplash.it/500/700/?random"></a></figure>
+    </article>
   </div>
-  <h2 class="frontpage--header">Events</h2>
+  <h2 class="frontpage--header">Aktiviteter</h2>
   <div class="itk-boxlist-events">
     <?php include 'includes/_events.php'; ?>
-    <a href="events.php" class="button is-block">Alle events</a>
+    <a href="events.php" class="button is-block">Alle aktiviteter</a>
   </div>
   <h2 class="frontpage--header">Nyheder</h2>
   <div class="itk-boxlist-news">
