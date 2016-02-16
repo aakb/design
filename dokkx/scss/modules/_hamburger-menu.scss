@@ -16,7 +16,7 @@
   z-index: 98;
   overflow: hidden;
 
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $white;
 
   transition: right .3s;
   transition-timing-function: ease-in-out;
@@ -38,7 +38,7 @@
     text-align: center;
 
     a {
-      @include strip-link-styles($gray-darker, none);
+      @include strip-link-styles($gray-darkest, none);
 
       font-weight: 600;
 
@@ -58,16 +58,18 @@
     &.is-active {
       margin-bottom: 1.5em;
       padding-top: .75em;
-      padding-bottom: .5em;
+      padding-bottom: 1.5em;
 
       background-color: $theme-color;
+
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
 
       a {
         @include strip-link-styles($white, none);
 
-        &:hover,
         &.is-active {
-          @include strip-link-styles(rgba(255, 255, 255, .75), none);
+          @include strip-link-styles($gray-darkest, none);
         }
       }
     }

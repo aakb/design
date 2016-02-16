@@ -15,7 +15,7 @@
       Kom og besøg i vores lokaler på niveau 2 på Dokk1.
     </p>
     <div class="header--button-wrapper">
-      <a href="aabningstider.php" class="header--button-link">Se vores åbningstider</a>
+      <a href="/dokkx/besoeg-dokkx/aabningstider.php" class="header--button-link">Se vores åbningstider</a>
     </div>
   </div>
 </div>

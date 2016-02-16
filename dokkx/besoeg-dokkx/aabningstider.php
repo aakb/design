@@ -1,6 +1,6 @@
 <?php
   $class = 'is-page';
-  $is_active        = 1;
+  $is_group_active  = 1;
   $is_sub_active[1] = 0;
 
   include '../_header.php';
