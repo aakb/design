@@ -12,7 +12,6 @@
 
   &--header {
     margin-top: .5em;
-    margin-left: -.075em; // Compensate for font whitespace
 
     color: $gray-darker;
     font-size: 2.5em;
@@ -29,24 +28,22 @@
   }
 
   &--image-wrapper {
-    margin-top: -2.5em;
-    margin-right: -6em;
+    margin-top: 5.5em;
     margin-bottom: 2.5em;
-    margin-left: -6em;
   }
 
   &--text {
     border-bottom: 1px solid $gray-lighter;
 
-    margin-right: -6em;
     margin-bottom: 3em;
-    margin-left: -6em;
-    padding-right: 6em;
     padding-bottom: 3em;
-    padding-left: 6em;
   }
 
   @include breakpoint($breakpoint-desk) {
+    &--image-wrapper {
+      margin-top: -2.5em;
+    }
+
     &--header {
       font-size: 4em;
     }
@@ -55,6 +52,9 @@
   @include breakpoint($breakpoint-bigscreen) {
     &--image-wrapper {
       margin-top: 0;
+
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
     }
   }
 }
