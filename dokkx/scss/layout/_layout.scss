@@ -13,18 +13,16 @@ body {
   .logo {
     overflow: hidden;
     position: absolute;
+    top: 1.5em;
     z-index: 90;
 
-    &.is-sticky {
-      @include breakpoint($breakpoint-desk) {
-        position: fixed;
-      }
+    @include breakpoint($breakpoint-desk) {
+      position: fixed;
     }
   }
 
   &.is-frontpage {
     .logo {
-      top: 1.25em;
       left: 1em;
 
       display: block;
@@ -34,7 +32,7 @@ body {
 
       &.is-sticky {
         @include breakpoint($breakpoint-desk) {
-          top: 1.3em;
+          top: 1.5em;
 
           height: 2.5em;
           width: 12em;
@@ -42,7 +40,6 @@ body {
       }
 
       @include breakpoint($breakpoint-desk) {
-        top: 2em;
         left: 1.8em;
 
         width: 12em;
@@ -51,8 +48,6 @@ body {
       }
 
       @include breakpoint($breakpoint-bigscreen) {
-        top: 3em;
-
         height: 5em;
         width: 15em;
       }
@@ -61,7 +56,6 @@ body {
 
   &.is-page {
     .logo {
-      top: 1.5em;
       left: 1em;
 
       height: 2em;

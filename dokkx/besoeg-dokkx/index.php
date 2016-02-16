@@ -6,11 +6,13 @@
   include '../_menus.php';
 ?>
 
-<figure class="content--image-wrapper"><img src="https://unsplash.it/2000/400/?random"></figure>
+<figure class="content--image-wrapper"><img src="https://unsplash.it/2000/500/?random"></figure>
 <main role="main" class="content">
   <h1 class="content--header">Besøg DokkX</h1>
-  <div class="content--text">
+  <div class="content--lead">
     <p>At nos hinc posthac, sitientis piros Afros. Ut enim ad minim veniam, quis nostrud exercitation. Ambitioni dedisse scripsisse iudicaretur. Prima luce, cum quibus mons aliud  consensu ab eo.</p>
+  </div>
+  <div class="content--text">
     <p>Salutantibus vitae elit libero, a pharetra augue. Quam diu etiam furor iste tuus nos eludet? Non equidem invideo, miror magis posuere velit aliquet. Quisque placerat facilisis egestas cillum dolore.</p>
     <p>Hi omnes lingua, institutis, legibus inter se differunt. Quid securi etiam tamquam eu fugiat nulla pariatur. A communi observantia non est recedendum.</p>
     <p>Quam temere in vitiis, legem sancimus haerentia. Integer legentibus erat a ante historiarum dapibus. Ab illo tempore, ab est sed immemorabili.</p>

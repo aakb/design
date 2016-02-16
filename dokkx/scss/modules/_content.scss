@@ -10,12 +10,18 @@
 
   @include word-wrap;
 
+  &--header,
+  &--lead {
+    font-weight: 600;
+    text-align: center;
+  }
+
   &--header {
     margin-top: .5em;
+    margin-left: -.075em; // Compensate for font whitespace
 
     color: $gray-darker;
     font-size: 2.5em;
-    font-weight: 300;
   }
 
   &--meta {
@@ -32,6 +38,13 @@
     margin-bottom: 2.5em;
   }
 
+  &--lead {
+    padding-right: .5em;
+    padding-left: .5em;
+
+    font-size: 1.25em;
+  }
+
   &--text {
     border-bottom: 1px solid $gray-lighter;
 
@@ -39,20 +52,24 @@
     padding-bottom: 3em;
   }
 
-  @include breakpoint($breakpoint-desk) {
-    &--image-wrapper {
-      margin-top: -2.5em;
+  @include breakpoint($breakpoint-tablet) {
+    &--lead {
+      padding-right: 1.25em;
+      padding-left: 1.25em;
     }
+  }
 
-    &--header {
-      font-size: 4em;
+  @include breakpoint($breakpoint-desk) {
+    &--lead {
+      padding-right: 3em;
+      padding-left: 3em;
+
+      font-size: 1.5em;
     }
   }
 
   @include breakpoint($breakpoint-bigscreen) {
     &--image-wrapper {
-      margin-top: 0;
-
       -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
       clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
     }

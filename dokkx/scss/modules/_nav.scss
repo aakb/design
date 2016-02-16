@@ -7,21 +7,22 @@
 
 .is-frontpage {
   .nav {
-    top: 1.1em;
     right: 0;
 
     background-color: transparent;
+  }
 
-    @include breakpoint($breakpoint-bigscreen) {
-      top: 3em;
-    }
-
+  .nav,
+  .nav.is-sticky {
     @include breakpoint($breakpoint-desk) {
       .nav--link {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
         &:hover {
+          margin-top: -1em;
+          margin-bottom: -1em;
+
           background-color: $theme-color;
         }
       }
@@ -38,7 +39,7 @@
   height: 5.5em;
   width: 100%;
 
-  background-color: transparentize($black, .25);
+  background-color: transparentize($black, .15);
 
   transition: top .35s, right .35s, padding .35s;
 
@@ -112,7 +113,7 @@
 
 .nav-toggle {
   position: absolute;
-  top: 1.4em;
+  top: 1.6em;
   right: 2em;
   z-index: 99;
 
@@ -122,6 +123,12 @@
   transform: rotate(0deg);
   transition: transform .5s ease-in-out;
   cursor: pointer;
+
+  &.open {
+    span {
+      background: $gray-darker;
+    }
+  }
 
   @include breakpoint($breakpoint-desk) {
     position: fixed;
@@ -138,7 +145,6 @@
 
   background: $white;
   opacity: 1;
-
 
   transform: rotate(0deg);
   transition: .25s ease-in-out;

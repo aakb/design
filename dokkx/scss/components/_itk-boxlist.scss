@@ -20,8 +20,10 @@ $boxlist-padding:                       1em;
   &--header {
     margin-bottom: .5em;
 
+    font-weight: 600;
+
     a {
-      @include strip-link-styles($gray-darkest);
+      @include strip-link-styles($gray-darker);
     }
   }
 
@@ -125,7 +127,7 @@ $boxlist-padding:                       1em;
   &--header-text {
     margin-bottom: 1.5em;
 
-    color: $gray-dark;
+    color: $gray-darker;
     text-align: center;
   }
 

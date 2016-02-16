@@ -5,9 +5,6 @@
  */
 
 
-$hamburger-menu-animation-duration: 0.3s;
-
-
 .hamburger-menu {
   position: fixed;
   top: 0;
@@ -19,9 +16,9 @@ $hamburger-menu-animation-duration: 0.3s;
   z-index: 98;
   overflow: hidden;
 
-  background-color: $theme-color;
+  background-color: rgba(255, 255, 255, 1);
 
-  transition: right $hamburger-menu-animation-duration;
+  transition: right .3s;
   transition-timing-function: ease-in-out;
 
   &.is-open {
@@ -34,20 +31,44 @@ $hamburger-menu-animation-duration: 0.3s;
   }
 
   &--links {
-    padding-top: 5em;
-    padding-right: 2em;
+    padding-top: 1.75em;
+    padding-right: 5em;
     padding-left: 2em;
 
-    a {
-      @include strip-link-styles(#fff, none);
+    text-align: center;
 
-      &.is-active,
+    a {
+      @include strip-link-styles($gray-darker, none);
+
+      font-weight: 600;
+
       &:hover {
-        color: $link-color-hover;
+        color: $theme-color;
       }
 
       &.is-sub {
-        margin-left: 1em;
+        font-weight: 100;
+      }
+    }
+  }
+
+  &--group {
+    margin-bottom: 1.75em;
+
+    &.is-active {
+      margin-bottom: 1.5em;
+      padding-top: .75em;
+      padding-bottom: .5em;
+
+      background-color: $theme-color;
+
+      a {
+        @include strip-link-styles($white, none);
+
+        &:hover,
+        &.is-active {
+          @include strip-link-styles(rgba(255, 255, 255, .75), none);
+        }
       }
     }
   }
@@ -55,17 +76,11 @@ $hamburger-menu-animation-duration: 0.3s;
   // Drupal uses same template for menus so they both get the nav--link class
   .nav--link {
     display: list-item;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    margin-bottom: .25em;
 
-    border-bottom: 1px solid transparentize(#fff, .5);
-    color: white;
+    color: $gray-darker;
     font-size: 1.2em;
     list-style: none;
     text-decoration: none;
-
-    &:last-child {
-      border-bottom: 0;
-    }
   }
 }
