@@ -12,7 +12,9 @@
   padding-bottom: 2em;
   width: 100%;
 
-  background: url('../images/header-background.jpg');
+  background-color: rgba(0, 0, 0, .5);
+  background-blend-mode: darken;
+  background-image: url('//unsplash.it/1600/500/?random');
   background-size: cover;
   color: #fff;
 

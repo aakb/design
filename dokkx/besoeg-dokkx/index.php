@@ -6,8 +6,8 @@
   include '../_menus.php';
 ?>
 
+<figure class="content--image-wrapper"><img src="https://unsplash.it/2000/400/?random"></figure>
 <main role="main" class="content">
-  <figure class="content--image-wrapper"><img src="https://unsplash.it/1600/500/?random"></figure>
   <h1 class="content--header">Besøg DokkX</h1>
   <div class="content--text">
     <p>At nos hinc posthac, sitientis piros Afros. Ut enim ad minim veniam, quis nostrud exercitation. Ambitioni dedisse scripsisse iudicaretur. Prima luce, cum quibus mons aliud  consensu ab eo.</p>

@@ -17,14 +17,12 @@ $boxlist-padding:                       1em;
 .itk-boxlist-column,
 .itk-boxlist-news,
 .itk-boxlist-events {
-  header {
-    a {
-      @include strip-link-styles($link-color);
-    }
-  }
-
   &--header {
     margin-bottom: .5em;
+
+    a {
+      @include strip-link-styles($gray-darkest);
+    }
   }
 
   &--link,
