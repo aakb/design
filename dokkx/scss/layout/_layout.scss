@@ -10,56 +10,37 @@ body, html {
 }
 
 body {
-  .logo {
-    overflow: hidden;
-    position: absolute;
-    top: 1.5em;
-    z-index: 90;
+  &.is-frontpage,
+  &.is-page {
+    .logo,
+    .logo.is-sticky {
+      top: 1.7em;
+      left: 1.8em;
+      z-index: 90;
 
-    @include breakpoint($breakpoint-desk) {
-      position: fixed;
-    }
-  }
-
-  &.is-frontpage {
-    .logo {
-      left: 1em;
-
-      display: block;
-      height: 2.4em;
-      width: 10em;
       overflow: hidden;
+      display: block;
+      height: 2em;
+      width: 10em;
+    }
 
-      &.is-sticky {
-        @include breakpoint($breakpoint-desk) {
-          top: 1.5em;
+    .logo {
+      position: absolute;
 
-          height: 2.5em;
-          width: 12em;
-        }
-      }
+      @include breakpoint($breakpoint-bigscreen) {
+        top: 1.5em;
 
-      @include breakpoint($breakpoint-desk) {
-        left: 1.8em;
-
-        width: 12em;
+        height: 5em;
+        width: 15em;
 
         transition: all .35s;
       }
-
-      @include breakpoint($breakpoint-bigscreen) {
-        height: 5em;
-        width: 15em;
-      }
     }
-  }
 
-  &.is-page {
-    .logo {
-      left: 1em;
-
-      height: 2em;
-      width: 10em;
+    .logo.is-sticky {
+      @include breakpoint($breakpoint-desk) {
+        position: fixed;
+      }
     }
   }
 }
