@@ -15,13 +15,17 @@ body {
     .logo,
     .logo.is-sticky {
       top: 1.7em;
-      left: 1.8em;
+      left: 1em;
       z-index: 90;
 
       overflow: hidden;
       display: block;
       height: 2em;
       width: 10em;
+
+      @include breakpoint($breakpoint-tablet) {
+        left: 1.8em;
+      }
     }
 
     .logo {

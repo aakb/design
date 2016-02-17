@@ -60,16 +60,17 @@
       padding-top: .75em;
       padding-bottom: 1.5em;
 
-      background-color: $theme-color;
-
-      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
-      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
-
       a {
-        @include strip-link-styles($white, none);
-
         &.is-active {
-          @include strip-link-styles($gray-darkest, none);
+          @include strip-link-styles($white, none);
+
+          padding-top: .75em;
+          padding-bottom: .75em;
+
+          background-color: $theme-color;
+
+          -webkit-clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
         }
       }
     }
