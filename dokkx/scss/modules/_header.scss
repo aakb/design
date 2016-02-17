@@ -33,9 +33,9 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 5.75em;
-    padding-right: 1em;
+    padding-right: $layout-padding;
     padding-bottom: 1.75em;
-    padding-left: 1em;
+    padding-left: $layout-padding;
 
     @include flexbox;
     @include flex-direction(column);
@@ -50,9 +50,7 @@
     @include breakpoint($breakpoint-desk) {
       max-width: $breakpoint-desk;
       padding-top: 9em;
-      padding-right: 1.8em;
       padding-bottom: 6em;
-      padding-left: 1.8em;
     }
 
     @include breakpoint($breakpoint-bigscreen) {

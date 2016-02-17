@@ -5,10 +5,20 @@
  */
 
 .content {
-  padding-right: 1em;
-  padding-left: 1em;
-
   @include word-wrap;
+
+  &--header,
+  &--lead,
+  &--meta,
+  &--text {
+    margin-right: $layout-padding;
+    margin-left: $layout-padding;
+
+    @include breakpoint($breakpoint-bigscreen) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
 
   &--header,
   &--lead {
@@ -36,13 +46,24 @@
   &--image-wrapper {
     margin-top: 5.5em;
     margin-bottom: 2.5em;
+
+    @include breakpoint($breakpoint-bigscreen) {
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+    }
   }
 
   &--lead {
-    padding-right: .5em;
-    padding-left: .5em;
-
     font-size: 1.25em;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-right: 3em;
+      margin-left: 3em;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      font-size: 1.5em;
+    }
   }
 
   &--text {
@@ -50,28 +71,5 @@
 
     margin-bottom: 3em;
     padding-bottom: 3em;
-  }
-
-  @include breakpoint($breakpoint-tablet) {
-    &--lead {
-      padding-right: 1.25em;
-      padding-left: 1.25em;
-    }
-  }
-
-  @include breakpoint($breakpoint-desk) {
-    &--lead {
-      padding-right: 3em;
-      padding-left: 3em;
-
-      font-size: 1.5em;
-    }
-  }
-
-  @include breakpoint($breakpoint-bigscreen) {
-    &--image-wrapper {
-      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
-    }
   }
 }
