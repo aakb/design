@@ -68,6 +68,12 @@ $boxlist-padding: 1em;
   margin-right: $layout-padding;
   margin-left: $layout-padding;
 
+  @include breakpoint($breakpoint-bigscreen) {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 6em;
+  }
+
   &--item {
     @include flexbox;
     @include flex-flow(row nowrap);
@@ -82,10 +88,8 @@ $boxlist-padding: 1em;
 
   header {
     order: 2;
-  }
 
-  @include breakpoint($breakpoint-lap) {
-    header {
+    @include breakpoint($breakpoint-lap) {
       padding-top: 0;
       padding-right: $boxlist-padding;
       padding-bottom: $boxlist-padding;
@@ -104,25 +108,12 @@ $boxlist-padding: 1em;
     @include flex-basis(6em);
     @include flex-shrink(0);
   }
-
-  @include breakpoint($breakpoint-bigscreen) {
-    margin-right: -6em;
-    margin-left: -6em;
-    padding-right: 6em;
-    padding-bottom: 6em;
-    padding-left: 6em;
-  }
 }
 
 
 .itk-boxlist-news,
 .itk-boxlist-events {
   padding-bottom: 5em;
-
-  &--item {
-    padding-right: $boxlist-padding;
-    padding-left: $boxlist-padding;
-  }
 
   &--header-text {
     margin-bottom: 1.5em;
@@ -159,21 +150,24 @@ $boxlist-padding: 1em;
 
     @include flex-basis(1em);
   }
-
-  @include breakpoint($breakpoint-tablet) {
-    &--item {
+  &--item {
+    @include breakpoint($breakpoint-tablet) {
       border: 1px solid $gray-lighter;
       padding-right: 0;
       padding-bottom: 0;
       padding-left: 0;
     }
+  }
 
-    header {
+  header {
+    @include breakpoint($breakpoint-tablet) {
       padding-top: 1.5em;
       padding-left: 0;
     }
+  }
 
-    figure {
+  figure {
+    @include breakpoint($breakpoint-tablet) {
       display: block;
       margin-right: 1.5em;
       margin-left: 0;
@@ -191,11 +185,18 @@ $boxlist-padding: 1em;
 
   @include breakpoint($breakpoint-tablet) {
     margin-bottom: 4em;
+
+    @include flex-basis(45%);
   }
 
   @include breakpoint($breakpoint-desk) {
+    box-sizing: border-box;
     margin-right: -1.5em;
     margin-left: -1.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+
+    @include flex-basis(33%);
   }
 
   &--item {
@@ -209,22 +210,9 @@ $boxlist-padding: 1em;
     @include flex-flow(column);
     @include flex-basis(40%);
 
-    header {
-      order: 1;
-
-      font-size: .75em;
-      text-align: center;
-    }
-
-    figure {
-      display: block;
-      margin-top: 1.25em;
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 1em;
-      max-width: 5em;
-
-      order: 2;
+    @include breakpoint($breakpoint-lap) {
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     p {
@@ -235,37 +223,39 @@ $boxlist-padding: 1em;
 
       order: 3;
     }
+  }
+
+  header {
+    order: 1;
+
+    font-size: .75em;
+    text-align: center;
 
     @include breakpoint($breakpoint-lap) {
-      padding-top: 0;
-      padding-bottom: 0;
+      text-align: center;
+      text-transform: uppercase;
 
-      header {
-        text-align: center;
-        text-transform: uppercase;
+      h2 {
+        margin-bottom: 0;
 
-        h2 {
-          margin-bottom: 0;
-
-          font-weight: 300;
-        }
-      }
-
-      figure {
-        max-width: 6em;
+        font-weight: 300;
       }
     }
+  }
 
-    @include breakpoint($breakpoint-tablet) {
-      @include flex-basis(45%);
-    }
+  figure {
+    display: block;
+    margin-top: 1.25em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    max-width: 5em;
 
-    @include breakpoint($breakpoint-desk) {
-      box-sizing: border-box;
-      padding-right: 1.5em;
-      padding-left: 1.5em;
+    order: 2;
 
-      @include flex-basis(33%);
+    @include breakpoint($breakpoint-lap) {
+      max-width: 6em;
+
     }
   }
 }
