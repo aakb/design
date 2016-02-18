@@ -7,7 +7,7 @@
   include '../_menus.php';
 ?>
 
-<? include '../includes/_image.php'; ?>
+<?php include '../includes/_image.php'; ?>
 <main role="main" class="content">
   <h1 class="content--header">Om DokkX</h1>
   <div class="content--lead">
