@@ -11,14 +11,14 @@
 <main role="main" class="content">
   <h1 class="content--header">Om DokkX</h1>
   <div class="content--lead">
-    <p>DokkX – centrum for velfærds- og frihedsteknologi</p>
+    <p>Centrum for velfærds- og frihedsteknologi</p>
+  </div>
+  <div class="content--text">
     <p>
       DokkX er Aarhus Kommunes nytænkende udviklingscenter for velfærdsteknologi og andre digitale løsninger.
       Det er her, du kan du se nye teknologiske løsninger og prøve dem af. Vores beskedne ønske er, at du går fra DokkX
       med ny inspiration til, hvordan teknologi kan gøre din hverdag lettere, sundere og sjovere. Intet mindre.
     </p>
-  </div>
-  <div class="content--text">
     <p>
       Vi ved, at teknologi i forvejen er en del af mange menneskers hverdag – uanset og vi tænker over det eller ej.
       Ved at skabe et rum på Dokk1, hvor alle kan føle, røre og lege med forskellige teknologiske løsninger, skal DokkX

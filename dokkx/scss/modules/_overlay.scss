@@ -13,7 +13,7 @@ $overlay-opacity:             .85;
   top: 0;
   bottom: 0;
   opacity: $overlay-opacity;
-  z-index: 97;
+  z-index: z($z-index-elements, overlay);
 
   width: 100%;
   height: 100%;

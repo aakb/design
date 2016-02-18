@@ -17,7 +17,7 @@ $breakpoint-bigscreen:        1500px;
 /* Z-index (inspired by https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/)
    ================================================================================================================== */
 
-$z-index-elements: header-overlay, header, content, nav, hamburger-menu, logo;
+$z-index-elements: header-overlay, header, content, nav, overlay, hamburger-menu, logo;
 
 
 

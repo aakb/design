@@ -9,7 +9,7 @@
       <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/">Aktiviteter</a>
       <a class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/">Besøg
         DokkX</a>
-      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="/dokkx/dokkx/">DokkX</a>
+      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="/dokkx/om-dokkx/">Om DokkX</a>
       <a class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>" href="/dokkx/kontakt/">Kontakt</a>
     </div>
   </nav>
@@ -45,18 +45,13 @@
           <a class="nav--link is-sub <?php echo $is_sub_active[1] === 0 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/aabningstider.php">
             Åbningstider</a>
         </div>
-        <div class="hamburger-menu--group"><a href="/dokkx/nyheder.php" class="nav--link<?php echo $is_active === 2 ?' is-active' : '' ?>">
-            Nyheder
-          </a></div>
-        <div class="hamburger-menu--group"><a href="/dokkx/events.php" class="nav--link<?php echo $is_active === 3 ?' is-active' : '' ?>">
-            Events
+        <div class="hamburger-menu--group<?php echo $is_group_active === 2 || isset($is_sub_active[1]) ? ' is-active' : '' ?>">
+          <a href="/dokkx/om-dokkx/" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">
+            Om DokkX
           </a>
         </div>
-        <div class="hamburger-menu--group"><a href="/dokkx/kontakt.php" class="nav--link<?php echo $is_active === 4 ?' is-active' : '' ?>">
-            Kontakt
-          </a>
-        </div>
-        <div class="hamburger-menu--group"><a href="/dokkx/designguide.php" class="nav--link<?php echo $is_active === 5 ? ' is-active' : '' ?>">
+        <div class="hamburger-menu--group<?php echo $is_group_active === 3 || isset($is_sub_active[1]) ? ' is-active' : '' ?>">
+          <a href="/dokkx/designguide.php" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">
             Designguide
           </a>
         </div>
