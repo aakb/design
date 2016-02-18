@@ -7,7 +7,7 @@
   include '../_menus.php';
 ?>
 
-<figure class="content--image-wrapper"><img src="https://unsplash.it/2000/500/?random"></figure>
+<?php include '../includes/_image.php'; ?>
 <main role="main" class="content">
   <h1 class="content--header">Besøg DokkX</h1>
   <div class="content--lead">

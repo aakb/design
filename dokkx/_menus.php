@@ -9,8 +9,8 @@
       <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="/dokkx/aktivitet/">Aktivitet</a>
       <a class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/">Besøg
         DokkX</a>
-      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="/dokkx/dokkx.php">DokkX</a>
-      <a class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>" href="/dokkx/kontakt.php">Kontakt</a>
+      <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="/dokkx/dokkx/">DokkX</a>
+      <a class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>" href="/dokkx/kontakt/">Kontakt</a>
     </div>
   </nav>
   <!--menu.html.twig END-->

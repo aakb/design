@@ -7,12 +7,13 @@
 <!--region.html.twig START-->
 <div class="header" role="banner" id="home">
   <div class="header--inner">
-    <h1 class="header--big">Velfærdsteknologi i Aarhus Kommune</h1>
+    <h1 class="header--big">Aarhus Kommunes føle-røre-legested for velfærds- og frihedsteknologi</h1>
     <p class="header--lead">
-      Vi indgår som projektpartner med kompetencer inden for design, antropologi og procesfacilitering.
+      DokkX er Aarhus Kommunes inspirationsrum for moderne teknologi. Her kan du tanke ny viden og inspiration til,
+      hvordan teknologi gør din hverdag lidt lettere, sundere og sjovere – gennem hele livet.
     </p>
     <p class="header--sub">
-      Kom og besøg i vores lokaler på niveau 2 på Dokk1.
+      Så kom og besøg os på niveau 2 på Dokk1.
     </p>
     <div class="header--button-wrapper">
       <a href="/dokkx/besoeg-dokkx/aabningstider.php" class="header--button-link">Se vores åbningstider</a>
@@ -21,7 +22,7 @@
 </div>
 <!--region.html.twig END-->
 
-<main role="main">
+<main role="main" class="content">
   <div class="itk-boxlist">
     <article class="itk-boxlist--item">
       <header>
