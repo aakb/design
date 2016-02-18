@@ -6,6 +6,12 @@
  *
  */
 
+
+// Make sure the user can't scroll sideways.
+body, html {
+  overflow-x: hidden;
+}
+
 html {
   height: 100%;
 }

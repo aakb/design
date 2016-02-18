@@ -4,6 +4,24 @@
  *
  */
 
+
+// The main content wrapper.
+main[role=main] {
+  margin-right: auto;
+  margin-bottom: 17em;
+  margin-left: auto;
+  max-width: $breakpoint-desk;
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-bottom: 9em;
+  }
+
+  @include breakpoint($breakpoint-desk) {
+    margin-bottom: 5em;
+    padding-bottom: 3em;
+  }
+}
+
 .content {
   @include word-wrap;
 

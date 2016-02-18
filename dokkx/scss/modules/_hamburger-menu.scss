@@ -13,7 +13,7 @@
   margin-right: 0;
   max-width: 90%;
   width: 30em;
-  z-index: 98;
+  z-index: z($z-index-elements, hamburger-menu);
   overflow: hidden;
 
   background-color: $white;
