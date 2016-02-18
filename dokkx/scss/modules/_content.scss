@@ -27,6 +27,7 @@
   }
 
   @include breakpoint($breakpoint-desk) {
+    margin-top: -20em;
     margin-bottom: 5em;
     padding-top: 4em;
 
@@ -35,7 +36,6 @@
   }
 
   @include breakpoint($breakpoint-bigscreen) {
-    margin-top: -20em;
     padding-right: $layout-padding;
     padding-left: $layout-padding;
     padding-top: 5em;
@@ -71,6 +71,7 @@
 
   &--header {
     margin-top: .5em;
+    margin-right: 0;
     margin-left: -.075em; // Compensate for font whitespace
 
     color: $gray-darker;
@@ -90,17 +91,19 @@
     margin-top: 5.5em;
     margin-bottom: 2.5em;
 
-    @include breakpoint($breakpoint-bigscreen) {
+    @include breakpoint($breakpoint-desk) {
       overflow: hidden;
 
       height: 500px;
 
-      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
-
       img {
         margin-top: -250px;
       }
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
     }
   }
 
