@@ -1,7 +1,7 @@
 <?php
   $class = 'is-page';
   $is_group_active  = 0;
-  $is_sub_active[0] = 0;
+  $is_sub_active[0] = 1;
 
   include '../_header.php';
   include '../_menus.php';

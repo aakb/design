@@ -31,10 +31,13 @@
           <a class="nav--link is-sub <?php echo $is_sub_active[0] === 0 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/sundhed-traening.php">
             Sundhed og træning
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 1 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/teknologier.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 1 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/book-rundvisning.php">
+            Book en rundvisning
+          </a>
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/teknologier.php">
             Teknologier
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/arkiv.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 3 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/arkiv.php">
             Arkiv
           </a>
         </div>
