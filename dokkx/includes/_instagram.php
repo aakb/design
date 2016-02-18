@@ -1,7 +1,7 @@
 <section class="instagram-gallery">
   <header>
     <h3 class="instagram-gallery--title">
-      <a href="https://instagram.com/explore/tags/MMFAarhus">#CFIAARHUS</a>
+      <a href="https://instagram.com/explore/tags/MMFAarhus">#DOKKX</a>
     </h3>
   </header>
   <div class="instagram-gallery--wrapper" id="instafeed--MMFAarhus">
