@@ -9,7 +9,7 @@
 
 <?php include '../includes/_image.php'; ?>
 <main role="main" class="content">
-  <h1 class="content--header">Aktivitet</h1>
+  <h1 class="content--header">Aktiviteter</h1>
   <div class="content--lead">
     <p>At nos hinc posthac, sitientis piros Afros. Ut enim ad minim veniam, quis nostrud exercitation. Ambitioni dedisse scripsisse iudicaretur. Prima luce, cum quibus mons aliud  consensu ab eo.</p>
   </div>
@@ -21,13 +21,12 @@
   <div class="itk-boxlist">
     <article class="itk-boxlist--item">
       <header>
-        <h2 class="itk-boxlist--header"><a href="netvaerk.php">Netværk</a></h2>
-        <p>Til dig der gerne vil dele din erfaring og inspireres af andre kollegaer og eksperter tilbyder Center for
-        Innovation i Aarhus deltagelse i vores innovationsnetværk. Her møder du kollegaer i Aarhus Kommune, der
-        arbejder med innovation ligesom dig.</p>
-        <a href="netvaerk.php">Læs om netværk</a>
+        <h2 class="itk-boxlist--header"><a href="/dokkx/aktiviteter/sundhed-traening.php">Sundhed og træning</a></h2>
+        <p>Der findes utallige teknologier, du kan bruge til at holde dig sund og i form gennem hele livet. Sammen med en bid brain food vil gæsterne blive budt på teknologi til alt fra selvmonitorering, altså, fx skridttællere og søvnmålere i apps, mobiltelefoner og ure, over Interaktive spil for både unge og gamle til teknologi til kognitiv og fysisk fitness.
+        </p>
+        <a href="/dokkx/aktiviteter/sundhed-traening.php">Sundhed og træning</a>
       </header>
-      <figure><a href="netvaerk.php"><img src="images/networking.png"></a></figure>
+      <figure><a href="netvaerk.php"><img src="https://unsplash.it/500/425/?random"></a></figure>
     </article>
     <article class="itk-boxlist--item">
       <header>
@@ -35,7 +34,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
         <a href="prototyper.php">Læs om prototyper</a>
       </header>
-      <figure><a href="prototyper.php"><img src="images/prototypes.png"></a></figure>
+      <figure><a href="netvaerk.php"><img src="https://unsplash.it/500/450/?random"></a></figure>
     </article>
     <article class="itk-boxlist--item">
       <header>
@@ -43,7 +42,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Hi omnes lingua, institutis, legibus inter se differunt. Cum ceteris in veneratione tui montes, nascetur mus.</p>
         <a href="sparring.php">Læs om sparring</a>
       </header>
-      <figure><a href="sparring.php"><img src="images/sparring.png"></a></figure>
+      <figure><a href="netvaerk.php"><img src="https://unsplash.it/500/475/?random"></a></figure>
     </article>
   </div>
 </main>

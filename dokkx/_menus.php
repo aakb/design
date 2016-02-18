@@ -6,7 +6,7 @@
   <!--menu.html.twig START-->
   <nav class="nav js-nav">
     <div class="nav--links">
-      <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="/dokkx/aktivitet/">Aktivitet</a>
+      <a class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/">Aktiviteter</a>
       <a class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/">Besøg
         DokkX</a>
       <a class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>" href="/dokkx/dokkx/">DokkX</a>
@@ -25,16 +25,16 @@
     <div class="hamburger-menu--inner">
       <div class="hamburger-menu--links">
         <div class="hamburger-menu--group<?php echo $is_group_active === 0 || isset($is_sub_active[0]) ? ' is-active' : '' ?>">
-          <a href="/dokkx/aktivitet/" class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">
-            Aktivitet
+          <a href="/dokkx/aktiviteter/" class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">
+            Aktiviteter
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 0 ? ' is-active' : '' ?>" href="/dokkx/aktivitet/sundhed-traening.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 0 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/sundhed-traening.php">
             Sundhed og træning
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 1 ? ' is-active' : '' ?>" href="/dokkx/aktivitet/teknologier.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 1 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/teknologier.php">
             Teknologier
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktivitet/arkiv.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/arkiv.php">
             Arkiv
           </a>
         </div>
