@@ -34,6 +34,10 @@
       }
     }
   }
+
+  .nav-toggle span {
+    background: $white;
+  }
 }
 
 .nav,
@@ -134,7 +138,7 @@
 
   &.open {
     span {
-      background: $gray-darker;
+      background: $gray-darkest;
     }
   }
 
@@ -151,7 +155,7 @@
   height: 5px;
   width: 100%;
 
-  background: $gray-darker;
+  background: $gray-darkest;
   opacity: 1;
 
   transform: rotate(0deg);
