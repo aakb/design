@@ -31,8 +31,8 @@
     margin-bottom: 5em;
     padding-top: 4em;
 
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
   }
 
   @include breakpoint($breakpoint-bigscreen) {
@@ -88,6 +88,8 @@
   }
 
   &--image-wrapper {
+    position: relative;
+
     margin-top: 5.5em;
     margin-bottom: 2.5em;
 
@@ -97,13 +99,17 @@
       height: 500px;
 
       img {
-        margin-top: -250px;
+        margin-top: -225px;
       }
     }
 
     @include breakpoint($breakpoint-bigscreen) {
       -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
       clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+    }
+
+    &:before {
+      @extend %image-overlay;
     }
   }
 
