@@ -15,6 +15,12 @@
   .nav,
   .nav.is-sticky {
     @include breakpoint($breakpoint-desk) {
+      &--links {
+        a {
+          @include strip-link-styles($white, none);
+        }
+      }
+
       .nav--link {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
@@ -39,7 +45,7 @@
   height: 5.5em;
   width: 100%;
 
-  background-color: transparentize($black, .15);
+  background-color: $white;
 
   transition: top .35s, right .35s, padding .35s;
 
@@ -68,7 +74,7 @@
       @include justify-content(flex-end);
 
       a {
-        @include strip-link-styles(#fff, none);
+        @include strip-link-styles($gray-darkest, none);
       }
     }
   }
@@ -79,7 +85,7 @@
       padding-right: 1.2em;
       padding-left: 1.2em;
 
-      color: white;
+      color: $gray-darkest;
       font-size: 1.2em;
       text-decoration: none;
 
@@ -99,10 +105,12 @@
 
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+
+        @include strip-link-styles($white, none);
       }
 
       &:hover {
-        background-color: $black;
+        background-color: rgb(112, 112, 112);
 
         @include strip-link-styles($white, none);
       }
