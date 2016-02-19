@@ -54,11 +54,15 @@
 
   &--group {
     margin-bottom: 1.75em;
+    padding-bottom: 1.5em;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-lighter;
+    }
 
     &.is-active {
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
       padding-top: .75em;
-      padding-bottom: 1.5em;
 
       a {
         &.is-active {
