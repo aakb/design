@@ -5,12 +5,14 @@
  */
 
 .instagram-gallery {
-  @extend %auto-margins;
+  margin-right: $layout-padding;
+  margin-left: $layout-padding;
 
-  @include breakpoint($breakpoint-desk) {
-    max-width: $breakpoint-desk;
+  @include breakpoint($breakpoint-bigscreen) {
+    margin-right: 0;
+    margin-left: 0;
   }
-
+  
   &--wrapper {
     @include flexbox;
     @include flex-wrap(wrap);
