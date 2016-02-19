@@ -20,6 +20,10 @@
     </div>
   </div>
 </div>
+
+<main role="main" class="content">
+  <?php include 'includes/_instagram.php'; ?>
+</main>
 <!--region.html.twig END-->
 
 <?php

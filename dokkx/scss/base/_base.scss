@@ -78,7 +78,7 @@ em {
 a {
   &:link {
     color: $link-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &:visited {
@@ -87,7 +87,7 @@ a {
 
   &:hover {
     color: darken($link-color, 10%);
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   &:focus {
