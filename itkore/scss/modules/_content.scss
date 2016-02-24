@@ -1,0 +1,130 @@
+/**
+ *
+ * Content.
+ *
+ */
+
+
+&.is-page .content {
+  margin-bottom: 17em;
+  position: relative;
+  z-index: z($z-index-elements, content);
+
+  background-color: rgba(255, 255, 255, 1);
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-bottom: 9em;
+  }
+
+  @include breakpoint($breakpoint-desk) {
+    padding-top: 3em;
+
+  }
+
+  @include breakpoint($breakpoint-bigscreen) {
+    padding-right: $layout-padding;
+    padding-left: $layout-padding;
+  }
+}
+
+.content {
+  margin-right: auto;
+  margin-bottom: 10em;
+  margin-left: auto;
+  max-width: $breakpoint-desk;
+
+  @include word-wrap;
+
+  &--header,
+  &--lead,
+  &--meta,
+  &--text {
+    margin-right: $layout-padding;
+    margin-left: $layout-padding;
+
+    @include breakpoint($breakpoint-bigscreen) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  &--header +
+  &--lead {
+    //padding-bottom: 0;
+
+  }
+
+  &--header,
+  &--lead {
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1.5em;
+  }
+
+  &--header {
+    margin-top: .5em;
+    margin-right: 0;
+    margin-left: -.075em; // Compensate for font whitespace
+
+    color: $gray-darker;
+    font-size: 2.5em;
+  }
+
+  &--meta {
+    margin-top: -.5em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+
+    border-bottom: 1px solid $gray-lighter;
+    font-weight: 300;
+  }
+
+  &--image-wrapper {
+    position: relative;
+
+    margin-top: 5.5em;
+
+    @include breakpoint($breakpoint-tablet) {
+      height: 300px;
+
+      img {
+        margin-top: -135px;
+      }
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      overflow: hidden;
+
+      height: 400px;
+
+      img {
+        margin-top: -225px;
+      }
+    }
+
+    &:before {
+      @extend %image-overlay;
+    }
+  }
+
+  &--lead {
+    font-size: 1.25em;
+
+    @include breakpoint($breakpoint-tablet) {
+      height: 100px;
+      margin-right: 3em;
+      margin-left: 3em;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      font-size: 1.5em;
+    }
+  }
+
+  &--text {
+    border-bottom: 1px solid $gray-lighter;
+
+    margin-bottom: 3em;
+    padding-bottom: 3em;
+  }
+}
