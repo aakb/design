@@ -51,6 +51,16 @@
 
   @include word-wrap;
 
+  p+p,
+  h3 {
+    margin-top: 2em;
+  }
+
+  // Needs nesting inside content for overriding p+p.
+  .content--inline-link {
+    margin-top: 1em;
+  }
+
   &--header,
   &--lead,
   &--meta,
@@ -64,10 +74,20 @@
     }
   }
 
+  h3,
+  h4,
   &--header,
   &--lead {
     font-weight: 600;
+  }
+
+  &--header,
+  &--lead {
     text-align: center;
+  }
+
+  &--lead {
+    margin-bottom: 1em;
   }
 
   &--header {
