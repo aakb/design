@@ -57,7 +57,7 @@
   }
 
   // Needs nesting inside content for overriding p+p.
-  .content--inline-link {
+  &--inline-link {
     margin-top: 1em;
   }
 
