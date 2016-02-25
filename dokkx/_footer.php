@@ -11,9 +11,9 @@
     <!--block.html.twig END-->
     <!--block.html.twig START-->
     <div class="footer--social">
-      <a href="#"><figure class="footer--icons"><img src="images/twitter.png"></figure></a>
-      <a href="#"><figure class="footer--icons"><img src="images/instagram.png"></figure></a>
-      <a href="#"><figure class="footer--icons"><img src="images/linkedin.png"></figure></a>
+      <a href="#"><figure class="footer--icons"><img src="/dokkx/images/twitter.png"></figure></a>
+      <a href="#"><figure class="footer--icons"><img src="/dokkx/images/instagram.png"></figure></a>
+      <a href="#"><figure class="footer--icons"><img src="/dokkx/images/linkedin.png"></figure></a>
     </div>
     <!--block.html.twig END-->
 
