@@ -18,8 +18,8 @@
       cookie meddelelse og lignende.
     </p>
   </div>
-  <h2>Headlines</h2>
   <fieldset>
+    <legend>Headlines</legend>
     <h1>Headline 1</h1>
     <h2>Headline 2</h2>
     <h3>Headline 3</h3>
@@ -27,9 +27,8 @@
     <h5>Headline 5</h5>
     <h6>Headline 6</h6>
   </fieldset>
-  <br><br>
-  <h2>Messages</h2>
   <fieldset>
+    <legend>Messages</legend>
     <div class="itk-message">
       <div class="itk-message--inner">
         This is a <strong>standard</strong> message
@@ -51,25 +50,39 @@
       </div>
     </div>
   </fieldset>
-  <br><br>
   <fieldset>
-    <h2>Link</h2>
+    <legend>Link</legend>
     Paullum deliquit, <a href="#">ponderibus modulisque</a> suis ratio utitur. Magna pars studiorum, prodita quaerimus.
   </fieldset>
-  <br><br>
-  <h2>Button</h2>
   <fieldset>
-    <a href="#" class="button">This is a button</a>
-    <br><br>
-    <a href="#" class="button is-block">This is a block button</a>
+    <legend>Button</legend>
+    <p>
+      <a href="#" class="button">This is a button</a>
+    </p>
+    <p>
+      <a href="#" class="button is-block">This is a block button</a>
+    </p>
   </fieldset>
-  <br><br>
-  <h2>Pager</h2>
   <fieldset>
+    <legend>Forms</legend>
+    <div class="content-form">
+      <div class="content-form--item">
+        <label for="name">Label</label>
+        <input id="name" type="text">
+      </div>
+      <div class="content-form--item">
+        <label for="name">Disabled</label>
+        <input id="name" type="text" disabled>
+      </div>
+      <a href="#" class="button">This is the button for the form</a>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Pager</legend>
     <?php include 'includes/_pager.php'; ?>
   </fieldset>
-  <h2>Instagram Gallery</h2>
   <fieldset>
+    <legend>Instagram Gallery</legend>
     <?php include 'includes/_instagram.php'; ?>
   </fieldset>
   <!-- Cookies -->

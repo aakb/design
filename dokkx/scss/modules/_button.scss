@@ -10,10 +10,10 @@
   display: inline-block;
   padding: .5em 1.5em;
 
-  background-color: transparent;
-  border: 1px solid $link-color;
+  background-color: $theme-color;
+  border: 1px solid $theme-color;
   border-radius: 1em;
-  color: $link-color;
+  color: $white;
   font-weight: 300;
   text-align: center;
   text-decoration: none;
@@ -22,9 +22,9 @@
   transition: background-color .5s, border .5s, color .5s;
 
   &:hover {
-    background-color: $link-color;
+    background-color: transparent;
     border: 1px solid $link-color;
-    color: $white;
+    color: $link-color;
   }
 
   &.is-block {
