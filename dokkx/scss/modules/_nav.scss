@@ -41,7 +41,8 @@
 }
 
 .nav,
-.nav.is-sticky {
+.nav.is-sticky,
+.is-frontpage .nav.is-sticky {
   top: 0;
   position: absolute;
   z-index: z($z-index-elements, nav);
