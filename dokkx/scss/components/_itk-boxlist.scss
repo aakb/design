@@ -14,7 +14,6 @@ $boxlist-padding: 1em;
 
 
 .itk-boxlist,
-.itk-boxlist-column,
 .itk-boxlist-news,
 .itk-boxlist-events {
   &--header {
@@ -71,7 +70,6 @@ $boxlist-padding: 1em;
   @include breakpoint($breakpoint-bigscreen) {
     margin-right: 0;
     margin-left: 0;
-    padding-bottom: 6em;
   }
 
   &--item {
@@ -173,89 +171,6 @@ $boxlist-padding: 1em;
       margin-left: 0;
 
       @include flex-basis(14em);
-    }
-  }
-}
-
-
-.itk-boxlist-column {
-  @include flexbox;
-  @include flex-flow(row wrap);
-  @include justify-content(center);
-
-  @include breakpoint($breakpoint-tablet) {
-    margin-bottom: 4em;
-
-    @include flex-basis(45%);
-  }
-
-  @include breakpoint($breakpoint-desk) {
-    box-sizing: border-box;
-    margin-right: -1.5em;
-    margin-left: -1.5em;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-
-    @include flex-basis(33%);
-  }
-
-  &--item {
-    margin-bottom: 4em;
-    padding-top: $boxlist-padding;
-    padding-right: $boxlist-padding;
-    padding-bottom: $boxlist-padding;
-    padding-left: $boxlist-padding;
-
-    @include flexbox;
-    @include flex-flow(column);
-    @include flex-basis(40%);
-
-    @include breakpoint($breakpoint-lap) {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
-    p {
-      min-height: 3em;
-      margin-bottom: 1.75em;
-
-      text-align: center;
-
-      order: 3;
-    }
-  }
-
-  header {
-    order: 1;
-
-    font-size: .75em;
-    text-align: center;
-
-    @include breakpoint($breakpoint-lap) {
-      text-align: center;
-      text-transform: uppercase;
-
-      h2 {
-        margin-bottom: 0;
-
-        font-weight: 300;
-      }
-    }
-  }
-
-  figure {
-    display: block;
-    margin-top: 1.25em;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 1em;
-    max-width: 5em;
-
-    order: 2;
-
-    @include breakpoint($breakpoint-lap) {
-      max-width: 6em;
-
     }
   }
 }

@@ -3,7 +3,7 @@
   <div class="footer--content">
     <!--block.html.twig START-->
     <div class="footer--aarhus">
-      <a href="http://aarhus.dk"><figure class="footer--logo"><img src="/cfiaarhus/images/AAK-02-venstre-neg.png"></figure></a>
+      <a href="http://aarhus.dk"><figure class="footer--logo"><img src="/dokkx/images/AAK-02-venstre-neg.png"></figure></a>
     </div>
     <div class="footer--mail">
       <p>Dokk1, Hack Kampmanns Plads 2 8000 Aarhus C - <a href="mailto:cfi@aarhus.dk">cfi@aarhus.dk</a></p>
