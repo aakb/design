@@ -28,4 +28,4 @@
   </div>
   <?php include 'includes/_instagram.php'; ?>
 </main>
-<?php include '_footer.php'; ?>
+<?php include $path . '/_footer.php'; ?>

@@ -27,6 +27,4 @@
     </article>
   </div>
 </main>
-<?php
-  include '_footer.php';
-?>
+<?php include $path . '/_footer.php'; ?>
