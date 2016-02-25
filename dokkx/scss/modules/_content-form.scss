@@ -1,0 +1,19 @@
+/**
+ *
+ * Content form.
+ *
+ */
+
+.content-form {
+  @include flexbox;
+  @include flex-direction(column);
+
+  &--item + &--item,
+  &--item + .button {
+    margin-top: 1.5em;
+  }
+
+  .button {
+    @include align-self(flex-end);
+  }
+}

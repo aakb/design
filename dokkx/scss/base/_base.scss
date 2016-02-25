@@ -70,6 +70,23 @@ em {
   }
 }
 
+fieldset {
+  border-color: $gray-lighter;
+  border-radius: .85em;
+}
+
+fieldset + fieldset {
+  margin-top: 3em;
+}
+
+legend {
+  padding-right: .5em;
+  padding-left: .5em;
+
+  color: $gray-dark;
+  font-size: 1.25em;
+  font-weight: 600;
+}
 
 
 /* Links

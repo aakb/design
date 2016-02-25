@@ -51,8 +51,8 @@
 
   @include word-wrap;
 
-  p+p,
-  h3 {
+  p + h3,
+  p + p {
     margin-top: 2em;
   }
 
