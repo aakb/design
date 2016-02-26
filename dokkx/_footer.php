@@ -9,14 +9,6 @@
       <p>Dokk1 niveau 2, Hack Kampmanns Plads 2 8000 Aarhus C - <a href="mailto:#">[Mangler e-mail]</a></p>
     </div>
     <!--block.html.twig END-->
-    <!--block.html.twig START-->
-    <div class="footer--social">
-      <a href="#"><figure class="footer--icons"><img src="/dokkx/images/twitter.png"></figure></a>
-      <a href="#"><figure class="footer--icons"><img src="/dokkx/images/instagram.png"></figure></a>
-      <a href="#"><figure class="footer--icons"><img src="/dokkx/images/linkedin.png"></figure></a>
-    </div>
-    <!--block.html.twig END-->
-
   </div>
 </footer>
 <!--region.html.twig END-->

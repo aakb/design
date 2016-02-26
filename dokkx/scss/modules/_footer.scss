@@ -29,6 +29,7 @@ $left-and-right-padding: 1em;
 
   &--mail {
     margin-bottom: $top-and-button-margin;
+
     text-align: center;
 
     @include flex-basis(100%);
@@ -36,20 +37,6 @@ $left-and-right-padding: 1em;
     a {
       color: white;
     }
-  }
-
-  &--social {
-    margin-bottom: $top-and-button-margin;
-
-    @include flexbox;
-    @include flex-basis(100%);
-    @include align-items(center);
-    @include justify-content(space-around);
-  }
-
-  &--icons {
-    width: 1.8em;
-    margin-left: $left-and-right-padding;
   }
 
   &--aarhus {
@@ -68,25 +55,14 @@ $left-and-right-padding: 1em;
   @include breakpoint($breakpoint-tablet) {
     &--mail {
       order: 2;
-      text-align: left;
+      text-align: right;
 
-      @include flex-basis(50%);
-    }
-
-    &--social,
-    &--icons {
-      @include flex-basis(25%);
-    }
-
-    &--social {
-        order: 3;
-      @include flexbox;
-      @include align-items(center);
-      @include justify-content(flex-end);
+      @include flex-basis(75%);
     }
 
     &--aarhus {
       order: 1;
+
       @include flex-basis(25%);
       @include justify-content(flex-start);
     }
@@ -94,15 +70,10 @@ $left-and-right-padding: 1em;
 
   @include breakpoint($breakpoint-desk) {
     &--mail {
-      text-align: center;
       order: 2;
 
-      @include flex-basis(50%);
+      @include flex-basis(75%);
       @include align-self(center);
-    }
-
-    &--social {
-      order: 3;
     }
 
     &--aarhus {
