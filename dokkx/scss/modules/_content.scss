@@ -6,8 +6,6 @@
 
 
 &.is-page .content {
-  margin-top: -8em;
-  margin-bottom: 17em;
   padding-top: 3em;
 
   position: relative;
@@ -28,7 +26,6 @@
 
   @include breakpoint($breakpoint-desk) {
     margin-top: -20em;
-    margin-bottom: 12em;
     padding-top: 4em;
 
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
@@ -45,11 +42,15 @@
 
 .content {
   margin-right: auto;
-  margin-bottom: 10em;
+  margin-bottom: 14em;
   margin-left: auto;
   max-width: $breakpoint-desk;
 
   @include word-wrap;
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-bottom: 9em;
+  }
 
   p + h3,
   p + p {
