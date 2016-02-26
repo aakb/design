@@ -12,7 +12,6 @@
   padding-bottom: 2em;
   width: 100%;
 
-  background-color: rgba(0, 0, 0, .5);
   background-image: url('//unsplash.it/1600/500/?random');
   background-size: cover;
   color: #fff;
@@ -22,6 +21,8 @@
 
   &:before {
     @extend %image-overlay;
+
+    background-color: rgba(0, 0, 0, .5);
   }
 
   // Handle z-index for remaining elements.

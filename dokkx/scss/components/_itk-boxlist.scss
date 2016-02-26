@@ -77,13 +77,12 @@ $boxlist-padding: 1em;
   &--item {
     @include flexbox;
     @include flex-flow(row nowrap);
+  }
 
-    margin-bottom: 3em;
-    padding-bottom: 2em;
-
-    &:not(:last-child) {
-      border-bottom: 1px solid $gray-lighter;
-    }
+  &--item + &--item {
+    border-top: 1px solid $gray-lighter;
+    margin-top: 2em;
+    padding-top: 2em;
   }
 
   header {

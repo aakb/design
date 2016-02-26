@@ -72,9 +72,9 @@
       <header>
         <h2 class="itk-boxlist--header"><a href="/dokkx/aktiviteter/">Aktuelt på DokkX</a></h2>
         <p>[Mangler tekst]</p>
-        <a href="/dokkx/aktiviteter/">[Mangler tekst]</a>
+        <a href="#">[Mangler tekst]</a>
       </header>
-      <figure><a href="/dokkx/aktiviteter/"><img src="https://unsplash.it/500/500/?random"</a></figure>
+      <figure><a href="#"><img src="https://unsplash.it/500/501/?random"></a></figure>
     </article>
     <article class="itk-boxlist--item">
       <header>
@@ -82,7 +82,7 @@
         <p>[Mangler tekst]</p>
         <a href="#">[Mangler tekst]</a>
       </header>
-      <figure><a href="#"><img src="https://unsplash.it/500/501/?random"</a></figure>
+      <figure><a href="#"><img src="https://unsplash.it/500/501/?random"></a></figure>
     </article>
   </div>
 </main>
