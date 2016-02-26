@@ -48,6 +48,10 @@ textarea {
   &[disabled] {
     background-color: $gray-lightest;
   }
+
+  &.is-error {
+    border: 1px solid $error-color;
+  }
 }
 
 
@@ -57,9 +61,6 @@ textarea {
 label {
   display: block;
   margin-bottom: .25em;
-
-  /* Move labels so they align better with fields when using rounded corners */
-  margin-left: .3em;
 
   color: $gray-darker;
 }

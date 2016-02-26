@@ -1,7 +1,7 @@
 <?php
   $class = 'is-page';
-  $is_group_active  = 0;
-  $is_sub_active[0] = 1;
+  $is_group_active  = 1;
+  $is_sub_active[1] = 1;
 
   include '../_header.php';
   include '../_menus.php';
@@ -23,6 +23,15 @@
       Så skriv ”Book rundvisning” i emnefeltet og send os en MAIL. Eller ring og hør nærmere på TLF.
     </p>
   </div>
+  <fieldset>
+    <legend>Book en rundvisning</legend>
+    <div class="itk-message">
+      <div class="itk-message--inner is-info">
+        Tak for dine henvendelse, vi vender tilbage hurtigst muligt!
+      </div>
+    </div>
+    <p>Vi har sendt en kopi af din henvendelse til <strong>mail@example.com</strong>, spørgsmål så kontakt os på: <a href="#">[Mangler e-mail]</a></p>
+  </fieldset>
   <?php include $path . '/includes/_instagram.php'; ?>
 </main>
 <?php include $path . '/_footer.php'; ?>
