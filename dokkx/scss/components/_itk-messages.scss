@@ -13,15 +13,18 @@
 $message-color:                  #f1f1f1;
 $message-info-color:             #dff2bf;
 $message-warning-color:          #feefb3;
-$message-error-color:            #ffbaba;
+$message-error-color:            $error-color;
 
 
 /* Styles
    ========================================================================== */
 
 .itk-message {
-  margin: 0 auto 1em;
   max-width: $breakpoint-desk;
+
+  & + p {
+    margin-top: 1em;
+  }
 }
 
 .itk-message--inner {

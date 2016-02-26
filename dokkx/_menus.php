@@ -33,9 +33,6 @@
           <a class="nav--link is-sub <?php echo $is_sub_active[0] === 0 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/sundhed-traening.php">
             Sundhed og træning
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 1 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/book-rundvisning.php">
-            Book en rundvisning
-          </a>
           <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/teknologier.php">
             Teknologier
           </a>
@@ -48,7 +45,11 @@
             Besøg DokkX
           </a>
           <a class="nav--link is-sub <?php echo $is_sub_active[1] === 0 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/aabningstider.php">
-            Åbningstider</a>
+            Åbningstider
+          </a>
+          <a class="nav--link is-sub <?php echo $is_sub_active[1] === 1 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/book-rundvisning.php">
+            Book en rundvisning
+          </a>
         </div>
         <div class="hamburger-menu--group<?php echo $is_group_active === 2 || isset($is_sub_active[1]) ? ' is-active' : '' ?>">
           <a href="/dokkx/om-dokkx/" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">

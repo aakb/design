@@ -147,10 +147,17 @@
     }
   }
 
-  &--text {
-    border-bottom: 1px solid $gray-lighter;
+  &--text + fieldset {
+    margin-top: 3em;
+  }
 
-    margin-bottom: 3em;
-    padding-bottom: 3em;
+  fieldset {
+    margin-right: $layout-padding;
+    margin-left: $layout-padding;
+
+    @include breakpoint($breakpoint-desk) {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }

@@ -23,7 +23,7 @@
         input[type=checkbox] {
           position: absolute;
 
-          margin-top: .2em;
+          margin-top: .25em;
           margin-left: -1.25em;
         }
       }
@@ -33,5 +33,8 @@
   .button {
     @include align-self(flex-end);
   }
+}
 
+p + .content-form {
+  margin-top: 1em;
 }
