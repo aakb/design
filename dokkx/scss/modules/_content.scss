@@ -6,50 +6,55 @@
 
 
 &.is-page .content {
-  padding-top: 3em;
+  &--inner {
+    margin-top: -7em;
+    padding-top: 3em;
 
-  position: relative;
-  z-index: z($z-index-elements, content);
+    position: relative;
+    z-index: z($z-index-elements, content);
 
-  background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
 
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 2%);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 2%);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.5%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.5%);
 
-  @include breakpoint($breakpoint-tablet) {
-    margin-bottom: 9em;
-    padding-top: 3.5em;
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: -8em;
+      margin-bottom: 9em;
+      padding-top: 3.5em;
 
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 3%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 3%);
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      margin-top: -21em;
+      padding-top: 3em;
+
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      padding-right: $layout-padding;
+      padding-left: $layout-padding;
+      padding-top: 5em;
+    }
   }
-
-  @include breakpoint($breakpoint-desk) {
-    margin-top: -20em;
-    padding-top: 4em;
-
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
-  }
-
-  @include breakpoint($breakpoint-bigscreen) {
-    padding-right: $layout-padding;
-    padding-left: $layout-padding;
-    padding-top: 5em;
-  }
-
 }
 
 .content {
-  margin-right: auto;
-  margin-bottom: 14em;
-  margin-left: auto;
-  max-width: $breakpoint-desk;
+  &--inner {
+    margin-right: auto;
+    margin-bottom: 14em;
+    margin-left: auto;
+    max-width: $breakpoint-desk;
 
-  @include word-wrap;
+    @include word-wrap;
 
-  @include breakpoint($breakpoint-tablet) {
-    margin-bottom: 9em;
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 9em;
+    }
   }
 
   p + h3,

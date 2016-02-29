@@ -22,25 +22,27 @@
 </div>
 
 <main role="main" class="content">
-  <div class="itk-boxlist">
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header"><a href="#">[Mangler tekst]</a></h2>
-        <p>[Mangler tekst]</p>
-        <a href="#">[Mangler tekst]</a>
-      </header>
-      <figure><a href="#"><img src="https://unsplash.it/500/425/?random"></a></figure>
-    </article>
-    <article class="itk-boxlist--item">
-      <header>
-        <h2 class="itk-boxlist--header"><a href="#">[Mangler tekst]</a></h2>
-        <p>[Mangler tekst]</p>
-        <a href="#">[Mangler tekst]</a>
-      </header>
-      <figure><a href="#"><img src="https://unsplash.it/500/450/?random"></a></figure>
-    </article>
+  <div class="content--inner">
+    <div class="itk-boxlist">
+      <article class="itk-boxlist--item">
+        <header>
+          <h2 class="itk-boxlist--header"><a href="#">[Mangler tekst]</a></h2>
+          <p>[Mangler tekst]</p>
+          <a href="#">[Mangler tekst]</a>
+        </header>
+        <figure><a href="#"><img src="https://unsplash.it/500/425/?random"></a></figure>
+      </article>
+      <article class="itk-boxlist--item">
+        <header>
+          <h2 class="itk-boxlist--header"><a href="#">[Mangler tekst]</a></h2>
+          <p>[Mangler tekst]</p>
+          <a href="#">[Mangler tekst]</a>
+        </header>
+        <figure><a href="#"><img src="https://unsplash.it/500/450/?random"></a></figure>
+      </article>
+    </div>
+    <?php include 'includes/_instagram.php'; ?>
   </div>
-  <?php include 'includes/_instagram.php'; ?>
 </main>
 <!--region.html.twig END-->
 
