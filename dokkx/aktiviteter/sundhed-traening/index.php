@@ -20,7 +20,6 @@
     <div class="content--text">
       <p>[Mangler tekst]</p>
     </div>
-    <?php include $path . '/includes/_instagram.php'; ?>
   </div>
 </main>
 <?php include $path . '/_footer.php'; ?>
