@@ -20,6 +20,7 @@
     </div>
     <div class="itk-boxlist">
       <?php include $path . '/includes/boxes/_sundhed-traening.php'; ?>
+      <?php include $path . '/includes/boxes/_faellesskab.php'; ?>
       <?php include $path . '/includes/boxes/_teknologier.php'; ?>
       <?php include $path . '/includes/boxes/_arkiv.php'; ?>
     </div>
