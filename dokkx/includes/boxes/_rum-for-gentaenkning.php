@@ -4,5 +4,5 @@
     <p>Et innovativt miljø for afsmittende samtaler og samarbejde</p>
     <a href="/dokkx/om-dokkx/rum-for-gentaenkning/">Rum for gentænking</a>
   </header>
-  <figure><a href="/dokkx/om-dokkx/rum-for-gentaenkning/"><img src="https://unsplash.it/500/502/?random"></a></figure>
+  <figure><a href="/dokkx/om-dokkx/rum-for-gentaenkning/"><img src="https://unsplash.it/500/499/?random"></a></figure>
 </article>

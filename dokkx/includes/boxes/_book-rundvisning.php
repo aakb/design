@@ -7,5 +7,5 @@
     </p>
     <a href="/dokkx/besoeg-dokkx/book-rundvisning/">Book en rundvisning</a>
   </header>
-  <figure><a href="/dokkx/besoeg-dokkx/book-rundvisning/"><img src="https://unsplash.it/500/500/?random"></a></figure>
+  <figure><a href="/dokkx/besoeg-dokkx/book-rundvisning/"><img src="https://unsplash.it/500/496/?random"></a></figure>
 </article>
