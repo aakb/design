@@ -1,4 +1,6 @@
 <?php
+  include $_SERVER['DOCUMENT_ROOT']. '/dokkx/_settings.php';
+
   $class = 'is-page';
   $is_active       = 0;
   $is_group_active = 0;

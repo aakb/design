@@ -1,14 +1,17 @@
 <?php
+  include $_SERVER['DOCUMENT_ROOT']. '/dokkx/_settings.php';
+
   $class = 'is-page';
+  $is_active        = 1;
   $is_group_active  = 1;
   $is_sub_active[1] = 0;
 
-  include '../_header.php';
-  include '../_menus.php';
+  include $path . '/_header.php';
+  include $path . '/_menus.php';
 ?>
 
 <main role="main" class="content">
-  <?php include '../includes/_image.php'; ?>
+  <?php include $path . '/includes/_image.php'; ?>
   <div class="content--inner">
     <h1 class="content--header">Åbningstider</h1>
     <div class="content--lead">

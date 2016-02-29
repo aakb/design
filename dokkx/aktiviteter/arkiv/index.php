@@ -1,16 +1,19 @@
 <?php
-  $class = 'is-page';
-  $is_group_active  = 0;
-  $is_sub_active[0] = 2;
+  include $_SERVER['DOCUMENT_ROOT']. '/dokkx/_settings.php';
 
-  include '../_header.php';
-  include '../_menus.php';
+  $class = 'is-page';
+  $is_active        = 0;
+  $is_group_active  = 0;
+  $is_sub_active[0] = 3;
+
+  include $path . '/_header.php';
+  include $path . '/_menus.php';
 ?>
 
+<?php include '../includes/_image.php'; ?>
 <main role="main" class="content">
-  <?php include '../includes/_image.php'; ?>
   <div class="content--inner">
-    <h1 class="content--header">Teknologier</h1>
+    <h1 class="content--header">Arkiv</h1>
     <div class="content--lead">
       <p>[Mangler tekst]</p>
     </div>
@@ -31,3 +34,4 @@
   </div>
 </main>
 <?php include $path . '/_footer.php'; ?>
+

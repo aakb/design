@@ -30,13 +30,13 @@
           <a href="/dokkx/aktiviteter/" class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">
             Aktiviteter
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 0 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/sundhed-traening.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 0 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/sundhed-traening/">
             Sundhed og træning
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/teknologier.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/teknologier/">
             Teknologier
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 3 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/arkiv.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 3 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/arkiv/">
             Arkiv
           </a>
         </div>
@@ -44,20 +44,29 @@
           <a href="/dokkx/besoeg-dokkx/" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">
             Besøg DokkX
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[1] === 0 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/aabningstider.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[1] === 0 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/aabningstider/">
             Åbningstider
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[1] === 1 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/book-rundvisning.php">
+          <a class="nav--link is-sub <?php echo $is_sub_active[1] === 1 ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/book-rundvisning/">
             Book en rundvisning
           </a>
         </div>
         <div class="hamburger-menu--group<?php echo $is_group_active === 2 || isset($is_sub_active[1]) ? ' is-active' : '' ?>">
-          <a href="/dokkx/om-dokkx/" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">
+          <a href="/dokkx/om-dokkx/" class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>">
             Om DokkX
+          </a>
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 0 ? ' is-active' : '' ?>" href="/dokkx/om-dokkx/frihed-til-mere-til-flere/">
+            Frihed til mere til flere
+          </a>
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 1 ? ' is-active' : '' ?>" href="/dokkx/om-dokkx/rum-for-gentaenkning/">
+            Rum for gentænking
+          </a>
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 2 ? ' is-active' : '' ?>" href="/dokkx/om-dokkx/centrum-for-velfaerds-og-frihedsteknologi/">
+            Centrum for velfærds- og Frihedsteknologi
           </a>
         </div>
         <div class="hamburger-menu--group<?php echo $is_group_active === 3 || isset($is_sub_active[1]) ? ' is-active' : '' ?>">
-          <a href="/dokkx/designguide.php" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">
+          <a href="/dokkx/designguide/" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">
             Designguide
           </a>
         </div>
