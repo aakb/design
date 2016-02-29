@@ -20,7 +20,6 @@
 
     @include breakpoint($breakpoint-tablet) {
       margin-top: -8em;
-      margin-bottom: 9em;
       padding-top: 3.5em;
 
       -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 3%);
@@ -46,14 +45,14 @@
 .content {
   &--inner {
     margin-right: auto;
-    margin-bottom: 14em;
+    margin-bottom: 16em;
     margin-left: auto;
     max-width: $breakpoint-desk;
 
     @include word-wrap;
 
     @include breakpoint($breakpoint-tablet) {
-      margin-bottom: 9em;
+      margin-bottom: 11em;
     }
   }
 
