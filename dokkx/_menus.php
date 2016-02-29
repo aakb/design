@@ -33,10 +33,13 @@
           <a class="nav--link is-sub <?php echo $is_sub_active[0] === 1 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/sundhed-traening/">
             Sundhed og træning
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/teknologier/">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 2 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/faellesskab/">
+            Fællesskab
+          </a>
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 3 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/teknologier/">
             Teknologier
           </a>
-          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 3 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/arkiv/">
+          <a class="nav--link is-sub <?php echo $is_sub_active[0] === 4 ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/arkiv/">
             Arkiv
           </a>
         </div>
