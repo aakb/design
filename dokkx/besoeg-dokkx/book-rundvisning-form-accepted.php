@@ -33,7 +33,6 @@
       </div>
       <p>Vi har sendt en kopi af din henvendelse til <strong>mail@example.com</strong>, spørgsmål så kontakt os på: <a href="#">[Mangler e-mail]</a></p>
     </fieldset>
-    <?php include $path . '/includes/_instagram.php'; ?>
   </div>
 </main>
 <?php include $path . '/_footer.php'; ?>

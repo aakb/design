@@ -43,7 +43,6 @@
         <a href="book-rundvisning-form-error.php" class="button">Send forespørgsel</a>
       </form>
     </fieldset>
-    <?php include $path . '/includes/_instagram.php'; ?>
   </div>
 </main>
 <?php include $path . '/_footer.php'; ?>

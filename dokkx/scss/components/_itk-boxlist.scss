@@ -91,7 +91,6 @@ $boxlist-padding: 1em;
     @include breakpoint($breakpoint-lap) {
       padding-top: 0;
       padding-right: $boxlist-padding;
-      padding-bottom: $boxlist-padding;
       padding-left: $boxlist-padding;
 
       @include flex-grow(1);
