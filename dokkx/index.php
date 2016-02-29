@@ -18,7 +18,7 @@
       Så kom og besøg os på niveau 2 på Dokk1.
     </p>
     <div class="header--button-wrapper">
-      <a href="/dokkx/besoeg-dokkx/aabningstider.php" class="header--button-link">Se vores åbningstider</a>
+      <a href="/dokkx/besoeg-dokkx/aabningstider/" class="header--button-link">Se vores åbningstider</a>
     </div>
   </div>
 </div>
