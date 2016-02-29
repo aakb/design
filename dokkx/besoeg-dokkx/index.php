@@ -1,10 +1,12 @@
 <?php
+  include $_SERVER['DOCUMENT_ROOT']. '/dokkx/_settings.php';
+
   $class = 'is-page';
   $is_active        = 1;
   $is_group_active  = 1;
 
-  include '../_header.php';
-  include '../_menus.php';
+  include $path . '/_header.php';
+  include $path . '/_menus.php';
 ?>
 
 <main role="main" class="content">
@@ -18,17 +20,7 @@
       <p>[Mangler tekst]</p>
     </div>
     <div class="itk-boxlist">
-      <article class="itk-boxlist--item">
-        <header>
-          <h2 class="itk-boxlist--header"><a href="/dokkx/besoeg-dokkx/book-rundvisning.php">Book en rundvisning</a></h2>
-          <p>
-            Alle er velkomne på DokkX i vores åbningstider. Du kan frit boltre dig blandt vores spændende teknologier, og
-            her er altid en medarbejder, du kan spørge til råds om stort og småt.
-          </p>
-          <a href="/dokkx/besoeg-dokkx/book-rundvisning.php">Book en rundvisning</a>
-        </header>
-        <figure><a href="/dokkx/besoeg-dokkx/book-rundvisning.php"><img src="https://unsplash.it/500/400/?random"></a></figure>
-      </article>
+      <?php include $path . '/includes/boxes/_book-rundvisning.php'; ?>
     </div>
     <?php include 'includes/_instagram.php'; ?>
   </div>

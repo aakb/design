@@ -1,14 +1,17 @@
 <?php
+  include $_SERVER['DOCUMENT_ROOT']. '/dokkx/_settings.php';
+
   $class = 'is-page';
+  $is_active        = 1;
   $is_group_active  = 1;
   $is_sub_active[1] = 1;
 
-  include '../_header.php';
-  include '../_menus.php';
+  include $path . '/_header.php';
+  include $path . '/_menus.php';
 ?>
 
 <main role="main" class="content">
-  <?php include '../includes/_image.php'; ?>
+  <?php include $path . '/includes/_image.php'; ?>
   <div class="content--inner">
     <h1 class="content--header">Book en rundvisning</h1>
     <div class="content--lead">
@@ -26,22 +29,12 @@
     </div>
     <fieldset>
       <legend>Book en rundvisning</legend>
-      <p>Udfyld formularen for at booke en rundvisning, vi skal bruge dit navn og e-mail adresse for at kontakte dig.</p>
-      <form class="content-form" id="#form" name="#form">
-        <div class="content-form--item">
-          <label for="name">Navn</label>
-          <input id="name" type="text" placeholder="Indtast dit fulde navn" required>
+      <div class="itk-message">
+        <div class="itk-message--inner is-info">
+          Tak for dine henvendelse, vi vender tilbage hurtigst muligt!
         </div>
-        <div class="content-form--item">
-          <label for="email">E-mail</label>
-          <input id="email" type="email" placeholder="Indtast e-mail adresse" required>
-        </div>
-        <div class="content-form--item">
-          <label for="message">Evt. besked</label>
-          <textarea id="message" placeholder="Skriv evt. en besked"></textarea>
-        </div>
-        <a href="book-rundvisning-form-error.php" class="button">Send forespørgsel</a>
-      </form>
+      </div>
+      <p>Vi har sendt en kopi af din henvendelse til <strong>mail@example.com</strong>, spørgsmål så kontakt os på: <a href="#">[Mangler e-mail]</a></p>
     </fieldset>
   </div>
 </main>

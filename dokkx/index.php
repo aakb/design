@@ -1,8 +1,10 @@
 <?php
+  include $_SERVER['DOCUMENT_ROOT']. '/dokkx/_settings.php';
+
   $class = 'is-frontpage';
 
-  include '_header.php';
-  include '_menus.php';
+  include $path . '/_header.php';
+  include $path . '/_menus.php';
 ?>
 <!--region.html.twig START-->
 <div class="header" role="banner" id="home">
@@ -24,22 +26,8 @@
 <main role="main" class="content">
   <div class="content--inner">
     <div class="itk-boxlist">
-      <article class="itk-boxlist--item">
-        <header>
-          <h2 class="itk-boxlist--header"><a href="#">[Mangler tekst]</a></h2>
-          <p>[Mangler tekst]</p>
-          <a href="#">[Mangler tekst]</a>
-        </header>
-        <figure><a href="#"><img src="https://unsplash.it/500/425/?random"></a></figure>
-      </article>
-      <article class="itk-boxlist--item">
-        <header>
-          <h2 class="itk-boxlist--header"><a href="#">[Mangler tekst]</a></h2>
-          <p>[Mangler tekst]</p>
-          <a href="#">[Mangler tekst]</a>
-        </header>
-        <figure><a href="#"><img src="https://unsplash.it/500/450/?random"></a></figure>
-      </article>
+      <?php include $path . '/includes/boxes/_sundhed-traening.php'; ?>
+      <?php include $path . '/includes/boxes/_book-rundvisning.php'; ?>
     </div>
     <?php include 'includes/_instagram.php'; ?>
   </div>
