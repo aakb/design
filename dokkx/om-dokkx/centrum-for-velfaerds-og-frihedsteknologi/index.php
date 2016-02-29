@@ -2,9 +2,7 @@
   include $_SERVER['DOCUMENT_ROOT']. '/dokkx/_settings.php';
 
   $class = 'is-page';
-  $is_active        = 2;
-  $is_group_active  = 2;
-  $is_sub_active[2] = 2;
+  $is_sub_active[2] = 3;
 
   include $path . '/_header.php';
   include $path . '/_menus.php';

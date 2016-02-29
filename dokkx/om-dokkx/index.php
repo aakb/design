@@ -3,7 +3,6 @@
 
   $class = 'is-page';
   $is_active       = 2;
-  $is_group_active = 2;
 
   include $path . '/_header.php';
   include $path . '/_menus.php';
