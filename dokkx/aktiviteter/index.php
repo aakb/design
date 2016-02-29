@@ -41,6 +41,7 @@
           <a href="/dokkx/besoeg-dokkx/book-rundvisning.php">Book en rundvisning</a>
         </header>
         <figure><a href="/dokkx/besoeg-dokkx/book-rundvisning.php"><img src="https://unsplash.it/500/400/?random"></a></figure>
+      </article>
     </div>
   </div>
 </main>

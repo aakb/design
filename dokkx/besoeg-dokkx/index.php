@@ -20,11 +20,14 @@
     <div class="itk-boxlist">
       <article class="itk-boxlist--item">
         <header>
-          <h2 class="itk-boxlist--header"><a href="#">[Mangler tekst]</a></h2>
-          <p>[Mangler tekst]</p>
-          <a href="#">[Mangler tekst]</a>
+          <h2 class="itk-boxlist--header"><a href="/dokkx/besoeg-dokkx/book-rundvisning.php">Book en rundvisning</a></h2>
+          <p>
+            Alle er velkomne på DokkX i vores åbningstider. Du kan frit boltre dig blandt vores spændende teknologier, og
+            her er altid en medarbejder, du kan spørge til råds om stort og småt.
+          </p>
+          <a href="/dokkx/besoeg-dokkx/book-rundvisning.php">Book en rundvisning</a>
         </header>
-        <figure><a href="#"><img src="https://unsplash.it/500/500/?random"</a></figure>
+        <figure><a href="/dokkx/besoeg-dokkx/book-rundvisning.php"><img src="https://unsplash.it/500/400/?random"></a></figure>
       </article>
     </div>
     <?php include 'includes/_instagram.php'; ?>
