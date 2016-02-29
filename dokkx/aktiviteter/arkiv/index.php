@@ -10,7 +10,7 @@
   include $path . '/_menus.php';
 ?>
 
-<?php include '../includes/_image.php'; ?>
+<?php include $path . '/includes/_image.php'; ?>
 <main role="main" class="content">
   <div class="content--inner">
     <h1 class="content--header">Arkiv</h1>
@@ -21,16 +21,8 @@
       <p>[Mangler tekst]</p>
     </div>
     <div class="itk-boxlist">
-      <article class="itk-boxlist--item">
-        <header>
-          <h2 class="itk-boxlist--header"><a href="#">[Mangler tekst]</a></h2>
-          <p>[Mangler tekst]</p>
-          <a href="#">[Mangler tekst]</a>
-        </header>
-        <figure><a href="#"><img src="https://unsplash.it/500/500/?random"</a></figure>
-      </article>
+      <?php include $path . '/includes/boxes/_sundhed-traening.php'; ?>
     </div>
-    <?php include 'includes/_instagram.php'; ?>
   </div>
 </main>
 <?php include $path . '/_footer.php'; ?>

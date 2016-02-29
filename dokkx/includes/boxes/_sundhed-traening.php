@@ -9,5 +9,5 @@
     </p>
     <a href="/dokkx/aktiviteter/sundhed-traening/">Sundhed og træning</a>
   </header>
-  <figure><a href="/dokkx/aktiviteter/sundhed-traening/"><img src="https://unsplash.it/500/503/?random"></a></figure>
+  <figure><a href="/dokkx/aktiviteter/sundhed-traening/"><img src="https://unsplash.it/500/500/?random"></a></figure>
 </article>
