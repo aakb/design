@@ -28,6 +28,12 @@ $boxlist-padding: 1em;
     }
   }
 
+  header {
+    a {
+      margin-top: .75em;
+    }
+  }
+
   &--link,
   &--link:link,
   &--link:visited {

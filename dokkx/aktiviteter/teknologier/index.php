@@ -19,8 +19,7 @@
       <p>[Mangler tekst]</p>
     </div>
     <div class="itk-boxlist">
-      <?php include $path . '/includes/boxes/_sundhed-traening.php'; ?>
-      <?php include $path . '/includes/boxes/_arkiv.php'; ?>
+      <?php include $path . '/includes/boxes/_fitlight-trainer.php'; ?>
     </div>
   </div>
 </main>

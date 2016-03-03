@@ -18,6 +18,9 @@
     <div class="content--text">
       <p>[Mangler tekst]</p>
     </div>
+    <div class="itk-boxlist">
+      <?php include $path . '/includes/boxes/_fitlight-trainer.php'; ?>
+    </div>
   </div>
 </main>
 <?php include $path . '/_footer.php'; ?>

@@ -27,21 +27,29 @@
     </div>
     <fieldset>
       <legend>Book en rundvisning</legend>
-      <p>Udfyld formularen for at booke en rundvisning, vi skal bruge dit navn og e-mail adresse for at kontakte dig.</p>
+      <p>[Mangler tekst]</p>
       <form class="content-form" id="#form" name="#form">
         <div class="content-form--item">
           <label for="name">Navn</label>
-          <input id="name" type="text" placeholder="Indtast dit fulde navn" required>
+          <input id="name" type="text" placeholder="Skriv dit fulde navn" required>
+        </div>
+        <div class="content-form--item">
+          <label for="name">Institution/forening</label>
+          <input id="name" type="text" placeholder="Skriv hvor din gruppe kommer fra" required>
+        </div>
+        <div class="content-form--item">
+          <label for="name">Antal personer</label>
+          <input id="name" type="number" placeholder="Skriv ca. antal personer" required>
         </div>
         <div class="content-form--item">
           <label for="email">E-mail</label>
-          <input id="email" type="email" placeholder="Indtast e-mail adresse" required>
+          <input id="email" type="email" placeholder="Skriv e-mail adresse" required>
         </div>
         <div class="content-form--item">
           <label for="message">Evt. besked</label>
           <textarea id="message" placeholder="Skriv evt. en besked"></textarea>
         </div>
-        <a href="book-rundvisning-form-error.php" class="button">Send forespørgsel</a>
+        <a href="book-rundvisning-form-error.php" class="button">Send</a>
       </form>
     </fieldset>
   </div>
