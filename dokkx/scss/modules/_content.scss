@@ -123,15 +123,15 @@
       overflow: hidden;
 
       height: 500px;
-
-      img {
-        margin-top: -225px;
-      }
     }
 
     @include breakpoint($breakpoint-bigscreen) {
       -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
       clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+
+      img {
+        margin-top: -225px;
+      }
     }
 
     &:before {
