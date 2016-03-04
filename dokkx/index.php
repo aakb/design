@@ -35,6 +35,7 @@
       <?php include $path . '/includes/boxes/_sundhed-traening.php'; ?>
       <?php include $path . '/includes/boxes/_book-rundvisning.php'; ?>
     </div>
+    <h2 class="frontpage--header"><a href="https://www.instagram.com/explore/tags/dokkx/">#DokkX</a> på Instagram</h2>
     <?php include 'includes/_instagram.php'; ?>
   </div>
 </main>

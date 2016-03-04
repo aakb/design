@@ -44,3 +44,12 @@
     word-wrap: break-word;
   }
 }
+
+
+.is-frontpage .instagram-gallery {
+  margin-top: 0;
+
+  &--title {
+    display: none;
+  }
+}
