@@ -27,7 +27,9 @@
 <main role="main" class="content">
   <div class="content--inner">
     <h2 class="frontpage--header">Seneste nyt fra DokkX</h2>
-    <?php include 'includes/_news.php'; ?>
+    <div class="itk-boxlist">
+      <?php include $path . '/includes/_news.php'; ?>
+    </div>
     <h2 class="frontpage--header">Oplevelser på DokkX</h2>
     <div class="itk-boxlist">
       <?php include $path . '/includes/boxes/_sundhed-traening.php'; ?>

@@ -6,5 +6,5 @@
     </p>
     <a href="/dokkx/aktiviteter/teknologier/fitlight-trainer/">Teknologier</a>
   </header>
-  <figure><a href="/dokkx/aktiviteter/teknologier/fitlight-trainer/"><img src="https://unsplash.it/500/501/?random"></a></figure>
+  <figure><a href="/dokkx/aktiviteter/teknologier/fitlight-trainer/"><img src="https://unsplash.it/500/502/?random"></a></figure>
 </article>
