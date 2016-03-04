@@ -9,10 +9,11 @@
   <nav class="nav js-nav">
     <div class="nav--links">
       <a class="nav--link<?php echo $is_active === 0 || $is_sub_active[0] ? ' is-active' : '' ?>" href="/dokkx/aktiviteter/">Aktiviteter</a>
-      <a class="nav--link<?php echo $is_active === 1 || $is_sub_active[1] ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/">Besøg
+      <a class="nav--link<?php echo $is_active === 1 || $is_sub_active[1] ? ' is-active' : '' ?>" href="/dokkx/nyheder/">Nyheder</a>
+      <a class="nav--link<?php echo $is_active === 2 || $is_sub_active[2] ? ' is-active' : '' ?>" href="/dokkx/besoeg-dokkx/">Besøg
         DokkX</a>
-      <a class="nav--link<?php echo $is_active === 2 || $is_sub_active[2] ? ' is-active' : '' ?>" href="/dokkx/om-dokkx/">Om DokkX</a>
-      <a class="nav--link<?php echo $is_active === 3 || $is_sub_active[3] ? ' is-active' : '' ?>" href="/dokkx/kontakt/">Kontakt</a>
+      <a class="nav--link<?php echo $is_active === 3 || $is_sub_active[3] ? ' is-active' : '' ?>" href="/dokkx/om-dokkx/">Om DokkX</a>
+      <a class="nav--link<?php echo $is_active === 4 || $is_sub_active[4] ? ' is-active' : '' ?>" href="/dokkx/kontakt/">Kontakt</a>
     </div>
   </nav>
   <!--menu.html.twig END-->

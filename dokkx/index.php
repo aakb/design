@@ -6,6 +6,7 @@
   include $path . '/_header.php';
   include $path . '/_menus.php';
 ?>
+
 <!--region.html.twig START-->
 <div class="header" role="banner" id="home">
   <div class="header--inner">
@@ -25,6 +26,11 @@
 
 <main role="main" class="content">
   <div class="content--inner">
+    <h2 class="frontpage--header">Seneste nyt fra DokkX</h2>
+    <div class="itk-boxlist">
+      <?php include $path . '/includes/_news.php'; ?>
+    </div>
+    <h2 class="frontpage--header">Oplevelser på DokkX</h2>
     <div class="itk-boxlist">
       <?php include $path . '/includes/boxes/_sundhed-traening.php'; ?>
       <?php include $path . '/includes/boxes/_book-rundvisning.php'; ?>

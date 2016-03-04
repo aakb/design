@@ -2,16 +2,16 @@
   include $_SERVER['DOCUMENT_ROOT']. '/dokkx/_settings.php';
 
   $class = 'is-page';
-  $is_active = 2;
+  $is_sub_active[0] = 1;
 
   include $path . '/_header.php';
   include $path . '/_menus.php';
 ?>
 
 <main role="main" class="content">
-  <?php include '../includes/_image.php'; ?>
+  <?php include $path . '/includes/_image.php'; ?>
   <div class="content--inner">
-    <h1 class="content--header">Besøg DokkX</h1>
+    <h1 class="content--header">Dørautomatik</h1>
     <div class="content--lead">
       <p>[Mangler tekst]</p>
     </div>
@@ -19,9 +19,8 @@
       <p>[Mangler tekst]</p>
     </div>
     <div class="itk-boxlist">
-      <?php include $path . '/includes/boxes/_book-rundvisning.php'; ?>
+      <?php include $path . '/includes/boxes/_faellesskab.php'; ?>
     </div>
-    <?php include 'includes/_instagram.php'; ?>
   </div>
 </main>
 <?php include $path . '/_footer.php'; ?>
