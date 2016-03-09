@@ -27,7 +27,7 @@
     <div class="sg-container">
       <h1 class="sg-logo">
         <span class="sg-logo-initials">SG</span>
-        <span class="sg-logo-full">STYLE GUIDE</span> <em>BOILERPLATE</em>
+        <span class="sg-logo-full">Indholdskanalen styleguide</span>
       </h1>
       <button type="button" class="sg-nav-toggle">Menu</button>
     </div>
@@ -39,12 +39,6 @@
       <ul class="sg-nav-group">
         <li>
           <a href="#sg-about">Getting Started</a>
-        </li>
-        <li>
-          <a href="#sg-colors">Colors</a>
-        </li>
-        <li>
-          <a href="#sg-fontStacks">Fonts</a>
         </li>
       </ul>
 
@@ -60,46 +54,6 @@
             <p>Add the attached styling as a seperate file in the scss/assets folder.</p>
             <p>Documentation for a component is added in the doc folder.</p>
           </div><!--/.sg-about-->
-
-          <!-- Manually add your UI colors here. -->
-          <div class="sg-colors sg-section">
-            <h2 id="sg-colors" class="sg-h2">Colors</h2>
-            <div class="sg-color-grid">
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #1abc9c;"></div>
-                <div class="sg-color-name">Turquoise</div>
-                <div class="sg-color-value">#1abc9c</div>
-              </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #2ecc71;"></div>
-                <div class="sg-color-name">Emerald</div>
-                <div class="sg-color-value">#2ecc71</div>
-              </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #3498db;"></div>
-                <div class="sg-color-name">Peter River</div>
-                <div class="sg-color-value">#3498db</div>
-              </div>
-              <div class="sg-color">
-                <div class="sg-color-swatch" style="background-color: #9b59b6;"></div>
-                <div class="sg-color-name">Amethyst</div>
-                <div class="sg-color-value">#9b59b6</div>
-              </div>
-            </div><!--/.sg-color-grid-->
-          </div><!--/.sg-colors-->
-
-          <!-- Manually add your fonts here. -->
-          <div class="sg-font-stacks sg-section">
-            <h2 id="sg-fontStacks" class="sg-h2">Font Stacks</h2>
-            <dl class="sg-font-list">
-              <dt>Primary Font:</dt>
-              <dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
-
-              <dt>Primary Font Italic:</dt>
-              <dd style='font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; font-style: italic;'>"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
-            </dl>
-            <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
-          </div><!--/.sg-font-stacks-->
         </div><!--/.sg-info-->
 
         <?php renderFilesInFolder('markup'); ?>
@@ -111,4 +65,3 @@
   <script src="js/sg-scripts.js"></script>
 </body>
 </html>
-

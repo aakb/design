@@ -10,14 +10,16 @@
 @import "base/_base";
 @import "base/_normalize";
 @import "base/_mixins";
-@import "base/icon";
+@import "base/_icon";
 
 // Include assets
-@import "assets/flexbox";
+@import "assets/_flexbox";
+@import "assets/_itk-tabs";
 
 // Layout
 
 // Components
-@import "components/itk-messages";
+@import "components/_alerts";
+@import "components/_tabs";
 
 // Modules

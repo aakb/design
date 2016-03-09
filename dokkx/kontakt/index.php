@@ -10,6 +10,13 @@
 
 <main role="main" class="content">
   <?php include '../includes/_image.php'; ?>
+  <div class="administration--tabs">
+    <ul>
+      <li><a href="/dette-er-en-side" data-drupal-link-system-path="node/27" class="is-active">View<span class="visually-hidden">(active tab)</span></a></li>
+      <li><a href="/node/27/edit" data-drupal-link-system-path="node/27/edit">Edit</a></li>
+      <li><a href="/node/27/delete" data-drupal-link-system-path="node/27/delete">Delete</a></li>
+    </ul>
+  </div>
   <div class="content--inner">
     <h1 class="content--header">Kontakt DokkX</h1>
     <div class="content--lead">
