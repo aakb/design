@@ -8,47 +8,72 @@
 /* Breakpoints
    ================================================================================================================== */
 
-
-$breakpoint-lap:              481px;
-$breakpoint-tablet:           720px;
-$breakpoint-desk:             1024px;
-$breakpoint-bigscreen:        1500px;
+$breakpoint-lap:          481px;
+$breakpoint-portable:     1023px;
+$breakpoint-desk:         1024px;
+$breakpoint-bigscreen:    1700px;
 
 
 /* Layout
    ================================================================================================================== */
 
+$border-radius:    .6em;
+$border-width:      1px !default;
 
-
-/* Elements
-   ================================================================================================================== */
-
-$nav-height:  80px;
+$layout-max-width:    75em;
+$border-radius:       .4em;
 
 
 /* Colors
    ================================================================================================================== */
 
-$theme-color:             #ffde06;
-$theme-color-secondary:   #009b92;
+$black:               #000;
+$white:               #fff;
 
-$black:            #000;
-$white:            #fff;
+$beige:               #f0f0e1;
+$beige-dark:          #e4e4d5;
 
-$gray-lightest:    lighten($black, 95%);
-$gray-lighter:     lighten($black, 90%);
-$gray-light:       lighten($black, 70%);
-$gray:             lighten($black, 60%);
-$gray-dark:        lighten($black, 50%);
-$gray-darker:      lighten($black, 40%);
-$gray-darkest:     lighten($black, 12%);
+$gray-lightest:       lighten($black, 98%);
+$gray-lighter:        lighten($black, 90%);
+$gray-light:          lighten($black, 80%);
+$gray:                lighten($black, 70%);
+$gray-dark:           lighten($black, 45%);
+$gray-darker:         lighten($black, 35%);
+$gray-darkest:        lighten($black, 25%);
 
-$link-color:       $theme-color-secondary;
-$link-color-hover: darken($link-color, 15%);
+$gray-background:     #f2f2f2;
+$gray-color:          #999;
+
+$orange:              #FF8600;
+
+$button-default-background: #357fd1;
+$button-default-inactive: #b8b8b8;
+$button-default-warning: #b20000;
 
 
-/* Typography
+/* Typograhy
    ================================================================================================================== */
 
-$font-family:      "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family:      "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font:             1em/1.5 $font-family;
+
+
+
+/* Link colors
+   ================================================================================================================== */
+
+$link-color:       #2c79d3;
+$link-color-hover:    darken($link-color, 10%);
+
+
+/* Spacing
+   ================================================================================================================== */
+
+$margin:    1.5em;
+$padding:   1.5em;
+
+
+/* Misc
+   ================================================================================================================== */
+
+$border-color:        $gray-lighter;

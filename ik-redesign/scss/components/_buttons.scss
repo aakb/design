@@ -1,0 +1,69 @@
+/**
+ *
+ * Buttons
+ *
+ * This is an example file
+ *
+ */
+
+
+%button {
+  @include strip-link-styles($white); // A tags
+
+  display: inline-block;
+  line-height: 1.5em;
+  font-size: 125%;
+  padding: .5em 2em;
+  position: relative;
+
+  border: 0;
+  border-radius: $itk--tabs-border-radius;
+  color: $white;  // Input tags
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.button {
+  @extend %button;
+
+  // Default colors
+  background: $button-default-background;
+
+  &:hover {
+    background: darken($button-default-background, 15%);
+  }
+
+  // Grayscale
+  &.is-grayscale {
+    background: $gray-dark;
+
+    &:hover {
+      background: darken($gray-dark, 15%);
+    }
+  }
+
+  // Inactive color
+  &.is-inactive {
+    background: $button-default-inactive;
+
+    &:hover {
+      background: darken($button-default-inactive, 15%);
+    }
+  }
+
+  // Warning color
+  &.is-warning {
+    background: $button-default-warning;
+
+    &:hover {
+      background: darken($button-default-warning, 15%);
+    }
+  }
+}

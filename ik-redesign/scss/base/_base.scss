@@ -19,8 +19,8 @@ body {
   width: 100%;
 
   background-color: $white;
+  color: $gray-darker;
 
-  color: #999;
   font: $font;
 }
 
@@ -88,6 +88,14 @@ a {
     color: darken($link-color, 10%);
   }
 }
+
+
+/* Typograhy
+   ================================================================================================================== */
+
+$font-family:      "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:             1em/1.5 $font-family;
+
 
 
 /* Paragraph

@@ -21,24 +21,22 @@
 
     // Link nesting rather than adding classes to tabs links.
     a {
-      background: $blue-dark;
+      background: $theme-color;
       margin: .5em .2em 0;
       padding: .5em 1em;
-
-      @include border-top-radius(.5em);
 
       @include strip-link-styles($white);
 
       &.active {  // Drupal state class.
-        background: $yellow;
+        background: $gray-darkest;
 
-        @include strip-link-styles($gray-darkest);
+        @include strip-link-styles($white);
       }
 
       &:hover {
-        background: $yellow;
+        background: $gray-darker;
 
-        @include strip-link-styles($gray-darkest);
+        @include strip-link-styles($white);
       }
     }
 
@@ -47,8 +45,6 @@
       margin: 0;
       padding: 1em .5em 0;
       background: $white;
-
-      @include border-top-radius(.5em);
     }
 
     li {

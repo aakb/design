@@ -12,9 +12,9 @@
   <?php include '../includes/_image.php'; ?>
   <div class="administration--tabs">
     <ul>
-      <li><a href="/dette-er-en-side" data-drupal-link-system-path="node/27" class="is-active">View<span class="visually-hidden">(active tab)</span></a></li>
-      <li><a href="/node/27/edit" data-drupal-link-system-path="node/27/edit">Edit</a></li>
-      <li><a href="/node/27/delete" data-drupal-link-system-path="node/27/delete">Delete</a></li>
+      <li><a href="/dette-er-en-side" class="is-active">View</a></li>
+      <li><a href="/node/27/edit">Edit</a></li>
+      <li><a href="/node/27/delete">Delete</a></li>
     </ul>
   </div>
   <div class="content--inner">

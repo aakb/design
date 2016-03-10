@@ -4,22 +4,25 @@
  *
  */
 
-
 // Include base
-@import "base/_vars";
-@import "base/_base";
-@import "base/_normalize";
-@import "base/_mixins";
-@import "base/_icon";
+@import "base/vars";
+@import "base/base";
+@import "base/normalize";
+@import "base/mixins";
+@import "base/icon";
+@import "base/forms";
 
 // Include assets
-@import "assets/_flexbox";
-@import "assets/_itk-tabs";
+@import "assets/flexbox";
+@import "assets/itk-tabs";
 
 // Layout
 
 // Components
-@import "components/_alerts";
-@import "components/_tabs";
+@import "components/alerts";
+@import "components/buttons";
+@import "components/tabs";
+@import "components/pager";
+@import "components/search_result";
 
 // Modules

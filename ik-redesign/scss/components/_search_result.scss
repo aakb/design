@@ -1,0 +1,42 @@
+/**
+ *
+ * Search result
+ *
+ */
+
+
+/* Search results
+   ========================================================================== */
+
+.search-result {
+  border: $border-width solid $gray-light;
+  margin-bottom: $margin;
+  padding: $padding;
+
+  border-radius: $border-radius;
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+
+  &--image {
+    margin-bottom: $margin;
+
+    @include flex(0, 0, 100%);
+    @include breakpoint($breakpoint-lap){
+      padding-right: 2em;
+
+      @include flex(0, 0, 30%);
+    }
+  }
+
+  &--content {
+    @include flex(0, 0, 100%);
+    @include breakpoint($breakpoint-lap){
+      @include flex(0, 0, 70%);
+    }
+  }
+
+  &--meta {
+    margin-bottom: $margin;
+  }
+}
