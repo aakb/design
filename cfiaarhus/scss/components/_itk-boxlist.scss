@@ -14,6 +14,7 @@ $boxlist-padding:                       1em;
 
 
 .itk-boxlist,
+.itk-boxlist-detail,
 .itk-boxlist-column,
 .itk-boxlist-news,
 .itk-boxlist-events {
@@ -61,8 +62,29 @@ $boxlist-padding:                       1em;
   }
 }
 
+.itk-boxlist,
+.itk-boxlist-news,
+.itk-boxlist-events {
+  &--item {
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+  }
+
+  header {
+    @include breakpoint($breakpoint-lap) {
+      padding-bottom: $boxlist-padding;
+    }
+  }
+
+  figure {
+    margin-right: 1em;
+
+    @include flex-basis(6em);
+  }
+}
 
 .itk-boxlist,
+.itk-boxlist-detail,
 .itk-boxlist-news,
 .itk-boxlist-events {
   padding-right: 1em;
@@ -72,9 +94,6 @@ $boxlist-padding:                       1em;
     @include flexbox;
     @include flex-flow(row nowrap);
 
-    margin-bottom: 3em;
-    padding-bottom: 2em;
-
     &:not(:last-child) {
       border-bottom: 1px solid $gray-lighter;
     }
@@ -82,13 +101,10 @@ $boxlist-padding:                       1em;
 
   header {
     order: 2;
-  }
 
-  @include breakpoint($breakpoint-lap) {
-    header {
+    @include breakpoint($breakpoint-lap) {
       padding-top: 0;
       padding-right: $boxlist-padding;
-      padding-bottom: $boxlist-padding;
       padding-left: $boxlist-padding;
 
       @include flex-grow(1);
@@ -97,11 +113,8 @@ $boxlist-padding:                       1em;
   }
 
   figure {
-    margin-right: 1em;
-
     order: 1;
 
-    @include flex-basis(6em);
     @include flex-shrink(0);
   }
 
@@ -114,6 +127,27 @@ $boxlist-padding:                       1em;
   }
 }
 
+
+.itk-boxlist-detail {
+  &--item {
+    margin-bottom: 1.25em;
+    padding-bottom: .5em;
+  }
+
+  header {
+    padding-bottom: .5em;
+  }
+
+  figure {
+    margin-right: .5em;
+
+    @include flex-basis(3em);
+  }
+
+  p {
+    margin-bottom: .5em;
+  }
+}
 
 .itk-boxlist-news,
 .itk-boxlist-events {
