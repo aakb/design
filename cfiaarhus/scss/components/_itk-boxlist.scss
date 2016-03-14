@@ -14,7 +14,7 @@ $boxlist-padding:                       1em;
 
 
 .itk-boxlist,
-.itk-boxlist-detail,
+.itk-boxlist-compact,
 .itk-boxlist-column,
 .itk-boxlist-news,
 .itk-boxlist-events {
@@ -84,7 +84,7 @@ $boxlist-padding:                       1em;
 }
 
 .itk-boxlist,
-.itk-boxlist-detail,
+.itk-boxlist-compact,
 .itk-boxlist-news,
 .itk-boxlist-events {
   padding-right: 1em;
@@ -128,24 +128,28 @@ $boxlist-padding:                       1em;
 }
 
 
-.itk-boxlist-detail {
+.itk-boxlist-compact {
   &--item {
-    margin-bottom: 1.25em;
-    padding-bottom: .5em;
+    margin-bottom: 1em;
+    padding-bottom: .25em;
   }
 
   header {
     padding-bottom: .5em;
   }
 
+  &--header {
+    margin-bottom: .1em;
+  }
+
   figure {
-    margin-right: .5em;
+    margin-right: .1em;
 
     @include flex-basis(3em);
   }
 
   p {
-    margin-bottom: .5em;
+    margin-bottom: 0;
   }
 }
 
