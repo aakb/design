@@ -1,0 +1,1 @@
+Uses filter icon from images folder

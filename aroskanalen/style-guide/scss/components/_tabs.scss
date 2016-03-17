@@ -1,0 +1,22 @@
+/**
+ *
+ * Itk tabs
+ *
+ * A component for displaying tabs as rounded corners.
+ *
+ */
+
+/* Styles
+   ========================================================================== */
+
+.tabs {
+  @extend %itk--tabs;
+}
+
+.tabs--item {
+  @extend %itk--tabs-item;
+
+  &.is-active {
+    font-weight: bold;
+  }
+}
