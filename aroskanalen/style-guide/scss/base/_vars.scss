@@ -17,8 +17,8 @@ $breakpoint-bigscreen:    1700px;
 /* Layout
    ================================================================================================================== */
 
-$border-radius:    .6em;
-$border-width:      1px !default;
+$border-radius:       .6em;
+$border-width:        1px;
 
 $layout-max-width:    75em;
 $border-radius:       .4em;
@@ -26,6 +26,10 @@ $border-radius:       .4em;
 
 /* Colors
    ================================================================================================================== */
+
+$theme-color:             rgb(21, 123, 179);
+$theme-color-light:       rgb(195, 226, 244);
+$theme-color-secondary:   #b13a32;
 
 $black:               #000;
 $white:               #fff;
@@ -62,8 +66,9 @@ $font:             1em/1.5 $font-family;
 /* Link colors
    ================================================================================================================== */
 
-$link-color:       #2c79d3;
-$link-color-hover:    darken($link-color, 10%);
+$link-color:       $theme-color;
+$link-color-hover: darken($link-color, 25%);
+
 
 
 /* Spacing
