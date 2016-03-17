@@ -53,7 +53,6 @@ body {
 .sg-sidebar {
   background: #3d3d3d;
   color: #fff;
-  font-size: 80%;
   padding-left: 16px; /* For older browsers */
   padding-left: 0 1rem;
   padding-right: 16px; /* For older browsers */
@@ -82,7 +81,6 @@ body {
   .js.nav-is-active .sg-sidebar {
     bottom: 0;
     float: left;
-    font-size: 100%;
     opacity: 1;
     position: absolute;
     top: 0;
@@ -156,8 +154,6 @@ body {
 .sg-logo,
 .sg-about p,
 .sg-color-value  {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
 }
 
 /* SG Font 2 */
@@ -169,8 +165,6 @@ body {
 .sg-h3,
 .sg-color-name,
 .sg-font-list dt  {
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   font-weight: 500;
 }
 
 /* Branding
@@ -209,8 +203,6 @@ body {
   border: 1px solid #7C7C7C;
   color: #fff;
   float: right;
-  font-size: 16px;
-  font-size: 1rem;
   padding: 5px 8px; /* For older browsers */
   padding: 0.3125rem 0.5rem;
   text-decoration: none;
@@ -247,7 +239,6 @@ body {
   border-left: 2px solid transparent;
   color: #fff;
   display: block;
-  font-size: 1.2em;
   padding: .35em 0 .35em .5em;
   text-decoration: none;
   text-transform: capitalize;
@@ -283,25 +274,21 @@ body {
 }
 
 .sg-h1 {
-  font-size: 2em;
   padding-bottom: .2em;
   text-transform: capitalize;
 }
 
 .sg-h2 {
   border-bottom: 1px solid #ddd;
-  font-size: 1.75em;
   margin-bottom: .75em;
   padding-bottom: .2em;
   text-transform: capitalize;
 }
 
 .sg-h3 {
-  font-size: 1.5em;
 }
 
 .sg-about p {
-  font-size: 1.1em;
 }
 
 
@@ -312,8 +299,6 @@ body {
   border: none;
   color: #222;
   float: left;
-  font-size: 16px; /* For older browsers */
-  font-size: 1rem;
   padding: .5em .9em;
   text-decoration: none;
 }
@@ -397,12 +382,10 @@ body {
 }
 
 .sg-color-name {
-  font-size: 1.2em; /* Test this with 1.1 em */
   padding: .5em 0;
 }
 
 .sg-color-value {
-  font-size: 1.2em;  /* Test this with 1.1 em */
 }
 
 @media only screen and (min-width: 375px) {
@@ -445,7 +428,6 @@ body {
 }
 
 .sg-font-list {
-  font-size: 1.1em;
 }
 
 .sg-font-list dt {

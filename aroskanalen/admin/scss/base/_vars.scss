@@ -24,7 +24,7 @@ $z-index-elements: header-overlay, header, content, nav, logo, overlay, hamburge
 /* Layout
    ================================================================================================================== */
 
-$layout-padding:  1.8em;
+$layout-padding:  1em;
 
 
 /* Elements
@@ -36,8 +36,9 @@ $nav-height:  80px;
 /* Colors
    ================================================================================================================== */
 
-$theme-color:             #009fe3;
-$theme-color-secondary:   #e30613;
+$theme-color:             rgb(21, 123, 179);
+$theme-color-light:       rgb(195, 226, 244);
+$theme-color-secondary:   #b13a32;
 
 $black:            #000;
 $white:            #fff;
@@ -53,7 +54,6 @@ $gray-darkest:     lighten($black, 12%);
 $link-color:       $theme-color;
 $link-color-hover: darken($link-color, 25%);
 
-$error-color:      #ffbaba;
 
 
 /* Typography

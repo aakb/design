@@ -8,43 +8,35 @@
 // Logo styling.
 // This handles the default logo behaviour whether it is sticky or not.
 .logo,
-.logo.is-sticky,
-.is-frontpage .logo.is-sticky {
-  position: absolute;
-  top: 1.7em;
-  left: $layout-padding;
-  z-index: z($z-index-elements, logo);
-  overflow: hidden;
+.logo.is-sticky {
+  @include flexbox;
+  @include strip-link-styles($white, none);
 
-  display: block;
-  height: 2em;
-  width: 10em;
+  overflow: hidden;
+  z-index: z($z-index-elements, logo);
+
+  height: 100%;
+  margin-right: 5.5em;
+  margin-left: $layout-padding;
+
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1em;
 
   @include breakpoint($breakpoint-desk) {
-    position: fixed;
+    margin-right: $layout-padding;
+
+    font-size: 1.75em;
   }
 
-  // Using full class because of chained selector (logo.is-sticky).
-  .logo--shape {
-    fill: $black;
-  }
-}
+  span {
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
 
-// Specific override when viewing the frontpage.
-// In this case the logo should show the text below and be slightly bigger on big screens.
-.is-frontpage {
-  .logo {
-    @include breakpoint($breakpoint-bigscreen) {
-      top: 1.5em;
+    white-space: nowrap;
 
-      height: 5em;
-      width: 15em;
-
-      transition: all .35s;
-    }
-
-    &--shape {
-      fill: $white;
+    @include breakpoint($breakpoint-tablet) {
     }
   }
 }

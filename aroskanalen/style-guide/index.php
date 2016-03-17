@@ -3,7 +3,7 @@
 <html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
-  <title>Style Guide Boilerplate</title>
+  <title>Aroskanalen style guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000">
 
@@ -26,8 +26,8 @@
   <div id="top" class="sg-header" role="banner">
     <div class="sg-container">
       <h1 class="sg-logo">
-        <span class="sg-logo-initials">SG</span>
-        <span class="sg-logo-full">Indholdskanalen styleguide</span>
+        <span class="sg-logo-initials">AR SG</span>
+        <span class="sg-logo-full">Aroskanalen style guide</span>
       </h1>
       <button type="button" class="sg-nav-toggle">Menu</button>
     </div>

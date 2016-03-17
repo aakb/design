@@ -61,8 +61,7 @@
     }
   }
 
-  // Drupal uses same template for menus so they both get the nav--link class
-  .nav--link {
+  &--link {
     display: list-item;
     margin-bottom: .25em;
 
