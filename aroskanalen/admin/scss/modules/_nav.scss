@@ -1,0 +1,137 @@
+/**
+ *
+ * Navigation.
+ *
+ */
+
+
+.nav {
+  display: none; // Hiding navigation on smaller screens
+
+  @include breakpoint($breakpoint-desk) {
+    @include flexbox;
+    @include flex-grow(1);
+    @include flex-shrink(0);
+    @include justify-content(center);
+
+    padding-right: 7em;
+
+    font-weight: 300;
+    text-align: right;
+
+    a {
+      @include strip-link-styles($white, none);
+    }
+  }
+
+  &--link {
+    @include breakpoint($breakpoint-desk) {
+      padding-right: 1.2em;
+      padding-left: 1.2em;
+
+      color: $gray-darkest;
+      font-size: 1.2em;
+      text-decoration: none;
+
+      transition: top .35s, right .35s, border 1s, padding .35s, background-color .25s;
+
+      @include flexbox;
+      @include align-items(center);
+
+      &.is-active,
+      &.is-active:hover {
+        margin-top: -1em;
+        margin-bottom: -1em;
+
+        background-color: $theme-color;
+
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+
+        @include strip-link-styles($white, none);
+      }
+
+      &:hover {
+        background-color: $gray-darkest;
+
+        @include strip-link-styles($white, none);
+      }
+    }
+  }
+}
+
+
+.nav-toggle {
+  position: absolute;
+  top: 1.6em;
+  right: 2em;
+  z-index: z($z-index-elements, nav-toggle);
+
+  height: 36px;
+  width: 40px;
+
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  &.open,
+  &.is-sticky {
+    span {
+      background: $gray-darkest;
+    }
+  }
+
+  @include breakpoint($breakpoint-desk) {
+  }
+}
+
+.nav-toggle span {
+  position: absolute;
+  left: 0;
+
+  display: block;
+  height: 5px;
+  width: 100%;
+
+  background: $white;
+  opacity: 1;
+
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.nav-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-toggle span:nth-child(2),
+.nav-toggle span:nth-child(3) {
+  top: 15px;
+}
+
+.nav-toggle span:nth-child(4) {
+  top: 30px;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  top: 15px;
+  left: 50%;
+
+  width: 0%;
+}
+
+.nav-toggle.open span:nth-child(2) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.nav-toggle.open span:nth-child(4) {
+  top: 15px;
+  width: 0%;
+  left: 50%;
+}

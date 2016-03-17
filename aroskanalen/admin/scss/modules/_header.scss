@@ -1,0 +1,26 @@
+/**
+ *
+ * Header.
+ *
+ */
+
+
+.header {
+  position: absolute;
+  top: 0;
+  z-index: z($z-index-elements, nav);
+
+  width: 100%;
+
+  background-color: $black;
+  transition: top .35s, right .35s, padding .35s;
+
+  &--inner {
+    @include flexbox;
+    @include flex-direction(row);
+
+    position: relative;
+
+    height: 5.5em;
+  }
+}

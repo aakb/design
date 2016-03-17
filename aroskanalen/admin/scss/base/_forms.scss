@@ -1,0 +1,66 @@
+/**
+ *
+ * Forms
+ *
+ * This is an example file
+ *
+ */
+
+
+
+/* Basic styling
+   ================================================================================================================== */
+
+input,
+textarea {
+  font: $font;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  border: 1px solid $gray-lighter;
+  display: block;
+  min-height: 1.25em;
+  width: 100%;
+  padding: .75em;
+
+  border-radius: .85em;
+  box-sizing: border-box;
+
+  color: $gray-darker;
+  background-color: $white;
+
+  &:focus {
+    border: 1px solid $gray-dark;
+
+    color: $gray-darkest;
+  }
+
+  &[disabled] {
+    background-color: $gray-lightest;
+  }
+
+  &.is-error {
+    border: 1px solid $error-color;
+  }
+}
+
+
+/* Labels
+   ================================================================================================================== */
+
+label {
+  display: block;
+  margin-bottom: .25em;
+
+  color: $gray-darker;
+}

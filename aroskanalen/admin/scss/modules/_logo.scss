@@ -1,0 +1,42 @@
+/**
+ *
+ * Logo.
+ *
+ */
+
+
+// Logo styling.
+// This handles the default logo behaviour whether it is sticky or not.
+.logo,
+.logo.is-sticky {
+  @include flexbox;
+  @include strip-link-styles($white, none);
+
+  overflow: hidden;
+  z-index: z($z-index-elements, logo);
+
+  height: 100%;
+  margin-right: 5.5em;
+  margin-left: $layout-padding;
+
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1em;
+
+  @include breakpoint($breakpoint-desk) {
+    margin-right: $layout-padding;
+
+    font-size: 1.75em;
+  }
+
+  span {
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    white-space: nowrap;
+
+    @include breakpoint($breakpoint-tablet) {
+    }
+  }
+}
