@@ -12,7 +12,7 @@
     @include flexbox;
     @include flex-grow(1);
     @include flex-shrink(0);
-    @include justify-content(center);
+    @include justify-content(flex-end);
 
     padding-right: 7em;
 
@@ -52,7 +52,7 @@
       }
 
       &:hover {
-        background-color: $gray-darkest;
+        background-color: $theme-color;
 
         @include strip-link-styles($white, none);
       }

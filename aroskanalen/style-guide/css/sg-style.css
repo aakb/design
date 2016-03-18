@@ -235,7 +235,9 @@ body {
 }
 
 .sg-nav-group a,
-.sg-nav-group a:visited {
+.sg-nav-group a:link,
+.sg-nav-group a:visited,
+.sg-nav-group a:hover {
   border-left: 2px solid transparent;
   color: #fff;
   display: block;
