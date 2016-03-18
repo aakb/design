@@ -26,6 +26,9 @@
 
   &--link {
     @include breakpoint($breakpoint-desk) {
+      @include flexbox;
+      @include align-items(center);
+
       padding-right: 1.2em;
       padding-left: 1.2em;
 
@@ -33,28 +36,21 @@
       font-size: 1.2em;
       text-decoration: none;
 
-      transition: top .35s, right .35s, border 1s, padding .35s, background-color .25s;
-
-      @include flexbox;
-      @include align-items(center);
+      transition: border .15s;
 
       &.is-active,
-      &.is-active:hover {
-        margin-top: -1em;
-        margin-bottom: -1em;
-
-        background-color: $theme-color;
-
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-
+      &.is-active:hover,
+      &:hover:not(.is-active) {
         @include strip-link-styles($white, none);
       }
 
-      &:hover {
+      &.is-active,
+      &.is-active:hover {
         background-color: $theme-color;
+      }
 
-        @include strip-link-styles($white, none);
+      &:hover:not(.is-active) {
+        border-bottom: .25em solid $theme-color;
       }
     }
   }
