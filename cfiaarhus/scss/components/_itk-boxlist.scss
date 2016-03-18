@@ -143,9 +143,13 @@ $boxlist-padding:                       1em;
   }
 
   figure {
-    margin-right: .1em;
+    margin-right: .75em;
 
     @include flex-basis(3em);
+
+    @include breakpoint($breakpoint-lap) {
+      margin-right: .1em;
+    }
   }
 
   p {
