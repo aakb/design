@@ -1,8 +1,8 @@
 
 .staff-department {
-margin: 1em;
-display: block;
-float: left;
+  display: block;
+
+
 }
 
 .flip-container{
@@ -17,3 +17,21 @@ img {
     height: $imageheight;
 
 }
+
+.staff-department .staff-list {
+
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  //@include justify-content(center);
+  float: left;
+
+}
+
+.staff-department-head {
+
+  text-align: center;
+  font-size: 3em;
+
+}
+
