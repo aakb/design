@@ -2,10 +2,15 @@
 
 .front{
 
-  background-color: black;
+  background-color: rgb(35,85,135);
+
+  //-webkit-box-shadow: 0 10px 6px -6px #777;
+  //-moz-box-shadow: 0 10px 6px -6px #777;
+  //box-shadow: 0 10px 15px 1px #777;
+
 
   .staff-name-title {
-    padding: .5em;
+    padding: .8em;
     a:link, a:visited {  
     color: white;
     text-decoration: none;

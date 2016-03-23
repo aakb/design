@@ -2,12 +2,17 @@
 
 .back {
 
-  background-color: green;
+  background-color: whitesmoke;
+
 
   .staff-contact {
 
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
     padding: .5em;
     .staff-phone {
+      padding-top: 2em;
       margin-bottom: 1em;
     }
 

@@ -1,12 +1,55 @@
+body {
 
-.staff-department {
+  //background:url('http://www.cssdeck.com/uploads/media/items/0/0Rs78ic.gif');
+  background-color:#F6F6F6;
+  padding:0;
+  margin:0;
+  font: 72.5% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+.topbar{
   display: block;
+  background-color:rgb(35,85,135);
+  top: 0;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+
+
+    text-align: center;
+    color: white;
+    font-size: 3em;
 
 
 }
 
-.flip-container{
+.staff-department {
 
+  padding-bottom: 4em;
+
+}
+
+.staff-department-leader{
+  @include flexbox;
+  @include flex-direction(row-reverse);
+  @include justify-content(flex-end);
+
+
+
+
+
+
+
+
+}
+
+ .first {
+   margin-top: 10em;
+ }
+
+.flip-container{
 margin: 1em;
 
 }
@@ -23,15 +66,7 @@ img {
   @include flexbox;
   @include flex-direction(row);
   @include flex-wrap(wrap);
-  //@include justify-content(center);
-  float: left;
-
 }
 
-.staff-department-head {
 
-  text-align: center;
-  font-size: 3em;
-
-}
 
