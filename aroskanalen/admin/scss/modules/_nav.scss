@@ -12,15 +12,24 @@
     @include flexbox;
     @include flex-grow(1);
     @include flex-shrink(0);
-    @include justify-content(flex-end);
+    @include justify-content(center);
 
     padding-right: 7em;
 
     font-weight: 300;
     text-align: right;
 
+    // Google icons
+    .material-icons {
+      margin-top: -.025em;
+      margin-right: .5em;
+    }
+
     a {
       @include strip-link-styles($white, none);
+
+      border-bottom: 5px solid $white;
+      margin-bottom: -5px;
     }
   }
 
@@ -50,7 +59,7 @@
       }
 
       &:hover:not(.is-active) {
-        border-bottom: .25em solid $theme-color;
+        border-bottom: 5px solid $theme-color;
       }
     }
   }
