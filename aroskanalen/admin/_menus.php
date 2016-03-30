@@ -5,16 +5,16 @@
       <a href="<?php echo $path_to_site; ?>" class="logo js-logo" title="Aroskanalen"><span>Aroskanalen</span></a>
       <nav class="nav js-nav">
           <a class="nav--link<?php echo $is_active === 0 || $is_sub_active[0] ? ' is-active' : '' ?>" href="#">
-            Slides
+            <i class="material-icons">add_to_queue</i>Slides
           </a>
           <a class="nav--link<?php echo $is_active === 1 || $is_sub_active[1] ? ' is-active' : '' ?>" href="#">
-            Kanaler
+            <i class="material-icons">dvr</i>Kanaler
           </a>
           <a class="nav--link<?php echo $is_active === 2 || $is_sub_active[2] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/screen/">
-            Skærme
+            <i class="material-icons">tv</i>Skærme
           </a>
         <a class="nav--link<?php echo $is_active === 3 || $is_sub_active[3] ? ' is-active' : '' ?>" href="#">
-          Medier
+          <i class="material-icons">picture_in_picture</i>Medier
         </a>
       </nav>
     </div>
