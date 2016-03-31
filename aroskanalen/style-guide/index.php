@@ -62,6 +62,8 @@
   </div><!--/.sg-wrapper-->
 
   <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/sg-scripts.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

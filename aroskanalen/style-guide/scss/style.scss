@@ -11,9 +11,11 @@
 @import "base/mixins";
 @import "base/icon";
 @import "base/forms";
+@import "base/functions";
 
 // Include assets
 @import "assets/flexbox";
+@import "assets/itk-modal";
 @import "assets/itk-tabs";
 
 // Layout
@@ -21,6 +23,7 @@
 // Components
 @import "components/alerts";
 @import "components/buttons";
+@import "components/modal";
 @import "components/tabs";
 @import "components/pager";
 @import "components/search-result";
