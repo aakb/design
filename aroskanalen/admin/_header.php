@@ -17,3 +17,4 @@
   <script src="<?php echo $path_to_site; ?>/js/modal.js"></script>
   <script src="<?php echo $path_to_site; ?>/js/dropdown.js"></script>
 </head>
+<body class="<?php echo $class; ?>">

@@ -1,4 +1,3 @@
-<body class="<?php echo $class; ?>">
   <div class="overlay js-menu-toggle"></div>
   <header class="header">
     <div class="header--inner">

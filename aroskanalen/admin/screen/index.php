@@ -2,6 +2,7 @@
   include_once $_SERVER['DOCUMENT_ROOT']. '/aroskanalen/admin/_settings.php';
 
   $is_active = 2;
+  $class = 'is-page';
 
   include_once $path . '/_header.php';
   include_once $path . '/_menus.php';

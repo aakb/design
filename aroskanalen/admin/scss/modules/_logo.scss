@@ -6,9 +6,30 @@
 
 
 // Logo styling.
-// This handles the default logo behaviour whether it is sticky or not.
-.logo,
-.logo.is-sticky {
+
+.is-frontpage .logo {
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column);
+
+  color: $white;
+
+  .material-icons {
+    font-size: 34px;
+  }
+
+  &--text {
+    margin-top: .1em;
+  }
+
+  &--slogan {
+    color: transparentize($white, .5);
+    font-size: .45em;
+  }
+}
+
+.is-page .logo,
+.is-page .logo.is-sticky {
   @include flexbox;
   @include strip-link-styles($white, none);
 
@@ -35,8 +56,5 @@
     margin-bottom: auto;
 
     white-space: nowrap;
-
-    @include breakpoint($breakpoint-tablet) {
-    }
   }
 }

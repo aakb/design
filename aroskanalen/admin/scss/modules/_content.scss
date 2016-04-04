@@ -5,7 +5,29 @@
  */
 
 
-.content {
+.is-frontpage .content {
+  @include flexbox;
+
+  height: 100%;
+
+  background-color: transparentize($black, .1);
+
+  &--inner {
+    @include flexbox;
+    @include flex-basis(85%);
+
+    margin: auto;
+    height: 60%;
+    max-width: 75%;
+
+    @include breakpoint($breakpoint-bigscreen) {
+      height: 45%;
+      max-width: 40%;
+    }
+  }
+}
+
+.is-page .content {
   position: relative;
   top: 8em;
 

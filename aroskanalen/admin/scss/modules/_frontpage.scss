@@ -5,15 +5,6 @@
  */
 
 
-.frontpage--header {
-  margin-top: 2em;
-
-  color: $gray-darker;
-  font-size: 1.75em;
-  font-weight: 600;
-  text-align: center;
-
-  @include breakpoint($breakpoint-tablet) {
-    font-size: 2.5em;
-  }
+body.is-frontpage {
+  background-image: url('https://images.unsplash.com/photo-1438906971739-e2463bbce8ed?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2575');
 }
