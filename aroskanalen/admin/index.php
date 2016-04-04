@@ -19,35 +19,26 @@
     </div>
     <div class="container">
       <div class="container--inner">
-        <h2>Login</h2>
-        <div class="login--form">
-          <form action="/login_check" method="post" role="form">
-            <input type="hidden" name="_csrf_token" value="2NofnmUtcTMA7purLt9gmpPmyrytRhzBYB1DqDzjm5g">
-
-            <div class="login--name">
-              <label for="username">Brugernavn</label>
-              <input type="text" class="login--name-input" id="username" name="_username" value="" required="required" placeholder="Brugernavn">
-            </div>
-
-            <div class="login--pass">
-              <label for="password">Kodeord</label>
-              <input type="password" class="login--pass-input" id="password" name="_password" required="required" placeholder="Kodeord">
-            </div>
-
-            <input type="submit" id="_submit" name="_submit" class="button" value="Login">
-
-            <div class="login--remember-me">
-              <input type="checkbox" id="remember_me" class="login--remember-me-checkbox" name="_remember_me" value="on">
-              <label for="remember_me" class="login--remember-me-label">Husk mig</label>
-            </div>
-          </form>
-        </div>
-        <div class="login--problem">
-          <p class="login--content-list-header">Problemer med at logge ind?</p>
-          <ul class="login--content-list">
-            <li><a href="/resetting/request">Jeg har glemt mit brugernavn eller kodeord.</a></li>
-          </ul>
-        </div>
+        <h2 class="has-lg-spacing">Login</h2>
+        <form action="screen" method="post" role="form">
+          <label>Brugernavn</label>
+          <input type="text" placeholder="Brugernavn">
+          <label>Kodeord</label>
+          <input type="password" placeholder="Kodeord">
+          <input type="submit" class="button is-block" value="Login">
+          <div class="form--checkbox">
+            <label>
+              <input type="checkbox">
+              Husk mig i 30 dage
+            </label>
+          </div>
+        </form>
+        <p>
+          Problemer med at logge ind?
+        </p>
+        <ul>
+          <li><a href="#">Jeg har glemt mit brugernavn eller kodeord.</a></li>
+        </ul>
       </div>
     </div>
 </main>
