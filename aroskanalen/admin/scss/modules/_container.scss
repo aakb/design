@@ -1,0 +1,44 @@
+/**
+ *
+ * Container.
+ *
+ */
+
+.container {
+  @include flexbox;
+  @include flex-grow(1);
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-content(stretch);
+
+
+  &:nth-child(1) {
+    @include flex(0 1 35%);
+
+    background-image: url('https://images.unsplash.com/photo-1438906971739-e2463bbce8ed?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2575');
+    background-size: cover;
+
+    .container--inner {
+      background-color: transparentize($theme-color-secondary, .1);
+      border-radius: 6px 0 0 6px;
+    }
+  }
+
+  &:nth-child(2) {
+    @include flex(0 1 65%);
+
+    .container--inner {
+      background-color: $white;
+      border-radius: 0 6px 6px 0;
+    }
+  }
+
+  &--inner {
+    @include flex-grow(1);
+
+    padding-top: 4em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+  }
+}

@@ -15,3 +15,4 @@
   <script src="<?php echo $path_to_site; ?>/js/menu-toggle.js"></script>
   <script src="<?php echo $path_to_site; ?>/js/header-scrolling.js"></script>
 </head>
+<body class="<?php echo $class; ?>">
