@@ -14,15 +14,26 @@
 
   &--inner {
     @include flexbox;
-    @include flex-basis(85%);
+    @include flex-basis(100%);
+    @include flex-direction(column);
 
     margin: auto;
-    height: 60%;
-    max-width: 75%;
+    height: 100%;
+    max-width: 100%;
+
+    @include breakpoint($breakpoint-tablet) {
+      height: auto;
+      max-width: 75%;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      @include flex-direction(row);
+
+      max-width: 85%;
+    }
 
     @include breakpoint($breakpoint-bigscreen) {
-      height: 45%;
-      max-width: 40%;
+      max-width: $layout-max-width;
     }
   }
 }

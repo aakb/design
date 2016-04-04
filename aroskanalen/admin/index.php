@@ -20,12 +20,18 @@
     <div class="container">
       <div class="container--inner">
         <h2 class="has-lg-spacing">Login</h2>
-        <form action="screen" method="post" role="form">
-          <label>Brugernavn</label>
-          <input type="text" placeholder="Brugernavn">
-          <label>Kodeord</label>
-          <input type="password" placeholder="Kodeord">
-          <input type="submit" class="button is-block" value="Login">
+        <form class="form">
+          <div class="form--group">
+            <label for="username">Brugernavn</label>
+            <input type="text" id="username" placeholder="Brugernavn">
+          </div>
+          <div class="form--group">
+            <label for="password">Kodeord</label>
+            <input type="password" id="password" placeholder="Password">
+          </div>
+          <div class="form--group">
+            <input type="submit" class="button is-block" value="Login">
+          </div>
           <div class="form--checkbox">
             <label>
               <input type="checkbox">
@@ -33,12 +39,15 @@
             </label>
           </div>
         </form>
-        <p>
-          Problemer med at logge ind?
-        </p>
-        <ul>
-          <li><a href="#">Jeg har glemt mit brugernavn eller kodeord.</a></li>
-        </ul>
+        <div class="well">
+          <p>
+            Problemer?
+          </p>
+          <ul>
+            <li><a href="#">Jeg har glemt brugernavn eller kodeord</a></li>
+            <li><a href="#">Jeg vil gerne oprette en ny bruger</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 </main>

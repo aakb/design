@@ -11,10 +11,6 @@
 /* Basic styling
    ================================================================================================================== */
 
-form {
-  margin-top: 1.25em;
-}
-
 input,
 textarea {
   font: $font;
@@ -58,28 +54,33 @@ textarea {
   }
 }
 
-input + label,
-input + input[type=submit]{
-  margin-top: 1.25em;
 
-  color: $gray-darker;
-  font-weight: 600;
-}
-
-
-/* Misc
+/* Form
    ================================================================================================================== */
 
-.form--checkbox {
-  position: relative;
-
+.form {
   margin-top: 1.25em;
-  padding-left: 20px;
 
-  input {
-    position: absolute;
+  &--group {
+    margin-top: 1.25em;
 
-    margin-top: 5px;
-    margin-left: -20px;
+    label {
+      color: $gray-darker;
+      font-weight: 600;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+
+    margin-top: 1.25em;
+    padding-left: 1.2em;
+
+    input {
+      position: absolute;
+
+      margin-top: .25em;
+      margin-left: -1.25em;
+    }
   }
 }

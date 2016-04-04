@@ -12,6 +12,8 @@
   @include align-items(center);
   @include flex-direction(column);
 
+  margin-bottom: 0;
+
   color: $white;
 
   .material-icons {
