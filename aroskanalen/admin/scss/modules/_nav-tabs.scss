@@ -1,0 +1,33 @@
+/**
+ *
+ * Nav tabs
+ *
+ * A component for displaying navigational tabs.
+ *
+ */
+
+/* Styles
+   ========================================================================== */
+
+.nav-tabs {
+  border-bottom: 1px solid $gray-lighter;
+  margin: 1em;
+
+  @include flexbox();
+  @include flex-wrap(wrap);
+}
+
+
+.nav-tabs--item {
+  border-bottom: 2px solid $gray-light;
+  margin-right: 2em;
+  padding: 1em 4em .5em 0;
+
+  @include strip-link-styles();
+  @include flex(0, 1, auto);
+
+  &.is-active {
+    color: $theme-color;
+    border-color: $theme-color;
+  }
+}
