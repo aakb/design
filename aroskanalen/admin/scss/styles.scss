@@ -18,6 +18,8 @@
 
 // Include assets
 @import "assets/flexbox";
+@import "assets/itk-modal";
+@import "assets/itk-tabs";
 
 // Components
 @import "components/itk-boxlist";
@@ -26,11 +28,16 @@
 // Modules
 @import "modules/button";
 @import "modules/content";
+@import "modules/dropdown";
 @import "modules/frontpage";
 @import "modules/footer";
 @import "modules/hamburger-menu";
 @import "modules/header";
 @import "modules/logo";
+@import "modules/modal";
 @import "modules/nav";
+@import "modules/nav-tabs";
 @import "modules/overlay";
 @import "modules/pager";
+@import "modules/search-result";
+@import "modules/tabs";

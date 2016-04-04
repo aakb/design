@@ -27,7 +27,6 @@ body {
 html,
 body {
   &.is-locked {
-    position: fixed;
     overflow: hidden;
   }
 }

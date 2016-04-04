@@ -14,4 +14,6 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="<?php echo $path_to_site; ?>/js/menu-toggle.js"></script>
   <script src="<?php echo $path_to_site; ?>/js/header-scrolling.js"></script>
+  <script src="<?php echo $path_to_site; ?>/js/modal.js"></script>
+  <script src="<?php echo $path_to_site; ?>/js/dropdown.js"></script>
 </head>

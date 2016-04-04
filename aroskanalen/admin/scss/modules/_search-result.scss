@@ -8,6 +8,10 @@
 /* Silent classes and variables related to this document
    ========================================================================== */
 
+$margin:          .5em;
+$padding:         1em;
+$border-radius:  .4em;
+
 %search-result {
   background-color: $white;
   border: $border-width solid $gray-light;
@@ -26,6 +30,13 @@
 /* Search results
    ========================================================================== */
 
+.search-result--wrapper {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+}
+
+
 .search-result--wide {
   @extend %search-result;
 }
@@ -34,7 +45,9 @@
 .search-result--box {
   @extend %search-result;
 
-  max-width: 300px;
+  margin: $margin;
+
+  @include flex(0, 0, 290px);
 
   &-header {
     @include flex(0, 1, auto);

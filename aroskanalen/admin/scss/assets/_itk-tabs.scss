@@ -18,7 +18,7 @@ $itk--tabs-active-background:   $gray-lighter; // Tabs active background color.
 $itk--tabs-border:              $border-width solid $gray-light; // Border around the tabs.
 $itk--tabs-padding:             .5em .75em; // Padding of the tabs
 $itk--tabs-font-size:           1rem;   // Inline block fix. The margin of -4px does not solve issue in chrome (this does).
-$itk--tabs-border-radius:       $border-radius; // The roundness!!
+$itk--tabs-border-radius:       .4em; // The roundness!!
 $itk--tabs-hover-background:    $gray-lighter;  // Background color on hover.
 $itk--tabs-hover-color:         inherit; // Text color on hover.
 
@@ -27,7 +27,10 @@ $itk--tabs-hover-color:         inherit; // Text color on hover.
    ========================================================================== */
 
 %itk--tabs {
+  color: $itk--tabs-color;
+
   @include flexbox();
+  @include justify-content(flex-end);
 }
 
 %itk--tabs-item {
@@ -53,11 +56,9 @@ $itk--tabs-hover-color:         inherit; // Text color on hover.
 
   &:hover {
     background: $itk--tabs-hover-background;
-    color: $itk--tabs-hover-color;
   }
 
   &.is-active {
     background: $itk--tabs-active-background;
-    color: $itk--tabs-active-color;
   }
 }
