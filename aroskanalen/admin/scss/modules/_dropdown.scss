@@ -12,7 +12,7 @@
   position: absolute;
   right: .5em;
   top: .5em;
-  z-index: z($z-index-elements, content);
+  z-index: z($z-index-elements, content-dropdown);
 
   padding: 1em 1em 1em 3em;
   box-sizing: border-box;

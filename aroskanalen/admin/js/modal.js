@@ -6,6 +6,7 @@
 (function($) {
   // Function for toggle burger navigation.
   function toggle_modal() {
+    var hamburger_button = $('.nav-toggle');
     var modal = $('.js-modal');
     var modalDialog = $('.js-modal-dialog');
     var body = $('body');
@@ -14,6 +15,8 @@
       // If nav is open we close it.
       if (modal.hasClass('is-visible')) {
 
+        // Button animation 'back to hamburger'.
+        hamburger_button.removeClass("open");
         // Hide menu.
         modal.addClass('is-hidden');
         modal.removeClass('is-visible');
@@ -24,6 +27,9 @@
 
       // If nav is closed we open it.
       else {
+        // Hamburger button animatiion to 'x'.
+        hamburger_button.addClass("open");
+
         // show menu.
         modal.removeClass('is-hidden');
         modal.addClass('is-visible');

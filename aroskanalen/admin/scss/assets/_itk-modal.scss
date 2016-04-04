@@ -30,7 +30,7 @@
   transition: opacity .2s, z-index .2s; // Use z-index to show hide since "display:none" doesn't work with transitions.
 
   &.is-visible {
-    z-index: 100; // Most likely on top of all other content.
+    z-index: z($z-index-elements, modal-overlay-visible); // Most likely on top of all other content.
     opacity: 1;
   }
 }

@@ -4,30 +4,17 @@
  *
  */
 
+.hamburger-menu--overlay {
+  @extend %itk--menu-nav-overlay;
+}
 
 .hamburger-menu {
-  position: fixed;
-  top: 0;
-  right: -30em;
-  bottom: 0;
-  margin-right: 0;
-  max-width: 90%;
-  width: 30em;
   z-index: z($z-index-elements, hamburger-menu);
-  overflow: hidden;
 
-  background-color: $white;
-
-  transition: right .2s;
-  transition-timing-function: ease-in-out;
-
-  &.is-open {
-    right: 0;
-  }
+  @include modal-dialog(30em, right, .2s);
 
   &--inner {
     height: 100%;
-    overflow-y: scroll;
   }
 
   &--links {
