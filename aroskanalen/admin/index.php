@@ -20,7 +20,7 @@
     <div class="container">
       <div class="container--inner">
         <h2 class="has-lg-spacing">Login</h2>
-        <form class="form">
+        <form action="screen/" class="form">
           <div class="form--group">
             <label for="username">Brugernavn</label>
             <input type="text" id="username" placeholder="Brugernavn">
