@@ -7,8 +7,12 @@
 
 // Logo styling.
 
-.is-frontpage .logo {
+.logo {
   @include flexbox;
+  @include flex-direction(row);
+}
+
+.is-frontpage .logo {
   @include align-items(center);
   @include flex-direction(column);
 
@@ -32,7 +36,8 @@
 
 .is-page .logo,
 .is-page .logo.is-sticky {
-  @include flexbox;
+  @include align-items(center);
+
   @include strip-link-styles($white, none);
 
   overflow: hidden;
@@ -46,6 +51,12 @@
   font-weight: 300;
   line-height: 1em;
 
+  .material-icons {
+    margin-right: .25em;
+
+    font-size: 38px;
+  }
+
   @include breakpoint($breakpoint-desk) {
     margin-right: $layout-padding;
 
@@ -54,9 +65,8 @@
 
   span {
     box-sizing: border-box;
-    margin-top: auto;
-    margin-bottom: auto;
 
+    font-weight: 400;
     white-space: nowrap;
   }
 }

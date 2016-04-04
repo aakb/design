@@ -1,7 +1,7 @@
 va<body class="<?php echo $class; ?>">
   <header class="header">
     <div class="header--inner">
-      <a href="<?php echo $path_to_site; ?>" class="logo js-logo" title="Aroskanalen"><span>Aroskanalen</span></a>
+      <a href="<?php echo $path_to_site; ?>" class="logo js-logo" title="Aroskanalen"><i class="material-icons">filter_none</i><span>Aroskanalen</span></a>
       <nav class="nav js-nav">
           <a class="nav--link<?php echo $is_active === 0 || $is_sub_active[0] ? ' is-active' : '' ?>" href="#">
             <i class="material-icons">add_to_queue</i>Slides

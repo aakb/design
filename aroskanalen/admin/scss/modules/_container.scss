@@ -31,7 +31,7 @@
     }
 
     .container--inner {
-      background-color: transparentize($theme-color-secondary, .1);
+      background-color: transparentize($theme-color, .1);
 
       @include breakpoint($breakpoint-tablet) {
         border-radius: 6px 6px 0 0;
