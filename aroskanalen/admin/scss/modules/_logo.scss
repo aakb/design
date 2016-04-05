@@ -5,8 +5,13 @@
  */
 
 
-// Logo styling.
+/* Silent classes and variables related to this document
+   ========================================================================== */
+$layout-padding:  1em;
 
+
+/* Logo styling
+   ========================================================================== */
 .is-frontpage .logo {
   @include flexbox;
   @include align-items(center);

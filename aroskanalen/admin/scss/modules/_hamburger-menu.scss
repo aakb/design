@@ -4,14 +4,20 @@
  *
  */
 
+
+/* Hamburger menu styles
+   ========================================================================== */
 .hamburger-menu--overlay {
-  @extend %itk--menu-nav-overlay;
+  @extend %itk--menu-nav-overlay; // assets/_itk-modal.scss
+
+  cursor: pointer;
 }
 
 .hamburger-menu {
   z-index: z($z-index-elements, hamburger-menu);
+  cursor: auto;
 
-  @include modal-dialog(30em, right, .2s);
+  @include modal-dialog(30em, right, .2s);  // assets/_itk-modal.scss
 
   &--inner {
     height: 100%;

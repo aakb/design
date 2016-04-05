@@ -1,4 +1,4 @@
-va<body class="<?php echo $class; ?>">
+<body class="<?php echo $class; ?>">
   <header class="header">
     <div class="header--inner">
       <a href="<?php echo $path_to_site; ?>" class="logo js-logo" title="Aroskanalen"><span>Aroskanalen</span></a>
@@ -24,7 +24,7 @@ va<body class="<?php echo $class; ?>">
     <span></span>
     <span></span>
   </div>
-  <div class="hamburger-menu--overlay js-modal is-hidden">
+  <div class="hamburger-menu--overlay js-toggle-modal js-modal is-hidden">
     <nav class="hamburger-menu js-modal-dialog is-hidden">
       <div class="hamburger-menu--inner">
         <div class="hamburger-menu--links">

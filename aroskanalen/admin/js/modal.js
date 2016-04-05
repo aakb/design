@@ -11,9 +11,15 @@
     var modalDialog = $('.js-modal-dialog');
     var body = $('body');
 
-    $('.js-toggle-modal').click(function() {
+    $('.js-toggle-modal').click(function(e) {
       // If nav is open we close it.
       if (modal.hasClass('is-visible')) {
+
+        // Look for toggle class before closing modal.
+        var classes = e.target.className;
+        if (classes.indexOf('js-toggle-modal') < 0){
+          return;
+        }
 
         // Button animation 'back to hamburger'.
         hamburger_button.removeClass("open");

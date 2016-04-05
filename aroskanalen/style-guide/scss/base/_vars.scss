@@ -17,31 +17,35 @@ $breakpoint-bigscreen:    1700px;
 /* Z-index (inspired by https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/)
    ================================================================================================================== */
 
-$z-index-elements: content, modal-overlay-visible;
+$z-index-elements: modal-overlay-init, header-overlay, header, content, nav, logo, content-dropdown, overlay, hamburger-menu, modal-overlay-visible, nav-toggle;
 
 
 /* Layout
    ================================================================================================================== */
 
-$border-radius:       .6em;
 $border-width:        1px;
 
 $layout-max-width:    75em;
 $border-radius:       .4em;
 
 
+/* Elements
+   ================================================================================================================== */
+
+$nav-height:  80px;
+
+
 /* Colors
    ================================================================================================================== */
 
+// Theme colors
 $theme-color:             rgb(21, 123, 179);
 $theme-color-light:       rgb(195, 226, 244);
 $theme-color-secondary:   #b13a32;
 
+// Grayscale colors
 $black:               #000;
 $white:               #fff;
-
-$beige:               #f0f0e1;
-$beige-dark:          #e4e4d5;
 
 $gray-lightest:       lighten($black, 98%);
 $gray-lighter:        lighten($black, 90%);
@@ -51,14 +55,13 @@ $gray-dark:           lighten($black, 45%);
 $gray-darker:         lighten($black, 35%);
 $gray-darkest:        lighten($black, 25%);
 
-$gray-background:     #f2f2f2;
-$gray-color:          #999;
+// Derived colors
+$link-color:       $theme-color;
+$link-color-hover: darken($link-color, 25%);
 
-$orange:              #FF8600;
-
-$button-default-background: #357fd1;
-$button-default-inactive: #b8b8b8;
-$button-default-warning: #b20000;
+$button-default-background: $theme-color;
+$button-default-inactive: $gray-lighter;
+$button-default-warning: $theme-color-secondary;
 
 
 /* Typograhy
@@ -66,25 +69,3 @@ $button-default-warning: #b20000;
 
 $font-family:      "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font:             1em/1.5 $font-family;
-
-
-
-/* Link colors
-   ================================================================================================================== */
-
-$link-color:       $theme-color;
-$link-color-hover: darken($link-color, 25%);
-
-
-
-/* Spacing
-   ================================================================================================================== */
-
-$margin:    1.5em;
-$padding:   1.5em;
-
-
-/* Misc
-   ================================================================================================================== */
-
-$border-color:        $gray-lighter;
