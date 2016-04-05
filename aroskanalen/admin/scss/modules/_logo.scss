@@ -41,9 +41,9 @@ $layout-padding:  1em;
 .is-page .logo,
 .is-page .logo.is-sticky {
   @include align-items(center);
-
   @include strip-link-styles($white, none);
 
+  position: absolute;
   overflow: hidden;
   z-index: z($z-index-elements, logo);
 
