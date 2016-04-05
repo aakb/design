@@ -1,2 +1,2 @@
 ### Simple dropdown box
-* A seperate link is needed to open the dropdown (Provided in example)
+* A seperate link is needed to open the dropdown

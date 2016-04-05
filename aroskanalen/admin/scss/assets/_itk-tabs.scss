@@ -30,7 +30,18 @@ $itk--tabs-hover-color:         inherit; // Text color on hover.
   color: $itk--tabs-color;
 
   @include flexbox();
-  @include justify-content(flex-end);
+
+  &.is-left {
+    @include justify-content(flex-start);
+  }
+
+  &.is-center {
+    @include justify-content(center);
+  }
+
+  &.is-right {
+    @include justify-content(flex-end);
+  }
 }
 
 %itk--tabs-item {

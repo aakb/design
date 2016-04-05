@@ -24,7 +24,7 @@
         Lorem ipsum 3
       </a>
     </div>
-    <div class="tabs" itk--tabs-count="2">
+    <div class="tabs is-right">
       <a class="tabs--item is-active">Oversigt</a>
       <a class="tabs--item">Planlægning</a>
     </div>

@@ -17,12 +17,18 @@
 
         // Look for toggle class before closing modal.
         var classes = e.target.className;
-        if (classes.indexOf('js-toggle-modal') < 0){
+        var parent_classes = e.target.parentElement.className;
+        if (classes.indexOf('js-toggle-modal') > -1 || parent_classes.indexOf('nav-toggle') > -1 ) {
+          // Continue closing.
+          // A toggle class exists on the element (or parent when clicking the X span for close)
+        } else {
+          // No toggle class exists and we should nt close.
           return;
         }
 
         // Button animation 'back to hamburger'.
         hamburger_button.removeClass("open");
+
         // Hide menu.
         modal.addClass('is-hidden');
         modal.removeClass('is-visible');
@@ -33,7 +39,7 @@
 
       // If nav is closed we open it.
       else {
-        // Hamburger button animatiion to 'x'.
+        // Hamburger button animation to 'x'.
         hamburger_button.addClass("open");
 
         // show menu.
