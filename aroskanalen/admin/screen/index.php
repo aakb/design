@@ -1,8 +1,11 @@
 <?php
   include_once $_SERVER['DOCUMENT_ROOT']. '/aroskanalen/admin/_settings.php';
 
-  $is_active = 2;
+  $is_active = 3;
   $class = 'is-page';
+
+  $submenu[0] = '<a href="#" class="submenu--link">Oversigt</a>';
+  $submenu[1] = '<a href="#" class="submenu--link">Opret skærm</a>';
 
   include_once $path . '/_header.php';
   include_once $path . '/_menus.php';
@@ -10,6 +13,7 @@
 
 <main role="main" class="content">
   <div class="content--inner">
+    <h1><a href="<?php echo $path_to_site; ?>/screen/">Skærme</a> / Oversigt</h1>
     <div class="nav-tabs">
       <a href="#" class="nav-tabs--item">
         Lorem ipsum
@@ -25,8 +29,8 @@
       </a>
     </div>
     <div class="tabs" itk--tabs-count="2">
-      <a class="tabs--item is-active">Oversigt</a>
-      <a class="tabs--item">Planlægning</a>
+      <a href="<?php echo $path_to_site; ?>/screen/" class="tabs--item is-active">Oversigt</a>
+      <a href="<?php echo $path_to_site; ?>/screen/planning/" class="tabs--item">Planlægning</a>
     </div>
     <div class="search-result--wrapper">
       <div class="search-result--box">
