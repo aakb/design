@@ -23,10 +23,10 @@ $z-index-elements: modal-overlay-init, header-overlay, header, content, nav, log
 /* Layout
    ================================================================================================================== */
 
-$border-width:        1px;
-
-$layout-max-width:    75em;
 $border-radius:       .4em;
+$border-width:       1px;
+$layout-padding:     1em;
+$layout-max-width:   64em;
 
 
 /* Elements

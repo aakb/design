@@ -55,7 +55,18 @@ $gray-dark:           lighten($black, 45%);
 $gray-darker:         lighten($black, 35%);
 $gray-darkest:        lighten($black, 25%);
 
-// Derived colors
+$error-color:      #ffbaba;
+
+/* Typograhy
+   ================================================================================================================== */
+
+$font-family:      "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:             1em/1.5 $font-family;
+
+
+
+/* Link colors
+   ================================================================================================================== */
 $link-color:       $theme-color;
 $link-color-hover: darken($link-color, 25%);
 

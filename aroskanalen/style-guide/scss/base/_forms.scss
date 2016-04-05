@@ -27,45 +27,60 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea {
-  border: 1px solid #ddd;
-  border-radius: $border-radius;
-  box-sizing: border-box;
+  border: 1px solid $gray-lighter;
   display: block;
   min-height: 1.25em;
   width: 100%;
   padding: .75em;
 
-  color: #222;
+  border-radius: .85em;
+  box-sizing: border-box;
+
+  color: $gray-darker;
   background-color: $white;
 
   &:focus {
-    border: 1px solid #333;
+    border: 1px solid $gray-dark;
 
-    color: #111;
+    color: $gray-darkest;
   }
 
   &[disabled] {
-    box-shadow: 0 0 0;
-    border: 1px solid #ccc;
-    background-color: lighten(#ccc, 5%);
+    background-color: $gray-lightest;
+  }
+
+  &.is-error {
+    border: 1px solid $error-color;
   }
 }
 
-input[type="search"]{
-  background: url("../images/filter-icon.png") no-repeat 1em 50%;
-  padding-left: 3em;
-}
 
-
-/* Labels
+/* Form
    ================================================================================================================== */
 
-label {
-  display: block;
-  margin-bottom: .25em;
+.form {
+  margin-top: 1.25em;
 
-  /* Move labels so they align better with fields when using rounded corners */
-  margin-left: .3em;
+  &--group {
+    margin-top: 1.25em;
 
-  color: #222;
+    label {
+      color: $gray-darker;
+      font-weight: 600;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+
+    margin-top: 1.25em;
+    padding-left: 1.2em;
+
+    input {
+      position: absolute;
+
+      margin-top: .3em;
+      margin-left: -1.25em;
+    }
+  }
 }
