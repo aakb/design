@@ -12,26 +12,32 @@
 @import "base/forms";
 @import "base/functions";
 @import "base/mixins";
-@import "base/icon";
 
 // Include patterns
 @import "patterns/patterns";
 
 // Include assets
 @import "assets/flexbox";
-
-// Components
-@import "components/itk-boxlist";
-@import "components/itk-messages";
+@import "assets/itk-modal";
+@import "assets/itk-tabs";
 
 // Modules
-@import "modules/button";
+@import "modules/alerts";
+@import "modules/buttons";
+@import "modules/container";
 @import "modules/content";
-@import "modules/frontpage";
+@import "modules/dropdown";
 @import "modules/footer";
+@import "modules/frontpage";
 @import "modules/hamburger-menu";
 @import "modules/header";
 @import "modules/logo";
+@import "modules/modal";
 @import "modules/nav";
+@import "modules/nav-tabs";
 @import "modules/overlay";
 @import "modules/pager";
+@import "modules/search-result";
+@import "modules/submenu";
+@import "modules/tabs";
+@import "modules/well";

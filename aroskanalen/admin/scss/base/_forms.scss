@@ -55,12 +55,32 @@ textarea {
 }
 
 
-/* Labels
+/* Form
    ================================================================================================================== */
 
-label {
-  display: block;
-  margin-bottom: .25em;
+.form {
+  margin-top: 1.25em;
 
-  color: $gray-darker;
+  &--group {
+    margin-top: 1.25em;
+
+    label {
+      color: $gray-darker;
+      font-weight: 600;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+
+    margin-top: 1.25em;
+    padding-left: 1.2em;
+
+    input {
+      position: absolute;
+
+      margin-top: .25em;
+      margin-left: -1.25em;
+    }
+  }
 }

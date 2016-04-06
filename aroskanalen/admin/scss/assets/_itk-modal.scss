@@ -1,0 +1,95 @@
+/**
+ *
+ * Itk tabs
+ *
+ * A component for displaying a dialog.
+ *
+ * Inspiration http://getbootstrap.com/javascript/
+ * Requires a javascript to show hide elements.
+ */
+
+
+/* Styles
+   ========================================================================== */
+
+/* Invisible overlay that appears when dialog opens and contains the dialog window */
+%itk--menu-nav-overlay {
+  background-color: rgba(0, 0, 0, .85);
+  opacity: 0;
+
+  // Stretch the background to fit screen.
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  overflow-y: auto;
+  z-index: -1;  // Must be hidden behind all other content
+
+  transition: opacity .2s, z-index .2s; // Use z-index to show hide since "display:none" doesn't work with transitions.
+
+  &.is-visible {
+    z-index: z($z-index-elements, modal-overlay-visible); // Most likely on top of all other content.
+    opacity: 1;
+  }
+}
+
+
+/* Mixin for defining modal-dialog */
+@mixin modal-dialog($width:420px, $position:center, $speed:.2) {
+  width: $width;
+
+  position: relative;
+
+  background: $white;
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+
+  @if $position == 'left' {
+    min-height: 100%;
+
+    margin: 0;
+    left: -$width;  // Dialog hidden just outside screen display
+    position: absolute;
+
+    transition: left $speed;
+    transition-timing-function: ease-in-out;
+
+    &.is-visible {
+      left: 0;
+    }
+
+  } @else if $position == 'right' {
+    min-height: 100%;
+
+    margin: 0;
+    right: -$width;  // Dialog hidden just outside screen display
+    position: absolute;
+
+    transition: right $speed;
+    transition-timing-function: ease-in-out;
+
+    &.is-visible {
+      right: 0;
+    }
+
+  } @else {
+    min-width: 300px;
+    min-height: 60%;
+    width: $width;
+
+    margin: 40px auto;
+    top: -100%;  // Dialog hidden just outside screen display
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 6px;
+
+    transition: top $speed;
+    transition-timing-function: ease-in-out;
+
+    &.is-visible {
+      top: 0;
+    }
+  }
+}

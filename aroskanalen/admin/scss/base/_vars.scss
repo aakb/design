@@ -8,23 +8,25 @@
 /* Breakpoints
    ================================================================================================================== */
 
-$breakpoint-lap:              481px;
-$breakpoint-tablet:           720px;
-$breakpoint-desk:             1024px;
-$breakpoint-bigscreen:        1500px;
+$breakpoint-lap:          481px;
+$breakpoint-tablet:       1023px;
+$breakpoint-desk:         1024px;
+$breakpoint-bigscreen:    1700px;
 
 
 /* Z-index (inspired by https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/)
    ================================================================================================================== */
 
-$z-index-elements: header-overlay, header, content, nav, logo, overlay, hamburger-menu, nav-toggle;
-
+$z-index-elements: modal-overlay-init, header-overlay, header, content, nav, logo, content-dropdown, overlay, modal-overlay-visible, hamburger-menu, nav-toggle;
 
 
 /* Layout
    ================================================================================================================== */
 
-$layout-padding:  1em;
+$border-radius:       .4em;
+$border-width:       1px;
+$layout-padding:     1em;
+$layout-max-width:   64em;
 
 
 /* Elements
@@ -36,32 +38,36 @@ $nav-height:  80px;
 /* Colors
    ================================================================================================================== */
 
+// Theme colors
 $theme-color:             rgb(21, 123, 179);
-$theme-color-dark:        rgb(42, 45, 88);
 $theme-color-light:       rgb(195, 226, 244);
+$theme-color-dark:        rgb(42, 45, 88);
 $theme-color-secondary:   #b13a32;
+$error-color:             #ffbaba;
 
-$black:            #000;
-$white:            #fff;
+// Grayscale colors
+$black:               #000;
+$white:               #fff;
 
 $gray-lightest:    lighten($black, 95%);
-$gray-lighter:     lighten($black, 90%);
-$gray-light:       lighten($black, 70%);
+$gray-lighter:     lighten($black, 85%);
+$gray-light:       lighten($black, 75%);
 $gray:             lighten($black, 60%);
 $gray-dark:        lighten($black, 50%);
 $gray-darker:      lighten($black, 40%);
 $gray-darkest:     lighten($black, 12%);
 
+// Derived colors
 $link-color:       $theme-color;
 $link-color-hover: darken($link-color, 25%);
 
-$error-color:      #ffbaba;
+$button-default-background: $theme-color;
+$button-default-inactive: $gray-lighter;
+$button-default-warning: $theme-color-secondary;
 
 
-/* Typography
+/* Typograhy
    ================================================================================================================== */
 
 $font-family:      "Alegreya Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font:             1em/1.5 $font-family;
-
-

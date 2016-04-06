@@ -1,0 +1,50 @@
+/**
+ *
+ * Dropdown
+ *
+ */
+
+
+/* Styles
+   ========================================================================== */
+
+.dropdown {
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  z-index: z($z-index-elements, content-dropdown);
+
+  padding: 1em 1em 1em 3em;
+  box-sizing: border-box;
+  display: inline-block;
+
+  background: $white;
+  border: 1px solid $gray-light;
+  border-radius: 8px;
+
+  &.is-hidden {
+    display: none;
+  }
+
+  &.is-visible {
+    display: inline-block;
+  }
+
+  &--settings-icon {
+    color: $gray;
+    cursor: pointer;
+    position: absolute;
+    right: .5em;
+    top: .5em;
+  }
+
+  &--items {
+    list-style-type: none;
+    padding: .5em 0 0;
+    text-align: right;
+  }
+
+  &--link {
+    @include strip-link-styles($link-color);
+  }
+}

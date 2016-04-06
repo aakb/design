@@ -5,13 +5,45 @@
  */
 
 
-// Logo styling.
-// This handles the default logo behaviour whether it is sticky or not.
-.logo,
-.logo.is-sticky {
+/* Silent classes and variables related to this document
+   ========================================================================== */
+$layout-padding:  1em;
+
+/* Logo styling
+   ========================================================================== */
+.logo {
   @include flexbox;
+  @include flex-direction(row);
+}
+
+.is-frontpage .logo {
+  @include align-items(center);
+  @include flex-direction(column);
+
+  margin-bottom: 0;
+
+  color: $white;
+
+  .material-icons {
+    font-size: 34px;
+  }
+
+  &--text {
+    margin-top: .1em;
+  }
+
+  &--slogan {
+    color: transparentize($white, .5);
+    font-size: .45em;
+  }
+}
+
+.is-page .logo,
+.is-page .logo.is-sticky {
+  @include align-items(center);
   @include strip-link-styles($white, none);
 
+  position: absolute;
   overflow: hidden;
   z-index: z($z-index-elements, logo);
 
@@ -23,6 +55,12 @@
   font-weight: 300;
   line-height: 1em;
 
+  .material-icons {
+    margin-right: .25em;
+
+    font-size: 38px;
+  }
+
   @include breakpoint($breakpoint-desk) {
     margin-right: $layout-padding;
 
@@ -31,12 +69,8 @@
 
   span {
     box-sizing: border-box;
-    margin-top: auto;
-    margin-bottom: auto;
 
+    font-weight: 400;
     white-space: nowrap;
-
-    @include breakpoint($breakpoint-tablet) {
-    }
   }
 }

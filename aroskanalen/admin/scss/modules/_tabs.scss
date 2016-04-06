@@ -8,15 +8,12 @@
 
 /* Styles
    ========================================================================== */
-
 .tabs {
   @extend %itk--tabs;
+
+  margin: 1em;
 }
 
 .tabs--item {
   @extend %itk--tabs-item;
-
-  &.is-active {
-    font-weight: bold;
-  }
 }

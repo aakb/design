@@ -24,9 +24,9 @@ body {
   margin: 0;
   width: 100%;
 
-  background-color: $white;
+  background-color: transparentize($black, .98);
 
-  color: #999;
+  color: $gray-darker;
   font: $font;
 }
 
@@ -47,7 +47,7 @@ h6 {
   margin-top: 0;
   margin-bottom: .5em;
 
-  font-weight: normal;
+  font-weight: 400;
 
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;

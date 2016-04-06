@@ -1,0 +1,67 @@
+/**
+ *
+ * Container.
+ *
+ */
+
+/* Container styles
+   ========================================================================== */
+
+.container {
+  @include flexbox;
+  @include justify-content(center);
+
+  &:nth-child(1) {
+    @include flex(0 0 auto);
+
+    background-image: url('../assets/images/structure.jpg');
+    background-size: cover;
+
+    @include breakpoint($breakpoint-desk) {
+      @include flex(0 0 35%);
+    }
+
+    .container--inner {
+      background-color: transparentize($theme-color, .1);
+
+      @include breakpoint($breakpoint-tablet) {
+        border-radius: 6px 6px 0 0;
+      }
+
+      @include breakpoint($breakpoint-desk) {
+        border-radius: 6px 0 0 6px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    @include flex(0 0 100%);
+
+    @include breakpoint($breakpoint-desk) {
+      @include flex(0 0 65%);
+    }
+
+    .container--inner {
+      background-color: $white;
+
+      @include breakpoint($breakpoint-tablet) {
+        border-radius: 0 0 6px 6px;
+      }
+
+      @include breakpoint($breakpoint-desk) {
+        padding-top: 4em;
+
+        border-radius: 0 6px 6px 0;
+      }
+    }
+  }
+
+  &--inner {
+    @include flex-basis(100%);
+
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+  }
+}

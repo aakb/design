@@ -5,52 +5,65 @@
  */
 
 
+/* Silent classes and variables related to this document
+   ========================================================================== */
+$pager--border-width: 3px;
+$pager--border-color: $gray-lighter;
+$pager--background: $white;
+$pager--text-color: $gray-lighter;
+$pager--valid: $gray-light;
+
+
+/* Pager for the creation pages (The one just below header.)
+   ========================================================================== */
+
 .pager {
-	margin-top: 2em;
+  &--search {
+    margin: 2em;
+    text-align: center;
 
-	&__items {
-		margin: 0;
-		padding: 0;
+    @include flexbox();
+    @include justify-content(center);
+  }
 
-		text-align: center;
-	}
+  &--search-item {
+    background: $gray-lightest;
+    border: 1px solid $gray-lighter;
+    box-sizing: border-box;
+    border-right: 0;
+    color: $gray-darker;
+    cursor: pointer;
+    text-align: center;
 
-  &__item {
-		display: inline-block;
-		padding: 0;
-		margin: .5em;
+    @include flex(0, 1, auto);
 
-		background: $gray-lightest;
-		color: $gray;
-
-		&:hover {
-			background: $theme-color-secondary;
-		}
-
-    a {
-			box-sizing: border-box;
-			display: block;
-			height: 100%;
-			padding: .5em 1em;
-			width: 100%;
-
-			@include strip-link-styles($gray);
-
-			&:hover {
-				color: $white;
-			}
+    &:first-child {
+      border-radius: .5em 0 0 .5em;
     }
 
-		&.is-active {
-			background: $theme-color-secondary;
+    &:last-child {
+      border-right: 1px solid $gray-lighter;
 
-			a {
-				@include strip-link-styles($gray-lightest);
-			}
-		}
+      border-radius: 0 .5em .5em 0;
+    }
 
-		&--ellipsis {
-			background: none;
-		}
+    &.is-active {
+      background: $gray-lighter;
+    }
+
+    &.is-inactive {
+      color: $gray;
+      cursor: default;
+    }
+  }
+
+  &--search-item-inner {
+    padding: .4em .9em;
+    display: block;
+
+    &.is-arrow {  // The used font has som weirdly positioned arrows, so we use a font family that positions arrows correctly.
+      font: 1em/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
   }
 }
+

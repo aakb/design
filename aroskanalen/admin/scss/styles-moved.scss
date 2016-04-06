@@ -1,0 +1,23 @@
+/**
+ *
+ * Styles that are used in production
+ *
+ * We are updating the systems over time and therefore we need to choose what to move.
+ *
+ */
+
+
+// Include base
+@import "base/vars";
+@import "base/mixins";
+
+// Include assets
+@import "assets/flexbox";
+@import "assets/itk-modal";
+
+// Modules
+@import "modules/hamburger-menu";
+@import "modules/header";
+@import "modules/logo";
+@import "modules/nav";
+@import "modules/overlay";

@@ -12,12 +12,20 @@
     @include flexbox;
     @include flex-grow(1);
     @include flex-shrink(0);
-    @include justify-content(flex-end);
+    @include justify-content(flex-start);
 
-    padding-right: 7em;
+    max-width: $layout-max-width;
+    margin-right: auto;
+    margin-left: auto;
 
     font-weight: 300;
     text-align: right;
+
+    // Google icons
+    .material-icons {
+      margin-top: -.1em;
+      margin-right: .4em;
+    }
 
     a {
       @include strip-link-styles($white, none);
@@ -29,28 +37,27 @@
       @include flexbox;
       @include align-items(center);
 
-      padding-right: 1.2em;
-      padding-left: 1.2em;
+      padding-right: 2em;
+      padding-left: 2em;
 
-      color: $gray-darkest;
+      color: $gray-darker;
       font-size: 1.2em;
       text-decoration: none;
 
       transition: border .15s;
 
-      &.is-active,
-      &.is-active:hover,
-      &:hover:not(.is-active) {
-        @include strip-link-styles($white, none);
+      &:hover {
+        background-color: transparentize(black, 0);
       }
 
       &.is-active,
       &.is-active:hover {
-        background-color: $theme-color;
+        @include strip-link-styles($black, none);
       }
 
-      &:hover:not(.is-active) {
-        border-bottom: .25em solid $theme-color;
+      &.is-active,
+      &.is-active:hover {
+        background-color: $white;
       }
     }
   }

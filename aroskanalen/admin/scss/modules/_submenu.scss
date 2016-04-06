@@ -1,0 +1,43 @@
+/**
+ *
+ * Submenu.
+ *
+ */
+
+.submenu {
+  display: none; // Hiding navigation on smaller screens
+
+  @include breakpoint($breakpoint-desk) {
+    display: block;
+  }
+
+  &--inner {
+    @include breakpoint($breakpoint-desk) {
+      @include flexbox;
+      @include flex-grow(1);
+      @include flex-shrink(0);
+      @include justify-content(flex-start);
+
+      max-width: $layout-max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  background-color: $white;
+  border-bottom: 1px solid $gray-lighter;
+  text-align: center;
+
+  &--link {
+    @include flexbox;
+    @include align-items(center);
+
+  }
+
+  &--link + &--link {
+    padding-left: 1.5em;
+  }
+}

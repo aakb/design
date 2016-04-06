@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-<meta charset="utf-8">
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
   <title>Aroskanalen style guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000">
@@ -15,7 +16,7 @@
   <link rel="stylesheet" href="css/github-markdown.css">
 
   <!-- Replace below stylesheet with your own stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../admin/css/styles.css">
 
   <!-- prism Syntax Highlighting Styles -->
   <link rel="stylesheet" href="vendor/prism/prism.css">
@@ -62,6 +63,9 @@
   </div><!--/.sg-wrapper-->
 
   <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/sg-scripts.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/dropdown.js"></script>
 </body>
 </html>

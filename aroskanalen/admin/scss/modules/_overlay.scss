@@ -5,9 +5,15 @@
  */
 
 
+/* Silent classes and variables related to this document
+   ========================================================================== */
 $overlay-animation-duration: 0.3s;
 $overlay-opacity:             .85;
 
+
+
+/* Overlay styles
+   ========================================================================== */
 .overlay {
   position: absolute;
   top: 0;

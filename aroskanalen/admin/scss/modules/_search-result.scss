@@ -1,0 +1,86 @@
+/**
+ *
+ * Search result
+ *
+ */
+
+
+/* Silent classes and variables related to this document
+   ========================================================================== */
+
+$margin:          .5em;
+$padding:         1em;
+$border-radius:  .4em;
+
+%search-result {
+  background-color: $white;
+  border: $border-width solid $gray-light;
+  margin-bottom: $margin;
+  padding: $padding;
+  position: relative;
+
+  border-radius: $border-radius;
+
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+
+/* Search results
+   ========================================================================== */
+
+.search-result--wrapper {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+}
+
+
+.search-result--wide {
+  @extend %search-result;
+}
+
+
+.search-result--box {
+  @extend %search-result;
+
+  margin: $margin;
+
+  @include flex(0, 0, 290px);
+
+  &-header {
+    @include flex(0, 1, auto);
+  }
+
+  &-settings-icon {
+    color: $gray;
+    cursor: pointer;
+  }
+}
+
+
+.search-result--image {
+  margin-bottom: $margin;
+
+  @include flex(0, 0, 100%);
+  @include breakpoint($breakpoint-lap){
+    padding-right: 2em;
+
+    @include flex(0, 0, 30%);
+  }
+}
+
+
+.search-result--content {
+  @include flex(0, 0, 100%);
+  @include breakpoint($breakpoint-lap){
+    @include flex(0, 0, 70%);
+  }
+}
+
+
+.search-result--meta {
+  margin-bottom: $margin;
+  width: 100%;
+}
