@@ -5,7 +5,6 @@
   $class = 'is-page';
 
   $submenu[0] = '<a href="#" class="submenu--link">Link</a>';
-  $submenu[1] = '<a href="#" class="submenu--link">Link</a>';
 
   include_once $path . '/_header.php';
   include_once $path . '/_menus.php';

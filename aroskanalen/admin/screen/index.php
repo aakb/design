@@ -4,7 +4,6 @@
   $is_active = 3;
   $class = 'is-page';
 
-  $submenu[0] = '<a href="#" class="submenu--link">Oversigt</a>';
   $submenu[1] = '<a href="#" class="submenu--link">Opret skærm</a>';
 
   include_once $path . '/_header.php';

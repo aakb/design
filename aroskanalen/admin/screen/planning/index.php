@@ -4,8 +4,9 @@
   $is_active = 3;
   $class = 'is-page';
 
-  $submenu[0] = '<a href="#" class="submenu--link">Oversigt</a>';
-  $submenu[1] = '<a href="#" class="submenu--link">Opret skærm</a>';
+  $submenu[0] = '<a href="#" class="submenu--link">Opret skærm</a>';
+  $submenu[1] = '<a href="' . $path_to_site . '/screen/" class="is-aligned-right">Oversigt</a>';
+  $submenu[2] = '<a href="' . $path_to_site . '/screen/planning/">Planlægning</a>';
 
   include_once $path . '/_header.php';
   include_once $path . '/_menus.php';

@@ -24,8 +24,8 @@
       <div class="submenu--inner">
         <?php echo $submenu[0]; ?>
         <?php echo $submenu[1]; ?>
+        <?php echo $submenu[2]; ?>
         <?php echo $submenu[3]; ?>
-        <?php echo $submenu[4]; ?>
       </div>
     </nav>
   </header>
