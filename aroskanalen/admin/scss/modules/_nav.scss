@@ -12,7 +12,11 @@
     @include flexbox;
     @include flex-grow(1);
     @include flex-shrink(0);
-    @include justify-content(center);
+    @include justify-content(flex-start);
+
+    max-width: $layout-max-width;
+    margin-right: auto;
+    margin-left: auto;
 
     font-weight: 300;
     text-align: right;
