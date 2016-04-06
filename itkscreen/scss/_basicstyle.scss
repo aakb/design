@@ -1,27 +1,39 @@
-body {
-
-  //background:url('http://www.cssdeck.com/uploads/media/items/0/0Rs78ic.gif');
-  background-color:#F6F6F6;
-  padding:0;
-  margin:0;
-  font: 72.5% 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+@font-face {
+  font-family: 'Gibson SemiBold';
+  src: url("/itkscreen/assets/dokk1/fonts/Gibson-SemiBold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Gibson Regular';
+  src: url("/itkscreen/assets/dokk1/fonts/Gibson-Regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Gibson Light';
+  src: url("/itkscreen/assets/dokk1/fonts/Gibson-Light-webfont.woff") format("woff");
 }
 
-.topbar{
+body {
+
+
+  //background:url('http://www.cssdeck.com/uploads/media/items/0/0Rs78ic.gif');
+  background-color: #F6F6F6;
+  padding: 0;
+  margin: 0;
+  font: 50% 'Gibson Regular', sans-serif;
+}
+
+.topbar {
   display: block;
-  background-color:rgb(35,85,135);
+  background-color: rgb(35, 85, 135);
   top: 0;
   position: absolute;
   width: 100%;
   padding-bottom: 1em;
   padding-top: 1em;
 
-
-    text-align: center;
-    color: white;
-    font-size: 3em;
-
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-family: 'Gibson SemiBold';
 
 }
 
@@ -31,35 +43,22 @@ body {
 
 }
 
-.staff-department-leader{
+.staff-department-leader {
   @include flexbox;
   @include flex-direction(row-reverse);
   @include justify-content(flex-end);
 
+}
 
+.first {
+  margin-top: 10em;
+}
 
-
-
-
-
+.flip-container {
+  margin: 1em;
 
 }
 
- .first {
-   margin-top: 10em;
- }
-
-.flip-container{
-margin: 1em;
-
-}
-
-
-img {
-    width: $imagewidth;
-    height: $imageheight;
-
-}
 
 .staff-department .staff-list {
 
@@ -67,6 +66,3 @@ img {
   @include flex-direction(row);
   @include flex-wrap(wrap);
 }
-
-
-
