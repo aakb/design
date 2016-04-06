@@ -14,7 +14,7 @@
 <main role="main" class="content">
   <div class="content--inner">
     <h1><a href="<?php echo $path_to_site; ?>/screen/">Skærme</a> / Planlægning</h1>
-    <div class="tabs" itk--tabs-count="2">
+    <div class="tabs is-right">
       <a href="<?php echo $path_to_site; ?>/screen/" class="tabs--item">Oversigt</a>
       <a href="<?php echo $path_to_site; ?>/screen/planning/" class="tabs--item is-active">Planlægning</a>
     </div>
