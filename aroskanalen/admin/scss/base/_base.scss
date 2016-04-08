@@ -24,7 +24,7 @@ body {
   margin: 0;
   width: 100%;
 
-  background-color: transparentize($black, .98);
+  background-color: $gray-lightest;
 
   color: $gray-darker;
   font: $font;

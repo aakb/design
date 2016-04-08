@@ -25,11 +25,8 @@
     margin-right: $layout-padding;
     margin-left: $layout-padding;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($layout-max-width+1) {
       max-width: $layout-max-width;
-    }
-
-    @include breakpoint($breakpoint-bigscreen) {
       margin-right: auto;
       margin-left: auto;
     }

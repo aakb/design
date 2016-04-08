@@ -7,9 +7,6 @@
 .submenu {
   display: none; // Hiding navigation on smaller screens
 
-  padding-top: 1em;
-  padding-bottom: 1em;
-
   background-color: $white;
   border-bottom: 1px solid $gray-lighter;
 
@@ -25,28 +22,72 @@
     margin-right: $layout-padding;
     margin-left: $layout-padding;
 
-    @include breakpoint($layout-max-width) {
+    @include breakpoint($breakpoint-desk) {
       @include flexbox;
-      @include flex-grow(1);
-      @include flex-shrink(0);
+      @include align-content(stretch);
       @include justify-content(flex-start);
-
-      max-width: $layout-max-width;
     }
 
-    @include breakpoint($breakpoint-bigscreen) {
+    @include breakpoint($layout-max-width+1) {
+      max-width: $layout-max-width;
       margin-right: auto;
       margin-left: auto;
     }
   }
 
+  &--links {
+    @include flexbox;
+    @include align-content(stretch);
+
+    margin: auto;
+
+    &.is-left {
+      @include flex-grow(1);
+      @include align-self(stretch);
+    }
+
+    &.is-right {
+      @include align-self(flex-end);
+    }
+  }
+
   &--link {
     @include flexbox;
-    @include align-items(center);
+    @include strip-link-styles($theme-color);
 
+    // Google icons
+    .material-icons {
+      margin-top: -.06em;
+      margin-right: .15em;
+    }
+
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
   }
 
   &--link + &--link {
     padding-left: 1.5em;
+  }
+
+  &--icon-link {
+    @include flexbox;
+    @include strip-link-styles($gray-darkest);
+
+    padding: .75em;
+
+    &.is-active {
+      background-color: $theme-color;
+
+      .material-icons {
+        color: $white;
+      }
+    }
+
+    .material-icons {
+      font-size: 36px;
+    }
   }
 }
