@@ -17,16 +17,16 @@ $breakpoint-bigscreen:    1700px;
 /* Z-index (inspired by https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/)
    ================================================================================================================== */
 
-$z-index-elements: modal-overlay-init, header-overlay, header, content, nav, logo, content-dropdown, overlay, modal-overlay-visible, hamburger-menu, nav-toggle;
+$z-index-elements: modal-overlay-init, header-overlay, header, content, nav, logo, content-dropdown, overlay, modal-overlay-visible, hamburger-menu, hamburger-menu-toggle;
 
 
 /* Layout
    ================================================================================================================== */
 
-$border-radius:       .4em;
+$border-radius:      .4em;
 $border-width:       1px;
 $layout-padding:     1em;
-$layout-max-width:   64em;
+$layout-max-width:   1400px;
 
 
 /* Elements

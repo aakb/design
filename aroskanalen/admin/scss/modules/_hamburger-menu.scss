@@ -77,3 +77,76 @@
     }
   }
 }
+
+
+.hamburger-menu-toggle {
+  position: absolute;
+  top: 1.6em;
+  right: 2em;
+  z-index: z($z-index-elements, hamburger-menu-toggle);
+
+  height: 36px;
+  width: 40px;
+
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  &.open,
+  &.is-sticky {
+    span {
+      background: $gray-darkest;
+    }
+  }
+}
+
+.hamburger-menu-toggle span {
+  position: absolute;
+  left: 0;
+
+  display: block;
+  height: 5px;
+  width: 100%;
+
+  background: $white;
+  opacity: 1;
+
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger-menu-toggle span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-menu-toggle span:nth-child(2),
+.hamburger-menu-toggle span:nth-child(3) {
+  top: 15px;
+}
+
+.hamburger-menu-toggle span:nth-child(4) {
+  top: 30px;
+}
+
+.hamburger-menu-toggle.open span:nth-child(1) {
+  top: 15px;
+  left: 50%;
+
+  width: 0%;
+}
+
+.hamburger-menu-toggle.open span:nth-child(2) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.hamburger-menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.hamburger-menu-toggle.open span:nth-child(4) {
+  top: 15px;
+  width: 0%;
+  left: 50%;
+}

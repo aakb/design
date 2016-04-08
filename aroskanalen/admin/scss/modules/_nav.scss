@@ -14,12 +14,12 @@
     @include flex-shrink(0);
     @include justify-content(flex-start);
 
-    max-width: $layout-max-width;
-    margin-right: auto;
-    margin-left: auto;
-
     font-weight: 300;
     text-align: right;
+
+    @include breakpoint($breakpoint-desk) {
+      margin-left: 3em;
+    }
 
     // Google icons
     .material-icons {
@@ -61,80 +61,4 @@
       }
     }
   }
-}
-
-
-.nav-toggle {
-  position: absolute;
-  top: 1.6em;
-  right: 2em;
-  z-index: z($z-index-elements, nav-toggle);
-
-  height: 36px;
-  width: 40px;
-
-  transform: rotate(0deg);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-
-  &.open,
-  &.is-sticky {
-    span {
-      background: $gray-darkest;
-    }
-  }
-
-  @include breakpoint($breakpoint-desk) {
-  }
-}
-
-.nav-toggle span {
-  position: absolute;
-  left: 0;
-
-  display: block;
-  height: 5px;
-  width: 100%;
-
-  background: $white;
-  opacity: 1;
-
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.nav-toggle span:nth-child(1) {
-  top: 0px;
-}
-
-.nav-toggle span:nth-child(2),
-.nav-toggle span:nth-child(3) {
-  top: 15px;
-}
-
-.nav-toggle span:nth-child(4) {
-  top: 30px;
-}
-
-.nav-toggle.open span:nth-child(1) {
-  top: 15px;
-  left: 50%;
-
-  width: 0%;
-}
-
-.nav-toggle.open span:nth-child(2) {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-.nav-toggle.open span:nth-child(3) {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.nav-toggle.open span:nth-child(4) {
-  top: 15px;
-  width: 0%;
-  left: 50%;
 }

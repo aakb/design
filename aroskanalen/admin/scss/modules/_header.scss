@@ -22,5 +22,16 @@
     position: relative;
 
     height: 5.5em;
+    margin-right: $layout-padding;
+    margin-left: $layout-padding;
+
+    @include breakpoint($layout-max-width) {
+      max-width: $layout-max-width;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }

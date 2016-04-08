@@ -4,12 +4,15 @@
   $is_active = 3;
   $class = 'is-page';
 
-  $submenu[0] = '<a href="#" class="submenu--link">Opret skærm</a>';
-
   include_once $path . '/_header.php';
   include_once $path . '/_menus.php';
 ?>
 
+<nav class="submenu">
+  <div class="submenu--inner">
+    <a href="#" class="submenu--link">Opret skærm</a>
+  </div>
+</nav>
 <main role="main" class="content">
   <div class="content--inner">
 

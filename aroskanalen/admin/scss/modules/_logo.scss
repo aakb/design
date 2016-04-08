@@ -43,13 +43,9 @@ $layout-padding:  1em;
   @include align-items(center);
   @include strip-link-styles($white, none);
 
-  position: absolute;
   overflow: hidden;
-  z-index: z($z-index-elements, logo);
 
   height: 100%;
-  margin-right: 5.5em;
-  margin-left: $layout-padding;
 
   font-size: 1.25em;
   font-weight: 300;
@@ -61,8 +57,9 @@ $layout-padding:  1em;
     font-size: 38px;
   }
 
-  @include breakpoint($breakpoint-desk) {
-    margin-right: $layout-padding;
+  @include breakpoint($breakpoint-bigscreen) {
+    margin-right: 0;
+    margin-left: 0;
 
     font-size: 1.75em;
   }

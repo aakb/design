@@ -5,7 +5,7 @@
 $(document).ready(function () {
   "use strict";
 
-  var hamburger_button = $('.nav-toggle');
+  var hamburger_button = $('.hamburger-menu-toggle');
   var hamburger_menu = $('.hamburger-menu');
   var html = $('html');
   var body = $('body');

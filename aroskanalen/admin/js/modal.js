@@ -6,7 +6,7 @@
 (function($) {
   // Function for toggle burger navigation.
   function toggle_modal() {
-    var hamburger_button = $('.nav-toggle');
+    var hamburger_button = $('.hamburger-menu-toggle');
     var modal = $('.js-modal');
     var modalDialog = $('.js-modal-dialog');
     var body = $('body');

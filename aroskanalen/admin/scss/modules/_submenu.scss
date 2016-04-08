@@ -7,29 +7,38 @@
 .submenu {
   display: none; // Hiding navigation on smaller screens
 
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  background-color: $white;
+  border-bottom: 1px solid $gray-lighter;
+
   @include breakpoint($breakpoint-desk) {
+    position: absolute;
+    top: 5.5em;
+
     display: block;
+    width: 100%;
   }
 
   &--inner {
-    @include breakpoint($breakpoint-desk) {
+    margin-right: $layout-padding;
+    margin-left: $layout-padding;
+
+    @include breakpoint($layout-max-width) {
       @include flexbox;
       @include flex-grow(1);
       @include flex-shrink(0);
       @include justify-content(flex-start);
 
       max-width: $layout-max-width;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
       margin-right: auto;
       margin-left: auto;
     }
   }
-
-  padding-top: 1em;
-  padding-bottom: 1em;
-
-  background-color: $white;
-  border-bottom: 1px solid $gray-lighter;
-  text-align: center;
 
   &--link {
     @include flexbox;
