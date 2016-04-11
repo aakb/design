@@ -1,7 +1,5 @@
 .flip-container {
   -webkit-perspective: 300;
-  width: $flipcardwidth;
-  height: $flipcardheight;
   //width: 400px;
   //height: 200px;
   position: relative;
@@ -11,14 +9,10 @@
   -webkit-transform: rotatey(180deg);
 }
 .flip-container .flipper {
-  width: $flipcardwidth;
-  height: $flipcardheight;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: 0.5s;
 }
 .flip-container .flipper .face {
-  width: $flipcardwidth;
-  height: $flipcardheight;
   position: absolute;
   -webkit-backface-visibility: hidden ;
   z-index: 2;
