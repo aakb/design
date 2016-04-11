@@ -48,6 +48,7 @@
     margin-bottom: 16em;
     margin-left: auto;
     max-width: $breakpoint-desk;
+    min-height: 20em;
 
     @include word-wrap;
 
