@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Gibson SemiBold';
+  src: url("../assets/fonts/Gibson-SemiBold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Gibson Regular';
+  src: url("../assets/fonts/Gibson-Regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Gibson Light';
+  src: url("../assets/fonts/Gibson-Light-webfont.woff") format("woff");
+}
+
+
+.header {
+  margin-top: 1em;
+
+  font-family: 'Gibson SemiBold';
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.group-wrapper {
+  @include flexbox;
+  @include flex-direction(row);
+}
+
+.group {
+  @include flexbox;
+  @include flex-basis(12em);
+  @include flex-direction(column);
+  @include align-items(center);
+
+  position: relative;
+
+  margin-top: 4em;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 12em;
+
+  &--group {
+    border-radius: 100%;
+    height: 12em;
+    width: 12em;
+
+    background-size: cover;
+    border: .75em solid $gray-lightest;
+  }
+
+  &--content {
+    @include flex-basis(100%);
+
+    position: absolute;
+    bottom: -1em;
+    right: 0;
+    left: 0;
+
+    padding: .5em 0;
+
+    background-color: transparentize($white, .1);
+    text-align: center;
+  }
+
+  &--name {
+    color: $theme-color;
+    font-family: 'Gibson SemiBold';
+    font-size: .85em;
+  }
+
+  &--position {
+    font-size: .75em;
+  }
+}
