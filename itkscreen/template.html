@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="groupApp">
+<html>
 <head>
   <title>ITK personale</title>
   <meta charset="utf-8">
@@ -9,22 +9,39 @@
   <script src="assets/js/controllers.js"></script>
   <link href="css/template.css" rel="stylesheet" type="text/css">
 </head>
-<body ng-controller="groupControl">
+<body data-ng-app="groupApp">
 <h1 class="header">ITK - Innovation Teknologi Kreativitet</h1>
-
-<article class="group" ng-repeat="group in groups">
-  <div class="group--header-wrapper">
-    <h2 class="group--header">{{group.group}}</h2>
-  </div>
-  <div class="group--member-wrapper">
-    <article class="group--member" ng-repeat="member in group.members">
-      <div class="group--member-image" style="background-image: url('{{member.image}}');"></div>
-      <div class="group--member-content">
-        <p class="group--member-name">{{member.firstname}} {{member.lastname}}</p>
-        <p class="group--member-position">{{member.position}}</p>
-      </div>
-    </article>
-  </div>
-</article>
+<div data-ng-controller="groupControl">
+  <article class="group" data-ng-repeat="group in groups">
+    <div class="group--header-wrapper">
+      <h2 class="group--header">{{ group.group }}</h2>
+    </div>
+    <div class="group--member-wrapper">
+      <article class="group--member" ng-repeat="member in group.members">
+        <div class="group--member-image" style="background-image: url('{{ member.image }}');"></div>
+        <div class="group--member-content">
+          <p class="group--member-name">{{ member.firstname }} {{ member.lastname }}</p>
+          <p class="group--member-position">{{ member.position }}</p>
+        </div>
+      </article>
+    </div>
+  </article>
+</div>
+<!-- <div data-ng-controller="dataControl">
+  <article class="group">
+    <div class="group--header-wrapper">
+      <h2 class="group--header">ITK</h2>
+    </div>
+    <div class="group--member-wrapper">
+      <article class="group--member" ng-repeat="item in data.data">
+        <div class="group--member-image" style="background-image: url('{{ item.Person.imagefromad }}');"></div>
+        <div class="group--member-content">
+          <p class="group--member-name">{{ item.Person.kaldenavn }}</p>
+          <p class="group--member-position">{{ item.Person.stilling }}</p>
+        </div>
+      </article>
+    </div>
+  </article>
+</div> -->
 </body>
 </html>
