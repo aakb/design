@@ -10,6 +10,7 @@
   <link href="/dokkx/css/ie9.css" rel="stylesheet" type="text/css">
   <![endif]-->
   <link href='//fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/x-icon" href="images/assets/favicon.ico">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="/dokkx/js/menu-toggle.js"></script>
   <script src="/dokkx/js/header-scrolling.js"></script>
