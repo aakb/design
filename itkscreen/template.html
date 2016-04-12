@@ -15,10 +15,17 @@
 </div>
 
 <article ng-repeat="staff in staffs">
-  <h2>{{staff.group}}</h2>
-  <article class="group" ng-repeat="member in staff.members">
+  <article class="group" ng-repeat="member in staff.members" ng-if="$first">
+    <h2>{{staff.group}}</h2>
     <div class="group--group" style="background-image: url('{{member.image}}');"></div>
-    <div class="group--content face front">
+    <div class="group--content">
+      <p class="group--name">{{member.firstname}} {{member.lastname}}</p>
+      <p class="group--position">{{member.position}}</p>
+    </div>
+  </article>
+  <article class="group" ng-repeat="member in staff.members" ng-if="!$first">
+    <div class="group--group" style="background-image: url('{{member.image}}');"></div>
+    <div class="group--content">
       <p class="group--name">{{member.firstname}} {{member.lastname}}</p>
       <p class="group--position">{{member.position}}</p>
     </div>
