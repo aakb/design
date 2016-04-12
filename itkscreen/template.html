@@ -17,11 +17,21 @@
       <h2 class="group--header">{{ group.group }}</h2>
     </div>
     <div class="group--member-wrapper">
-      <article class="group--member" ng-repeat="member in group.members">
-        <div class="group--member-image" style="background-image: url('{{ member.image }}');"></div>
-        <div class="group--member-content">
-          <p class="group--member-name">{{ member.firstname }} {{ member.lastname }}</p>
-          <p class="group--member-position">{{ member.position }}</p>
+      <article class="group--member flip-container" data-ng-repeat="member in group.members" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="group--inner-wrapper front">
+            <div class="group--member-image" style="background-image: url('{{ member.image }}');"></div>
+            <div class="group--member-content">
+              <p class="group--member-name">{{ member.firstname }} {{ member.lastname }}</p>
+              <p class="group--member-position">{{ member.position }}</p>
+            </div>
+          </div>
+          <div class="group--inner-wrapper back">
+            <div class="group--member-image" style="background-image: url('{{ member.image }}');"></div>
+            <div class="group--member-content">
+              <p class="group--member-name">Back</p>
+            </div>
+          </div>
         </div>
       </article>
     </div>
