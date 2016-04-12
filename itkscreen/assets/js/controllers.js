@@ -12,6 +12,17 @@ groupApp.controller('dataControl', function ($scope, $http) {
 
 
 groupApp.controller('groupControl', function($scope) {
+  $scope.flip = function flip($event) {
+
+    var element = angular.element($event.currentTarget);
+
+    if (element.hasClass('is-flipped')) {
+      element.removeClass('is-flipped');
+    } else {
+      element.addClass('is-flipped');
+    }
+  }
+
   $scope.groups = [{
     group: 'ITK Ledelse',
     members:
