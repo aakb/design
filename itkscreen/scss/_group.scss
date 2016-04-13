@@ -11,8 +11,15 @@
   src: url("../assets/fonts/Gibson-Light-webfont.woff") format("woff");
 }
 
+$member-width: 8vmin;
 
-.header {
+.group-wrapper {
+  @include flexbox;
+
+  padding: 3vmin;
+}
+
+.group-header {
   margin-top: 3vmin;
 
   font-family: 'Gibson SemiBold';
@@ -23,17 +30,11 @@
 
 .group {
   @include flexbox;
-  @include justify-content(flex-start);
-  @include align-content(stretch);
-  @include align-items(flex-start);
 
   position: relative;
 
-  margin-top: 3vmin;
-
-  + .group {
-    margin-top: 6vmin;
-  }
+  margin-top: 2vmin;
+  max-width: 25%;
 
   &--header-wrapper {
     @include flexbox;
@@ -48,7 +49,7 @@
     @include align-self(flex-start);
     @include flex-basis(100%);
 
-    margin-top: 4vmin;
+    margin-top: 5vmin;
 
     font-size: 1.5vmin;
     text-align: center;
@@ -58,12 +59,8 @@
 
   &--member-wrapper {
     @include flexbox;
-    @include flex(1 1 auto);
-    @include flex-direction(row);
-    @include justify-content(flex-start);
-    @include align-content(flex-start);
-    @include align-items(flex-start);
     @include flex-wrap(wrap);
+    @include align-content(flex-start);
 
     margin-top: -2vmin;
   }
@@ -71,11 +68,11 @@
   &--member {
     position: relative;
 
-    margin-top: 2.5vmin;
+    margin-top: 4vmin;
     margin-right: 3vmin;
     margin-bottom: 2.5vmin;
-    height: 7.5vmin;
-    width: 7.5vmin;
+    height: $member-width;
+    width: $member-width;
   }
 
   &--member-image,
@@ -83,11 +80,15 @@
     border-radius: 100%;
     border: 1px solid $gray-lighter;
     box-sizing: border-box;
-    height: 7.5vmin;
-    width: 7.5vmin;
+    height: $member-width;
+    width: $member-width;
 
     background-color: $white;
     background-size: cover;
+
+    color: $black;
+    font-size: 1vmin;
+    text-align: center;
   }
 
   &--member-content {
