@@ -1,0 +1,34 @@
+.toggle {
+  position: absolute;
+  top: 1.5vmin;
+  right: 3vmin;
+  z-index: 99;
+
+  a + a {
+    margin-left: 1vmin;
+  }
+
+  &--direction {
+    &:after {
+      content: " (→)";
+    }
+
+    &.has-direction-horizontal {
+      &:after {
+        content: " (↓)";
+      }
+    }
+  }
+
+  &--image-style {
+    &:after {
+      content: " (rounded)";
+    }
+
+    &.has-rounded-images {
+      &:after {
+        content: " (square)";
+      }
+    }
+  }
+}

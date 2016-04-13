@@ -12,27 +12,58 @@ groupApp.controller('dataControl', function ($scope, $http) {
 
 
 groupApp.controller('groupControl', function($scope) {
+  // Toggle direction
+  $scope.directionSelected = false;
+  $scope.setDirection = function() {
+    $scope.directionSelected = !$scope.directionSelected;
+  };
+
+
+  // Toggle image style
+  $scope.imageStyleSelected = true;
+  $scope.setImageStyle = function() {
+    $scope.imageStyleSelected = !$scope.imageStyleSelected;
+  };
+
+
+  // Toggle size and spacing
+  $scope.largeSpacing= false;
+  $scope.setSpacing = function() {
+    $scope.largeSpacing = !$scope.largeSpacing;
+  };
+
+
+  // Se active member (flipped)
   $scope.setActive = function(member) {
-    if ($scope.selected === member) {
-      $scope.selected = '';
+    if ($scope.memberSelected === member) {
+      $scope.memberSelected = '';
 
     } else {
-      $scope.selected = member;
+      $scope.memberSelected = member;
     }
-  }
+  };
 
   $scope.isSelected = function(member) {
-    return $scope.selected === member;
-  }
+    return $scope.memberSelected === member;
+  };
 
   $scope.groups = [{
-    group: 'ITK Ledelse',
+    group: 'Ledelse',
     members:
       [
         {
+          'firstname': 'Rolf',
+          'lastname': 'Hapel',
+          'position': 'Forvaltningschef',
+          'image': 'https://pbs.twimg.com/profile_images/288490738/Pas.jpg',
+          'azident': 'azkbc86',
+          'email': 'example@example.com',
+          'quote': 'Quote!'
+        },
+        {
           'firstname': 'Bo',
           'lastname': 'Fristed',
-          'position': 'CIO',
+          'position': 'CIO, ITK',
           'image': 'http://srvwebaak01/TLFimageupload/imageHandler.ashx?ident=azkbc86',
           'azident': 'azkbc86',
           'email': 'example@example.com',
@@ -41,7 +72,7 @@ groupApp.controller('groupControl', function($scope) {
         {
           'firstname': 'Martin',
           'lastname': 'Vellerup',
-          'position': 'ITK Design, afdelingsleder',
+          'position': 'Afdelingsleder, ITK Design',
           'image': 'http://srvwebaak01/TLFimageupload/imageHandler.ashx?ident=azkb022',
           'azident': 'azkb022',
           'email': 'example@example.com',
@@ -50,7 +81,7 @@ groupApp.controller('groupControl', function($scope) {
         {
           'firstname': 'Tonny',
           'lastname': 'Jensen',
-          'position': 'ITK Digital, afdelingsleder',
+          'position': 'Afdelingsleder, ITK Digital',
           'image': 'https://unsplash.it/150.46?random',
           'azident': 'azkb929',
           'email': 'example@example.com',
@@ -59,7 +90,7 @@ groupApp.controller('groupControl', function($scope) {
         {
           'firstname': 'Anne',
           'lastname': 'Vest Hansen',
-          'position': 'ITK Digital, afdelingsleder',
+          'position': 'Afdelingsleder, ITK Lab',
           'image': 'https://unsplash.it/150.47?random',
           'azident': 'azkb263',
           'email': 'example@example.com',
@@ -68,7 +99,7 @@ groupApp.controller('groupControl', function($scope) {
         {
           'firstname': 'Susanne',
           'lastname': 'Iversen',
-          'position': 'ITK Medier, afdelingsleder',
+          'position': 'Afdelingsleder, ITK Medier',
           'image': 'https://unsplash.it/150.48?random',
           'azident': 'azkba78',
           'email': 'example@example.com',

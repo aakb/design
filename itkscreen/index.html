@@ -10,24 +10,28 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body data-ng-app="groupApp">
-<h1 class="group-header">ITK - Innovation Teknologi Kreativitet</h1>
-<div data-ng-controller="groupControl" class="group-wrapper">
-  <article class="group" data-ng-repeat="group in groups">
+<div data-ng-controller="groupControl" class="group-wrapper" data-ng-class="{'has-direction-horizontal' : directionSelected}">
+  <section class="toggle">
+    <a href="#" class="toggle--direction" data-ng-class="{'has-direction-horizontal' : directionSelected}" data-ng-click="setDirection()">Toggle view</a>
+    <a href="#" class="toggle--image-style" data-ng-class="{'has-rounded-images' : imageStyleSelected}" data-ng-click="setImageStyle()">Toggle image style</a>
+    <a href="#" class="toggle--spacing" data-ng-class="{'has-rounded-images' : imageStyleSelected}" data-ng-click="setSpacing()">Toggle size/spacing</a>
+  </section>
+  <article class="group" data-ng-repeat="group in groups" data-ng-class="{'has-direction-horizontal' : directionSelected, 'has-large-spacing' : largeSpacing}">
     <div class="group--header-wrapper">
       <h2 class="group--header">{{ group.group }}</h2>
     </div>
     <div class="group--member-wrapper">
-      <article class="group--member flip-container" data-ng-class="{active : isSelected(member)}" data-ng-click="setActive(member)" data-ng-repeat="member in group.members" ontouchstart="this.classList.toggle('hover');">
+      <article class="group--member flip-container" data-ng-class="{'active' : isSelected(member), 'has-large-spacing' : largeSpacing}" data-ng-click="setActive(member)" data-ng-repeat="member in group.members" ontouchstart="this.classList.toggle('hover');">
         <div class="flipper">
           <div class="group--inner-wrapper front">
-            <div class="group--member-image" style="background-image: url('{{ member.image }}');"></div>
+            <div class="group--member-image" style="background-image: url('{{ member.image }}');" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-large-spacing' : largeSpacing}"></div>
             <div class="group--member-content">
               <p class="group--member-name">{{ member.firstname }} {{ member.lastname }}</p>
               <p class="group--member-meta">{{ member.position }}</p>
             </div>
           </div>
           <div class="group--inner-wrapper back">
-            <div class="group--member-image-back"></div>
+            <div class="group--member-image-back" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-large-spacing' : largeSpacing}"></div>
             <div class="group--member-content">
               <p class="group--member-name">{{ member.firstname }} {{ member.lastname }}</p>
               <p class="group--member-meta">{{ member.email }}</p>

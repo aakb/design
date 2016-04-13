@@ -11,12 +11,16 @@
   src: url("../assets/fonts/Gibson-Light-webfont.woff") format("woff");
 }
 
-$member-width: 8vmin;
+$member-width: 10vmin;
 
 .group-wrapper {
   @include flexbox;
 
   padding: 3vmin;
+
+  &.has-direction-horizontal {
+    @include flex-direction(column);
+  }
 }
 
 .group-header {
@@ -33,8 +37,17 @@ $member-width: 8vmin;
 
   position: relative;
 
-  margin-top: 2vmin;
-  max-width: 25%;
+  margin-top: 5vmin;
+
+  transition: 1s;
+
+  &:not(.has-direction-horizontal) {
+    max-width: 25%;
+  }
+
+  &.has-large-spacing {
+    margin-top: 2vmin;
+  }
 
   &--header-wrapper {
     @include flexbox;
@@ -68,27 +81,45 @@ $member-width: 8vmin;
   &--member {
     position: relative;
 
-    margin-top: 4vmin;
-    margin-right: 3vmin;
+    margin-top: 2.5vmin;
+    margin-right: 1.5vmin;
     margin-bottom: 2.5vmin;
     height: $member-width;
     width: $member-width;
+
+    transition: 1s;
+
+    &.has-large-spacing {
+      height: $member-width * .85;
+      width: $member-width * .85;
+      margin-top: 4vmin;
+      margin-right: 3vmin;
+    }
   }
 
   &--member-image,
   &--member-image-back {
-    border-radius: 100%;
     border: 1px solid $gray-lighter;
     box-sizing: border-box;
     height: $member-width;
     width: $member-width;
 
-    background-color: $white;
     background-size: cover;
 
-    color: $black;
-    font-size: 1vmin;
-    text-align: center;
+    transition: 1s;
+
+    &.has-large-spacing {
+      height: $member-width * .85;
+      width: $member-width * .85;
+    }
+
+    &.has-rounded-images {
+      border-radius: 100%;
+    }
+  }
+
+  &--member-image-back {
+    background-color: $white;
   }
 
   &--member-content {
@@ -98,7 +129,6 @@ $member-width: 8vmin;
 
     padding: .5vmin 0;
 
-    background-color: transparentize($white, .1);
     text-align: center;
   }
 
