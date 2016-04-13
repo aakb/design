@@ -12,15 +12,17 @@ groupApp.controller('dataControl', function ($scope, $http) {
 
 
 groupApp.controller('groupControl', function($scope) {
-  $scope.flip = function flip($event) {
+  $scope.setActive = function(member) {
+    if ($scope.selected === member) {
+      $scope.selected = '';
 
-    var element = angular.element($event.currentTarget);
-
-    if (element.hasClass('is-flipped')) {
-      element.removeClass('is-flipped');
     } else {
-      element.addClass('is-flipped');
+      $scope.selected = member;
     }
+  }
+
+  $scope.isSelected = function(member) {
+    return $scope.selected === member;
   }
 
   $scope.groups = [{
@@ -32,35 +34,45 @@ groupApp.controller('groupControl', function($scope) {
           'lastname': 'Fristed',
           'position': 'CIO',
           'image': 'http://srvwebaak01/TLFimageupload/imageHandler.ashx?ident=azkbc86',
-          'azident': 'azkbc86'
+          'azident': 'azkbc86',
+          'email': 'example@example.com',
+          'quote': 'Quote!'
         },
         {
           'firstname': 'Martin',
           'lastname': 'Vellerup',
           'position': 'ITK Design, afdelingsleder',
           'image': 'http://srvwebaak01/TLFimageupload/imageHandler.ashx?ident=azkb022',
-          'azident': 'azkb022'
+          'azident': 'azkb022',
+          'email': 'example@example.com',
+          'quote': 'Quote!'
         },
         {
           'firstname': 'Tonny',
           'lastname': 'Jensen',
           'position': 'ITK Digital, afdelingsleder',
           'image': 'https://unsplash.it/150/150?random',
-          'azident': 'azkb929'
+          'azident': 'azkb929',
+          'email': 'example@example.com',
+          'quote': 'Quote!'
         },
         {
           'firstname': 'Anne',
           'lastname': 'Vest Hansen',
           'position': 'ITK Digital, afdelingsleder',
           'image': 'https://unsplash.it/150/151?random',
-          'azident': 'azkb263'
+          'azident': 'azkb263',
+          'email': 'example@example.com',
+          'quote': 'Quote!'
         },
         {
           'firstname': 'Susanne',
           'lastname': 'Iversen',
           'position': 'ITK Medier, afdelingsleder',
           'image': 'https://unsplash.it/150/152?random',
-          'azident': 'azkba78'
+          'azident': 'azkba78',
+          'email': 'example@example.com',
+          'quote': 'Quote!'
         }
       ]
     }, {

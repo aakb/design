@@ -78,12 +78,15 @@
     width: 7.5vmin;
   }
 
-  &--member-image {
+  &--member-image,
+  &--member-image-back {
     border-radius: 100%;
+    border: 1px solid $gray-lighter;
     box-sizing: border-box;
     height: 7.5vmin;
     width: 7.5vmin;
 
+    background-color: $white;
     background-size: cover;
   }
 
@@ -104,7 +107,7 @@
     font-size: .85vmin;
   }
 
-  &--member-position {
+  &--member-meta {
     font-size: .75vmin;
   }
 }
@@ -116,11 +119,8 @@
   perspective: 1000;
 }
 /* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
+.flip-container.active .flipper {
   transform: rotateY(180deg);
-}
-
-.flip-container, .front, .back {
 }
 
 /* flip speed goes here */
