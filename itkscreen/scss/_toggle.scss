@@ -4,30 +4,51 @@
   right: 3vmin;
   z-index: 99;
 
+  a {
+    &:link,
+    &:active,
+    &:visited,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   a + a {
     margin-left: 1vmin;
   }
 
   &--direction {
-    &:after {
-      content: " (→)";
+    &:before {
+      content: "↓ Vertical ";
     }
 
     &.has-direction-horizontal {
-      &:after {
-        content: " (↓)";
+      &:before {
+        content: "→ Horizontal ";
       }
     }
   }
 
   &--image-style {
-    &:after {
-      content: " (rounded)";
+    &:before {
+      content: "□ Square ";
     }
 
     &.has-rounded-images {
-      &:after {
-        content: " (square)";
+      &:before {
+        content: "○ Round ";
+      }
+    }
+  }
+
+  &--spacing {
+    &:before {
+      content: "- Less ";
+    }
+
+    &.has-large-spacing {
+      &:before {
+        content: "+ More ";
       }
     }
   }
