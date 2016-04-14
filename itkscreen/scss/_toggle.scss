@@ -19,36 +19,36 @@
 
   &--direction {
     &:before {
-      content: "↓ Vertical ";
+      content: "→ Horizontal ";
     }
 
     &.has-direction-horizontal {
       &:before {
-        content: "→ Horizontal ";
+        content: "↓ Vertical ";
       }
     }
   }
 
   &--image-style {
     &:before {
-      content: "□ Square ";
+      content: "○ Round ";
     }
 
     &.has-rounded-images {
       &:before {
-        content: "○ Round ";
+        content: "□ Square ";
       }
     }
   }
 
   &--spacing {
     &:before {
-      content: "- Less ";
+      content: "■ Small ";
     }
 
     &.has-large-spacing {
       &:before {
-        content: "+ More ";
+        content: "■ Large ";
       }
     }
   }

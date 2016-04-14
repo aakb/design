@@ -12,9 +12,9 @@
 <body data-ng-app="groupApp">
 <div data-ng-controller="groupControl" class="group-wrapper" data-ng-class="{'has-direction-horizontal' : directionSelected}">
   <section class="toggle">
-    <a href="#" class="toggle--direction" data-ng-class="{'has-direction-horizontal' : directionSelected}" data-ng-click="setDirection()">view</a>
+    <a href="#" class="toggle--direction" data-ng-class="{'has-direction-horizontal' : directionSelected}" data-ng-click="setDirection()">flow</a>
     <a href="#" class="toggle--image-style" data-ng-class="{'has-rounded-images' : imageStyleSelected}" data-ng-click="setImageStyle()">images</a>
-    <a href="#" class="toggle--spacing" data-ng-class="{'has-large-spacing' : largeSpacing}" data-ng-click="setSpacing()">space</a>
+    <a href="#" class="toggle--spacing" data-ng-class="{'has-large-spacing' : largeSpacing}" data-ng-click="setSpacing()">images</a>
   </section>
   <article class="group" data-ng-repeat="group in groups" data-ng-class="{'has-direction-horizontal' : directionSelected, 'has-large-spacing' : largeSpacing}">
     <div class="group--header-wrapper">
