@@ -28,8 +28,6 @@
 
     @include breakpoint($breakpoint-desk) {
       @include flex-direction(row);
-
-      max-width: 85%;
     }
 
     @include breakpoint($breakpoint-bigscreen) {
