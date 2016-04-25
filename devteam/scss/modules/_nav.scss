@@ -22,13 +22,8 @@
       }
 
       .nav--link {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
         &:hover {
-          margin-top: -1em;
-          margin-bottom: -1em;
-
           background-color: $theme-color;
         }
       }
@@ -102,13 +97,8 @@
 
       &.is-active,
       &.is-active:hover {
-        margin-top: -1em;
-        margin-bottom: -1em;
 
         background-color: $theme-color;
-
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
         @include strip-link-styles($white, none);
       }
@@ -122,6 +112,7 @@
   }
 }
 
+// hamburger menu toggle-effect
 
 .nav-toggle {
   position: absolute;

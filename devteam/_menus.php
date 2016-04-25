@@ -3,7 +3,7 @@
 <body class="<?php echo $class; ?>">
   <div class="overlay js-menu-toggle"></div>
   <a href="/devteam" class="logo js-logo" title="DevTeam">
-    <img src="/devteam/images/assets/dev-team.png">
+      <!-- <img src="/devteam/images/assets/dev-team.png">-->
   </a>
   <!--menu.html.twig START-->
   <nav class="nav js-nav">

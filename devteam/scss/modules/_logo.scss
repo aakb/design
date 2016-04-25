@@ -17,6 +17,9 @@
   overflow: hidden;
 
   display: block;
+  background: url("/devteam/images/assets/dev-team.png");
+  background-size: 10em;
+  background-repeat: no-repeat;
   height: 2em;
   width: 10em;
 
@@ -24,10 +27,7 @@
     position: fixed;
   }
 
-  // Using full class because of chained selector (logo.is-sticky).
-  .logo--shape {
-    fill: $black;
-  }
+
 }
 
 // Specific override when viewing the frontpage.
@@ -37,6 +37,9 @@
     @include breakpoint($breakpoint-bigscreen) {
       top: 1.5em;
 
+  background: url("/devteam/images/assets/dev-team-white.png");
+  background-size: 15em;
+  background-repeat: no-repeat;
       height: 5em;
       width: 15em;
 
