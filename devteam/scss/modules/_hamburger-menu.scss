@@ -1,0 +1,86 @@
+/**
+ *
+ * Hamburger menu
+ *
+ */
+
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: -30em;
+  bottom: 0;
+  margin-right: 0;
+  max-width: 90%;
+  width: 30em;
+  z-index: z($z-index-elements, hamburger-menu);
+  overflow: hidden;
+
+  background-color: $white;
+
+  transition: right .3s;
+  transition-timing-function: ease-in-out;
+
+  &.is-open {
+    right: 0;
+  }
+
+  &--inner {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  &--links {
+    padding-top: 5em;
+    padding-right: 2em;
+    padding-left: 2em;
+
+    text-align: center;
+
+    a {
+      @include strip-link-styles($gray-darkest, none);
+
+      font-weight: 600;
+
+      &:hover {
+        color: $theme-color;
+      }
+
+      &.is-sub {
+        font-weight: 100;
+      }
+    }
+  }
+
+  &--group {
+    margin-bottom: 1.75em;
+    padding-bottom: 1.5em;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-lighter;
+    }
+  }
+
+  // Drupal uses same template for menus so they both get the nav--link class
+  .nav--link {
+    display: list-item;
+    margin-bottom: .25em;
+
+    color: $gray-darker;
+    font-size: 1.2em;
+    list-style: none;
+    text-decoration: none;
+
+    &.is-active {
+      @include strip-link-styles($white, none);
+
+      padding-top: .75em;
+      padding-bottom: .75em;
+
+      background-color: $theme-color;
+
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+      clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+    }
+  }
+}

@@ -1,0 +1,86 @@
+/**
+ *
+ * Footer
+ *
+ */
+
+$top-and-button-margin: 2em;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  background-color: black;
+
+  &--content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $breakpoint-desk;
+    padding-top: $top-and-button-margin;
+    padding-right: $layout-padding;
+    padding-left: $layout-padding;
+
+    @include flexbox;
+    @include flex-flow(row wrap);
+  }
+
+  &--mail {
+    margin-bottom: $top-and-button-margin;
+
+    text-align: center;
+
+    @include flex-basis(100%);
+
+    a {
+      color: white;
+    }
+  }
+
+  &--aarhus {
+    margin-bottom: $top-and-button-margin;
+
+    @include flexbox;
+    @include flex-basis(100%);
+    @include align-items(center);
+    @include justify-content(space-around);
+  }
+
+  &--logo {
+    width: 8em;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    &--mail {
+      order: 2;
+      text-align: right;
+
+      @include flex-basis(75%);
+    }
+
+    &--aarhus {
+      order: 1;
+
+      @include flex-basis(25%);
+      @include justify-content(flex-start);
+    }
+  }
+
+  @include breakpoint($breakpoint-desk) {
+    &--mail {
+      order: 2;
+
+      @include flex-basis(75%);
+      @include align-self(center);
+    }
+
+    &--aarhus {
+      order: 1;
+      margin-top: 0;
+
+      @include justify-content(flex-start);
+      @include flex-basis(25%);
+    }
+  }
+}
