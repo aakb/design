@@ -24,7 +24,12 @@
 </nav>
 <main role="main" class="content">
   <div class="content--inner">
-
+    <form class="search">
+      <div class="search--input">
+        <input type="search" placeholder="Søg ...">
+      </div>
+      <a class="search--toggle-filter"><img src="<?php echo $path_to_site; ?>/assets/icons/ic_tune_48px.svg"></a>
+    </form>
   </div>
 </main>
 

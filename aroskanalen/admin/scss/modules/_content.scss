@@ -44,12 +44,8 @@
     margin-right: auto;
     margin-bottom: 16em;
     margin-left: auto;
-    max-width: $breakpoint-desk;
+    max-width: $layout-max-width;
 
     @include word-wrap;
-
-    @include breakpoint($breakpoint-tablet) {
-      margin-bottom: 11em;
-    }
   }
 }
