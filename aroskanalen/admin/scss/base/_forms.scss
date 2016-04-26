@@ -27,22 +27,20 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea {
-  border: 1px solid $gray-lighter;
+  border: 0;
   display: block;
-  min-height: 1.25em;
+  min-height: 3.75em;
+  padding: .85em 1.25em;
   width: 100%;
-  padding: .75em;
 
-  border-radius: .85em;
+  border-radius: .25em;
   box-sizing: border-box;
 
-  color: $gray-darker;
+  color: $gray-darkest;
   background-color: $white;
 
   &:focus {
-    border: 1px solid $gray-dark;
-
-    color: $gray-darkest;
+    color: $gray-darker;
   }
 
   &[disabled] {
