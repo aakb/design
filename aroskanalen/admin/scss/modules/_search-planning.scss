@@ -1,0 +1,26 @@
+/**
+ *
+ * Search planning
+ *
+ */
+
+
+.search-planning {
+  @include flexbox;
+  @include flex-basis(100%);
+
+  &--item {
+    @include flex-basis(100%);
+
+    border: 1px solid $gray-light;
+
+    background-color: $white;
+  }
+
+  &--item-header {
+    border-bottom: 1px solid $gray-light;
+    padding: .75em;
+
+    font-weight: bold;
+  }
+}
