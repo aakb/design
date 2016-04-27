@@ -1,0 +1,95 @@
+/**
+ *
+ * File upload widget
+ *
+ */
+
+
+/* Upload styles
+================================================================================================================== */
+
+.upload {
+  background: $gray-lighter;
+  box-sizing: border-box;
+  margin-top: .3em;
+  padding: 1em;
+  
+  // Uploaded files table
+  table {
+    margin-bottom: 1em;
+    width: 100%;
+
+    .button {
+      font-size: 75%;
+      padding: .5em;
+      width: 5em;
+      float: right;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid $gray-dark;
+  }
+
+  td {
+    padding: .5em 0;
+  }
+
+  &--file {
+    input[type="file"] {
+
+      color: $gray-dark;
+      height: 10em;
+      border: 1px dotted $gray-dark;
+      background: $white;
+      margin-top: .3em;
+      position: relative;
+
+      &:before {
+        content: "Click eller træk en fil her, og click upload";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $white;
+        background-position: center 60px;
+        background-image: url("../images/upload.svg");
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        padding: 1em;
+        text-align: center;
+      }
+
+      &.has-file:before {
+        content: attr(data-content);  // From filefield.js
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $white;
+        background-position: center 60px;
+        background-image: url("../images/check-circle.svg");
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        padding: 1em;
+        text-align: center;
+      }
+    }
+
+    .form-submit {
+      display: block;
+      float: right;
+      margin: .5em 0 0 1em;
+      width: 8em;
+    }
+  }
+
+  &--description {
+    float: left;
+    margin: 1em .5em 0 0;
+  }
+}

@@ -1,0 +1,117 @@
+/**
+ *
+ * Styles related to the progress bar
+ *
+ */
+
+
+/* Progress bar styles
+================================================================================================================== */
+
+.progress {
+  margin: 30px 0 0;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid $gray;
+
+  // Change color of step two circle.
+  &.is-step-2 .progress--item:nth-child(2) .progress--circle {
+    background: $theme-color-secondary;
+  }
+
+  // Change color of step two and three circles.
+  &.is-step-3 .progress--item:nth-child(2) .progress--circle,
+  &.is-step-3 .progress--item:nth-child(3) .progress--circle {
+    background: $theme-color-secondary;
+  }
+
+}
+
+// The progress bar is all gray.
+.progress--bar {
+  background: $gray-lighter;
+  height: 10px;
+  margin: 0 5px;
+  width: calc(100% - 10px); // Remove a bit of progress bar in both sides to not overflow circles.
+
+  // A transition bar on top of the default progress bar to keep track on progress.
+  &-transition {
+    background: $theme-color-secondary;
+    height: 100%;
+    width: 0;
+    transition: width .5s;
+
+    transition-timing-function: ease-in-out;
+
+    // The expanding transition bar.
+    &.is-step-2 {
+      width: 50%;
+    }
+
+    &.is-step-3 {
+      width: 100%;
+    }
+  }
+}
+
+.progress--item {
+  // Currently 3 progress steps.
+  @include flex(0, 1, 33%);
+
+  margin-top: 20px;
+  position: relative;
+
+  &:first-child {  // Specific styling for first progress item.
+    .progress--circle {
+      background: $theme-color-secondary;
+      left: 0;
+      right: auto;
+    }
+
+    .progress--label {
+      text-align: left;
+    }
+  }
+
+  &:last-child {  // Specific styling for last progress item.
+    .progress--circle {
+      left: auto;
+      right: 0;
+    }
+
+    .progress--label {
+      text-align: right;
+    }
+  }
+}
+
+// Display of a circle in progress bar.
+.progress--circle {
+  width: 30px;
+  height: 30px;
+  transform: translateY(-134%); // A weird number to have circles place exactly right on top of progress bar.
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  border-radius: 100%;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+
+  color: $white;
+  font-family: $font-bold;
+  background: $gray-lighter;
+
+  transition: background .2s; // We delay the circle transition a bit to match up with progress bar transiation.
+  transition-timing-function: ease-in-out;
+  transition-delay: .3s; // We delay the circle transition a bit to match up with progress bar transiation.
+}
+
+.progress--label {
+  color: $gray-dark;
+  display: block;
+  text-align: center;
+}
