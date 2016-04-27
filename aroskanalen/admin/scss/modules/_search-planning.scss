@@ -9,6 +9,10 @@
   @include flexbox;
   @include flex-basis(100%);
 
+  border-top: 1px solid $gray-light;
+  margin-top: 2em;
+  padding-top: 2em;
+
   &--item {
     @include flex-basis(100%);
 
@@ -17,10 +21,44 @@
     background-color: $white;
   }
 
-  &--item-header {
+  header {
+    @include flexbox;
+    @include align-items(center);
+    @include align-content(center);
+
     border-bottom: 1px solid $gray-light;
     padding: .75em;
+  }
 
+  &--item-header {
     font-weight: bold;
+  }
+
+  &--date-picker {
+    @include align-self(center);
+
+    margin: auto;
+  }
+
+  &--channels {
+    @include flexbox;
+    @include flex-wrap(wrap);
+  }
+
+  &--channel {
+    @include flex-basis(100%);
+
+    position: relative;
+
+    margin-top: .5em;
+
+    &-inner {
+      position: relative;
+
+      padding: .25em .75em;
+
+      background-color: $theme-color;
+      color: $white;
+    }
   }
 }

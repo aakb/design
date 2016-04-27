@@ -35,12 +35,19 @@
         <article class="search-planning--item">
           <header>
             <h3 class="search-planning--item-header">Header</h3>
+            <div class="search-planning--date-picker">< 1/1-16 - 1/7-16 ></div>
           </header>
-          <ul>
-            <li>Channel #1</li>
-            <li>Channel #2</li>
-            <li>Channel #3</li>
-          </ul>
+          <div class="search-planning--channels">
+            <div class="search-planning--channel">
+              <div class="search-planning--channel-inner" style="left: 10%; width: 50%;">Channel #1</div>
+            </div>
+            <div class="search-planning--channel">
+              <div class="search-planning--channel-inner" style="left: 28%; width: 30%;">Channel #2</div>
+            </div>
+            <div class="search-planning--channel">
+              <div class="search-planning--channel-inner" style="left: 40%; width: 17%;">Channel #3</div>
+            </div>
+          </div>
           <ul>
             <ul>12:00</ul>
             <ul>12:00</ul>
