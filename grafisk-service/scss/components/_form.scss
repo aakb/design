@@ -1,0 +1,154 @@
+/**
+ *
+ * Styles related to the form
+ *
+ */
+
+/* Form styles
+   ================================================================================================================== */
+
+
+
+/* Basic styling
+   ================================================================================================================== */
+
+input,
+textarea {
+  font: $font;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  border: 1px solid $gray-lighter;
+  display: block;
+  min-height: 1.25em;
+  width: 100%;
+  padding: .75em;
+
+  border-radius: .3em;
+  box-sizing: border-box;
+
+  color: $black;
+  background-color: $gray-lighter;
+
+  @include placeholder-color($gray-dark);
+
+  &:focus {
+    border: 1px solid $theme-color-secondary;
+    box-sizing: border-box;
+    outline: none;
+
+    color: $gray-darkest;
+  }
+
+  &[disabled] {
+    background-color: $gray-lightest;
+  }
+
+  &.is-error {
+    border: 1px solid $error-color;
+  }
+}
+
+
+/* Form
+   ================================================================================================================== */
+
+.form {
+  margin: 2em 0;
+}
+
+// Don't show pages that are not active
+.form--page.is-hidden {
+  display: none;
+}
+
+// Class for parent to prepare child elements for flexbox.
+.form--flex-wrapper {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+// Default label display
+.form--label {
+  @include flex(0, 0, 100%);
+
+  font-family: $font-bold;
+  margin-bottom: .3em;
+}
+
+// Default form item.
+.form--item {
+  margin: .5em 0;
+
+  @include flex(0, 0, 100%);
+
+  // If we want side by side form elements
+  &.is-half-width {
+    @include flex(0, 0, 48%); // The remaining % is used for spacing.
+  }
+
+  // The actual input field should fill out it's container.
+  input {
+    width: 100%;
+  }
+}
+
+// The checkbox wrapper has different background styling compared to other form items.
+.form--checkbox-wrapper {
+  @include flex-wrap(nowrap);
+
+  margin-top: 1em;
+  padding: .75em;
+  box-sizing: border-box;
+
+  background-color: $gray-lighter;
+  border-radius: .3em;
+}
+
+// Custom checkbox styling (http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/)
+input[type="checkbox"] {
+  @include flex(0, 0, 25px);  // Static width of the checkbox.
+
+  // Disable browser default appearance.
+  @include appearance(none);
+
+  display: block;
+  height: 25px;
+  padding: 5px;
+  margin-right: 1em;
+
+  border: 2px solid $black;
+  border-radius: .3em;
+
+  // Add custom background and border when checked.
+  &:checked {
+    border: 2px solid $theme-color-secondary;
+
+    background-color: $theme-color-secondary;
+    background-image: url("../images/check.svg");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: center center;
+  }
+
+  // Disable default browser outline.
+  &:focus {
+    outline: none;
+  }
+}
+
+// We want the label to take the full width but also shrink when the browser is small.
+.form--checkbox-label {
+  @include flex(1, 1, auto);
+}

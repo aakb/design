@@ -5,15 +5,13 @@
  */
 
 
-/* Silent classes and variables related to this document
-   ========================================================================== */
-$layout-padding:  1em;
-
 /* Logo styling
    ========================================================================== */
 .logo {
   @include flexbox;
   @include flex-direction(row);
+
+  margin-left: $layout-padding;
 }
 
 .is-frontpage .logo {
@@ -57,9 +55,10 @@ $layout-padding:  1em;
     font-size: 38px;
   }
 
-  @include breakpoint($breakpoint-bigscreen) {
-    margin-right: 0;
-    margin-left: 0;
+  @include breakpoint($layout-max-width+1) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $layout-max-width;
 
     font-size: 1.75em;
   }

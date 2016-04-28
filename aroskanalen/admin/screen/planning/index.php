@@ -24,7 +24,44 @@
 </nav>
 <main role="main" class="content">
   <div class="content--inner">
-
+    <form class="search">
+      <section class="search--elements">
+        <div class="search--input">
+          <input type="search" placeholder="Søg ...">
+        </div>
+        <a class="search--toggle-filter"><img src="<?php echo $path_to_site; ?>/assets/icons/ic_tune_48px.svg"></a>
+      </section>
+      <section class="search-planning">
+        <article class="search-planning--item">
+          <header>
+            <h3 class="search-planning--item-header">Header</h3>
+          </header>
+          <ul>
+            <li>Channel #1</li>
+            <li>Channel #2</li>
+            <li>Channel #3</li>
+          </ul>
+          <ul>
+            <ul>12:00</ul>
+            <ul>12:00</ul>
+            <ul>12:00</ul>
+            <ul>12:00</ul>
+            <ul>12:00</ul>
+            <ul>12:00</ul>
+            <ul>12:00</ul>
+          </ul>
+          <ol>
+            <li>Mandag</li>
+            <li>Tirsdag</li>
+            <li>Onsdag</li>
+            <li>Torsdag</li>
+            <li>Fredag</li>
+            <li>Lørdag</li>
+            <li>Søndag</li>
+          </ol>
+        </article>
+      </section>
+    </form>
   </div>
 </main>
 

@@ -1,0 +1,20 @@
+/**
+ *
+ * Styles related to the header
+ *
+ */
+
+
+/* Header styles
+================================================================================================================== */
+
+.header {
+  padding: 1em;
+
+  background: $theme-color;
+  color: $white;
+  
+  &--text {
+    margin-bottom: 0;
+  }
+}
