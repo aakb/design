@@ -34,20 +34,19 @@
 // In this case the logo should show the text below and be slightly bigger on big screens.
 .is-frontpage {
   .logo {
-    @include breakpoint($breakpoint-bigscreen) {
       top: 1.5em;
 
   background: url("/devteam/images/assets/dev-team-white.png");
-  background-size: 15em;
+  background-size: 10em;
   background-repeat: no-repeat;
       height: 5em;
       width: 15em;
 
       transition: all .35s;
-    }
 
-    &--shape {
-      fill: $white;
-    }
+    @include breakpoint($breakpoint-bigscreen) {
+
+      background-size: 15em;
   }
+}
 }
