@@ -1,0 +1,65 @@
+/**
+ *
+ * Buttons
+ *
+ */
+
+
+/* Button styles
+================================================================================================================== */
+
+%button {
+  @include strip-link-styles($white); // A tags
+
+  display: inline-block;
+  line-height: 1.5em;
+  font-size: 100%;
+  padding: .5em 2em;
+  position: relative;
+
+  border: 0;
+  border-radius: .3em;
+  color: $white;  // Input tags
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.button {
+  @extend %button;
+  @include flex(0, 0, 5em);
+  // Default colors
+  background: $theme-color-secondary;
+
+  &:hover {
+    background: darken($theme-color-secondary, 15%);
+  }
+
+  // Grayscale
+  &.is-grayscale {
+    background: $gray-dark;
+
+    &:hover {
+      background: darken($gray-dark, 15%);
+    }
+  }
+
+  &.is-hidden {
+   visibility: hidden;
+  }
+}
+
+.buttons--container {
+  width: 100%;
+  margin-top: 2em;
+
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
