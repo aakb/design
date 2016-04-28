@@ -6,8 +6,6 @@
 
 
 .search {
-  @include flexbox;
-
   margin-left: $layout-padding;
 
   @include breakpoint($layout-max-width+1) {
@@ -19,6 +17,10 @@
 
   @include breakpoint($breakpoint-bigscreen) {
     padding-left: 0;
+  }
+
+  &--elements {
+    @include flexbox;
   }
 
   &--input {
