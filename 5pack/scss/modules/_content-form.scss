@@ -1,0 +1,40 @@
+/**
+ *
+ * Content form.
+ *
+ */
+
+.content-form {
+  @include flexbox;
+  @include flex-direction(column);
+
+  &--item + &--item,
+  &--item + .button,
+  &--item + h3,
+  &--item + h4 {
+    margin-top: 1.5em;
+
+    &.is-radio,
+    &.is-checkbox {
+      label {
+        padding-left: 1.25em;
+
+        input[type=radio],
+        input[type=checkbox] {
+          position: absolute;
+
+          margin-top: .25em;
+          margin-left: -1.25em;
+        }
+      }
+    }
+  }
+
+  .button {
+    @include align-self(flex-end);
+  }
+}
+
+p + .content-form {
+  margin-top: 1em;
+}

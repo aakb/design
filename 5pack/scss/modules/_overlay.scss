@@ -1,0 +1,28 @@
+/**
+ *
+ * Overlay
+ *
+ */
+
+
+$overlay-animation-duration: 0.3s;
+$overlay-opacity:             .85;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: $overlay-opacity;
+  z-index: z($z-index-elements, overlay);
+
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+
+  &.is-visible {
+    visibility: visible;
+    transition: background $overlay-animation-duration;
+    cursor: pointer;
+    background-color: #000;
+  }
+}
