@@ -35,6 +35,7 @@ $internal-link-image-width: 112px;
   &--iframe,
   &--title-only {
     margin-top: $paragraph-margin-top;
+    margin-boottom: $paragraph-margin-top;
   }
 
   // Paragraph Title
