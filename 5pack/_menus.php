@@ -6,12 +6,12 @@
   <!--menu.html.twig START-->
   <nav class="nav js-nav">
     <div class="nav--links">
-      <a class="nav--link<?php echo $is_active === 0 || $is_sub_active[0] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/#">Om 5 pack</a>
-      <a class="nav--link<?php echo $is_active === 1 || $is_sub_active[1] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/#">Nyheder</a>
-      <a class="nav--link<?php echo $is_active === 2 || $is_sub_active[2] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/#">Temaer</a>
-      <a class="nav--link<?php echo $is_active === 3 || $is_sub_active[3] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/#">Netværk</a>
-      <a class="nav--link<?php echo $is_active === 4 || $is_sub_active[4] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/#">Kontakt</a>
-      <a class="nav--link<?php echo $is_active === 5 || $is_sub_active[5] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/#">English</a>
+      <a class="nav--link<?php echo $is_active === 0 || $is_sub_active[0] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/om-5-pack/">Om 5 pack</a>
+      <a class="nav--link<?php echo $is_active === 1 || $is_sub_active[1] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/nyheder/">Nyheder</a>
+      <a class="nav--link<?php echo $is_active === 2 || $is_sub_active[2] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/">Temaer</a>
+      <a class="nav--link<?php echo $is_active === 3 || $is_sub_active[3] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/netvaerk/">Netværk</a>
+      <a class="nav--link<?php echo $is_active === 4 || $is_sub_active[4] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/kontakt/">Kontakt</a>
+      <a class="nav--link<?php echo $is_active === 5 || $is_sub_active[5] ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/english/">English</a>
     </div>
   </nav>
   <!--menu.html.twig END-->

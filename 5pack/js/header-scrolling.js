@@ -12,9 +12,9 @@
     var threshold = 50;
 
     // Header elements
-    var logo      = $('.js-logo');
-    var nav       = $('.js-nav');
-    var menu      = $('.js-menu-toggle');
+    var logo = $('.js-logo');
+    var nav = $('.js-nav');
+    var menu = $('.js-menu-toggle');
 
     // When the user scrolls and reaches the threshold.
     if (scroll >= threshold) {

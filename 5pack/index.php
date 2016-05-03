@@ -24,6 +24,10 @@
 
 <main role="main" class="content">
   <div class="content--inner">
+    <h2 class="frontpage--header">Seneste nyt</h2>
+    <div class="itk-boxlist">
+      <?php include $path . '/includes/_news.php'; ?>
+    </div>
     <h2 class="frontpage--header">Temaer</h2>
     <div class="itk-boxlist-gallery">
       <?php include $path . '/includes/gallery-boxes/_1.php'; ?>
@@ -32,10 +36,6 @@
       <?php include $path . '/includes/gallery-boxes/_4.php'; ?>
       <?php include $path . '/includes/gallery-boxes/_5.php'; ?>
       <?php include $path . '/includes/gallery-boxes/_6.php'; ?>
-    </div>
-    <h2 class="frontpage--header">Seneste nyt</h2>
-    <div class="itk-boxlist">
-      <?php include $path . '/includes/_news.php'; ?>
     </div>
   </div>
 </main>
