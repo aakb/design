@@ -2,7 +2,7 @@
   include $_SERVER['DOCUMENT_ROOT']. '/5pack/_settings.php';
 
   $class = 'is-page';
-  $is_active = 3;
+  $is_active = 2;
 
   include $path . '/_header.php';
   include $path . '/_menus.php';
