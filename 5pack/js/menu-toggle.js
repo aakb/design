@@ -1,6 +1,8 @@
 /**
-* Created by jakobrindom on 28/08/15.
-*/
+ *
+ * Toggle hamburgermenu
+ *
+ */
 
 $(document).ready(function () {
   "use strict";

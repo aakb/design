@@ -11,42 +11,37 @@
 .logo.is-sticky,
 .is-frontpage .logo.is-sticky {
   position: absolute;
-  top: 1.7em;
+  top: 1.3em;
   left: $layout-padding;
   z-index: z($z-index-elements, logo);
-  overflow: hidden;
 
-  display: block;
-  background: url("../images/assets/5-pack-logo-orange.svg");
-  background-size: 10em;
-  background-repeat: no-repeat;
-  height: 2em;
+  height: 3em;
   width: 10em;
+
+  background-image: url("../images/assets/5-pack-logo-orange.svg");
+  background-repeat: no-repeat;
 
   @include breakpoint($breakpoint-desk) {
     position: fixed;
   }
-
-
 }
 
 // Specific override when viewing the frontpage.
 // In this case the logo should show the text below and be slightly bigger on big screens.
 .is-frontpage {
   .logo {
-    top: 1.5em;
+    height: 3em;
+    width: 10em;
 
-    height: 5em;
-    width: 15em;
+    background-image: url("../images/assets/5-pack-logo-white.svg");
 
-    background: url("../images/assets/5-pack-logo-white.svg");
-    background-size: 10em;
-    background-repeat: no-repeat;
-
-    transition: all .35s;
+    transition: height .35s, width .35s;
 
     @include breakpoint($breakpoint-bigscreen) {
-      background-size: 15em;
+      top: 1.8em;
+
+      height: 4.5em;
+      width: 15em;
     }
   }
 }

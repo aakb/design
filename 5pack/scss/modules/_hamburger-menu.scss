@@ -47,7 +47,7 @@
       }
 
       &.is-sub {
-        font-weight: 100;
+        font-weight: 200;
       }
     }
   }
@@ -61,8 +61,7 @@
     }
   }
 
-  // Drupal uses same template for menus so they both get the nav--link class
-  .nav--link {
+  &--link {
     display: list-item;
     margin-bottom: .25em;
 
@@ -72,13 +71,9 @@
     text-decoration: none;
 
     &.is-active {
-      @include strip-link-styles($white, none);
-
-      padding-top: .75em;
-      padding-bottom: .75em;
-
-      background-color: $theme-color;
-
+      &.is-sub {
+        @include strip-link-styles($theme-color, none);
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 <article class="itk-boxlist--item">
   <header>
-    <h2 class="itk-boxlist--header"><a href="#">Open data</a></h2>
+    <h2 class="itk-boxlist--header"><a href="#">Den Digitale Infrastruktur</a></h2>
     <p>
       [Mangler tekst]
     </p>
