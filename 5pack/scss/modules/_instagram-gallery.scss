@@ -1,0 +1,55 @@
+/**
+ *
+ * Instagram gallery
+ *
+ */
+
+.instagram-gallery {
+  margin-top: 5em;
+  margin-right: $layout-padding;
+  margin-left: $layout-padding;
+
+  @include breakpoint($breakpoint-bigscreen) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  &--wrapper {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    @include align-items(center);
+    @include justify-content(space-between);
+  }
+
+  figure {
+    margin-bottom: 2.5em;
+    max-width: 45%;
+
+    @include align-self(flex-start);
+    @include flex-basis(45%);
+
+    @include breakpoint($breakpoint-desk) {
+      max-width: 30%;
+
+      @include flex-basis(30%);
+    }
+  }
+
+  img {
+    margin-bottom: .5em;
+  }
+  
+  figcaption {
+    color: $gray;
+    word-wrap: break-word;
+  }
+}
+
+
+.is-frontpage .instagram-gallery {
+  margin-top: 0;
+
+  &--title {
+    display: none;
+  }
+}

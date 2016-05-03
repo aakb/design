@@ -1,0 +1,19 @@
+/**
+ *
+ * Frontpage.
+ *
+ */
+
+
+.frontpage--header {
+  margin-top: 2em;
+
+  color: $gray-darker;
+  font-size: 1.75em;
+  font-weight: 600;
+  text-align: center;
+
+  @include breakpoint($breakpoint-tablet) {
+    font-size: 2.5em;
+  }
+}

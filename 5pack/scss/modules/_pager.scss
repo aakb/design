@@ -1,0 +1,56 @@
+/**
+ *
+ * Pager
+ *
+ */
+
+
+.pager {
+	margin-top: 2em;
+
+	&__items {
+		margin: 0;
+		padding: 0;
+
+		text-align: center;
+	}
+
+  &__item {
+		display: inline-block;
+		padding: 0;
+		margin: .5em;
+
+		background: $gray-lightest;
+		color: $gray;
+
+		&:hover {
+			background: $theme-color-secondary;
+		}
+
+    a {
+			box-sizing: border-box;
+			display: block;
+			height: 100%;
+			padding: .5em 1em;
+			width: 100%;
+
+			@include strip-link-styles($gray);
+
+			&:hover {
+				color: $white;
+			}
+    }
+
+		&.is-active {
+			background: $theme-color-secondary;
+
+			a {
+				@include strip-link-styles($gray-lightest);
+			}
+		}
+
+		&--ellipsis {
+			background: none;
+		}
+  }
+}

@@ -17,7 +17,7 @@
   overflow: hidden;
 
   display: block;
-  background: url("/devteam/images/assets/dev-team.png");
+  background: url("../images/assets/5-pack-logo-orange.svg");
   background-size: 10em;
   background-repeat: no-repeat;
   height: 2em;
@@ -34,19 +34,19 @@
 // In this case the logo should show the text below and be slightly bigger on big screens.
 .is-frontpage {
   .logo {
-      top: 1.5em;
+    top: 1.5em;
 
-  background: url("/devteam/images/assets/dev-team-white.png");
-  background-size: 10em;
-  background-repeat: no-repeat;
-      height: 5em;
-      width: 15em;
+    height: 5em;
+    width: 15em;
 
-      transition: all .35s;
+    background: url("../images/assets/5-pack-logo-white.svg");
+    background-size: 10em;
+    background-repeat: no-repeat;
+
+    transition: all .35s;
 
     @include breakpoint($breakpoint-bigscreen) {
-
       background-size: 15em;
+    }
   }
-}
 }
