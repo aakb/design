@@ -9,10 +9,21 @@
 ================================================================================================================== */
 
 @font-face {
-  font-family: 'Open-Sans';
-  src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+  font-family: 'Open Sans Light';
+  src: url("../fonts/open-sans/OpenSans-Light.ttf");
 }
+
 @font-face {
-  font-family: 'Open-Sans-Bold';
-  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url("../fonts/open-sans/OpenSans-semibold.ttf");
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/open-sans/OpenSans-Bold.ttf");
 }

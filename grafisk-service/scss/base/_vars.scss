@@ -18,6 +18,7 @@ $breakpoint-bigscreen:        1500px;
 /* Layout
    ================================================================================================================== */
 
+$layout-max-width: 1000px;
 
 
 /* Elements
@@ -37,7 +38,7 @@ $white:            #fff;
 
 $gray-lightest:    lighten($black, 95%);
 $gray-lighter:     lighten($black, 90%);
-$gray-light:       lighten($black, 70%);
+$gray-light:       lighten($black, 75%);
 $gray:             lighten($black, 60%);
 $gray-dark:        lighten($black, 50%);
 $gray-darker:      lighten($black, 40%);
@@ -51,6 +52,9 @@ $error-color:      red;
 /* Typography
    ================================================================================================================== */
 
-$font-family:      'Open-Sans', Arial, sans-serif;
-$font-bold:        'Open-Sans-Bold', Arial, sans-serif;
-$font:             1em/1.5 $font-family;
+$font-default:     'Arial, sans-serif';
+$font-normal:      'Open Sans', $font-default;
+$font-light:       'Open Sans Light', $font-default;
+$font-semibold:    'Open Sans semibold', $font-default;
+$font-bold:        'Open Sans Bold', $font-default;
+$font:             1em/1.5 $font-light;

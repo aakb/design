@@ -11,16 +11,13 @@ html {
 }
 
 body {
-  position: relative; // For absolute positioned burger menu to have 100 height.
-
-  display: table; // http://galengidman.com/2014/03/25/responsive-flexible-height-sticky-footers-in-css/
   height: 100%;
   margin: 0;
   width: 100%;
 
   background-color: $white;
 
-  color: $black;
+  color: $gray-darkest;
   font: $font;
 }
 
