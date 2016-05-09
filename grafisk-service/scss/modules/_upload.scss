@@ -9,11 +9,13 @@
 ================================================================================================================== */
 
 .upload {
-  background: $gray-lighter;
-  box-sizing: border-box;
-  margin-top: .3em;
-  padding: 1em;
-  
+  &--inner {
+    padding: 1em;
+
+    background: $gray-lighter;
+    border-radius: .3em;
+  }
+
   // Uploaded files table
   table {
     margin-bottom: 1em;
@@ -28,7 +30,7 @@
   }
 
   tr {
-    border-bottom: 1px solid $gray-dark;
+    border-bottom: 1px solid $gray-light;
   }
 
   td {
@@ -36,17 +38,19 @@
   }
 
   &--file {
+    text-align: center;
+
     input[type="file"] {
 
       color: $gray-dark;
-      height: 10em;
+      height: 7em;
       border: 1px dotted $gray-dark;
       background: $white;
       margin-top: .3em;
       position: relative;
 
       &:before {
-        content: "Click eller træk en fil her, og click upload";
+        content: "";
         position: absolute;
         z-index: 1;
         top: 0;
@@ -54,10 +58,10 @@
         right: 0;
         bottom: 0;
         background: $white;
-        background-position: center 60px;
+        background-position: center 25px;
         background-image: url("../images/upload.svg");
         background-repeat: no-repeat;
-        background-size: 70px 70px;
+        background-size: 50px 50px;
         padding: 1em;
         text-align: center;
       }
@@ -82,14 +86,13 @@
 
     .form-submit {
       display: block;
-      float: right;
-      margin: 1em 0 0 .5em;
+      margin-right: auto;
+      margin-left: auto;
       width: 8em;
     }
   }
 
   &--description {
-    float: left;
     margin: 1em .5em 0 0;
   }
 }

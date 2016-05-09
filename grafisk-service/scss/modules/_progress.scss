@@ -9,10 +9,9 @@
 ================================================================================================================== */
 
 .progress {
-  margin: 30px 0 0;
-  padding-bottom: 30px;
-
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $gray-light;
+  margin: 3.5em 0 0;
+  padding-bottom: 3em;
 
   // Change color of step two circle.
   &.is-step-2 .progress--item:nth-child(2) .progress--circle {
@@ -29,10 +28,11 @@
 
 // The progress bar is all gray.
 .progress--bar {
-  background: $gray-lighter;
   height: 10px;
   margin: 0 5px;
   width: calc(100% - 10px); // Remove a bit of progress bar in both sides to not overflow circles.
+
+  background: $gray-light;
 
   // A transition bar on top of the default progress bar to keep track on progress.
   &-transition {
@@ -60,6 +60,12 @@
 
   margin-top: 20px;
   position: relative;
+
+  .progress--label {
+    color: $gray;
+    font-family: $font-light;
+    font-size: .85em;
+  }
 
   &:first-child {  // Specific styling for first progress item.
     .progress--circle {
@@ -101,9 +107,10 @@
   text-align: center;
   vertical-align: middle;
 
+  background: $gray-light;
   color: $white;
   font-family: $font-bold;
-  background: $gray-lighter;
+  font-size: .85em;
 
   transition: background .2s; // We delay the circle transition a bit to match up with progress bar transiation.
   transition-timing-function: ease-in-out;

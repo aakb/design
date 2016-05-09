@@ -24,6 +24,12 @@
 
     &:checked + label {
       border: 1px solid $theme-color-secondary;
+
+      transition: border 1.5s;
+    }
+
+    + label .origin--check {
+      opacity: 0;
     }
 
     &:checked + label .origin--check {
@@ -36,6 +42,9 @@
       background-image: url("../images/check-circle.svg");
       background-repeat: no-repeat;
       background-size: 20px 20px;
+      opacity: 1;
+
+      transition: opacity .5s;
     }
   }
 
@@ -80,23 +89,19 @@
 }
 
 .origin--field-container {
-  // Expand the label to take the full height and width of its wrapper.
-  z-index: 2;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
+  height: 100%;
 
   // Display the origin container.
   opacity: 1;
-  transition: opacity .5s;
-  transition-timing-function: ease-in-out;
+  transition: opacity 1s;
 
   // Hide the origin container.
   &.is-hidden {
-    display: none;
+    overflow: hidden;
     z-index: 1;
+
+    height: 0;
+
     opacity: 0;
   }
 }

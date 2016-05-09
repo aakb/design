@@ -1,13 +1,10 @@
 <?php
-  $class = 'is-frontpage';
-
   include '_header.php';
-  include '_menus.php';
 ?>
 <!--region.html.twig START-->
 <div class="header" role="banner" id="home">
   <div class="header--inner">
-    <h1 class="header--text">Grafisk Service</h1>
+    <h1 class="header--text"><a href="/grafisk-service/" title="Grafisk Service">Grafisk Service</a></h1>
   </div>
 </div>
 <!--region.html.twig END-->

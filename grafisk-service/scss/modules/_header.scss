@@ -13,8 +13,23 @@
 
   background: $theme-color;
   color: $white;
+
+  &--inner {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $layout-max-width;
+  }
   
   &--text {
     margin-bottom: 0;
+
+    font-family: $font-bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    a {
+      @include strip-link-styles($white);
+    }
   }
 }
