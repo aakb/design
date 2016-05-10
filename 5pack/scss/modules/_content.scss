@@ -37,7 +37,7 @@
 .content {
   &--inner {
     margin-right: auto;
-    margin-bottom: 16em;
+    margin-bottom: 3em;
     margin-left: auto;
     max-width: $breakpoint-desk;
     min-height: 20em;
@@ -45,7 +45,7 @@
     @include word-wrap;
 
     @include breakpoint($breakpoint-tablet) {
-      margin-bottom: 11em;
+      margin-bottom: 3em;
     }
 
     &.is-front {
