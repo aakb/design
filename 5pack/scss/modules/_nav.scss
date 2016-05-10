@@ -45,7 +45,7 @@
   height: 5.5em;
   width: 100%;
 
-  background-color: $white;
+  background-color: rgba(0,0,0, .75);
 
   transition: top .35s, right .35s, padding .35s;
 
@@ -74,7 +74,7 @@
       @include justify-content(flex-end);
 
       a {
-        @include strip-link-styles($gray-darkest, none);
+        @include strip-link-styles($white, none);
       }
     }
   }
@@ -85,7 +85,7 @@
       padding-right: 1.2em;
       padding-left: 1.2em;
 
-      color: $gray-darkest;
+      color: $white;
       font-size: 1.2em;
       text-decoration: none;
 
@@ -127,13 +127,6 @@
   transition: .5s ease-in-out;
   cursor: pointer;
 
-  &.open,
-  &.is-sticky {
-    span {
-      background: $gray-darkest;
-    }
-  }
-
   @include breakpoint($breakpoint-desk) {
     position: fixed;
   }
@@ -147,7 +140,7 @@
   height: 5px;
   width: 100%;
 
-  background: $gray-darkest;
+  background: $white;
   opacity: 1;
 
   transform: rotate(0deg);

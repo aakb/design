@@ -47,6 +47,19 @@
     @include breakpoint($breakpoint-tablet) {
       margin-bottom: 11em;
     }
+
+    &.is-front {
+      max-width: 100%;
+      margin-bottom: 0;
+      min-height: 20em;
+      padding: 2em 0;
+
+      @include word-wrap;
+
+      &:last-child {
+        background: $gray-lightest;
+      }
+    }
   }
 
   p + h3,
@@ -109,7 +122,6 @@
   &--image-wrapper {
     position: relative;
 
-    margin-top: 5.5em;
     margin-bottom: 2.5em;
 
     @include breakpoint($breakpoint-desk) {

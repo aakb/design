@@ -18,7 +18,7 @@
   height: 3em;
   width: 10em;
 
-  background-image: url("../images/assets/5-pack-logo-orange.svg");
+  background-image: url("../logo.svg");
   background-repeat: no-repeat;
 
   @include breakpoint($breakpoint-desk) {
@@ -33,7 +33,7 @@
     height: 3em;
     width: 10em;
 
-    background-image: url("../images/assets/5-pack-logo-white.svg");
+    background-image: url("../logo.svg");
 
     transition: height .35s, width .35s;
 

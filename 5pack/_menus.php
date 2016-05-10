@@ -26,50 +26,50 @@
     <div class="hamburger-menu--inner">
       <div class="hamburger-menu--links">
         <div class="hamburger-menu--group">
-          <a href="<?php echo $path_to_site; ?>/om-5-pack/" class="hamburger-menu--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">
+          <a href="<?php echo $path_to_site; ?>/om-5-pack/" class="nav--link<?php echo $is_active === 0 ? ' is-active' : '' ?>">
             Om 5 pack
           </a>
         </div>
         <div class="hamburger-menu--group">
-          <a href="<?php echo $path_to_site; ?>/nyheder/" class="hamburger-menu--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">
+          <a href="<?php echo $path_to_site; ?>/nyheder/" class="nav--link<?php echo $is_active === 1 ? ' is-active' : '' ?>">
             Nyheder
           </a>
         </div>
         <div class="hamburger-menu--group">
-          <a href="<?php echo $path_to_site; ?>/temaer/" class="hamburger-menu--link<?php echo $is_active === 2 ? ' is-active' : '' ?>">
+          <a href="<?php echo $path_to_site; ?>/temaer/" class="nav--link<?php echo $is_active === 2 ? ' is-active' : '' ?>">
             Temaer
           </a>
-          <a class="hamburger-menu--link is-sub <?php echo $is_sub_active[2] === 1 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/den-digitale-infrastruktur/">
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 1 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/den-digitale-infrastruktur/">
             Den digtiale infrastruktur
           </a>
-          <a class="hamburger-menu--link is-sub <?php echo $is_sub_active[2] === 2 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/open-data/">
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 2 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/open-data/">
             Open Data
           </a>
-          <a class="hamburger-menu--link is-sub <?php echo $is_sub_active[2] === 3 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/mobilitet/">
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 3 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/mobilitet/">
             Mobilitet
           </a>
-          <a class="hamburger-menu--link is-sub <?php echo $is_sub_active[2] === 4 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/forsyning/">
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 4 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/forsyning/">
             Forsyning
           </a>
-          <a class="hamburger-menu--link is-sub <?php echo $is_sub_active[2] === 5 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/mennesker/">
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 5 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/mennesker/">
             Mennesker
            </a>
-          <a class="hamburger-menu--link is-sub <?php echo $is_sub_active[2] === 6 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/living-labs/">
+          <a class="nav--link is-sub <?php echo $is_sub_active[2] === 6 ? ' is-active' : '' ?>" href="<?php echo $path_to_site; ?>/temaer/living-labs/">
             Living Labs
           </a>
         </div>
         <div class="hamburger-menu--group">
-          <a href="<?php echo $path_to_site; ?>/netvaerk/" class="hamburger-menu--link<?php echo $is_active === 3 ? ' is-active' : '' ?>">
+          <a href="<?php echo $path_to_site; ?>/netvaerk/" class="nav--link<?php echo $is_active === 3 ? ' is-active' : '' ?>">
             Netværk
           </a>
         </div>
         <div class="hamburger-menu--group">
-          <a href="<?php echo $path_to_site; ?>/kontakt/" class="hamburger-menu--link<?php echo $is_active === 4 ? ' is-active' : '' ?>">
+          <a href="<?php echo $path_to_site; ?>/kontakt/" class="nav--link<?php echo $is_active === 4 ? ' is-active' : '' ?>">
             Kontakt
           </a>
         </div>
         <div class="hamburger-menu--group">
-          <a href="<?php echo $path_to_site; ?>/english/" class="hamburger-menu--link<?php echo $is_active === 5 ? ' is-active' : '' ?>">
+          <a href="<?php echo $path_to_site; ?>/english/" class="nav--link<?php echo $is_active === 5 ? ' is-active' : '' ?>">
             English
           </a>
         </div>

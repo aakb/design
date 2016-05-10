@@ -20,7 +20,15 @@ $message-error-color:            $error-color;
    ========================================================================== */
 
 .itk-message {
-  max-width: $breakpoint-desk;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 9em;
+  max-width: 1024px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
 
   & + p {
     margin-top: 1em;

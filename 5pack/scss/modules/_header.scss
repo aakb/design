@@ -34,7 +34,6 @@
 
   @include breakpoint($breakpoint-tablet) {
     padding-bottom: 1em;
-    margin-bottom: 4em;
   }
 
   // Header inner
@@ -60,8 +59,10 @@
 
     @include breakpoint($breakpoint-desk) {
       max-width: $breakpoint-desk;
-      padding-top: 9em;
+      padding-top: 12em;
+      padding-right: 1.8em;
       padding-bottom: 6em;
+      padding-left: 1.8em;
     }
 
     @include breakpoint($breakpoint-bigscreen) {

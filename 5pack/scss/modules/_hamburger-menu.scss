@@ -61,7 +61,8 @@
     }
   }
 
-  &--link {
+  // Nesting since we use the same template.
+  & .nav--link {
     display: list-item;
     margin-bottom: .25em;
 

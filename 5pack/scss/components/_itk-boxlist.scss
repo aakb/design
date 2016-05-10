@@ -17,6 +17,12 @@ $boxlist-padding: 1em;
   margin-right: $layout-padding;
   margin-left: $layout-padding;
 
+  &--wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $breakpoint-desk;
+  }
+
   &--header {
     margin-bottom: 0;
 
@@ -107,7 +113,7 @@ $boxlist-padding: 1em;
 
     order: 1;
 
-    @include flex-basis(6em);
+    @include flex-basis(224px);
     @include flex-shrink(0);
   }
 }

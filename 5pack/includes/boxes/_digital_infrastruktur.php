@@ -4,7 +4,7 @@
     <p>
       [Mangler tekst]
     </p>
-    <a href="#">[Mangler tekst]</a>
+    <a href="#">Læs mere</a>
   </header>
   <figure><a href=""#"><img src="https://unsplash.it/501/498/?random"></a></figure>
 </article>
