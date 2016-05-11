@@ -139,6 +139,7 @@ $boxlist-padding: 1em;
   &--item {
     margin-bottom: 4em;
     position: relative;
+    padding-bottom: 3em;
 
     @include flexbox;
     @include flex-flow(column);
@@ -177,7 +178,6 @@ $boxlist-padding: 1em;
 
     @include breakpoint($breakpoint-lap) {
       padding-top: 0;
-      padding-bottom: 0;
 
       header {
         text-align: center;
