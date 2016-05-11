@@ -31,7 +31,7 @@
       <?php include $path . '/includes/_news.php'; ?>
     </div>
     <h2 class="frontpage--header">Oplevelser på DokkX</h2>
-    <div class="itk-boxlist">
+    <div class="itk-boxlist-gallery">
       <?php include $path . '/includes/boxes/_sundhed-traening.php'; ?>
       <?php include $path . '/includes/boxes/_book-rundvisning.php'; ?>
     </div>
