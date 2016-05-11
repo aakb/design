@@ -138,6 +138,7 @@ $boxlist-padding: 1em;
 
   &--item {
     margin-bottom: 4em;
+    position: relative;
 
     @include flexbox;
     @include flex-flow(column);
@@ -212,7 +213,14 @@ $boxlist-padding: 1em;
     margin-right: auto;
     margin-left: auto;
     min-width: 75%;
+    max-width: 15em;
     padding: .5em 1em;
+
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     background-color: transparent;
     border: 1px solid $link-color;
