@@ -32,16 +32,6 @@
   .logo {
     height: 3em;
     width: 10em;
-
     background-image: url("../logo.svg");
-
-    transition: height .35s, width .35s;
-
-    @include breakpoint($breakpoint-bigscreen) {
-      top: 1.8em;
-
-      height: 4.5em;
-      width: 15em;
-    }
   }
 }
