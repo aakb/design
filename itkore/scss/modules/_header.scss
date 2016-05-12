@@ -12,12 +12,12 @@
   padding-bottom: 2em;
   width: 100%;
 
-  background-image: url('//unsplash.it/1600/500/?random');
   background-size: cover;
   color: #fff;
 
   &:before {
     @extend %image-overlay;
+
 
     background-color: rgba(0, 0, 0, .5);
   }
@@ -35,7 +35,6 @@
 
   @include breakpoint($breakpoint-tablet) {
     padding-bottom: 1em;
-    margin-bottom: 4em;
   }
 
   // Header inner
@@ -46,7 +45,7 @@
     margin-left: auto;
     padding-top: 5.75em;
     padding-right: $layout-padding;
-    padding-bottom: .75em;
+    padding-bottom: 1.75em;
     padding-left: $layout-padding;
 
     @include flexbox;
@@ -55,14 +54,16 @@
 
     @include breakpoint($breakpoint-tablet) {
       padding-right: 8em;
-      padding-bottom: 2em;
+      padding-bottom: 4em;
       padding-left: 8em;
     }
 
     @include breakpoint($breakpoint-desk) {
       max-width: $breakpoint-desk;
-      padding-top: 9em;
-      padding-bottom: 2em;
+      padding-top: 12em;
+      padding-right: 1.8em;
+      padding-bottom: 6em;
+      padding-left: 1.8em;
     }
 
     @include breakpoint($breakpoint-bigscreen) {

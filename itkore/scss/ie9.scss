@@ -21,8 +21,7 @@
 
 
 .itk-boxlist,
-.itk-boxlist-news,
-.itk-boxlist-events {
+.itk-boxlist-gallery {
   &--item {
     float: left;
     padding: 1em;
@@ -50,24 +49,6 @@
   }
 }
 
-
-.itk-boxlist-column {
-  &--item {
-    float: left;
-    width: 33%;
-  }
-}
-
-
-.instagram-gallery {
-  margin-bottom: 7em;
-  figure {
-    float: left;
-    margin-right: 2em;
-    width: 33%;
-  }
-}
-
 .button,
 .button:link,
 .button:visited {
@@ -75,24 +56,5 @@
 
   &.is-block {
     display: inline-block;
-  }
-}
-
-
-.footer {
-  &--mail {
-    float: left;
-  }
-
-  &--social {
-    float: right;
-  }
-
-  &--icons {
-    float: left;
-  }
-  &--aarhus {
-    padding-right: 1em;
-    float: left;
   }
 }

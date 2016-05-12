@@ -1,0 +1,152 @@
+/**
+ *
+ * Fields
+ *
+ * All fields displayed on nodes and users.
+ */
+
+/* Variables related to this document.
+================================================================================================================== */
+
+// Set widths
+$image-width-lap: 22.5%;
+$image-gutter-lap: 2.5%;
+
+$image-width-desk: 33%;
+$image-gutter-desk: 2.5%;
+
+$paragraph-margin-top: 3.5em;
+
+$internal-link-image-width: 112px;
+
+
+/* Styles
+================================================================================================================== */
+
+.paragraphs--internal-link + .paragraphs--internal-link {
+  margin-top: $paragraph-margin-top / 1.25;
+}
+
+.paragraphs {
+  &--wrapper {
+    margin-right: 1.8em;
+    margin-left: 1.8em;
+  }
+
+  &--text-left,
+  &--internal-link,
+  &--title-paragraph,
+  &--youtube,
+  &--iframe,
+  &--title-only {
+    margin-top: $paragraph-margin-top;
+    margin-bottom: $paragraph-margin-top;
+  }
+
+  // Paragraph Title
+  &--title {
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
+
+  // Text Left
+  &--text-inner{
+    @include flexbox;
+    @include justify-content(space-between);
+    @include flex-wrap(no-wrap);
+  }
+
+  &--text-left {
+
+    figure {
+      margin-top: .25em;
+      margin-left: 1em;
+      min-width: 5em;
+
+      @include flex-basis(5em);
+      @include flex-grow(1);
+      @include order(2);
+
+      @include breakpoint($breakpoint-lap) {
+        @include flex-basis($image-width-lap);
+
+        min-width: $image-width-lap;
+        max-width: $image-width-lap;
+      }
+
+      @include breakpoint($breakpoint-desk) {
+        @include flex-basis($image-width-desk);
+        min-width: $image-width-desk;
+        max-width: $image-width-desk;
+      }
+    }
+  }
+
+  &--text-left-wrapper {
+    @include order(1);
+    @include flex-shrink(1);
+
+    @include breakpoint($breakpoint-lap) {
+      //@include flex-basis();
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      //@include flex-basis();
+    }
+
+    .paragraphs--text > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+  // Internal Link
+
+  &--internal-link {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include flex-wrap(no-wrap);
+
+    .figure {
+      margin-right: 1em;
+      min-width: $internal-link-image-width / 2;
+      max-width: $internal-link-image-width / 2;
+
+      @include flex-basis(5em);
+      @include flex-grow(0);
+      @include order(1);
+
+      @include breakpoint($breakpoint-lap) {
+        min-width: $internal-link-image-width;
+        max-width: $internal-link-image-width;
+      }
+    }
+
+    a:first-child {
+
+        @include strip-link-styles();
+
+
+    }
+
+    .paragraphs--text > p:last-child {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: $paragraph-margin-top;
+    }
+  }
+
+  &--internal-link-wrapper {
+    @include order(2);
+    @include flex-grow(1);
+    @include flex-shrink(1);
+  }
+
+  // Title only
+  &--title-only {
+    font-size: 1.25em;
+    margin-bottom: -1.25em;
+  }
+}

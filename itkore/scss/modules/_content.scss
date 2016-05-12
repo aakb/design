@@ -6,34 +6,71 @@
 
 
 &.is-page .content {
-  margin-bottom: 17em;
-  position: relative;
-  z-index: z($z-index-elements, content);
-
-  background-color: rgba(255, 255, 255, 1);
-
-  @include breakpoint($breakpoint-tablet) {
-    margin-bottom: 9em;
-  }
-
-  @include breakpoint($breakpoint-desk) {
+  &--inner {
+    margin-top: -7em;
     padding-top: 3em;
 
-  }
+    position: relative;
+    z-index: z($z-index-elements, content);
 
-  @include breakpoint($breakpoint-bigscreen) {
-    padding-right: $layout-padding;
-    padding-left: $layout-padding;
+    background-color: rgba(255, 255, 255, 1);
+
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: -8em;
+      padding-top: 3.5em;
+    }
+
+    @include breakpoint($breakpoint-desk) {
+      margin-top: -21em;
+      padding-top: 3em;
+    }
+
+    @include breakpoint($breakpoint-bigscreen) {
+      padding-right: $layout-padding;
+      padding-left: $layout-padding;
+      padding-top: 5em;
+    }
   }
 }
 
 .content {
-  margin-right: auto;
-  margin-bottom: 10em;
-  margin-left: auto;
-  max-width: $breakpoint-desk;
+  &--inner {
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-left: auto;
+    max-width: $breakpoint-desk;
+    min-height: 20em;
 
-  @include word-wrap;
+    @include word-wrap;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 3em;
+    }
+
+    &.is-front {
+      max-width: 100%;
+      margin-bottom: 0;
+      min-height: 20em;
+      padding: 2em 0;
+
+      @include word-wrap;
+
+      &:last-child {
+        background: $gray-lightest;
+      }
+    }
+  }
+
+  p + h3,
+  p + p {
+    margin-top: 2em;
+  }
+
+  // Needs nesting inside content for overriding p+p.
+  &--inline-link {
+    margin-top: 1em;
+  }
 
   &--header,
   &--lead,
@@ -48,17 +85,20 @@
     }
   }
 
-  &--header +
+  h3,
+  h4,
+  &--header,
   &--lead {
-    //padding-bottom: 0;
-
+    font-weight: 600;
   }
 
   &--header,
   &--lead {
-    font-weight: 600;
     text-align: center;
-    padding-bottom: 1.5em;
+  }
+
+  &--lead {
+    margin-bottom: 1em;
   }
 
   &--header {
@@ -82,21 +122,15 @@
   &--image-wrapper {
     position: relative;
 
-    margin-top: 5.5em;
-
-    @include breakpoint($breakpoint-tablet) {
-      height: 300px;
-
-      img {
-        margin-top: -135px;
-      }
-    }
+    margin-bottom: 2.5em;
 
     @include breakpoint($breakpoint-desk) {
       overflow: hidden;
 
-      height: 400px;
+      height: 500px;
+    }
 
+    @include breakpoint($breakpoint-bigscreen) {
       img {
         margin-top: -225px;
       }
@@ -111,7 +145,6 @@
     font-size: 1.25em;
 
     @include breakpoint($breakpoint-tablet) {
-      height: 100px;
       margin-right: 3em;
       margin-left: 3em;
     }
@@ -121,10 +154,17 @@
     }
   }
 
-  &--text {
-    border-bottom: 1px solid $gray-lighter;
+  &--text + fieldset {
+    margin-top: 3em;
+  }
 
-    margin-bottom: 3em;
-    padding-bottom: 3em;
+  fieldset {
+    margin-right: $layout-padding;
+    margin-left: $layout-padding;
+
+    @include breakpoint($breakpoint-desk) {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }

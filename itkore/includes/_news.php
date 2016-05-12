@@ -1,51 +1,9 @@
-<article class="itk-boxlist-news--item">
+<article class="itk-boxlist--item">
   <header>
-    <h2 class="itk-boxlist-news--header"><a href="../news/nyhed.php">This is the news!</a></h2>
-    <div class="itk-boxlist-news--meta">
-      <p class="itk-boxlist-news--meta-wrapper">
-        <span class="itk-boxlist-news--icon"><img src="includes/icons/calendar.svg"></span>
-        4. oktober 2015
-      </p>
-    </div>
-    <p>
-      Sed haec quis possit intrepidus aestimare tellus. Curabitur blandit tempus ardua ridiculus sed magna. Morbi
-      odio eros, volutpat ut pharetra vitae, lobortis sed nibh.
-    </p>
-    <a href="../news/nyhed.php">Læs nyheden</a>
+    <h2 class="itk-boxlist--header"><a href="<?php echo $path_to_site; ?>/nyheder/nyhed/">[Mangler tekst]</a></h2>
+    <div class="itk-boxlist--meta">4. oktober 2015</div>
+    <p>[Mangler tekst]</p>
+    <a href="<?php echo $path_to_site; ?>/nyheder/nyhed/">Læs mere</a>
   </header>
-  <figure><a href="../news/nyhed.php"><img src="https://unsplash.it/499/500/?random"></a></figure>
-</article>
-<article class="itk-boxlist-news--item">
-  <header>
-    <h2 class="itk-boxlist-news--header"><a href="../news/nyhed.php">This is the news!</a></h2>
-    <div class="itk-boxlist-news--meta">
-      <p class="itk-boxlist-news--meta-wrapper">
-        <span class="itk-boxlist-news--icon"><img src="includes/icons/calendar.svg"></span>
-        3. oktober 2015
-      </p>
-    </div>
-    <p>
-      Sed haec quis possit intrepidus aestimare tellus. Curabitur blandit tempus ardua ridiculus sed magna. Morbi
-      odio eros, volutpat ut pharetra vitae, lobortis sed nibh.
-    </p>
-    <a href="../news/nyhed.php">Læs nyheden</a>
-  </header>
-  <figure><a href="../news/nyhed.php"><img src="https://unsplash.it/500/500/?random"></a></figure>
-</article>
-<article class="itk-boxlist-news--item">
-  <header>
-    <h2 class="itk-boxlist-news--header"><a href="../news/nyhed.php">This is the news!</a></h2>
-    <div class="itk-boxlist-news--meta">
-      <p class="itk-boxlist-news--meta-wrapper">
-        <span class="itk-boxlist-news--icon"><img src="includes/icons/calendar.svg"></span>
-        2. oktober 2015
-      </p>
-    </div>
-    <p>
-      Sed haec quis possit intrepidus aestimare tellus. Curabitur blandit tempus ardua ridiculus sed magna. Morbi
-      odio eros, volutpat ut pharetra vitae, lobortis sed nibh.
-    </p>
-    <a href="../news/nyhed.php">Læs nyheden</a>
-  </header>
-  <figure><a href="../news/nyhed.php"><img src="https://unsplash.it/500/501/?random"></a></figure>
+  <figure><a href="<?php echo $path_to_site; ?>/nyheder/nyhed/"><img src="https://unsplash.it/499/500/?random"></a></figure>
 </article>

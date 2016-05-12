@@ -20,24 +20,17 @@ $breakpoint-bigscreen:        1500px;
 $z-index-elements: header-overlay, header, content, nav, logo, overlay, hamburger-menu, nav-toggle;
 
 
-
 /* Layout
    ================================================================================================================== */
 
 $layout-padding:  1.8em;
 
 
-/* Elements
-   ================================================================================================================== */
-
-$nav-height:  80px;
-
-
 /* Colors
    ================================================================================================================== */
 
-$theme-color:             #2bb673;
-$theme-color-secondary:   #153037;
+$theme-color:             rgb(222, 106, 16);
+$theme-color-secondary:   #e30613;
 
 $black:            #000;
 $white:            #fff;
@@ -53,9 +46,13 @@ $gray-darkest:     lighten($black, 12%);
 $link-color:       $theme-color;
 $link-color-hover: darken($link-color, 25%);
 
+$error-color:      #ffbaba;
+
 
 /* Typography
    ================================================================================================================== */
 
-$font-family:      "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family:      "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font:             1em/1.5 $font-family;
+
+

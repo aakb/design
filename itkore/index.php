@@ -1,4 +1,5 @@
 <?php
+  include $_SERVER['DOCUMENT_ROOT']. '/itkore/_settings.php';
   $class = 'is-frontpage';
 
   include '_header.php';
@@ -21,10 +22,27 @@
 </div>
 
 <main role="main" class="content">
-  <?php include 'includes/_instagram.php'; ?>
+  <div class="content--inner is-front">
+    <div class="itk-boxlist--wrapper">
+      <h2 class="frontpage--header">Temaer</h2>
+      <div class="itk-boxlist-gallery">
+        <?php include $_SERVER['DOCUMENT_ROOT']. '/itkore/_settings.php';?>
+        <?php include $path . '/includes/gallery-boxes/_1.php'; ?>
+        <?php include $path . '/includes/gallery-boxes/_2.php'; ?>
+        <?php include $path . '/includes/gallery-boxes/_3.php'; ?>
+        <?php include $path . '/includes/gallery-boxes/_4.php'; ?>
+        <?php include $path . '/includes/gallery-boxes/_5.php'; ?>
+        <?php include $path . '/includes/gallery-boxes/_6.php'; ?>
+      </div>
+    </div>
+  </div>
+  <div class="content--inner is-front">
+    <div class="itk-boxlist--wrapper">
+      <h2 class="frontpage--header">Seneste nyt</h2>
+      <div class="itk-boxlist">
+        <?php include $path . '/includes/_news.php'; ?>
+      </div>
+    </div>
+  </div>
 </main>
 <!--region.html.twig END-->
-
-<?php
-  include '_footer.php';
-?>

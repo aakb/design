@@ -8,14 +8,11 @@
 .is-frontpage {
   .nav {
     right: 0;
-
-    background-color: black;
   }
 
   .nav,
   .nav.is-sticky {
     @include breakpoint($breakpoint-desk) {
-      background-color: black;
       &--links {
         a {
           @include strip-link-styles($white, none);
@@ -37,7 +34,8 @@
 }
 
 .nav,
-.nav.is-sticky {
+.nav.is-sticky,
+.is-frontpage .nav.is-sticky {
   top: 0;
   position: absolute;
   z-index: z($z-index-elements, nav);
@@ -45,7 +43,7 @@
   height: 5.5em;
   width: 100%;
 
-  background-color: $white;
+  background-color: rgba(0,0,0, .75);
 
   transition: top .35s, right .35s, padding .35s;
 
@@ -74,7 +72,7 @@
       @include justify-content(flex-end);
 
       a {
-        @include strip-link-styles($gray-darkest, none);
+        @include strip-link-styles($white, none);
       }
     }
   }
@@ -85,12 +83,11 @@
       padding-right: 1.2em;
       padding-left: 1.2em;
 
-      color: $gray-darkest;
+      color: $white;
       font-size: 1.2em;
       text-decoration: none;
 
-      transition: top .35s, right .35s, padding .35s;
-      transition: border 1s, background-color .25s;
+      transition: top .35s, right .35s, border 1s, padding .35s, background-color .25s;
 
       @include flexbox;
       @include align-items(center);
@@ -98,6 +95,7 @@
 
       &.is-active,
       &.is-active:hover {
+
         background-color: $theme-color;
 
         @include strip-link-styles($white, none);
@@ -113,6 +111,7 @@
 }
 
 // hamburger menu toggle-effect
+
 .nav-toggle {
   position: absolute;
   top: 1.6em;
@@ -123,14 +122,8 @@
   width: 40px;
 
   transform: rotate(0deg);
-  transition: transform .5s ease-in-out;
+  transition: .5s ease-in-out;
   cursor: pointer;
-
-  &.open {
-    span {
-      background: $gray-darkest;
-    }
-  }
 
   @include breakpoint($breakpoint-desk) {
     position: fixed;
@@ -145,7 +138,7 @@
   height: 5px;
   width: 100%;
 
-  background: $gray-darkest;
+  background: $white;
   opacity: 1;
 
   transform: rotate(0deg);

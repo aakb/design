@@ -47,7 +47,7 @@
       }
 
       &.is-sub {
-        font-weight: 100;
+        font-weight: 200;
       }
     }
   }
@@ -59,26 +59,10 @@
     &:not(:last-child) {
       border-bottom: 1px solid $gray-lighter;
     }
-
-    &.is-active {
-      margin-bottom: 2em;
-      padding-top: .75em;
-
-      a {
-        &.is-active {
-          @include strip-link-styles($white, none);
-
-          padding-top: .75em;
-          padding-bottom: .75em;
-
-          background-color: $theme-color;
-        }
-      }
-    }
   }
 
-  // Drupal uses same template for menus so they both get the nav--link class
-  .nav--link {
+  // Nesting since we use the same template.
+  & .nav--link {
     display: list-item;
     margin-bottom: .25em;
 
@@ -86,5 +70,11 @@
     font-size: 1.2em;
     list-style: none;
     text-decoration: none;
+
+    &.is-active {
+      &.is-sub {
+        @include strip-link-styles($theme-color, none);
+      }
+    }
   }
 }
