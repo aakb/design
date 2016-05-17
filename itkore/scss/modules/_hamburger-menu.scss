@@ -6,28 +6,14 @@
 
 
 .hamburger-menu {
-  position: fixed;
-  top: 0;
-  right: -30em;
-  bottom: 0;
-  margin-right: 0;
-  max-width: 90%;
-  width: 30em;
-  z-index: z($z-index-elements, hamburger-menu);
-  overflow: hidden;
+  @include modal-dialog(30em, right, .2s);
 
-  background-color: $white;
-
-  transition: right .3s;
-  transition-timing-function: ease-in-out;
-
-  &.is-open {
-    right: 0;
+  &--overlay {
+    @extend %itk--menu-nav-overlay;
   }
 
   &--inner {
     height: 100%;
-    overflow-y: scroll;
   }
 
   &--links {

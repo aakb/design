@@ -84,6 +84,7 @@ $boxlist-padding: 1em;
 }
 
 .itk-boxlist {
+
   &--item {
     @include flexbox;
     @include flex-flow(row nowrap);
@@ -97,14 +98,17 @@ $boxlist-padding: 1em;
 
   header {
     order: 2;
+    padding-top: 0;
 
-    @include breakpoint($breakpoint-lap) {
-      padding-top: 0;
+    @include flex-basis(auto);
+    @include flex-grow(1);
+    @include flex-shrink(1);
+
+    @include breakpoint(600px) {
       padding-right: $boxlist-padding;
       padding-left: $boxlist-padding;
 
-      @include flex-grow(1);
-      @include flex-shrink(1);
+      @include flex-basis(auto);
     }
   }
 
@@ -113,12 +117,18 @@ $boxlist-padding: 1em;
 
     order: 1;
 
-    @include flex-basis(224px);
+    @include flex-basis(80px);
     @include flex-shrink(0);
+
+    @include breakpoint(800px) {
+      @include flex-basis(224px);
+    }
   }
 }
 
 .itk-boxlist-gallery {
+  margin-right: $layout-padding;
+  margin-left: $layout-padding;
   margin-top: 3em;
 
   @include flexbox;

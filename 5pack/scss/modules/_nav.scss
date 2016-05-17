@@ -8,6 +8,8 @@
 .is-frontpage {
   .nav {
     right: 0;
+
+    background-color: transparent;
   }
 
   .nav,
@@ -43,11 +45,11 @@
   height: 5.5em;
   width: 100%;
 
-  background-color: rgba(0,0,0, .75);
-
   transition: top .35s, right .35s, padding .35s;
 
   @include breakpoint($breakpoint-desk) {
+    background-color: rgba(0,0,0, .75);
+
     position: fixed;
     top: 0;
     right: 0;
