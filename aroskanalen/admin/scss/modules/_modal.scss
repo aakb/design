@@ -9,6 +9,16 @@
 /* Styles
    ========================================================================== */
 
+/***
+  title: Modal
+  section: Modalsection
+  description: Very pretty modal
+  example: |
+    <a href="" class="btn btn-small">button</a>
+    <a href="" class="btn btn-medium">button</a>
+    <a href="" class="btn btn-large">button</a>
+***/
+
 .modal {
   @extend %itk--menu-nav-overlay;
 
