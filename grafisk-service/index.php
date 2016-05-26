@@ -3,7 +3,7 @@
 ?>
 <div class="header" role="banner" id="home">
   <div class="header--inner">
-    <h1 class="header--text"><a href="/grafisk-service/" title="ITK DESIGN - grafisk Service">ITK DESIGN - grafisk Service</a></h1>
+    <h1 class="header--text"><a href="/grafisk-service/" title="ITK DESIGN - grafisk Service">ITK DESIGN - Grafisk Service</a></h1>
   </div>
 </div>
 
