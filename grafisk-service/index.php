@@ -67,7 +67,7 @@
         <div class="form--label">Beskrivelse af opgaven</div>
       </div>
       <div class="form--item">
-        <div class="form--label">Opgavens titel</div>
+        <div class="form--label">Titel</div>
         <input type="text" placeholder="Skriv en sigende titel for opgaven" name="task_title">
       </div>
       <div class="form--item">
