@@ -1,18 +1,13 @@
 <?php
   include '_header.php';
 ?>
-<!--region.html.twig START-->
 <div class="header" role="banner" id="home">
   <div class="header--inner">
-    <h1 class="header--text"><a href="/grafisk-service/" title="Grafisk Service">Grafisk Service</a></h1>
+    <h1 class="header--text"><a href="/grafisk-service/" title="ITK DESIGN - grafisk Service">ITK DESIGN - grafisk Service</a></h1>
   </div>
 </div>
-<!--region.html.twig END-->
 
 <main role="main" class="content">
-  <div class="content--lead">
-    Bestilling af opgaver ved Grafisk Service, ITK Design.
-  </div>
   <div class="progress is-step-1 js-progress">
     <div class="progress--bar">
       <div class="progress--bar-transition js-progress-bar is-step-1"></div>
@@ -28,148 +23,134 @@
       </div>
       <div class="progress--item is-active">
         <span class="progress--circle">3</span>
+        <span class="progress--label">Fakturering</span>
+      </div>
+      <div class="progress--item">
+        <span class="progress--circle">4</span>
         <span class="progress--label">Levering</span>
       </div>
     </div>
   </div>
   <form class="form">
     <div class="form--page form--page-1 js-progress-page">
-      <div class="origin form--flex-wrapper">
-        <div class="form--label">Hvor er du fra?</div>
-        <div class="origin--item js-origin-aakb">
-          <input type="radio" name="origin" value="aak-bib" id="origin-aak-bib" class="origin--input">
-          <label for="origin-aak-bib" class="option">
-            <span class="origin--label-inner">Aarhus kommunes biblioteker<span class="origin--label-inner-sub">Jeg bestiller opgaven for bibliotekerne</span></span>
-            <span class="origin--check"></span>
-          </label>
-        </div>
-        <div class="origin--item js-origin-other">
-          <input type="radio" name="origin" value="other" id="origin-other" class="origin--input">
-          <label for="origin-other" class="option">
-            <span class="origin--label-inner">Andet<span class="origin--label-inner-sub">Jeg bestiller opgaven fra et andet sted i Aarhus Kommune</span></span>
-            <span class="origin--check"></span>
-          </label>
-        </div>
+      <div class="form--page-description">
+        <div class="form--label">Hvem bestiller opgaven?</div>
       </div>
-      <div class="origin--group-wrapper">
-        <div class="origin--field-container form--flex-wrapper js-origin-aakb-container is-hidden">
-          <div class="form--item">
-            <div class="form--label">Afdeling</div>
-            <input type="text" placeholder="Vælg hvilken afdeling der er tilknyttet opgaven" name="department">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">Fornavn</div>
-            <input type="text" placeholder="Skriv dit fornavn" name="first_name">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">Efternavn</div>
-            <input type="text" placeholder="Skriv dit efternavn" name="surname">
-          </div>
-          <div class="form--item">
-            <div class="form--label">E-mail</div>
-            <input type="text" placeholder="Skriv din e-mail f.eks. mail@example.com" name="email">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">Phone</div>
-            <input type="text" placeholder="+45" name="phone">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">Debitor -/EAN-nummer</div>
-            <input type="text" placeholder="F.eks 1234567891234" name="email">
-          </div>
-          <div class="form--item form--flex-wrapper form--checkbox-wrapper">
-            <input type="checkbox" name="marketing" id="marketing" value="value">
-            <label class="form--checkbox-label" for="marketing">Skal bestillingen tilføjes til markedsføringskontoen?</label>
-          </div>
-          <div class="buttons--container">
-            <div class="button buttons--back js-back is-hidden">Tilbage</div>
-            <div class="button buttons--forward js-forward">Fortsæt</div>
+      <div class="origin--field-container form--flex-wrapper js-origin-aakb-container is-hidden">
+        <div class="form--item">
+          <div class="form--label">Afdeling</div>
+          <input type="text" placeholder="Vælg hvilken afdeling, der er tilknyttet opgaven" name="department">
+        </div>
+        <div class="form--item is-half-width">
+          <div class="form--label">Telefon</div>
+          <div class="form--phone-field-wrapper form--flex-wrapper">
+            <input class="form--phone-field-input" type="text" name="phone">
+            <div class="form--phone-field-prefix">+45</div>
           </div>
         </div>
-        <div class="origin--field-container form--flex-wrapper js-origin-other-container is-hidden">
-          <div class="form--item is-half-width">
-            <div class="form--label">Fornavn</div>
-            <input type="text" placeholder="Skriv dit fornavn" name="first_name">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">Efternavn</div>
-            <input type="text" placeholder="Skriv dit efternavn" name="surname">
-          </div>
-          <div class="form--item">
-            <div class="form--label">Adresse</div>
-            <input type="text" placeholder="Skriv din adresse" name="email">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">Postnr</div>
-            <input type="text" placeholder="8000" name="first_name">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">By</div>
-            <input type="text" placeholder="Aarhus" name="surname">
-          </div>
-          <div class="form--item">
-            <div class="form--label">E-mail</div>
-            <input type="text" placeholder="Skriv din e-mail f.eks. mail@example.com" name="email">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">Phone</div>
-            <input type="text" placeholder="+45" name="phone">
-          </div>
-          <div class="form--item is-half-width">
-            <div class="form--label">Debitor -/EAN-nummer</div>
-            <input type="text" placeholder="F.eks 1234567891234" name="email">
-          </div>
-          <div class="buttons--container">
-            <div class="button buttons--back js-back is-hidden">Tilbage</div>
-            <div class="button buttons--forward js-forward">Fortsæt</div>
-          </div>
+        <div class="form--item is-half-width">
+          <div class="form--label">Kontaktperson</div>
+          <input type="text" placeholder="" name="surname">
+        </div>
+        <div class="form--item">
+          <div class="form--label">E-mail</div>
+          <input type="text" placeholder="" name="email">
+        </div>
+        <div class="buttons--container">
+          <div class="button buttons--back js-back is-hidden is-grayscale">Tilbage</div>
+          <div class="button buttons--forward js-forward">Fortsæt</div>
         </div>
       </div>
     </div>
     <div class="form--page form--page-2 form--flex-wrapper js-progress-page is-hidden">
+      <div class="form--page-description">
+        <div class="form--label">Beskrivelse af opgaven</div>
+      </div>
       <div class="form--item">
         <div class="form--label">Opgavens titel</div>
-        <input type="text" placeholder="Skriv titel" name="task_title">
+        <input type="text" placeholder="Skriv en sigende titel for opgaven" name="task_title">
       </div>
       <div class="form--item">
         <div class="form--label">Produkttype</div>
-        <input type="text" placeholder="Plakat, flyer, rollup, el.lign." name="product_type">
+        <input type="text" placeholder="Skriv f.eks folder, plakat, visitkort ..." name="product_type">
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Antal</div>
-        <input type="text" placeholder="Hvor mange skal du bruge?" name="product_type">
+        <input type="text" placeholder="" name="product_type">
       </div>
       <div class="form--item">
         <div class="form--label">Kommentar</div>
-        <textarea rows="8" cols="50" placeholder="Angiv produktspecifikationer..."></textarea>
+        <textarea rows="8" cols="50" placeholder="Angiv produktspecifikationer. F.eks størrelse, materiale, typer, osv."></textarea>
       </div>
       <?php include '_fileupload.php';?>
       <div class="buttons--container">
-        <div class="button buttons--back js-back">Tilbage</div>
+        <div class="button buttons--back js-back is-grayscale">Tilbage</div>
         <div class="button buttons--forward js-forward">Fortsæt</div>
       </div>
     </div>
     <div class="form--page form--page-3 form--flex-wrapper js-progress-page is-hidden">
+      <div class="form--page-description">
+        <div class="form--label">Hvem skal betale?</div>
+      </div>
       <div class="form--item is-half-width">
-        <div class="form--label">Ønsket leveringsdato</div>
-        <input type="text" placeholder="21.07.1981" name="task_title">
+        <div class="form--label">Internt debitor nr./EAN-nummer</div>
+        <input type="text" placeholder="F.eks 1234567891234" name="email">
+      </div>
+      <div class="form--item is-half-width">
+        <div class="form--label">Betaling</div>
+        <div class=" form--flex-wrapper form--checkbox-wrapper">
+          <input type="checkbox" name="marketing" id="marketing" value="value">
+          <label class="form--checkbox-label" for="marketing">Borgerservice og bibliotekers markedsføringskonto?</label>
+          <div class="form--read-more js-toggle-modal"></div>
+          <div class="modal js-modal is-hidden">
+            <div class="modal--dialog js-modal-dialog is-hidden">
+              <div class="modal--content">
+                <div class="form--label">Markedsføringskonto</div>
+                <div>
+                  Markedsføringskontoen er en pulje i Borgerservice og Biblioteker til borgerrettet information om arrangementer og kurser i bibliotekerne samt generelle borgerservicekampagner.
+                </div>
+                <div class="buttons--container">
+                  <div class="button modal--close js-toggle-modal">
+                    Luk
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons--container">
+        <div class="button buttons--back js-back is-grayscale">Tilbage</div>
+        <div class="button buttons--forward js-forward">Fortsæt</div>
+      </div>
+    </div>
+    <div class="form--page form--page-4 form--flex-wrapper js-progress-page is-hidden">
+      <div class="form--page-description">
+        <div class="form--label">Hvor skal ordren leveres?</div>
+      </div>
+      <div class="form--item">
+        <div class="form--label">Kommentar</div>
+        <textarea rows="4" cols="50" placeholder="Har du kommentarer til leveringen? F.eks flere leveringsadresser."></textarea>
+      </div>
+      <div class="form--item is-half-width">
+        <div class="form--label">Afdeling/institution</div>
+        <input type="text" name="task_title">
       </div>
       <div class="form--item">
         <div class="form--label">Leveringsadresse</div>
-        <input type="text" placeholder="Skriv din ønskede leveringsadresse" name="email">
+        <input type="text" placeholder="" name="email">
       </div>
       <div class="form--item is-half-width">
-        <div class="form--label">Postnr</div>
-        <input type="text" placeholder="8000" name="first_name">
+        <div class="form--label">Postnummer</div>
+        <input type="text" name="first_name">
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">By</div>
-        <input type="text" placeholder="Aarhus" name="surname">
+        <input type="text" name="surname">
       </div>
       <div class="buttons--container">
-        <div class="button buttons--back js-back">Tilbage</div>
-        <div class="button buttons--forward js-forward">Fortsæt</div>
-        <a href="/grafisk-service/" class="button buttons--forward">Indsend</a>
+        <div class="button buttons--back js-back is-grayscale">Tilbage</div>
+        <a href="/grafisk-service/" class="button buttons--forward">Bestil</a>
       </div>
     </div>
   </form>

@@ -12,7 +12,7 @@
     var page = $('.js-progress-page');  // The page wrapper
     var currentStep = 1;
 
-    var steps = 3;  // The number of steps in form.
+    var steps = 4;  // The number of steps in form.
 
     $('.js-forward').click(function() {
       // Don't act if we are on last page.
@@ -33,16 +33,19 @@
 
         // Remove hidden class from active page.
         $('.form--page-' + currentStep).toggleClass('is-hidden');
+
+        // Hide/Show buttons.
+        $('.js-back').removeClass('is-hidden');
+        $('.js-forward').removeClass('is-hidden');
+
+        if (currentStep == 4) {
+          $('.js-forward').addClass('is-hidden');
+        }
+
+        $('body').animate({
+          scrollTop: $("#home").offset().top
+        }, 50);
       }
-
-      // Hide/Show buttons.
-      $('.js-back').removeClass('is-hidden');
-      $('.js-forward').removeClass('is-hidden');
-
-      if (currentStep == 3) {
-        $('.js-forward').addClass('is-hidden');
-      }
-
     });
 
     $('.js-back').click(function() {
@@ -71,6 +74,10 @@
         if (currentStep === 1) {
           $('.js-back').addClass('is-hidden');
         }
+
+        $('body').animate({
+          scrollTop: $("#home").offset().top
+        }, 50);
       }
     });
   }

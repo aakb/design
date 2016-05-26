@@ -11,6 +11,6 @@
   <![endif]-->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/progress.js"></script>
-  <script src="js/origin_display.js"></script>
   <script src="js/filefield.js"></script>
+  <script src="js/modal.js"></script>
 </head>
