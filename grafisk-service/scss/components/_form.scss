@@ -190,6 +190,10 @@ input[type="checkbox"] {
   border: 2px solid $gray-dark;
   border-radius: .3em;
 
+  &:focus {
+    border-color: $gray-darkest;
+  }
+
   // Add custom background and border when checked.
   &:checked {
     border: 2px solid $theme-color-secondary;
@@ -224,4 +228,8 @@ input[type="checkbox"] {
   background-position: center center;
 
   cursor: pointer;
+
+  &:focus {
+    outline: 1px dotted $gray-dark;
+  }
 }

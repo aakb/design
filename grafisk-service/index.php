@@ -57,8 +57,8 @@
           <input type="text" placeholder="" name="email">
         </div>
         <div class="buttons--container">
-          <div class="button buttons--back js-back is-hidden is-grayscale">Tilbage</div>
-          <div class="button buttons--forward js-forward">Fortsæt</div>
+          <a href="#" class="button buttons--back js-back is-hidden is-grayscale">Tilbage</a>
+          <a href="#" class="button buttons--forward js-forward">Fortsæt</a>
         </div>
       </div>
     </div>
@@ -84,8 +84,8 @@
       </div>
       <?php include '_fileupload.php';?>
       <div class="buttons--container">
-        <div class="button buttons--back js-back is-grayscale">Tilbage</div>
-        <div class="button buttons--forward js-forward">Fortsæt</div>
+        <a href="#" class="button buttons--back js-back is-grayscale">Tilbage</a>
+        <a href="#" class="button buttons--forward js-forward">Fortsæt</a>
       </div>
     </div>
     <div class="form--page form--page-3 form--flex-wrapper js-progress-page is-hidden">
@@ -101,7 +101,7 @@
         <div class=" form--flex-wrapper form--checkbox-wrapper">
           <input type="checkbox" name="marketing" id="marketing" value="value">
           <label class="form--checkbox-label" for="marketing">Borgerservice og bibliotekers markedsføringskonto?</label>
-          <div class="form--read-more js-toggle-modal"></div>
+          <a href="#" class="form--read-more js-toggle-modal"></a>
           <div class="modal js-modal is-hidden">
             <div class="modal--dialog js-modal-dialog is-hidden">
               <div class="modal--content">
@@ -110,9 +110,9 @@
                   Markedsføringskontoen er en pulje i Borgerservice og Biblioteker til borgerrettet information om arrangementer og kurser i bibliotekerne samt generelle borgerservicekampagner.
                 </div>
                 <div class="buttons--container">
-                  <div class="button modal--close js-toggle-modal">
+                  <a href="#" class="button modal--close js-toggle-modal">
                     Luk
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -120,8 +120,8 @@
         </div>
       </div>
       <div class="buttons--container">
-        <div class="button buttons--back js-back is-grayscale">Tilbage</div>
-        <div class="button buttons--forward js-forward">Fortsæt</div>
+        <a href="#" class="button buttons--back js-back is-grayscale">Tilbage</a>
+        <a href="#" class="button buttons--forward js-forward">Fortsæt</a>
       </div>
     </div>
     <div class="form--page form--page-4 form--flex-wrapper js-progress-page is-hidden">
@@ -149,7 +149,7 @@
         <input type="text" name="surname">
       </div>
       <div class="buttons--container">
-        <div class="button buttons--back js-back is-grayscale">Tilbage</div>
+        <a href="#" class="button buttons--back js-back is-grayscale">Tilbage</a>
         <a href="/grafisk-service/" class="button buttons--forward">Bestil</a>
       </div>
     </div>

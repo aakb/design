@@ -75,7 +75,11 @@
   .progress--label {
     color: $gray;
     font-family: $font-light;
-    font-size: .85em;
+    font-size: .75em;
+
+    @include breakpoint(400px) {
+      font-size: .85em;
+    }
   }
 
   &:first-child {  // Specific styling for first progress item.

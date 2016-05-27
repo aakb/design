@@ -37,6 +37,7 @@
   // Default colors
   background: $theme-color-secondary;
 
+  &:focus,
   &:hover {
     background: darken($theme-color-secondary, 15%);
   }
@@ -45,6 +46,7 @@
   &.is-grayscale {
     background: $gray-dark;
 
+    &:focus,
     &:hover {
       background: darken($gray-dark, 15%);
     }
