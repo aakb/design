@@ -40,8 +40,11 @@ body {
   align-items: center;
   flex-basis: 160px;
 
-  border-top: 1px solid rgb(255, 255, 255);
   font-size: 72px;
+}
+
+.row:not(:first-child) {
+  border-top: 1px solid rgb(255, 255, 255);
 }
 
 .row:last-child {
