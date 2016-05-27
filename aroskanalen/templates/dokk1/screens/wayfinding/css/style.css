@@ -40,8 +40,12 @@ body {
   align-items: center;
   flex-basis: 160px;
 
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(255, 255, 255);
   font-size: 72px;
+}
+
+.row:last-child {
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .row.is-header {
