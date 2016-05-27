@@ -30,9 +30,9 @@ body {
   flex-direction: column;
 
   padding-top: 80px;
-  padding-right: 60px;
+  padding-right: 40px;
   padding-bottom: 80px;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .row {
@@ -49,12 +49,18 @@ body {
 }
 
 .row.is-grouped {
-  margin-left: 60px;
+  margin-left: 120px;
 }
 
-.row.has-icon img {
+.row .arrow {
+  height: 60px;
+  margin-right: 60px;
+  width: 60px;
+}
+
+.row .icon {
   height: 77px;
-  margin-left: 120px;
+  margin-left: 60px;
   width: 77px;
 }
 
