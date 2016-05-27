@@ -72,11 +72,17 @@ textarea {
   display: none;
 }
 
+
 // Class for parent to prepare child elements for flexbox.
 .form--flex-wrapper {
   @include flexbox();
   @include flex-wrap(wrap);
   @include justify-content(space-between);
+}
+
+
+.form--page-description {
+  @include flex(0, 0, 100%);
 }
 
 // Default label display
@@ -97,12 +103,62 @@ textarea {
 
   // If we want side by side form elements
   &.is-half-width {
-    @include flex(0, 0, 48%); // The remaining % is used for spacing.
+    @include breakpoint(600px) {
+      @include flex(0, 0, 48%); // The remaining % is used for spacing.
+    }
+  }
+}
+
+// Phone field should have static country code prefix.
+
+.form--phone-field-wrapper {
+  background-color: $gray-lighter;
+  border-radius: .3em;
+  box-sizing: border-box;
+
+  position: relative;
+
+  &:focus {
+    border-color: $theme-color-secondary;
+  }
+}
+
+.form--phone-field-prefix {
+  @include flex(0, 0, 50px);
+  @include order(1);
+
+  border-left: 1px solid $gray-lighter;
+  border-top: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+  border-radius: .3em 0 0 .3em;
+
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.form--phone-field-input[type="text"] {
+  @include flex(1, 1, auto);
+  @include order(2);
+
+  border-left: 0;
+  border-radius: 0 .3em .3em 0;
+  border-right: 1px solid $gray-lighter;
+  border-top: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+
+  width: auto;
+
+  background: transparent;
+
+  &:focus {
+    border-left: 0;
+    border-color: $theme-color-secondary;
   }
 
-  // The actual input field should fill out it's container.
-  input {
-    width: 100%;
+  &:focus + div {
+    border-color: $theme-color-secondary;
   }
 }
 
@@ -111,7 +167,6 @@ textarea {
 .form--checkbox-wrapper {
   @include flex-wrap(nowrap);
 
-  margin-top: 1em;
   padding: .75em;
   box-sizing: border-box;
 
@@ -122,7 +177,7 @@ textarea {
 // Custom checkbox styling (http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/)
 input[type="checkbox"] {
   @include flex(0, 0, 20px);  // Static width of the checkbox.
-  @include align-self(center)
+  @include align-self(center);
 
   // Disable browser default appearance.
   @include appearance(none);
@@ -134,6 +189,10 @@ input[type="checkbox"] {
 
   border: 2px solid $gray-dark;
   border-radius: .3em;
+
+  &:focus {
+    border-color: $gray-darkest;
+  }
 
   // Add custom background and border when checked.
   &:checked {
@@ -157,4 +216,20 @@ input[type="checkbox"] {
   @include flex(1, 1, auto);
 
   color: $gray-darker;
+}
+
+.form--read-more {
+  @include flex(0, 0, 20px);
+
+  border-radius: 1em;
+  background-image: url("../images/question-mark.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center center;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px dotted $gray-dark;
+  }
 }

@@ -7,37 +7,14 @@
 
 &.is-page .content {
   &--inner {
-    margin-top: -7em;
-    padding-top: 3em;
-
     position: relative;
     z-index: z($z-index-elements, content);
 
     background-color: rgba(255, 255, 255, 1);
 
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.5%);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.5%);
-
-    @include breakpoint($breakpoint-tablet) {
-      margin-top: -8em;
-      padding-top: 3.5em;
-
-      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 3%);
-      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 3%);
-    }
-
-    @include breakpoint($breakpoint-desk) {
-      margin-top: -21em;
-      padding-top: 3em;
-
-      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
-      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
-    }
-
     @include breakpoint($breakpoint-bigscreen) {
       padding-right: $layout-padding;
       padding-left: $layout-padding;
-      padding-top: 5em;
     }
   }
 }
@@ -124,6 +101,10 @@
       overflow: hidden;
 
       height: 500px;
+
+      &:before {
+        @extend %image-overlay;
+      }
     }
 
     @include breakpoint($breakpoint-bigscreen) {
@@ -133,10 +114,6 @@
       img {
         margin-top: -225px;
       }
-    }
-
-    &:before {
-      @extend %image-overlay;
     }
   }
 

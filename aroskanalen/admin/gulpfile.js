@@ -5,7 +5,7 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var sass = require('gulp-sass');
-
+var styleguidejs = require('gulp-styleguidejs');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -27,6 +27,7 @@ browserSync.init({
 // We only want to process our own non-processed JavaScript files.
 var jsPath = ['./js/*.js', '!./js/*.min.*'];
 var sassPath = './scss/**/*.scss';
+var cssPath = './css/styles.css';
 var phpPath = './**/*.php'; //could also be twig files
 var buildDir = './js';
 
@@ -46,7 +47,7 @@ gulp.task('sass', function () {
   gulp.src(sassPath)
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: 'compressed',
+      outputStyle: 'nested',
       includePaths: [
         'scss/assets/compass-mixins/lib',
       ]
@@ -56,12 +57,19 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('styleguide', function() {
+  gulp.src(cssPath)
+    .pipe(styleguidejs())
+    .pipe(gulp.dest('./docs'));
+});
+
 /**
  * Watch files for changes and run tasks.
  */
 gulp.task('watch', function() {
   gulp.watch(jsPath, ['jshint']);
   gulp.watch(sassPath, ['sass']);
+  gulp.watch(cssPath, ['styleguide']);
   gulp.watch(phpPath).on('change', browserSync.reload);
   gulp.watch(jsPath).on('change',browserSync.reload);
 });
@@ -97,5 +105,5 @@ gulp.task('assetsJs', function () {
 
 
 // Tasks to compile sass and watch js file.
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'watch', 'styleguide']);
 gulp.task('build', ['buildJs', 'sass']);

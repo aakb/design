@@ -24,11 +24,18 @@
     background: $theme-color-secondary;
   }
 
+  // Change color of step two and three and four circles.
+  &.is-step-4 .progress--item:nth-child(2) .progress--circle,
+  &.is-step-4 .progress--item:nth-child(3) .progress--circle,
+  &.is-step-4 .progress--item:nth-child(4) .progress--circle {
+    background: $theme-color-secondary;
+  }
+
 }
 
 // The progress bar is all gray.
 .progress--bar {
-  height: 10px;
+  height: 4px;
   margin: 0 5px;
   width: calc(100% - 10px); // Remove a bit of progress bar in both sides to not overflow circles.
 
@@ -45,18 +52,22 @@
 
     // The expanding transition bar.
     &.is-step-2 {
-      width: 50%;
+      width: 33%;
     }
 
     &.is-step-3 {
+      width: 66%;
+    }
+
+    &.is-step-4 {
       width: 100%;
     }
   }
 }
 
 .progress--item {
-  // Currently 3 progress steps.
-  @include flex(0, 1, 33%);
+  // Currently 4 progress steps.
+  @include flex(1, 1, auto);
 
   margin-top: 20px;
   position: relative;
@@ -64,10 +75,16 @@
   .progress--label {
     color: $gray;
     font-family: $font-light;
-    font-size: .85em;
+    font-size: .75em;
+
+    @include breakpoint(400px) {
+      font-size: .85em;
+    }
   }
 
   &:first-child {  // Specific styling for first progress item.
+    @include flex(0, 1, calc(33.33% / 2));
+
     .progress--circle {
       background: $theme-color-secondary;
       left: 0;
@@ -80,6 +97,8 @@
   }
 
   &:last-child {  // Specific styling for last progress item.
+    @include flex(0, 1, calc(33.33% / 2));
+
     .progress--circle {
       left: auto;
       right: 0;
@@ -93,24 +112,23 @@
 
 // Display of a circle in progress bar.
 .progress--circle {
-  width: 30px;
-  height: 30px;
-  transform: translateY(-134%); // A weird number to have circles place exactly right on top of progress bar.
+  width: 35px;
+  height: 35px;
+  transform: translateY(-115%); // A weird number to have circles place exactly right on top of progress bar.
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
 
   border-radius: 100%;
-  line-height: 30px;
+  line-height: 35px;
   display: block;
   text-align: center;
   vertical-align: middle;
 
   background: $gray-light;
   color: $white;
-  font-family: $font-bold;
-  font-size: .85em;
+  font-size: 1em;
 
   transition: background .2s; // We delay the circle transition a bit to match up with progress bar transiation.
   transition-timing-function: ease-in-out;

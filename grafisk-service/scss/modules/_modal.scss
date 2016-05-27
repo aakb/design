@@ -1,0 +1,29 @@
+/**
+ *
+ * Modal box
+ *
+ * Uses itk-modal asset
+ */
+
+
+/* Styles
+   ========================================================================== */
+
+.modal {
+  @extend %itk--menu-nav-overlay;
+
+  &--dialog {
+    @include modal-dialog(90%, center, .2s);
+  }
+
+  &--content {
+    padding: 2em;
+  }
+
+  &--close {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 8em;
+  }
+}
