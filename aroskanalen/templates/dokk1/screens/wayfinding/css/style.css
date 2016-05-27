@@ -30,9 +30,9 @@ body {
   flex-direction: column;
 
   padding-top: 80px;
-  padding-right: 60px;
+  padding-right: 40px;
   padding-bottom: 80px;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .row {
@@ -40,8 +40,15 @@ body {
   align-items: center;
   flex-basis: 160px;
 
-  border-bottom: 1px solid rgb(255, 255, 255);
   font-size: 72px;
+}
+
+.row:not(:first-child) {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.row:last-child {
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .row.is-header {
@@ -49,12 +56,18 @@ body {
 }
 
 .row.is-grouped {
-  margin-left: 60px;
+  margin-left: 120px;
 }
 
-.row.has-icon img {
+.row .arrow {
+  height: 60px;
+  margin-right: 60px;
+  width: 60px;
+}
+
+.row .icon {
   height: 77px;
-  margin-left: 120px;
+  margin-left: 60px;
   width: 77px;
 }
 
