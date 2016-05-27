@@ -1,5 +1,5 @@
 <?php
-  include '_header.php';
+include '_header.php';
 ?>
 <div class="header" role="banner" id="home">
   <div class="header--inner">
@@ -128,29 +128,33 @@
       <div class="form--page-description">
         <div class="form--label">Hvor skal ordren leveres?</div>
       </div>
+      <div class="form--item is-half-width">
+        <div class="form--label">Leveringstidspunkt</div>
+        <input type="text" class="form--date" placeholder="" name="date">
+      </div>
       <div class="form--item">
         <div class="form--label">Kommentar</div>
         <textarea rows="4" cols="50" placeholder="Har du kommentarer til leveringen? F.eks flere leveringsadresser."></textarea>
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Afdeling/institution</div>
-        <input type="text" name="task_title">
+        <input type="text" name="department">
       </div>
       <div class="form--item">
         <div class="form--label">Leveringsadresse</div>
-        <input type="text" placeholder="" name="email">
+        <input type="text" placeholder="" name="delivery_address">
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Postnummer</div>
-        <input type="text" name="first_name">
+        <input type="text" name="postal_code">
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">By</div>
-        <input type="text" name="surname">
+        <input type="text" name="city">
       </div>
       <div class="buttons--container">
         <a href="#" class="button buttons--back js-back is-grayscale">Tilbage</a>
-        <a href="/grafisk-service/" class="button buttons--forward">Bestil</a>
+        <a href="/grafisk-service/thank-you/" class="button buttons--forward">Bestil</a>
       </div>
     </div>
   </form>
