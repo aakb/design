@@ -1,0 +1,41 @@
+/**
+ *
+ * Styles related to the confirmation page
+ *
+ */
+
+
+/* Confirmation styles
+================================================================================================================== */
+
+.confirmation {
+  &--header {
+    margin: 2em auto 2em;
+    width: 350px;
+
+    display: block;
+
+    font-size: 1.5em;
+    font-family: $font-semibold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+  }
+
+  &--icon {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+
+    background-image: url("../images/check-circled.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: center center;
+  }
+
+  &--text {
+    text-align: center;
+  }
+}

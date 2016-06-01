@@ -5,6 +5,7 @@
  */
 
 $top-and-button-margin: 2em;
+$left-and-right-padding: 1em;
 
 .footer {
   position: absolute;
@@ -19,8 +20,8 @@ $top-and-button-margin: 2em;
     margin-right: auto;
     max-width: $breakpoint-desk;
     padding-top: $top-and-button-margin;
-    padding-right: $layout-padding;
-    padding-left: $layout-padding;
+    padding-right: $left-and-right-padding;
+    padding-left: $left-and-right-padding;
 
     @include flexbox;
     @include flex-flow(row wrap);
@@ -28,7 +29,6 @@ $top-and-button-margin: 2em;
 
   &--mail {
     margin-bottom: $top-and-button-margin;
-
     text-align: center;
 
     @include flex-basis(100%);
@@ -36,6 +36,20 @@ $top-and-button-margin: 2em;
     a {
       color: white;
     }
+  }
+
+  &--social {
+    margin-bottom: $top-and-button-margin;
+
+    @include flexbox;
+    @include flex-basis(100%);
+    @include align-items(center);
+    @include justify-content(space-around);
+  }
+
+  &--icons {
+    width: 1.8em;
+    margin-left: $left-and-right-padding;
   }
 
   &--aarhus {
@@ -54,14 +68,25 @@ $top-and-button-margin: 2em;
   @include breakpoint($breakpoint-tablet) {
     &--mail {
       order: 2;
-      text-align: right;
+      text-align: left;
 
-      @include flex-basis(75%);
+      @include flex-basis(50%);
+    }
+
+    &--social,
+    &--icons {
+      @include flex-basis(25%);
+    }
+
+    &--social {
+      order: 3;
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(flex-end);
     }
 
     &--aarhus {
       order: 1;
-
       @include flex-basis(25%);
       @include justify-content(flex-start);
     }
@@ -69,10 +94,15 @@ $top-and-button-margin: 2em;
 
   @include breakpoint($breakpoint-desk) {
     &--mail {
+      text-align: center;
       order: 2;
 
-      @include flex-basis(75%);
+      @include flex-basis(50%);
       @include align-self(center);
+    }
+
+    &--social {
+      order: 3;
     }
 
     &--aarhus {
