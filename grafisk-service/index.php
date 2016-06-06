@@ -32,6 +32,26 @@ include '_header.php';
     </div>
   </div>
   <form class="form">
+    <div class="itk-message">
+      <div class="itk-message--inner">
+        <p>This is a <strong>standard</strong> message</p>
+      </div>
+    </div>
+    <div class="itk-message">
+      <div class="itk-message--inner is-info">
+        This is just for your <strong>information</strong>
+      </div>
+    </div>
+    <div class="itk-message">
+      <div class="itk-message--inner is-warning">
+        This is a <strong>warning</strong>
+      </div>
+    </div>
+    <div class="itk-message">
+      <div class="itk-message--inner is-error">
+        This is an <strong>error</strong>
+      </div>
+    </div>
     <div class="form--page form--page-1 js-progress-page">
       <div class="form--page-description">
         <div class="form--label">Hvem bestiller opgaven?</div>

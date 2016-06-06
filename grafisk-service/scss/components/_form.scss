@@ -88,6 +88,10 @@ textarea {
   margin: 3em 0;
 }
 
+.form--page {
+  margin-top: 3em;
+}
+
 // Don't show pages that are not active
 .form--page.is-hidden {
   display: none;

@@ -11,10 +11,13 @@
 .content {
   box-sizing: border-box;
 
-  height: 100%;
   margin-right: auto;
   margin-left: auto;
   max-width: $layout-max-width;
   padding: 2em 1em;
   width: 100%;
+
+  @include breakpoint($breakpoint-desk) {
+    box-sizing: content-box;
+  }
 }
