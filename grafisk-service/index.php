@@ -39,22 +39,22 @@ include '_header.php';
       <div class="origin--field-container form--flex-wrapper js-origin-aakb-container is-hidden">
         <div class="form--item">
           <div class="form--label">Afdeling</div>
-          <input type="text" placeholder="Vælg hvilken afdeling, der er tilknyttet opgaven" name="department">
+          <input type="text" placeholder="Vælg hvilken afdeling, der er tilknyttet opgaven" name="department" required>
         </div>
         <div class="form--item is-half-width">
           <div class="form--label">Telefon</div>
           <div class="form--phone-field-wrapper form--flex-wrapper">
-            <input class="form--phone-field-input" type="text" name="phone">
+            <input class="form--phone-field-input" type="tel" name="phone" required>
             <div class="form--phone-field-prefix">+45</div>
           </div>
         </div>
         <div class="form--item is-half-width">
           <div class="form--label">Kontaktperson</div>
-          <input type="text" placeholder="" name="surname">
+          <input type="text" placeholder="" name="surname" required>
         </div>
         <div class="form--item">
           <div class="form--label">E-mail</div>
-          <input type="text" placeholder="" name="email">
+          <input type="email" placeholder="" name="email" required>
         </div>
         <div class="buttons--container">
           <a href="#" class="button buttons--back js-back is-hidden is-grayscale">Tilbage</a>
@@ -68,15 +68,15 @@ include '_header.php';
       </div>
       <div class="form--item">
         <div class="form--label">Titel</div>
-        <input type="text" placeholder="Skriv en sigende titel for opgaven" name="task_title">
+        <input type="text" placeholder="Skriv en sigende titel for opgaven" name="task_title" required>
       </div>
       <div class="form--item">
         <div class="form--label">Produkttype</div>
-        <input type="text" placeholder="Skriv f.eks folder, plakat, visitkort ..." name="product_type">
+        <input type="text" placeholder="Skriv f.eks folder, plakat, visitkort ..." name="product_type" required>
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Antal</div>
-        <input type="text" placeholder="" name="product_type">
+        <input type="number" placeholder="" name="product_type" required>
       </div>
       <div class="form--item">
         <div class="form--label">Kommentar</div>
@@ -94,7 +94,7 @@ include '_header.php';
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Internt debitor nr./EAN-nummer</div>
-        <input type="text" placeholder="F.eks 1234567891234" name="email">
+        <input type="number" placeholder="F.eks 1234567891234" name="debitor" required>
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Betaling</div>
@@ -130,7 +130,7 @@ include '_header.php';
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Leveringstidspunkt</div>
-        <input type="text" class="form--date" placeholder="" name="date">
+        <input type="text" class="form--date" placeholder="" name="date" required>
       </div>
       <div class="form--item">
         <div class="form--label">Kommentar</div>
@@ -138,19 +138,19 @@ include '_header.php';
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Afdeling/institution</div>
-        <input type="text" name="department">
+        <input type="text" name="department" required>
       </div>
       <div class="form--item">
         <div class="form--label">Leveringsadresse</div>
-        <input type="text" placeholder="" name="delivery_address">
+        <input type="text" placeholder="" name="delivery_address" required>
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">Postnummer</div>
-        <input type="text" name="postal_code">
+        <input type="number" name="postal_code" pattern="[0-9]{4}" required>
       </div>
       <div class="form--item is-half-width">
         <div class="form--label">By</div>
-        <input type="text" name="city">
+        <input type="text" name="city" required>
       </div>
       <div class="buttons--container">
         <a href="#" class="button buttons--back js-back is-grayscale">Tilbage</a>

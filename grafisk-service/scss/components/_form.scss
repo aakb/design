@@ -57,6 +57,27 @@ textarea {
   &.is-error {
     border: 1px solid $error-color;
   }
+
+  &:required:not(:valid) {
+    padding-right: 1.65em;
+
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAnBAMAAABgRHy1AAAAMFBMVEUAAADoIQDoIQDoIQDoIQDoIQDoIQDoIQDoIQDoIQDoIQDoIQDoIQDoIQDoIQDoIQCBMie9AAAAD3RSTlMAd+7MIhEziFVE3buZqmZ04+2JAAABNklEQVQoz2WT300CQRCHBxEFYiIbE580ZwdiBaLPGi/YwL0bE61AKlCswPjgM3aAHWgJtuAd/gkgw2+GDdzufMntZb/Lzs7M7pGnzmBEERtiv2NbE3tAMWLbxg5gX40dwr4Z+w7bMvYO9tPYBLZv7ANsZuwTbLqcNfwWF8y5V/dEW3ykC7eZx+pOhgVRFStvMWkyT/CqJLpmjUGxK1+n1NhhIUU85Xcfzx4vyLC3pYfsLS1UarlBrywf5Nwgcs/Od+nRafjcucw00jS4zspPaE9ZGaeBPYZKdPcSmxDTJoav+CBGFQ6PY/1QLkNNxpeVrTLoa0uKMFlMu9qDINkZkQb+C5LFfdTAeaeUrBarzWiXAuRSVdeHUs6kBgIS+L9DnnP9JTTwpFTGtW9AUgQX8Goxu+yRMgf0T0h2YnDlagAAAABJRU5ErkJggg==);
+    background-origin: content-box;
+    background-position: 105% center;
+    background-repeat: no-repeat;
+    background-size: .5em;
+
+    @include breakpoint($breakpoint-desk) {
+      padding-right: .75em;
+
+      background-position: right center;
+    }
+  }
+
+  &:required:valid {
+    background-color: $info-color;
+    border: 1px solid darken($info-color, 15%);
+  }
 }
 
 
@@ -138,7 +159,7 @@ textarea {
 
 }
 
-.form--phone-field-input[type="text"] {
+.form--phone-field-input[type="tel"] {
   @include flex(1, 1, auto);
   @include order(2);
 
@@ -151,8 +172,6 @@ textarea {
 
   width: auto;
 
-  background: transparent;
-
   &:focus {
     border-left: 0;
     border-color: $theme-color-secondary;
@@ -160,6 +179,18 @@ textarea {
 
   &:focus + div {
     border-color: $theme-color-secondary;
+  }
+
+  &:required:valid {
+    border-color: darken($info-color, 15%);
+    border-left: 0;
+  }
+
+  &:required:valid + div {
+    background-color: $info-color;
+    border-top: 1px solid darken($info-color, 15%);
+    border-bottom: 1px solid darken($info-color, 15%);
+    border-left: 1px solid darken($info-color, 15%);
   }
 }
 
