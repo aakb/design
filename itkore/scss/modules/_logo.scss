@@ -16,22 +16,24 @@
   z-index: z($z-index-elements, logo);
 
   height: 3em;
-  width: 10em;
+  width: auto;
 
-  background-image: url("../logo.svg");
   background-repeat: no-repeat;
 
   @include breakpoint($breakpoint-desk) {
     position: fixed;
   }
-}
 
-// Specific override when viewing the frontpage.
-// In this case the logo should show the text below and be slightly bigger on big screens.
-.is-frontpage {
-  .logo {
+  // Supported image tags
+  > img,
+  > svg {
     height: 3em;
-    width: 10em;
-    background-image: url("../logo.svg");
+    width: auto;
+  }
+
+  // If text instead of image.
+  &--text {
+    font-size: 3em;
+    line-height: 1em;
   }
 }
