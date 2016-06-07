@@ -1,9 +1,14 @@
 <div class="form--item upload" data-drupal-selector="edit-field-file-upload-wrapper" id="edit-field-file-upload-wrapper">
   <div class="form--label">Upload filer</div>
+  <div class="itk-message js-custom-toggle">
+    <div class="itk-message--inner is-error">
+      Der skete en fejl ved upload af filer. 16 MB grænse. Tilladte typer: txt pdf doc docx
+    </div>
+  </div>
   <div class="upload--inner">
     <div id="edit-field-file-upload-ajax-wrapper">
-      <summary class="form--label" role="button" aria-controls="edit-field-file-upload" aria-expanded="true" aria-pressed="true">Uploadede filer</summary>
-      <table id="edit-field-file-upload--_xIrfv1lEIo-table" class="responsive-enabled" data-striping="1">
+      <summary class="form--label js-custom-toggle" role="button" aria-controls="edit-field-file-upload" aria-expanded="true" aria-pressed="true" style="display: none;">Uploadede filer</summary>
+      <table id="edit-field-file-upload--_xIrfv1lEIo-table" class="responsive-enabled js-custom-toggle" data-striping="1" style="display: none;">
         <tbody>
           <tr class="draggable">
             <td>
@@ -34,7 +39,7 @@
       <div id="edit-field-file-upload-ajax-wrapper">
         <div class="js-form-item form--item upload--file js-form-type-managed-file form-item-field-file-upload-0 js-form-item-field-file-upload-0">
           <div id="edit-field-file-upload-0-upload" class="js-form-managed-file form-managed-file">
-            <input class="js-hide button js-form-submit form-submit" data-drupal-selector="edit-field-file-upload-0-upload-button" formnovalidate="formnovalidate" type="submit" id="edit-field-file-upload-0-upload-button" name="field_file_upload_0_upload_button" value="Upload">
+            <input class="js-hide button js-form-submit js-custom-form-submit form-submit" data-drupal-selector="edit-field-file-upload-0-upload-button" formnovalidate="formnovalidate" type="submit" id="edit-field-file-upload-0-upload-button" name="field_file_upload_0_upload_button" value="Vælg filer">
           </div>
           <div id="edit-field-file-upload-0-upload--description" class="upload--description">
             16 MB grænse. Tilladte typer: txt pdf doc docx

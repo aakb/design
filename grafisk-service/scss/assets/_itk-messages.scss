@@ -13,21 +13,40 @@
 $message-color:                  #f1f1f1;
 $message-info-color:             #dff2bf;
 $message-warning-color:          #feefb3;
-$message-error-color:            #ffbaba;
+$message-error-color:            $error-color;
 
 
 /* Styles
    ========================================================================== */
 
 .itk-message {
-  margin: 0 auto 1em;
-  max-width: $breakpoint-desk;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  p + p {
+    margin-top: .5em;
+  }
+}
+
+.itk-message + .itk-message,
+div + .itk-message {
+  margin-top: 1em;
+}
+
+div + .itk-message {
+  margin-bottom: 1em;
 }
 
 .itk-message--inner {
   border-radius: .75em;
 
-  padding: 1em;
+  padding: .75em;
 
   background-color: $message-color;
   border: 1px solid darken($message-color, 25%);

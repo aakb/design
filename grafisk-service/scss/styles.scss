@@ -16,6 +16,7 @@
 // Include assets
 @import "assets/flexbox";
 @import "assets/itk-modal";
+@import "assets/itk-messages";
 
 // Layout
 @import "layout/content";
@@ -24,6 +25,7 @@
 @import "components/form";
 
 // Modules
+@import "modules/cookies";
 @import "modules/buttons";
 @import "modules/confirmation";
 @import "modules/header";

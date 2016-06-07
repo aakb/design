@@ -46,7 +46,10 @@ $gray-darkest:     lighten($black, 12%);
 
 $link-color:       $theme-color-secondary;
 $link-color-hover: darken($link-color, 15%);
-$error-color:      red;
+$info-color:       #dff2bf;
+$warning-color:    #feefb3;
+$error-color:      #ffbaba;
+
 
 
 /* Typography
