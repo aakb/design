@@ -17,6 +17,22 @@ $boxlist-padding: 1em;
   margin-right: $layout-padding;
   margin-left: $layout-padding;
 
+  @include breakpoint($breakpoint-bigscreen) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &--item {
+    @include flexbox;
+    @include flex-flow(row nowrap);
+  }
+
+  &--item + &--item {
+    border-top: 1px solid $gray-lighter;
+    margin-top: 2em;
+    padding-top: 2em;
+  }
+
   &--wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -39,10 +55,31 @@ $boxlist-padding: 1em;
   }
 
   header {
+    @include order(2);
+
+    padding-top: 0;
+
+    @include flex-basis(auto);
+    @include flex-grow(1);
+    @include flex-shrink(1);
+
+    @include breakpoint(600px) {
+      padding-right: $boxlist-padding;
+      padding-left: $boxlist-padding;
+    }
+
     p + a {
       display: inline-block;
       margin-top: .75em;
     }
+  }
+
+  figure {
+    @include order(1);
+    @include flex-shrink(0);
+
+    margin-right: 1em;
+    max-width: 6em;
   }
 
   &--meta {
@@ -52,7 +89,7 @@ $boxlist-padding: 1em;
   &--link,
   &--link:link,
   &--link:visited {
-    order: 4;
+    @include order(4);
 
     display: block;
     margin-right: auto;
@@ -83,71 +120,33 @@ $boxlist-padding: 1em;
   }
 }
 
-.itk-boxlist {
-
-  &--item {
-    @include flexbox;
-    @include flex-flow(row nowrap);
-  }
-
-  &--item + &--item {
-    border-top: 1px solid $gray-lighter;
-    margin-top: 2em;
-    padding-top: 2em;
-  }
-
-  header {
-    order: 2;
-    padding-top: 0;
-
-    @include flex-basis(auto);
-    @include flex-grow(1);
-    @include flex-shrink(1);
-
-    @include breakpoint(600px) {
-      padding-right: $boxlist-padding;
-      padding-left: $boxlist-padding;
-
-      @include flex-basis(auto);
-    }
-  }
-
-  figure {
-    margin-right: 1em;
-
-    order: 1;
-
-    @include flex-basis(80px);
-    @include flex-shrink(0);
-
-    @include breakpoint(800px) {
-      @include flex-basis(224px);
-    }
-  }
-}
-
 .itk-boxlist-gallery {
-  margin-right: $layout-padding;
-  margin-left: $layout-padding;
-  margin-top: 3em;
-
   @include flexbox;
   @include flex-flow(row wrap);
   @include justify-content(space-between);
+
+  margin-top: 3em;
+  margin-right: $layout-padding;
+  margin-left: $layout-padding;
 
   @include breakpoint($breakpoint-tablet) {
     margin-bottom: 4em;
   }
 
-  &--item {
-    margin-bottom: 4em;
+  @include breakpoint($breakpoint-bigscreen) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 
+  &--item {
     @include flexbox;
     @include flex-flow(column);
     @include flex-basis(40%);
 
+    margin-bottom: 4em;
+
     header {
-      order: 1;
+      @include order(1);
 
       font-size: .75em;
       text-align: center;
@@ -158,23 +157,23 @@ $boxlist-padding: 1em;
     }
 
     figure {
+      @include order(2);
+
       display: block;
       margin-top: 1.25em;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 1em;
       max-width: 5em;
-
-      order: 2;
     }
 
     p {
+      @include order(3);
+
       min-height: 3em;
       margin-bottom: 1.75em;
 
       text-align: center;
-
-      order: 3;
     }
 
     @include breakpoint($breakpoint-lap) {
@@ -209,7 +208,7 @@ $boxlist-padding: 1em;
   &--link,
   &--link:link,
   &--link:visited {
-    order: 4;
+    @include order(4);
 
     display: block;
     margin-right: auto;

@@ -1,1 +1,1 @@
-<figure class="content--image-wrapper"><img src="https://unsplash.it/2000/1000/?random"></figure>
+<figure class="content--image-wrapper"><img src="<?php echo $path_to_site; ?>/images/header-default.jpg"></figure>
