@@ -1,22 +1,23 @@
 <?php
   include $_SERVER['DOCUMENT_ROOT']. '/itkore/_settings.php';
+
   $class = 'is-frontpage';
 
-  include '_header.php';
-  include '_menus.php';
+  include $path . '/_header.php';
+  include $path . '/_menus.php';
 ?>
+
 <!--region.html.twig START-->
-<div class="header" role="banner" id="home">
+<div class="header" role="banner" id="home" style="background-image: url('<?php echo $path_to_site; ?>/images/header-default.jpg');">
   <div class="header--inner">
-    <h1 class="header--big">ITKore - The site behind it all</h1>
+    <h1 class="header--big">[Mangler tekst]</h1>
     <p class="header--lead">
-    This is a header lead
+      [Mangler tekst]
     </p>
     <p class="header--sub">
-    This is a header sub.
     </p>
     <div class="header--button-wrapper">
-      <a href="#" class="header--button-link">button</a>
+      <a href="#" class="header--button-link">Læs mere</a>
     </div>
   </div>
 </div>
@@ -26,7 +27,6 @@
     <div class="itk-boxlist--wrapper">
       <h2 class="frontpage--header">Temaer</h2>
       <div class="itk-boxlist-gallery">
-        <?php include $_SERVER['DOCUMENT_ROOT']. '/itkore/_settings.php';?>
         <?php include $path . '/includes/gallery-boxes/_1.php'; ?>
         <?php include $path . '/includes/gallery-boxes/_2.php'; ?>
         <?php include $path . '/includes/gallery-boxes/_3.php'; ?>

@@ -2,7 +2,7 @@
   include $_SERVER['DOCUMENT_ROOT']. '/5pack/_settings.php';
 
   $class = 'is-page';
-  $is_active = 4;
+  $is_active = 0;
 
   include $path . '/_header.php';
   include $path . '/_menus.php';
@@ -11,7 +11,7 @@
 <main role="main" class="content">
   <?php include $path . '/includes/_image.php'; ?>
   <div class="content--inner">
-    <h1 class="content--header">Kontakt</h1>
+    <h1 class="content--header">Om 5 pack</h1>
     <div class="content--lead">
       <p>[Mangler tekst]</p>
     </div>

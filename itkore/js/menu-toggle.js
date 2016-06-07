@@ -1,6 +1,8 @@
 /**
-* Created by jakobrindom on 28/08/15.
-*/
+ *
+ * Toggle hamburgermenu
+ *
+ */
 
 $(document).ready(function () {
   "use strict";
@@ -9,7 +11,7 @@ $(document).ready(function () {
   var hamburger_menu = $('.hamburger-menu');
   var html = $('html');
   var body = $('body');
-  var overlay = $('.hamburger-menu--overlay');
+  var overlay = $('.overlay');
 
   $('.js-menu-toggle').click(function() {
     if(hamburger_button.hasClass("open")){
