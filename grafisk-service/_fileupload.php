@@ -34,7 +34,7 @@
       <div id="edit-field-file-upload-ajax-wrapper">
         <div class="js-form-item form--item upload--file js-form-type-managed-file form-item-field-file-upload-0 js-form-item-field-file-upload-0">
           <div id="edit-field-file-upload-0-upload" class="js-form-managed-file form-managed-file">
-            <input class="js-hide button js-form-submit form-submit" data-drupal-selector="edit-field-file-upload-0-upload-button" formnovalidate="formnovalidate" type="submit" id="edit-field-file-upload-0-upload-button" name="field_file_upload_0_upload_button" value="Upload">
+            <input class="js-hide button js-form-submit form-submit" data-drupal-selector="edit-field-file-upload-0-upload-button" formnovalidate="formnovalidate" type="submit" id="edit-field-file-upload-0-upload-button" name="field_file_upload_0_upload_button" value="Vælg filer">
           </div>
           <div id="edit-field-file-upload-0-upload--description" class="upload--description">
             16 MB grænse. Tilladte typer: txt pdf doc docx

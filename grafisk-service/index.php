@@ -33,23 +33,8 @@ include '_header.php';
   </div>
   <form class="form">
     <div class="itk-message">
-      <div class="itk-message--inner">
-        <p>This is a <strong>standard</strong> message</p>
-      </div>
-    </div>
-    <div class="itk-message">
-      <div class="itk-message--inner is-info">
-        This is just for your <strong>information</strong>
-      </div>
-    </div>
-    <div class="itk-message">
-      <div class="itk-message--inner is-warning">
-        This is a <strong>warning</strong>
-      </div>
-    </div>
-    <div class="itk-message">
       <div class="itk-message--inner is-error">
-        This is an <strong>error</strong>
+        Du skal udfylde alle påkrævede felter (markeret med *) for at fortsætte
       </div>
     </div>
     <div class="form--page form--page-1 js-progress-page">
@@ -178,4 +163,12 @@ include '_header.php';
       </div>
     </div>
   </form>
+  <div id="js-cookies" class="cookies">
+    <div class="cookies--inner">
+      <span class="cookies--text">Siden bruger cookies til at holde styr på din bestilling</span>
+        <span class="cookies--agree">
+        <span class="button js-cookies--agree">Ok det er i orden</span>
+      </span>
+    </div>
+  </div>  
 </main>
