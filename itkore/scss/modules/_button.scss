@@ -37,4 +37,15 @@
       max-width: 50%;
     }
   }
+
+  &.is-inverted {
+    background-color: transparent;
+    border: 1px solid $theme-color;
+    color: $link-color;
+
+    &:hover {
+      background-color: $theme-color;
+      color: $white;
+    }
+  }
 }

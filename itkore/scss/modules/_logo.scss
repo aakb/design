@@ -7,6 +7,13 @@
 
 // Logo styling.
 // This handles the default logo behaviour whether it is sticky or not.
+
+.logo {
+  @include strip-link-styles($white);
+
+  font-size: 100%;
+}
+
 .logo,
 .logo.is-sticky,
 .is-frontpage .logo.is-sticky {
@@ -17,9 +24,6 @@
 
   height: 3em;
   width: 10em;
-
-  background-image: url("../logo.svg");
-  background-repeat: no-repeat;
 
   @include breakpoint($breakpoint-desk) {
     position: fixed;
@@ -32,6 +36,5 @@
   .logo {
     height: 3em;
     width: 10em;
-    background-image: url("../logo.svg");
   }
 }

@@ -20,10 +20,10 @@ $message-error-color:            $error-color;
    ========================================================================== */
 
 .itk-message {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  z-index: 1;
-  top: 6em;
+  z-index: 10;
+  top: 9em;
   max-width: 1024px;
   margin: 0 auto;
   left: 0;
