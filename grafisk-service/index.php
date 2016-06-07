@@ -31,7 +31,7 @@ include '_header.php';
       </div>
     </div>
   </div>
-  <form class="form">
+  <form class="form" action="javascript:return false;">
     <div class="itk-message">
       <div class="itk-message--inner is-error">
         Du skal udfylde alle påkrævede felter (markeret med *) for at fortsætte
