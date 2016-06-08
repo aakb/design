@@ -7,7 +7,6 @@
   include $path . '/_menus.php';
 ?>
 
-<!--region.html.twig START-->
 <div class="header" role="banner" id="home" style="background-image: url('<?php echo $path_to_site; ?>/images/header-default.jpg');">
   <div class="header--inner">
     <h1 class="header--big">Velkommen til dit nye site</h1>
@@ -28,7 +27,7 @@
     <div class="itk-boxlist--wrapper">
       <h2 class="frontpage--header">Vejledninger</h2>
       <div class="itk-boxlist-gallery">
-        <?php include $path . '/includes/gallery-boxes/_1.php'; ?>
+        <?php include $path . '/includes/gallery-boxes/_opret_side.php'; ?>
       </div>
     </div>
   </div>
@@ -38,7 +37,16 @@
       <div class="itk-boxlist">
         <?php include $path . '/includes/_news.php'; ?>
       </div>
+      <a href="<?php echo $path_to_site; ?>/nyheder/" class="button is-block is-inverted">Alle nyheder</a>
+    </div>
+  </div>
+  <div class="content--inner is-front">
+    <div class="itk-boxlist--wrapper">
+      <h2 class="frontpage--header">Events</h2>
+      <div class="itk-boxlist">
+        <?php include $path . '/includes/_event.php'; ?>
+      </div>
+      <a href="<?php echo $path_to_site; ?>/events/" class="button is-block is-inverted">Alle begivenheder</a>
     </div>
   </div>
 </main>
-<!--region.html.twig END-->

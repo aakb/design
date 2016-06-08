@@ -25,12 +25,6 @@
           <a href="<?php echo $path_to_site; ?>/kom-igang/opret-side/" class="nav--link is-sub <?php echo $is_sub_active[1] === 1 ? ' is-active' : '' ?>">
             Vejledning: Opret side
           </a>
-          <a href="<?php echo $path_to_site; ?>/kom-igang/opret-nyhed/" class="nav--link is-sub <?php echo $is_sub_active[1] === 1 ? ' is-active' : '' ?>">
-            Vejledning: Opret nyhed
-          </a>
-          <a href="<?php echo $path_to_site; ?>/kom-igang/opret-begivenhed/" class="nav--link is-sub <?php echo $is_sub_active[1] === 1 ? ' is-active' : '' ?>">
-            Vejledning: Opret begivenhed
-          </a>
         </div>
       </div>
     </div>

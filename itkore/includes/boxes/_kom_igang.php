@@ -6,5 +6,5 @@
     </p>
     <a href="<?php echo $path_to_site; ?>/kom-igang/">Kom igang</a>
   </header>
-  <figure><a href="<?php echo $path_to_site; ?>/kom-igang/"><img src="https://unsplash.it/501/498/?random"></a></figure>
+  <figure><a href="<?php echo $path_to_site; ?>/kom-igang/"><img src="<?php echo $path_to_site; ?>/images/list-default.jpg"></a></figure>
 </article>
