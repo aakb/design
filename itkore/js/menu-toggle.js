@@ -14,9 +14,9 @@ $(document).ready(function () {
   var overlay = $('.overlay');
 
   $('.js-menu-toggle').click(function() {
-    if(hamburger_button.hasClass("open")){
+    if(hamburger_button.hasClass("is-open")){
       // Button animation 'back to hamburger'.
-      hamburger_button.removeClass("open");
+      hamburger_button.removeClass("is-open");
 
       // Closes hamburger menu.
       hamburger_menu.removeClass("is-open");
@@ -30,7 +30,7 @@ $(document).ready(function () {
     }
     else {
       // Hamburger button animatiion to 'x'.
-      hamburger_button.addClass("open");
+      hamburger_button.addClass("is-open");
 
       // Open hamburger menu.
       hamburger_menu.addClass("is-open");

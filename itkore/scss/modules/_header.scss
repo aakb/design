@@ -38,6 +38,10 @@
 
   // Header inner
   &--inner {
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+
     box-sizing: border-box;
     height: 100%;
     margin-right: auto;
@@ -47,9 +51,7 @@
     padding-bottom: 1.75em;
     padding-left: $layout-padding;
 
-    @include flexbox;
-    @include flex-direction(column);
-    @include justify-content(center);
+    text-align: center;
 
     @include breakpoint($breakpoint-tablet) {
       padding-right: 8em;
