@@ -11,14 +11,14 @@ var download = function(az){
   httpntlm.get({
     url: 'http://srvwebaak01/TLFimageupload/imageHandler.ashx?ident=' + az,
     encoding: null,
-    username: 'azkbd85',
-    password: 'Fn)33>mp=d',
+    username: 'xxx',
+    password: 'xxx',
     workstation: '',
     domain: ''
   }, function (err, res){
     if(err) return err;
     res.setEncoding('binary');
-    
+
     console.log(res);
     fs.writeFile(az + '.jpg', res.body, 'binary', function(err){
       if (err) throw err;
