@@ -24,12 +24,12 @@
       <h2 class="group--header" data-ng-class="{'has-small-images' : largeSpacing}">{{ group.group }}</h2>
     </div>
     <div class="group--member-wrapper" data-ng-class="{'has-small-images' : largeSpacing}">
-      <article class="group--member flip-container" data-ng-class="{'active' : isSelected(member), 'has-small-images' : largeSpacing}" data-ng-click="setActive(member)" data-ng-repeat="member in group.members" ontouchstart="this.classList.toggle('hover');">
+      <article class="group--member flip-container" data-ng-class="{'active' : isSelected(member), 'has-small-images' : largeSpacing}" data-ng-click="setActive(member)" data-ng-repeat="member in group.members.data" ontouchstart="this.classList.toggle('hover');">
         <div class="flipper">
           <div class="group--inner-wrapper front">
-            <div class="group--member-image" style="background-image: url('{{ member.image }}');" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-small-images' : largeSpacing}"></div>
+            <div class="group--member-image" style="background-image: url('//srvwebaak01/TLFimageupload/imageHandler.ashx?ident={{ member.azident }}');" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-small-images' : largeSpacing}"></div>
             <div class="group--member-content">
-              <p class="group--member-name">{{ member.firstname }} {{ member.lastname }}</p>
+              <p class="group--member-name">{{ member.kaldenavn }}</p>
               <p class="group--member-meta">{{ member.position }}</p>
             </div>
           </div>

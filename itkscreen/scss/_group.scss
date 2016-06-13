@@ -11,7 +11,7 @@
   src: url("../assets/fonts/Gibson-Light-webfont.woff") format("woff");
 }
 
-$member-width: 10vmin;
+$member-width: 8.5vmin;
 
 .group-wrapper {
   @include flexbox;
@@ -99,8 +99,8 @@ $member-width: 10vmin;
     &.has-small-images {
       height: $member-width * .85;
       width: $member-width * .85;
-      margin-right: 3vmin;
-      margin-bottom: 6.5vmin;
+      margin-right: 2vmin;
+      margin-bottom: 4.5vmin;
     }
   }
 
