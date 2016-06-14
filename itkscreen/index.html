@@ -30,7 +30,7 @@
       <article class="group--member flip-container" data-ng-class="{'active' : isSelected(member), 'has-small-images' : largeSpacing}" data-ng-click="setActive(member)" data-ng-repeat="member in group.members.data" ontouchstart="this.classList.toggle('hover');">
         <div class="flipper">
           <div class="group--inner-wrapper front">
-            <div class="group--member-image" style="background-image: url('//srvwebaak01/TLFimageupload/imageHandler.ashx?ident={{ member.azident }}');" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-small-images' : largeSpacing}"></div>
+            <div class="group--member-image" style="background-image: url('images/{{ member.azident | trim }}.jpg');" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-small-images' : largeSpacing}"></div>
             <div class="group--member-content">
               <p class="group--member-name">{{ member.kaldenavn }}</p>
               <p class="group--member-meta">{{ member.position }}</p>

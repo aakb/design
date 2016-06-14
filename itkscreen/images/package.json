@@ -5,6 +5,7 @@
   "main": "download.js",
   "dependencies": {
     "httpntlm": "^1.6.1",
+    "prompt": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {

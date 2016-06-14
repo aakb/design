@@ -1,40 +1,51 @@
+/**
+ * @file
+ * Download user images.
+ */
+
 var fs = require('fs');
-var ntlm = require('request-ntlm');
+var httpntlm = require('httpntlm');
+var prompt = require('prompt');
+var json = require('../data.json');
 
-
-
-var download = function(az){
-  var httpntlm = require('httpntlm');
-
-  var f=fs.createWriteStream(az + '.jpg');
-
+/**
+ * Helper function to download images.
+ */
+var download = function(az, username, password){
   httpntlm.get({
     url: 'http://srvwebaak01/TLFimageupload/imageHandler.ashx?ident=' + az,
-    encoding: null,
-    username: 'xxx',
-    password: 'xxx',
+    username: username,
+    password: password,
     workstation: '',
-    domain: ''
-  }, function (err, res){
-    if(err) return err;
-    res.setEncoding('binary');
-
-    console.log(res);
-    fs.writeFile(az + '.jpg', res.body, 'binary', function(err){
-      if (err) throw err;
-      console.log('File saved.')
-    })
+    domain: '',
+    binary: true
+  }, function (err, response){
+    if(err) return console.log(err);
+    fs.writeFile(az + '.jpg', response.body, function (err) {
+      if(err) return console.log("error writing file");
+      console.log(".");
+    });
   });
 };
 
-
-
-var json = require('../data.json');
-
-for (var i in json) {
-  for (var j in json[i].members.data) {
-    var az = json[i].members.data[j].azident.trim();
-    download(az);
+prompt.start();
+prompt.get(['username', { name: 'password', hidden: true }], function (err, result) {
+  if (err) {
+    return onErr(err);
   }
+
+  for (var i in json) {
+    for (var j in json[i].members.data) {
+      var az = json[i].members.data[j].azident.trim();
+      download(az, result.username, result.password);
+    }
+  }
+});
+
+function onErr(err) {
+  console.log(err);
+  return 1;
 }
+
+
 
