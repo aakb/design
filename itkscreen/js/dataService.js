@@ -8,7 +8,7 @@ angular.module('groupApp').service('dataService', ['$http', '$q',
      * @returns {*|{}}
      */
     this.getData = function getData() {
-      return $http.get('data.json');
+      return $http.get('data/data.json');
     }
   }
 ]);

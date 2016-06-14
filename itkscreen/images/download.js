@@ -6,12 +6,12 @@
 var fs = require('fs');
 var httpntlm = require('httpntlm');
 var prompt = require('prompt');
-var json = require('../data.json');
+var json = require('../data/data.json');
 
 /**
  * Helper function to download images.
  */
-var download = function(az, username, password){
+var download = function (az, username, password) {
   httpntlm.get({
     url: 'http://srvwebaak01/TLFimageupload/imageHandler.ashx?ident=' + az,
     username: username,
@@ -22,11 +22,21 @@ var download = function(az, username, password){
   }, function (err, response){
     if(err) return console.log(err);
     fs.writeFile(az + '.jpg', response.body, function (err) {
-      if(err) return console.log("error writing file");
+      if(err) {
+        return console.log("error writing file");
+      }
       console.log(".");
     });
   });
 };
+
+/**
+ * Error callback function.
+ */
+function onErr(err) {
+  console.log(err);
+  return 1;
+}
 
 prompt.start();
 prompt.get(['username', { name: 'password', hidden: true }], function (err, result) {
@@ -41,11 +51,3 @@ prompt.get(['username', { name: 'password', hidden: true }], function (err, resu
     }
   }
 });
-
-function onErr(err) {
-  console.log(err);
-  return 1;
-}
-
-
-

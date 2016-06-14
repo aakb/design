@@ -32,16 +32,16 @@
           <div class="group--inner-wrapper front">
             <div class="group--member-image" style="background-image: url('images/{{ member.azident | trim }}.jpg');" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-small-images' : largeSpacing}"></div>
             <div class="group--member-content">
-              <p class="group--member-name">{{ member.kaldenavn }}</p>
-              <p class="group--member-meta">{{ member.position }}</p>
+              <p class="group--member-name">{{ member.kaldenavn | trim }}</p>
+              <p class="group--member-meta">{{ member.position | trim }}</p>
             </div>
           </div>
           <div class="group--inner-wrapper back">
             <div class="group--member-image-back" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-small-images' : largeSpacing}"></div>
             <div class="group--member-content">
-              <p class="group--member-name">{{ member.firstname }} {{ member.lastname }}</p>
-              <p class="group--member-meta">{{ member.email }}</p>
-              <p class="group--member-meta">{{ member.quote }}</p>
+              <p class="group--member-name">{{ member.firstname | trim }} {{ member.lastname | trim }}</p>
+              <p class="group--member-meta">{{ member.email | trim }}</p>
+              <p class="group--member-meta">{{ member.quote | trim }}</p>
             </div>
           </div>
         </div>
