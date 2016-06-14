@@ -25,8 +25,6 @@ $member-width: 8.5vmin;
   transition: 1s;
 
   &:nth-child(1) {
-    width: 9%;
-
     .group--member-wrapper {
       max-width: $member-width;
     }
@@ -34,8 +32,6 @@ $member-width: 8.5vmin;
 
   &:nth-child(2),
   &:nth-child(4) {
-    width: 27.5%;
-
     .group--member-wrapper {
       max-width: $member-width * 3.75;
     }
@@ -43,10 +39,8 @@ $member-width: 8.5vmin;
 
   &:nth-child(3),
   &:nth-child(5) {
-    width: 18%;
-
     .group--member-wrapper {
-      max-width: $member-width * 2.5;
+      max-width: $member-width * 3.75;
     }
   }
 
@@ -97,7 +91,7 @@ $member-width: 8.5vmin;
     position: relative;
 
     margin-right: auto;
-    margin-bottom: 4.5vmin;
+    margin-bottom: 6vmin;
     height: $member-width;
     width: $member-width;
 
