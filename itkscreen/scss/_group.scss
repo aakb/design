@@ -1,33 +1,16 @@
-@font-face {
-  font-family: 'Gibson SemiBold';
-  src: url("../assets/fonts/Gibson-SemiBold-webfont.woff") format("woff");
-}
-@font-face {
-  font-family: 'Gibson Regular';
-  src: url("../assets/fonts/Gibson-Regular-webfont.woff") format("woff");
-}
-@font-face {
-  font-family: 'Gibson Light';
-  src: url("../assets/fonts/Gibson-Light-webfont.woff") format("woff");
-}
-
 $member-width: 8.5vmin;
 
 .group-wrapper {
   @include flexbox;
+  @include flex-grow(1);
   @include align-self(center);
 
   padding: 3vmin;
-
-  &.has-direction-horizontal {
-    @include flex-direction(column);
-  }
 }
 
 .group-header {
   margin-top: 3vmin;
 
-  font-family: 'Gibson SemiBold';
   font-size: 3vmin;
   font-weight: 600;
   text-align: center;
@@ -35,6 +18,8 @@ $member-width: 8.5vmin;
 
 .group {
   @include flexbox;
+  @include flex-direction(column);
+  @include flex(0 1 100%);
 
   margin-top: -2.5vmin;
 
@@ -42,7 +27,28 @@ $member-width: 8.5vmin;
 
   transition: 1s;
 
-  &:not(.has-direction-horizontal) {
+  &:nth-child(1) {
+    .group--member-wrapper {
+      max-width: $member-width;
+    }
+  }
+
+  &:nth-child(2) {
+    .group--member-wrapper {
+      max-width: $member-width * 3;
+    }
+  }
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    .group--member-wrapper {
+      max-width: $member-width * 3;
+    }
+  }
+
+  &--outer-wrapper {
+    @include flexbox;
+    @include align-self(center);
   }
 
   &--header-wrapper {
@@ -51,29 +57,28 @@ $member-width: 8.5vmin;
     @include align-content(flex-start);
     @include align-self(stretch);
 
-    margin-top: 3vmin;
-    min-width: 7vmin;
+    position: relative;
 
-    &.has-small-images {
-      margin-top: 5vmin;
-    }
+    min-width: 8.5vmin;
   }
 
   &--header {
     @include align-self(flex-start);
     @include flex-basis(100%);
 
-    margin-top: 4.5vmin;
+    position: absolute;
+    top: -3.25vmin;
+    left: -46vmin;
+
+    margin-top: 3.5vmin;
+    width: 50vmin;
 
     font-size: 1.5vmin;
-    text-align: center;
+    text-align: right;
 
     transform: rotate(-90deg);
+    transform-origin: top right;
     transition: 1s;
-
-    &.has-small-images {
-      margin-top: 3.5vmin;
-    }
   }
 
   &--member-wrapper {
@@ -81,27 +86,19 @@ $member-width: 8.5vmin;
     @include flex-wrap(wrap);
     @include align-content(flex-start);
 
-    margin-top: 3vmin;
-
     transition: 1s;
   }
 
   &--member {
     position: relative;
 
-    margin-right: 1.5vmin;
-    margin-bottom: 5vmin;
+    margin-right: auto;
+    margin-bottom: 4.5vmin;
+    margin-left: auto;
     height: $member-width;
     width: $member-width;
 
     transition: 1s;
-
-    &.has-small-images {
-      height: $member-width * .85;
-      width: $member-width * .85;
-      margin-right: 2vmin;
-      margin-bottom: 4.5vmin;
-    }
   }
 
   &--member-image,
@@ -114,15 +111,6 @@ $member-width: 8.5vmin;
     background-size: cover;
 
     transition: 1s;
-
-    &.has-small-images {
-      height: $member-width * .85;
-      width: $member-width * .85;
-    }
-
-    &.has-rounded-images {
-      border-radius: 100%;
-    }
   }
 
   &--member-image-back {
@@ -141,7 +129,6 @@ $member-width: 8.5vmin;
 
   &--member-name {
     color: $theme-color;
-    font-family: 'Gibson SemiBold';
     font-size: .85vmin;
   }
 

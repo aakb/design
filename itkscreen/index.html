@@ -16,36 +16,33 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body data-ng-app="groupApp">
-<div data-ng-controller="groupControl" class="group-wrapper" data-ng-class="{'has-direction-horizontal' : directionSelected}">
-  <section class="toggle">
-    <a href="#" class="toggle--direction" data-ng-class="{'has-direction-horizontal' : directionSelected}" data-ng-click="setDirection()">flow</a>
-    <a href="#" class="toggle--image-style" data-ng-class="{'has-rounded-images' : imageStyleSelected}" data-ng-click="setImageStyle()">images</a>
-    <a href="#" class="toggle--spacing" data-ng-class="{'has-small-images' : largeSpacing}" data-ng-click="setSpacing()">images</a>
-  </section>
-  <article class="group" data-ng-repeat="group in groups" data-ng-class="{'has-direction-horizontal' : directionSelected, 'has-small-images' : largeSpacing}">
-    <div class="group--header-wrapper">
-      <h2 class="group--header" data-ng-class="{'has-small-images' : largeSpacing}">{{ group.group }}</h2>
-    </div>
-    <div class="group--member-wrapper" data-ng-class="{'has-small-images' : largeSpacing}">
-      <article class="group--member flip-container" data-ng-class="{'active' : isSelected(member), 'has-small-images' : largeSpacing}" data-ng-click="setActive(member)" data-ng-repeat="member in group.members.data" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-          <div class="group--inner-wrapper front">
-            <div class="group--member-image" style="background-image: url('images/{{ member.azident | trim }}.jpg');" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-small-images' : largeSpacing}"></div>
-            <div class="group--member-content">
-              <p class="group--member-name">{{ member.kaldenavn | trim }}</p>
-              <p class="group--member-meta">{{ member.position | trim }}</p>
+<div data-ng-controller="groupControl" class="group-wrapper">
+  <article class="group" data-ng-repeat="group in groups">
+    <div class="group--outer-wrapper">
+      <div class="group--header-wrapper">
+        <h2 class="group--header">{{ group.group }}</h2>
+      </div>
+      <div class="group--member-wrapper">
+        <article class="group--member flip-container" data-ng-class="{'active' : isSelected(member)}" data-ng-click="setActive(member)" data-ng-repeat="member in group.members.data" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="group--inner-wrapper front">
+              <div class="group--member-image" style="background-image: url('images/{{ member.azident | trim }}.jpg');"></div>
+              <div class="group--member-content">
+                <p class="group--member-name">{{ member.kaldenavn | trim }}</p>
+                <p class="group--member-meta">{{ member.position | trim }}</p>
+              </div>
+            </div>
+            <div class="group--inner-wrapper back">
+              <div class="group--member-image" style="background-image: url('images/{{ member.azident | trim }}.jpg');"></div>
+              <div class="group--member-content">
+                <p class="group--member-name">{{ member.firstname | trim }} {{ member.lastname | trim }}</p>
+                <p class="group--member-meta">{{ member.email | trim }}</p>
+                <p class="group--member-meta">{{ member.quote | trim }}</p>
+              </div>
             </div>
           </div>
-          <div class="group--inner-wrapper back">
-            <div class="group--member-image-back" data-ng-class="{'has-rounded-images' : imageStyleSelected, 'has-small-images' : largeSpacing}"></div>
-            <div class="group--member-content">
-              <p class="group--member-name">{{ member.firstname | trim }} {{ member.lastname | trim }}</p>
-              <p class="group--member-meta">{{ member.email | trim }}</p>
-              <p class="group--member-meta">{{ member.quote | trim }}</p>
-            </div>
-          </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </div>
   </article>
 </div>
