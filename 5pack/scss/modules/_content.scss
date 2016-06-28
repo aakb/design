@@ -36,7 +36,8 @@
 }
 
 .content {
-  @include flex(1, 1, 80%);
+  @include flex(1, 0, auto);
+  min-height: 80%;
 
   &--inner {
     margin-right: auto;

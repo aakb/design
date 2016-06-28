@@ -15,7 +15,7 @@
   background-size: cover;
   color: #fff;
 
-  @include flex(1, 1, auto);
+  @include flex(1, 0, auto);
 
   &:before {
     @extend %image-overlay;

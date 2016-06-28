@@ -12,7 +12,8 @@ $left-and-right-padding: 1em;
 
   background-color: black;
 
-  @include flex(1, 1, auto);
+  @include flex(1, 0, auto);
+  @include align-self(flex-end);
 
   &--content {
     margin-left: auto;
