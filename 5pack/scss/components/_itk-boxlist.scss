@@ -135,10 +135,6 @@ $boxlist-padding: 1em;
   @include flex-flow(row wrap);
   @include justify-content(space-between);
 
-  @include breakpoint($breakpoint-tablet) {
-    margin-bottom: 4em;
-  }
-
   &--item {
     margin-bottom: 4em;
     padding-bottom: 3em;
