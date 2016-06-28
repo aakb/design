@@ -141,6 +141,9 @@ $boxlist-padding: 1em;
 
   &--item {
     margin-bottom: 4em;
+    padding-bottom: 3em;
+    position: relative;
+
 
     @include flexbox;
     @include flex-flow(column);
@@ -179,7 +182,6 @@ $boxlist-padding: 1em;
 
     @include breakpoint($breakpoint-lap) {
       padding-top: 0;
-      padding-bottom: 0;
 
       header {
         text-align: center;
@@ -212,10 +214,14 @@ $boxlist-padding: 1em;
     order: 4;
 
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 1em;
+    margin-left: 1em;
     min-width: 75%;
     padding: .5em 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     background-color: transparent;
     border: 1px solid $link-color;
@@ -235,6 +241,8 @@ $boxlist-padding: 1em;
     }
 
     @include breakpoint($breakpoint-desk) {
+      margin-right: 2em;
+      margin-left: 2em;
       max-width: 100%;
     }
   }

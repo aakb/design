@@ -6,6 +6,7 @@
 
 
 &.is-page .content {
+
   &--inner {
     margin-top: -7em;
     padding-top: 3em;
@@ -35,6 +36,8 @@
 }
 
 .content {
+  @include flex(1, 1, 80%);
+
   &--inner {
     margin-right: auto;
     margin-bottom: 3em;
@@ -43,10 +46,6 @@
     min-height: 20em;
 
     @include word-wrap;
-
-    @include breakpoint($breakpoint-tablet) {
-      margin-bottom: 3em;
-    }
 
     &.is-front {
       max-width: 100%;

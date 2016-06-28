@@ -24,3 +24,6 @@
     </div>
   </div>
 </main>
+<?php
+include $path . '/_footer.php';
+?>

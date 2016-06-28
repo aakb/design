@@ -45,4 +45,7 @@
     </div>
   </div>
 </main>
+<?php
+  include $path . '/_footer.php';
+?>
 <!--region.html.twig END-->

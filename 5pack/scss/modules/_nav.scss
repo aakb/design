@@ -160,6 +160,10 @@
   top: 30px;
 }
 
+.nav-toggle.open span {
+  background: $black;
+}
+
 .nav-toggle.open span:nth-child(1) {
   top: 15px;
   left: 50%;

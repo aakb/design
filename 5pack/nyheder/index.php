@@ -17,5 +17,6 @@
     </div>
   </div>
 </main>
-
-<?php include $path . '/_footer.php'; ?>
+<?php
+include $path . '/_footer.php';
+?>
